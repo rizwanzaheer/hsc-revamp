@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>编组 10备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-10备份" transform="translate(2.000000, 2.000000)">
+            <rect id="矩形" stroke="#2255CB" stroke-width="3" x="0" y="0" width="48" height="48" rx="6"></rect>
+            <path d="M6,0 L42,0 C45.3137085,-6.08718376e-16 48,2.6862915 48,6 L48,12 L48,12 L0,12 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="矩形" stroke="#2255CB" stroke-width="3"></path>
+            <circle id="椭圆形" fill="#00C0AB" cx="34.5" cy="6.5" r="1.5"></circle>
+            <circle id="椭圆形备份-3" fill="#00C0AB" cx="38.5" cy="6.5" r="1.5"></circle>
+            <circle id="椭圆形备份-4" fill="#00C0AB" cx="42.5" cy="6.5" r="1.5"></circle>
+            <polyline id="路径" stroke="#00C0AB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="14 37 7 31.5 14 26"></polyline>
+            <polyline id="路径备份" stroke="#00C0AB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="32 26 39 31.5 32 37"></polyline>
+            <line x1="26.6428571" y1="26.3666667" x2="22.3571429" y2="36.6333333" id="直线-3" stroke="#00C0AB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

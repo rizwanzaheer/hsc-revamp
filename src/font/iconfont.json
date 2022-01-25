@@ -1,0 +1,177 @@
+{
+  "id": "2492200",
+  "name": "hsc-portal",
+  "font_family": "iconfont",
+  "css_prefix_text": "hsc-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "21094060",
+      "name": "箭头-白",
+      "font_class": "jiantou-bai",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "21094032",
+      "name": "邮件 (1)",
+      "font_class": "youjian1",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "21093841",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "21093842",
+      "name": "youtube",
+      "font_class": "youtube",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "21093843",
+      "name": "telegram",
+      "font_class": "telegram",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "21093797",
+      "name": "链接",
+      "font_class": "lianjie",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "21093798",
+      "name": "书",
+      "font_class": "shu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "21093799",
+      "name": "挖矿",
+      "font_class": "wakuang",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "21093801",
+      "name": "资金池 ",
+      "font_class": "zijinchi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "21093802",
+      "name": "钱包1",
+      "font_class": "qianbao1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "21093803",
+      "name": "交易统计",
+      "font_class": "jiaoyitongji",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "21093804",
+      "name": "程序",
+      "font_class": "chengxu",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "21093805",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "21093806",
+      "name": "Github",
+      "font_class": "Github",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "21093766",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "21093767",
+      "name": "twitter (1)",
+      "font_class": "twitter1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "21093768",
+      "name": "应用",
+      "font_class": "yingyong",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "21093769",
+      "name": "开发者",
+      "font_class": "kaifazhe",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "21093770",
+      "name": "钱包",
+      "font_class": "qianbao",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "21093771",
+      "name": "挖矿资料",
+      "font_class": "wakuangziliao",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "21093772",
+      "name": "facebook (1)",
+      "font_class": "facebook1",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "21093773",
+      "name": "资产",
+      "font_class": "zichan",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "9430532",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "17542110",
+      "name": "导航",
+      "font_class": "daohang",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}

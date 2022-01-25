@@ -3,47 +3,47 @@
         <div class="clearfix pc">
             <div class="fl logo">
                 <a style="cursor: pointer" @click="jump('/')">
-                    <!-- <img src="../../../../images/logo/logo.svg" alt="logo" height="26" /> -->
+                    <img src="../../../../images/logo/logo.svg" alt="logo" height="26" />
                 </a>
             </div>
             <div class="fl menu-con">
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
-                    <el-menu-item index="/" @click="jump('/')">{{" $t('common.home')" }}</el-menu-item>
+                    <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item>
                     <el-submenu index="2" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{" $t('common.developer')" }}</template>
+                        <template slot="title">{{ $t('common.developer') }}</template>
                         <el-menu-item index="2-0">
                             <a
                                 :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
                                 target="_blank"
-                            >{{" $t('common.whitePaper')" }}</a>
+                            >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
                         <el-menu-item index="2-1">
                             <a
                                 href="https://docs.hoosmartchain.com/"
                                 target="_blank"
-                            >{{" $t('common.docs')" }}</a>
+                            >{{ $t('common.docs') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="2-2">{{" $t('common.github')" }}</el-menu-item>
+                        <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item>
                         <el-menu-item index="2-3">
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
-                            >{{ "$t('common.hscte')" }}</a>
+                            >{{ $t('common.hscte') }}</a>
                         </el-menu-item>
                         <el-menu-item index="2-4">
                             <a
                                 href="https://testnet.hscscan.com/hydrant"
                                 target="_blank"
-                            >{{ "$t('common.ffhsct')" }}</a>
+                            >{{ $t('common.ffhsct') }}</a>
                         </el-menu-item>
                     </el-submenu>
                     <el-submenu index="3" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ "$t('common.usehsc')" }}</template>
+                        <template slot="title">{{ $t('common.usehsc') }}</template>
                         <el-menu-item index="3-1">
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
                                 target="_blank"
-                            >{{ "$t('common.wallet')" }}</a>
+                            >{{ $t('common.wallet') }}</a>
                         </el-menu-item>
                         <el-menu-item index="3-2">
                             <a
@@ -273,6 +273,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../sass/common/_var.scss';
 .main-header {
     height: 80px;
     box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.03);
@@ -395,6 +396,7 @@ export default {
 </style>
 
 <style lang="scss">
+@import '../sass/common/_var.scss';
 @media (max-width: 1000px) {
     .main-header {
         .pc {

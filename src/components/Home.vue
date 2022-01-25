@@ -1,6 +1,6 @@
-<template>
-    <div>
-        <el-row class="mb-4">
+<template class="dark">
+    <div class="bg-gray-500 dark:bg-black">
+        <el-row>
             <el-button>Default</el-button>
             <el-button type="primary">Primary</el-button>
             <el-button type="success">Success</el-button>
@@ -34,7 +34,7 @@
             <el-button type="success" :icon="Check" circle></el-button>
             <el-button type="info" :icon="Message" circle></el-button>
             <el-button type="warning" :icon="Star" circle></el-button>
-            <el-button type="danger" :icon="Delete" circle class="dark:bg-slate-800"></el-button>
+            <el-button type="danger" :icon="Delete" circle></el-button>
         </el-row>
     </div>
 </template>
@@ -45,11 +45,11 @@ import { Search, Edit, Check, Message, Star, Delete } from '@element-plus/icons-
 </script>
 <style>
 :root {
-    /* --el-color-primary: #409eff;
+    --el-color-primary: #409eff;
     --el-color-success: #67c23a;
     --el-color-warning: #e6a23c;
     --el-color-danger: #f56c6c;
     --el-color-error: #f56c6c;
-    --el-color-info: #909399; */
+    --el-color-info: #909399;
 }
 </style>
