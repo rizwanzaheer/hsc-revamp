@@ -350,7 +350,8 @@
 </template>
 
 <script setup>
-const logoSrc = require('/images/icon/join/wechat.svg')
+import logoSrc from './../images/icon/join/wechat.svg'
+
 function toBrand() {
     this.$router.push({
         path: '/brand',
