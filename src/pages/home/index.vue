@@ -1,3 +1,3 @@
 <template>
-    <h1>hadfadfd</h1>
+    <h1>home page</h1>
 </template>

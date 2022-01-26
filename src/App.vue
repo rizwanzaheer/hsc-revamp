@@ -14,18 +14,9 @@
 
 
 <script setup>
-// import { computed } from 'vue'
-// import { useStore } from 'vuex'
-
-import mainLayout from './layouts/main.vue'
-import mainHeader from './layouts/header.vue'
-import mainFooter from './layouts/footer.vue'
-
-// const store = useStore()
-// const user = ''
-// const stack = computed(() => {
-//     return store.state.stack
-// });
+import mainLayout from './layouts/main.vue';
+import mainHeader from './layouts/header.vue';
+import mainFooter from './layouts/footer.vue';
 </script>
 
 

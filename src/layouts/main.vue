@@ -15,14 +15,11 @@
 </template>
 
 <script setup>
-import { useSlots, useAttrs } from 'vue'
-
-const slots = useSlots()
-const attrs = useAttrs()
 </script>
 
 <style lang="scss">
 @import '../sass/common/_var.scss';
+
 .main-body {
     width: 100%;
     height: 100%;

@@ -299,11 +299,11 @@
                 <el-submenu index="6">
                     <template slot="title">{{ $t('common.keepInTouch') }}</template>
                     <el-menu-item index="6-1">
-                        <img src="/images/icon/join/twitter-1.svg" alt height="10" />
+                        <img src="../images/icon/join/twitter-1.svg" alt height="10" />
                         <a href="https://twitter.com/HooSmartChain" target="_blank">Twitter</a>
                     </el-menu-item>
                     <el-menu-item index="6-2">
-                        <img src="/images/icon/join/telegram-1.svg" alt height="10" />
+                        <img src="../images/icon/join/telegram-1.svg" alt height="10" />
                         <a href="https://t.me/HooSmartChain" target="_blank">Telegram</a>
                     </el-menu-item>
                     <!-- <el-menu-item index="6-2"><img src="/images/icon/join/wechat-1.svg" alt="" height="10" />
@@ -331,7 +331,7 @@
         <div class="copyright">
             <div class="copyright-con clearfix">
                 <div class="fl copyright-l">
-                    <img src="/images/logo/logo-white.svg" alt height="18" />
+                    <img src="../images/logo/logo-white.svg" alt height="18" />
                     <div class="mobile">
                         <a>{{ $t('common.privacy') }}</a>
                         <a>{{ $t('common.terms') }}</a>
@@ -350,12 +350,16 @@
 </template>
 
 <script setup>
-import logoSrc from './../images/icon/join/wechat.svg'
+import { ref } from 'vue';
+import logoSrc from '../images/icon/join/wechat.svg';
+let curLang = ref('en');
+
+console.log('this.$i18n is: ', this);
 
 function toBrand() {
     this.$router.push({
         path: '/brand',
-    })
+    });
 }
 </script>
 

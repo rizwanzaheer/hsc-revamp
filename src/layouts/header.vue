@@ -3,99 +3,15 @@
         <div class="clearfix pc">
             <div class="fl logo">
                 <a style="cursor: pointer" @click="jump('/')">
-                    <img src="../../../../images/logo/logo.svg" alt="logo" height="26" />
+                    <img src="../images/logo/logo.svg" alt="logo" height="26" />
                 </a>
             </div>
-            <div class="fl menu-con">
-                <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
-                    <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item>
-                    <el-submenu index="2" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.developer') }}</template>
-                        <el-menu-item index="2-0">
-                            <a
-                                :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
-                                target="_blank"
-                            >{{ $t('common.whitePaper') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-1">
-                            <a
-                                href="https://docs.hoosmartchain.com/"
-                                target="_blank"
-                            >{{ $t('common.docs') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item>
-                        <el-menu-item index="2-3">
-                            <a
-                                href="https://testnet.hscscan.com/"
-                                target="_blank"
-                            >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-4">
-                            <a
-                                href="https://testnet.hscscan.com/hydrant"
-                                target="_blank"
-                            >{{ $t('common.ffhsct') }}</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="3" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.usehsc') }}</template>
-                        <el-menu-item index="3-1">
-                            <a
-                                :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
-                                target="_blank"
-                            >{{ $t('common.wallet') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="3-2">
-                            <a
-                                :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'"
-                                target="_blank"
-                            >{{ $t('common.buygasfee') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
-                    </el-submenu>
-                    <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-submenu index="5" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.explorer') }}</template>
-                        <el-menu-item index="5-1">
-                            <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
-                        </el-menu-item>
 
-                        <el-menu-item index="5-1">
-                            <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="5-2">
-                            <a
-                                href="https://testnet.hscscan.com/"
-                                target="_blank"
-                            >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="6" popper-class="el-menu-popper-reset">
-                        <template slot="title">
-                            <el-badge
-                                style="line-height: 29px"
-                                value="HOT"
-                            >{{ $t('common.activity') }}</el-badge>
-                        </template>
-                        <el-menu-item index="6-1">
-                            <a
-                                target="_blank"
-                                @click="jump('/activity/unicorn-program')"
-                            >{{ $t('common.activity.unicorn') }}</a>
-                        </el-menu-item>
-                        <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
-                            <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <!-- <el-menu-item index="/memorabilia" @click="jump('/memorabilia')">大事记</el-menu-item> -->
-                    <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
-                </el-menu>
-            </div>
             <div class="fr lang">
                 <el-popover
                     placement="bottom"
                     trigger="hover"
-                    :visible-arrow="false"
+                    :show-arrow="false"
                     popper-class="lang-popup"
                 >
                     <div class="lang-item-con">
@@ -111,164 +27,52 @@
                 </el-popover>
             </div>
         </div>
-        <!-- 移动端 -->
-        <div class="mobile">
-            <div class="clearfix">
-                <div class="fl logo">
-                    <a href="/">
-                        <img src="../../../../images/logo/logo.svg" alt="logo" height="15" />
-                    </a>
-                </div>
-                <div class="fr menu-btn" @click="toggleMenu()">
-                    <i v-if="!isOpen" class="iconfont hsc-daohang"></i>
-                    <i v-else class="iconfont hsc-guanbi"></i>
-                </div>
-            </div>
-            <div v-if="isOpen" class="m-menu-con">
-                <el-menu
-                    class="m-menu-bd"
-                    :default-active="activeIndex"
-                    unique-opened
-                    mode="vertical"
-                >
-                    <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item>
-                    <el-submenu index="2" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.developer') }}</template>
-                        <el-menu-item index="2-0">
-                            <a
-                                :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
-                                target="_blank"
-                            >{{ $t('common.whitePaper') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-1">
-                            <a
-                                href="https://docs.hoosmartchain.com/"
-                                target="_blank"
-                            >{{ $t('common.docs') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item>
-                        <el-menu-item index="2-3">
-                            <a
-                                href="https://testnet.hscscan.com/"
-                                target="_blank"
-                            >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="2-4">
-                            <a
-                                href="https://testnet.hscscan.com/hydrant"
-                                target="_blank"
-                            >{{ $t('common.ffhsct') }}</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="3" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.usehsc') }}</template>
-                        <el-menu-item index="3-1">
-                            <a
-                                href="https://docs.hoosmartchain.com/#/wallet"
-                                target="_blank"
-                            >{{ $t('common.wallet') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="3-2">
-                            <a
-                                href="https://docs.hoosmartchain.com/#/buy_hoo"
-                                target="_blank"
-                            >{{ $t('common.buygasfee') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
-                    </el-submenu>
-                    <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-submenu index="5" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.explorer') }}</template>
-                        <el-menu-item index="5-1">
-                            <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="5-1">
-                            <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
-                        </el-menu-item>
-                        <el-menu-item index="5-2">
-                            <a
-                                href="https://testnet.hscscan.com/"
-                                target="_blank"
-                            >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="6" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.activity') }}</template>
-                        <el-menu-item index="6-1">
-                            <a
-                                target="_blank"
-                                @click="jump('/activity/unicorn-program')"
-                            >{{ $t('common.activity.unicorn') }}</a>
-                        </el-menu-item>
-                        <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
-                            <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
-                        </el-menu-item>
-                    </el-submenu>
-                    <!-- <el-menu-item index="/memorabilia" @click="jump('/memorabilia')">大事记</el-menu-item> -->
-                    <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
-                    <el-submenu index="8">
-                        <template slot="title">{{ $t('common.lang') }}</template>
-                        <el-menu-item index="8-1" @click="setLang('zh_cn')">简体中文</el-menu-item>
-                        <!-- <el-menu-item index="8-2" @click="setLang('zh_tw')">繁體中文</el-menu-item> -->
-                        <el-menu-item index="8-3" @click="setLang('en')">English</el-menu-item>
-                        <!-- <el-menu-item index="8-4" @click="setLang('ko')">한국어</el-menu-item> -->
-                    </el-submenu>
-                </el-menu>
-            </div>
-        </div>
     </div>
 </template>
+<script setup>
+import { ref, computed, onMounted } from 'vue';
+const activeIndex = ref('/');
+// mobile
+const isOpen = ref(false);
+let curLang = ref('');
+// watch: {
+//     $route: {
+//         immutable: true,
+//         handler(v) {
+//             this.activeIndex = v.path;
+//         },
+//     },
+// };
+onMounted(() => console.log('on mounted works'));
 
-<script>
-export default {
-    name: 'MainHeader',
-    data() {
-        return {
-            activeIndex: '/',
-            // mobile
-            isOpen: false,
-        }
-    },
-    watch: {
-        $route: {
-            immutable: true,
-            handler(v) {
-                this.activeIndex = v.path
-            },
-        },
-    },
-    mounted() {},
-    methods: {
-        // 移动端导航展开与收起
-        toggleMenu() {
-            this.isOpen = !this.isOpen
-        },
-        // 语言字典
-        langOptions(lang) {
-            const langs = {
-                zh_cn: '简体中文',
-                zh_tw: '繁體中文',
-                en: 'English',
-                ko: '한국어',
-            }
+//     // 移动端导航展开与收起
+function toggleMenu() {
+    this.isOpen = !this.isOpen;
+}
+// 语言字典
+const langOptions = (lang) => {
+    const langs = {
+        zh_cn: '简体中文',
+        zh_tw: '繁體中文',
+        en: 'English',
+        ko: '한국어',
+    };
 
-            return langs[lang]
-        },
-        // 设置语言
-        setLang(lang) {
-            // this.curLang = lang
-            // cookie.set('hsc_i18n', lang)
-            // window.location.reload()
-            window.location.href = `/${lang}${this.$route.path}`
-        },
-        // 路由跳转
-        jump(path) {
-            this.isOpen = false
-            this.$router.push({
-                path,
-            })
-        },
-    },
+    return langs[lang];
+};
+//     // 设置语言
+const setLang = (lang) => {
+    this.curLang = 'en';
+    // cookie.set('hsc_i18n', lang)
+    // window.location.reload()
+    window.location.href = `/${lang}${this.$route.path}`;
+};
+//     // 路由跳转
+function jump(path) {
+    this.isOpen = false;
+    this.$router.push({
+        path,
+    });
 }
 </script>
 
