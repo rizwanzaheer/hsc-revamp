@@ -132,7 +132,7 @@
                 <!-- <p class="join-3">
           <el-popover placement="left" width="200" trigger="hover">
             <div class="address-title-img">
-              <img src="/images/icon/join/wechat-2.jpg" alt="" height="180" />
+              <img src="../images/icon/join/wechat-2.jpg" alt="" height="180" />
             </div>
             <a slot="reference">Wechat</a>
           </el-popover>
@@ -140,7 +140,7 @@
         <p class="join-5">
           <el-popover placement="left" width="200" trigger="hover">
             <div class="address-title-img">
-              <img src="/images/common/qrcode_group.png" alt="" height="180" />
+              <img src="../images/common/qrcode_group.png" alt="" height="180" />
             </div>
             <a slot="reference">{{ $t('common.community.qqgroup') }}</a>
           </el-popover>
@@ -306,25 +306,25 @@
                         <img src="../images/icon/join/telegram-1.svg" alt height="10" />
                         <a href="https://t.me/HooSmartChain" target="_blank">Telegram</a>
                     </el-menu-item>
-                    <!-- <el-menu-item index="6-2"><img src="/images/icon/join/wechat-1.svg" alt="" height="10" />
+                    <!-- <el-menu-item index="6-2"><img src="../images/icon/join/wechat-1.svg" alt="" height="10" />
             <el-popover placement="top-start" width="200" trigger="hover">
               <div class="address-title-img">
-                <img src="/images/icon/join/wechat-2.jpg" alt="" height="180" />
+                <img src="../images/icon/join/wechat-2.jpg" alt="" height="180" />
               </div>
               <a slot="reference">Wechat</a>
             </el-popover>
           </el-menu-item>
 
-          <el-menu-item index="6-2"><img src="/images/icon/join/qq-1.svg" alt="" height="14" />
+          <el-menu-item index="6-2"><img src="../images/icon/join/qq-1.svg" alt="" height="14" />
             <el-popover placement="top-start" width="200" trigger="hover">
               <div class="address-title-img">
-                <img src="/images/common/qrcode_group.png" alt="" height="180" />
+                <img src="../images/common/qrcode_group.png" alt="" height="180" />
               </div>
               <a slot="reference">{{ $t('common.community.qqgroup') }}</a>
             </el-popover>
                     </el-menu-item>-->
 
-                    <!-- <el-menu-item index="6-4"><img src="/images/icon/join/email-1.svg" alt="" height="10"> <a href="mailto:hsc@hoosmartchain.com" target="_blank">Email</a></el-menu-item> -->
+                    <!-- <el-menu-item index="6-4"><img src="../images/icon/join/email-1.svg" alt="" height="10"> <a href="mailto:hsc@hoosmartchain.com" target="_blank">Email</a></el-menu-item> -->
                 </el-submenu>
             </el-menu>
         </div>
@@ -404,10 +404,10 @@ function toBrand() {
                     padding-left: 25px;
                 }
                 .join-1 {
-                    background: url('/images/icon/join/twitter-1.svg') no-repeat left center;
+                    background: url('../images/icon/join/twitter-1.svg') no-repeat left center;
                     background-size: 19px 13px;
                     &:hover {
-                        background: url('/images/icon/join/twitter.svg') no-repeat left center;
+                        background: url('../images/icon/join/twitter.svg') no-repeat left center;
                         background-size: 19px 13px;
                         a {
                             color: $color-white;
@@ -416,10 +416,10 @@ function toBrand() {
                     }
                 }
                 .join-2 {
-                    background: url('/images/icon/join/telegram-1.svg') no-repeat left center;
+                    background: url('../images/icon/join/telegram-1.svg') no-repeat left center;
                     background-size: 19px 13px;
                     &:hover {
-                        background: url('/images/icon/join/telegram.svg') no-repeat left center;
+                        background: url('../images/icon/join/telegram.svg') no-repeat left center;
                         background-size: 19px 13px;
                         a {
                             color: $color-white;
@@ -428,10 +428,10 @@ function toBrand() {
                     }
                 }
                 .join-3 {
-                    background: url('/images/icon/join/wechat-1.svg') no-repeat left center;
+                    background: url('../images/icon/join/wechat-1.svg') no-repeat left center;
                     background-size: 19px 13px;
                     &:hover {
-                        background: url('/images/icon/join/wechat.svg') no-repeat left center;
+                        background: url('../images/icon/join/wechat.svg') no-repeat left center;
                         background-size: 19px 13px;
                         a {
                             color: $color-white;
@@ -440,10 +440,10 @@ function toBrand() {
                     }
                 }
                 .join-4 {
-                    background: url('/images/icon/join/email-1.svg') no-repeat left center;
+                    background: url('../images/icon/join/email-1.svg') no-repeat left center;
                     background-size: 19px 12px;
                     &:hover {
-                        background: url('/images/icon/join/email.svg') no-repeat left center;
+                        background: url('../images/icon/join/email.svg') no-repeat left center;
                         background-size: 19px 12px;
                         a {
                             color: $color-white;
@@ -452,10 +452,10 @@ function toBrand() {
                     }
                 }
                 .join-5 {
-                    background: url('/images/icon/join/qq-1.svg') no-repeat left center;
+                    background: url('../images/icon/join/qq-1.svg') no-repeat left center;
                     background-size: 19px 19px;
                     &:hover {
-                        background: url('/images/icon/join/qq.svg') no-repeat left center;
+                        background: url('../images/icon/join/qq.svg') no-repeat left center;
                         background-size: 19px 19px;
                         a {
                             color: $color-white;

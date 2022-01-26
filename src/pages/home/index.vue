@@ -1,3 +1,3 @@
 <template>
-    <h1>home page</h1>
+    <h1>Dynamic home page loading here!</h1>
 </template>
