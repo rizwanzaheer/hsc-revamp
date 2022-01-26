@@ -4,7 +4,7 @@ import messages from './locales/index';
 // const messageImports = import.meta.glob('./locales/*.json')
 // console.log(messageImports)
 
-export const SUPPORT_LOCALES = ['en', 'ko', 'zh_cn', 'zh_tw'];
+export const SUPPORT_LOCALES = ['en', 'ko', 'zh_cn', 'zh_tw', 'ar'];
 
 console.log('messages file is: ', messages);
 

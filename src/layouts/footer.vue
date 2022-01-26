@@ -146,6 +146,9 @@
           </el-popover>
                 </p>-->
                 <!-- <p class="join-4"><a href="mailto:hsc@hoosmartchain.com" target="_blank">Email</a></p> -->
+                <p class="join-6">
+                    <a href="https://t.me/HooSmartChain" target="_blank">Discord</a>
+                </p>
             </div>
         </div>
 
@@ -306,6 +309,10 @@
                         <img src="../images/icon/join/telegram-1.svg" alt height="10" />
                         <a href="https://t.me/HooSmartChain" target="_blank">Telegram</a>
                     </el-menu-item>
+                    <el-menu-item index="6-3">
+                        <img src="../images/icon/join/telegram-1.svg" alt height="10" />
+                        <a href="https://t.me/HooSmartChain" target="_blank">Discord</a>
+                    </el-menu-item>
                     <!-- <el-menu-item index="6-2"><img src="../images/icon/join/wechat-1.svg" alt="" height="10" />
             <el-popover placement="top-start" width="200" trigger="hover">
               <div class="address-title-img">
@@ -405,26 +412,30 @@ function toBrand() {
                 }
                 .join-1 {
                     background: url('../images/icon/join/twitter-1.svg') no-repeat left center;
-                    background-size: 19px 13px;
+                    background-size: 19px 19px;
                     &:hover {
                         background: url('../images/icon/join/twitter.svg') no-repeat left center;
-                        background-size: 19px 13px;
+                        background-size: 25px 28px;
                         a {
                             color: $color-white;
                             text-decoration: none;
+                            margin-left: 5px;
                         }
+                        cursor: pointer;
                     }
                 }
                 .join-2 {
                     background: url('../images/icon/join/telegram-1.svg') no-repeat left center;
-                    background-size: 19px 13px;
+                    background-size: 19px 19px;
                     &:hover {
                         background: url('../images/icon/join/telegram.svg') no-repeat left center;
-                        background-size: 19px 13px;
+                        background-size: 25px 25px;
                         a {
                             color: $color-white;
                             text-decoration: none;
+                            margin-left: 5px;
                         }
+                        cursor: pointer;
                     }
                 }
                 .join-3 {
@@ -432,11 +443,13 @@ function toBrand() {
                     background-size: 19px 13px;
                     &:hover {
                         background: url('../images/icon/join/wechat.svg') no-repeat left center;
-                        background-size: 19px 13px;
+                        background-size: 25px 25px;
                         a {
                             color: $color-white;
                             text-decoration: none;
+                            margin-left: 5px;
                         }
+                        cursor: pointer;
                     }
                 }
                 .join-4 {
@@ -444,11 +457,13 @@ function toBrand() {
                     background-size: 19px 12px;
                     &:hover {
                         background: url('../images/icon/join/email.svg') no-repeat left center;
-                        background-size: 19px 12px;
+                        background-size: 25px 25px;
                         a {
                             color: $color-white;
                             text-decoration: none;
+                            margin-left: 5px;
                         }
+                        cursor: pointer;
                     }
                 }
                 .join-5 {
@@ -456,11 +471,27 @@ function toBrand() {
                     background-size: 19px 19px;
                     &:hover {
                         background: url('../images/icon/join/qq.svg') no-repeat left center;
-                        background-size: 19px 19px;
+                        background-size: 25px 25px;
                         a {
                             color: $color-white;
                             text-decoration: none;
+                            margin-left: 5px;
                         }
+                        cursor: pointer;
+                    }
+                }
+                .join-6 {
+                    background: url('../images/icon/join/discord.svg') no-repeat left center;
+                    background-size: 19px 19px;
+                    &:hover {
+                        background: url('../images/icon/join/discord-hover.svg') no-repeat left center;
+                        background-size: 25px 25px;
+                        a {
+                            color: $color-white;
+                            text-decoration: none;
+                            margin-left: 5px;
+                        }
+                        cursor: pointer;
                     }
                 }
             }
