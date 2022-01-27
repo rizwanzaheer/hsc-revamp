@@ -9,7 +9,7 @@
 
             <div class="fl menu-con">
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
-                    <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item>
+                    <!-- <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item> -->
                     <el-sub-menu index="2" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.developer') }}</template>
                         <el-menu-item index="2-0">
@@ -38,6 +38,7 @@
                             >{{ $t('common.ffhsct') }}</a>
                         </el-menu-item>
                     </el-sub-menu>
+
                     <el-sub-menu index="3" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.usehsc') }}</template>
                         <el-menu-item index="3-1">
@@ -54,31 +55,33 @@
                         </el-menu-item>
                         <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
                     </el-sub-menu>
+
                     <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-sub-menu index="5" popper-class="el-menu-popper-reset">
-                        <!-- <template slot="title">{{ $t('common.explorer') }}</template>
+                    <el-sub-menu index="4" popper-class="el-menu-popper-reset">
+                        <template #title>{{ $t('common.explorer') }}</template>
                         <el-menu-item index="5-1">
                             <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
                         </el-menu-item>
 
-                        <el-menu-item index="5-1">
+                        <el-menu-item index="4-1">
                             <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="5-2">
+                        <el-menu-item index="4-2">
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
                             >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>-->
+                        </el-menu-item>
                     </el-sub-menu>
-                    <el-sub-menu index="6" popper-class="el-menu-popper-reset">
-                        <!-- <template slot="title">
+
+                    <el-sub-menu popper-class="el-menu-popper-reset">
+                        <template #title>
                             <el-badge
                                 style="line-height: 29px"
                                 value="HOT"
                             >{{ $t('common.activity') }}</el-badge>
                         </template>
-                        <el-menu-item index="6-1">
+                        <el-menu-item index="5-1">
                             <a
                                 target="_blank"
                                 @click="jump('/activity/unicorn-program')"
@@ -86,7 +89,7 @@
                         </el-menu-item>
                         <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
-                        </el-menu-item>-->
+                        </el-menu-item>
                     </el-sub-menu>
                     <!-- <el-menu-item index="/memorabilia" @click="jump('/memorabilia')">大事记</el-menu-item> -->
                     <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
@@ -175,19 +178,19 @@ function jump(path) {
 <style lang="scss">
 @import '../sass/common/_var.scss';
 .main-header {
-    height: 80px;
+    height: 60px;
     box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.03);
     .pc {
         max-width: 1200px;
         margin: 0 auto;
         .logo {
-            margin-top: 25px;
+            margin-top: 15px;
             height: 26px;
             width: 220px;
         }
         .menu-con {
             margin-left: 60px;
-            margin-top: 20px;
+            margin-top: 0px;
             .menu-bd {
                 border-bottom: none;
                 .el-menu-item {
@@ -208,7 +211,7 @@ function jump(path) {
                         border-bottom: none;
                     }
                 }
-                .el-submenu {
+                .el-sub-menu {
                     .el-submenu__title {
                         padding: 0 16px;
                         font-size: 16px;
@@ -226,7 +229,7 @@ function jump(path) {
             }
         }
         .lang {
-            margin-top: 30px;
+            margin-top: 15px;
             .lang-con {
                 cursor: pointer;
                 .lang-text {
@@ -333,12 +336,15 @@ function jump(path) {
                             background-color: $color-white;
                         }
                     }
-                    .el-submenu {
+                    .el-sub-menu {
                         .el-submenu__title {
                             font-size: 16px;
                             color: $color-secondary;
+                            // &:hover {
+                            //     background-color: $color-white;
+                            // }
                             &:hover {
-                                background-color: $color-white;
+                                color: $color-primary;
                             }
                         }
                         .el-menu-item {

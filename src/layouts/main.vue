@@ -32,12 +32,12 @@
             position: fixed;
             left: 0;
             top: 0;
-            height: 80px;
+            height: 60px;
             width: 100%;
             z-index: 100;
         }
         > .bd {
-            padding-top: 80px;
+            padding-top: 60px;
             width: 100%;
         }
     }
