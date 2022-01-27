@@ -9,29 +9,29 @@
 
             <div class="fl menu-con">
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
-                    <!-- <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item> -->
+                    <!-- <el-menu-item index="/" @click="jump('/')" style="visibility:hidden;">{{ $t('common.home') }}</el-menu-item> -->
                     <el-sub-menu index="/" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.developer') }}</template>
-                        <el-menu-item index="2-0">
+                        <el-menu-item index="/-0">
                             <a
                                 :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="2-1">
+                        <el-menu-item index="/-1">
                             <a
                                 href="https://docs.hoosmartchain.com/"
                                 target="_blank"
                             >{{ $t('common.docs') }}</a>
                         </el-menu-item>
                         <!-- <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item> -->
-                        <el-menu-item index="2-3">
+                        <el-menu-item index="/-3">
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
                             >{{ $t('common.hscte') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="2-4">
+                        <el-menu-item index="/-4">
                             <a
                                 href="https://testnet.hscscan.com/hydrant"
                                 target="_blank"
@@ -96,7 +96,6 @@
                         @click="jump('/memorabilia')"
                         style="visibility: hidden !important;"
                     >大事记</el-menu-item>
-                    <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
                 </el-menu>
             </div>
 
@@ -114,8 +113,18 @@
                         <!-- <p class="lang-item" @click="setLang('ko')">한국어</p> -->
                     </div>
                     <template #reference class="lang-con">
-                        <span class="lang-text">{{ langOptions(curLang) }}</span>
-                        <i class="el-icon-arrow-down"></i>
+                        <div style="display:flex; justify-content: space-evenly;">
+                            <!-- <i class="el-icon-arrow-down"></i> -->
+
+                            <img src="../images/header/icon-world.svg" alt="logo" height="26" />
+                            <span class="lang-text">{{ langOptions(curLang) }}</span>
+                            <!-- <img src="../images/logo/logo.svg" alt="logo" height="26" /> -->
+                            <el-icon>
+                                <arrow-down />
+                                <br />
+                            </el-icon>
+                        </div>
+                        <!-- <i class="el-icon el-sub-menu__icon-arrow"></i> -->
                     </template>
                 </el-popover>
             </div>
@@ -124,6 +133,8 @@
 </template>
 <script setup>
 import { ref, computed, onMounted, watchEffect } from 'vue';
+import { Edit, ArrowDown } from '@element-plus/icons-vue';
+
 const activeIndex = ref('/');
 // mobile
 const isOpen = ref(false);
@@ -234,12 +245,18 @@ function jump(path) {
         }
         .lang {
             margin-top: 15px;
+            width: 90px;
             .lang-con {
                 cursor: pointer;
                 .lang-text {
                     font-size: 14px;
                     color: rgba($color: $color-secondary, $alpha: 0.7);
                     margin-right: 3px;
+                }
+            }
+            .el-tooltip__trigger {
+                .el-icon {
+                    padding-top: 4px;
                 }
             }
         }
