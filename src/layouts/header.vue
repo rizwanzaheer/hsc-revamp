@@ -239,11 +239,21 @@ function jump(path) {
                         line-height: 40px;
                         border-bottom: none;
                         color: $color-secondary;
+                        &:hover {
+                            color: $color-primary !important;
+                        }
                     }
                     &.is-opened {
                         .el-submenu__title {
                             color: $color-primary;
+                            &:hover {
+                                color: $color-primary !important;
+                            }
                         }
+                    }
+                    &:hover,
+                    &.is-opened {
+                        color: $color-primary !important;
                     }
                 }
             }
@@ -370,7 +380,7 @@ function jump(path) {
                             //     background-color: $color-white;
                             // }
                             &:hover {
-                                color: $color-primary;
+                                color: $color-primary !important;
                             }
                         }
                         .el-menu-item {
@@ -386,6 +396,9 @@ function jump(path) {
                             &:hover {
                                 background-color: $color-white;
                             }
+                        }
+                        &:hover {
+                            color: $color-primary !important;
                         }
                     }
                 }
