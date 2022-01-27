@@ -10,8 +10,8 @@
             <div class="fl menu-con">
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
                     <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item>
-                    <el-submenu index="2" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.developer') }}</template>
+                    <el-sub-menu index="2" popper-class="el-menu-popper-reset">
+                        <template #title>{{ $t('common.developer') }}</template>
                         <el-menu-item index="2-0">
                             <a
                                 :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
@@ -37,9 +37,9 @@
                                 target="_blank"
                             >{{ $t('common.ffhsct') }}</a>
                         </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="3" popper-class="el-menu-popper-reset">
-                        <template slot="title">{{ $t('common.usehsc') }}</template>
+                    </el-sub-menu>
+                    <el-sub-menu index="3" popper-class="el-menu-popper-reset">
+                        <template #title>{{ $t('common.usehsc') }}</template>
                         <el-menu-item index="3-1">
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
@@ -53,9 +53,9 @@
                             >{{ $t('common.buygasfee') }}</a>
                         </el-menu-item>
                         <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
-                    </el-submenu>
+                    </el-sub-menu>
                     <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-submenu index="5" popper-class="el-menu-popper-reset">
+                    <el-sub-menu index="5" popper-class="el-menu-popper-reset">
                         <!-- <template slot="title">{{ $t('common.explorer') }}</template>
                         <el-menu-item index="5-1">
                             <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
@@ -70,8 +70,8 @@
                                 target="_blank"
                             >{{ $t('common.hscte') }}</a>
                         </el-menu-item>-->
-                    </el-submenu>
-                    <el-submenu index="6" popper-class="el-menu-popper-reset">
+                    </el-sub-menu>
+                    <el-sub-menu index="6" popper-class="el-menu-popper-reset">
                         <!-- <template slot="title">
                             <el-badge
                                 style="line-height: 29px"
@@ -87,7 +87,7 @@
                         <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
                         </el-menu-item>-->
-                    </el-submenu>
+                    </el-sub-menu>
                     <!-- <el-menu-item index="/memorabilia" @click="jump('/memorabilia')">大事记</el-menu-item> -->
                     <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
                 </el-menu>
@@ -97,7 +97,7 @@
                 <el-popover
                     placement="bottom"
                     trigger="hover"
-                    :show-arrow="false"
+                    :show-arrow="true"
                     popper-class="lang-popup"
                 >
                     <div class="lang-item-con">
@@ -106,21 +106,29 @@
                         <p class="lang-item" @click="setLang('en')">English</p>
                         <!-- <p class="lang-item" @click="setLang('ko')">한국어</p> -->
                     </div>
-                    <span slot="reference" class="lang-con">
+                    <template #reference class="lang-con">
                         <span class="lang-text">{{ langOptions(curLang) }}</span>
                         <i class="el-icon-arrow-down"></i>
-                    </span>
+                    </template>
                 </el-popover>
             </div>
         </div>
     </div>
 </template>
 <script setup>
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, watchEffect } from 'vue';
 const activeIndex = ref('/');
 // mobile
 const isOpen = ref(false);
 let curLang = ref('en');
+watchEffect(() => {
+    // $route: {
+    //     immutable: true,
+    //     handler(v) {
+    //         this.activeIndex = v.path;
+    //     };
+    // };
+});
 // watch: {
 //     $route: {
 //         immutable: true,
@@ -137,6 +145,7 @@ function toggleMenu() {
 }
 // 语言字典
 const langOptions = (lang) => {
+    console.log('calling langOptions is: ', lang);
     const langs = {
         zh_cn: '简体中文',
         zh_tw: '繁體中文',
@@ -147,12 +156,13 @@ const langOptions = (lang) => {
     return langs[lang];
 };
 //     // 设置语言
-const setLang = (lang) => {
+function setLang(lang) {
     curLang = 'en';
     // cookie.set('hsc_i18n', lang)
     // window.location.reload()
+    console.log('this.$route is: ', this.$route);
     window.location.href = `/${lang}${this.$route.path}`;
-};
+}
 //     // 路由跳转
 function jump(path) {
     this.isOpen = false;
@@ -239,8 +249,8 @@ function jump(path) {
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         padding: 10px 0;
-        margin-top: 20px;
-        margin-left: 15px;
+        // margin-top: 20px;
+        // margin-left: 15px;
         border-radius: 5px;
         .el-menu-item {
             color: $color-secondary !important;
