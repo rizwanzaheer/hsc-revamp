@@ -92,7 +92,7 @@
                         </el-menu-item>
                     </el-sub-menu>
                     <el-menu-item
-                        index="/memorabilia"
+                        index="5"
                         @click="jump('/memorabilia')"
                         style="visibility: hidden !important;"
                     >大事记</el-menu-item>
@@ -206,6 +206,11 @@ function jump(path) {
         .menu-con {
             margin-left: 60px;
             margin-top: 0px;
+            .el-menu {
+                .el-sub-menu__hide-arrow {
+                    visibility: hidden !important;
+                }
+            }
             .menu-bd {
                 border-bottom: none;
                 .el-menu-item {
