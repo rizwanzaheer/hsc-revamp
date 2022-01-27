@@ -10,7 +10,7 @@
             <div class="fl menu-con">
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
                     <!-- <el-menu-item index="/" @click="jump('/')">{{ $t('common.home') }}</el-menu-item> -->
-                    <el-sub-menu index="2" popper-class="el-menu-popper-reset">
+                    <el-sub-menu index="/" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.developer') }}</template>
                         <el-menu-item index="2-0">
                             <a
@@ -24,7 +24,7 @@
                                 target="_blank"
                             >{{ $t('common.docs') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item>
+                        <!-- <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item> -->
                         <el-menu-item index="2-3">
                             <a
                                 href="https://testnet.hscscan.com/"
@@ -39,34 +39,34 @@
                         </el-menu-item>
                     </el-sub-menu>
 
-                    <el-sub-menu index="3" popper-class="el-menu-popper-reset">
+                    <el-sub-menu index="2" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.usehsc') }}</template>
-                        <el-menu-item index="3-1">
+                        <el-menu-item index="2-1">
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
                                 target="_blank"
                             >{{ $t('common.wallet') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="3-2">
+                        <el-menu-item index="2-2">
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'"
                                 target="_blank"
                             >{{ $t('common.buygasfee') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
+                        <!-- <el-menu-item index="2-3">{{ $t('common.dapps') }}</el-menu-item> -->
                     </el-sub-menu>
 
                     <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-sub-menu index="4" popper-class="el-menu-popper-reset">
+                    <el-sub-menu index="3" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.explorer') }}</template>
-                        <el-menu-item index="5-1">
+                        <el-menu-item index="3-1">
                             <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
                         </el-menu-item>
 
-                        <el-menu-item index="4-1">
+                        <el-menu-item index="3-1">
                             <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="4-2">
+                        <el-menu-item index="3-2">
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
@@ -74,24 +74,28 @@
                         </el-menu-item>
                     </el-sub-menu>
 
-                    <el-sub-menu popper-class="el-menu-popper-reset">
+                    <el-sub-menu index="4" popper-class="el-menu-popper-reset">
                         <template #title>
                             <el-badge
                                 style="line-height: 29px"
                                 value="HOT"
                             >{{ $t('common.activity') }}</el-badge>
                         </template>
-                        <el-menu-item index="5-1">
+                        <el-menu-item index="4-1">
                             <a
                                 target="_blank"
                                 @click="jump('/activity/unicorn-program')"
                             >{{ $t('common.activity.unicorn') }}</a>
                         </el-menu-item>
-                        <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
+                        <el-menu-item v-if="curLang==='zh_cn'" index="4-2">
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
                         </el-menu-item>
                     </el-sub-menu>
-                    <!-- <el-menu-item index="/memorabilia" @click="jump('/memorabilia')">大事记</el-menu-item> -->
+                    <el-menu-item
+                        index="/memorabilia"
+                        @click="jump('/memorabilia')"
+                        style="visibility: hidden !important;"
+                    >大事记</el-menu-item>
                     <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
                 </el-menu>
             </div>
@@ -251,7 +255,7 @@ function jump(path) {
         background: $color-white;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        padding: 10px 0;
+        padding: 10px;
         // margin-top: 20px;
         // margin-left: 15px;
         border-radius: 5px;
