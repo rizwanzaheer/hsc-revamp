@@ -251,9 +251,11 @@ function jump(path) {
                             }
                         }
                     }
-                    &:hover,
-                    &.is-opened {
-                        color: $color-primary !important;
+                    .el-sub-menu__title {
+                        &:hover,
+                        &.is-opened {
+                            color: $color-primary !important;
+                        }
                     }
                 }
             }
