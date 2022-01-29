@@ -3,7 +3,7 @@
         <div class="clearfix pc">
             <div class="fl logo">
                 <a style="cursor: pointer" @click="jump('/')">
-                    <img src="../images/logo/logo.svg" alt="logo" height="26" />
+                    <img src="../images/logo/logo-white.svg" alt="logo" height="26" />
                 </a>
             </div>
 
