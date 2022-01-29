@@ -116,7 +116,7 @@
                         <div style="display:flex; justify-content: space-evenly;">
                             <!-- <i class="el-icon-arrow-down"></i> -->
 
-                            <img src="../images/header/icon-world.svg" alt="logo" height="26" />
+                            <img src="../images/header/icon-world-white.svg" alt="logo" height="26" />
                             <span class="lang-text">{{ langOptions(curLang) }}</span>
                             <!-- <img src="../images/logo/logo.svg" alt="logo" height="26" /> -->
                             <el-icon>
@@ -265,8 +265,12 @@ function jump(path) {
         .lang {
             margin-top: 15px;
             width: 90px;
+            color: $color-white;
+            cursor: pointer;
+            img {
+                color: $color-white;
+            }
             .lang-con {
-                cursor: pointer;
                 .lang-text {
                     font-size: 14px;
                     color: rgba($color: $color-secondary, $alpha: 0.7);
