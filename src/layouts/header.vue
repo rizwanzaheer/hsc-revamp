@@ -213,6 +213,7 @@ function jump(path) {
             }
             .menu-bd {
                 border-bottom: none;
+                background-color: transparent;
                 .el-menu-item {
                     padding: 0 16px;
                     font-size: 16px;

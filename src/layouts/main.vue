@@ -28,7 +28,7 @@
         width: 100%;
         height: 100%;
         > .hd {
-            background-color: $color-white;
+            background-color: transparent;
             position: fixed;
             left: 0;
             top: 0;
@@ -41,6 +41,20 @@
             width: 100%;
         }
     }
+}
+.main-con {
+    background: url('../images/banner/main-banner.png'); // no-repeat left center;
+    background-size: contain;
+    // &:hover {
+    //     background: url('../images/icon/join/twitter.svg') no-repeat left center;
+    //     background-size: 25px 28px;
+    //     a {
+    //         color: $color-white;
+    //         text-decoration: none;
+    //         margin-left: 5px;
+    //     }
+    //     cursor: pointer;
+    // }
 }
 </style>
 
