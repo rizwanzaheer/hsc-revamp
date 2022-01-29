@@ -43,7 +43,7 @@
     }
 }
 .main-con {
-    background: url('../images/banner/main-banner.png'); // no-repeat left center;
+    background: url('../images/banner/main-banner.png') no-repeat; //left center;
     background-size: contain;
     // &:hover {
     //     background: url('../images/icon/join/twitter.svg') no-repeat left center;
