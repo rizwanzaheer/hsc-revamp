@@ -45,6 +45,7 @@
 .main-con {
     background: url('../images/banner/main-banner.png') no-repeat; //left center;
     background-size: contain;
+    background-color: #12171b;
     // &:hover {
     //     background: url('../images/icon/join/twitter.svg') no-repeat left center;
     //     background-size: 25px 28px;
