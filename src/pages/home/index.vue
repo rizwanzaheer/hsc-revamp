@@ -44,40 +44,94 @@
                 </el-link>
             </div>
 
+            <!-- number counter section start  -->
+
             <el-row :gutter="20" justify="center" class="mt-[70px]">
-                <el-col :lg="4">
+                <el-col :lg="3" :offset="1">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">181M</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Total value locked (USDT)</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="4">
+                <el-col :lg="3">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">25,425</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Number of transactions</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="4">
+                <el-col :lg="3">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">126</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">transaction per second</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="4">
+                <el-col :lg="3">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">65,098</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Active addresses</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="4">
+                <el-col :lg="3">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">27</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Active Projects</h5>
                     </div>
+                </el-col>
+            </el-row>
+
+            <!-- number counter section start  -->
+
+            <el-row :gutter="20">
+                <el-col
+                    :lg="16"
+                    :offset="4"
+                    class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
+                >
+                    <el-col :lg="8" :md="12">
+                        <div class="grid-content">
+                            <h2 class="text-[15px] text-white leading-[19.29px] mt-5">News & Update:</h2>
+                        </div>
+                    </el-col>
+                    <el-col :lg="18">
+                        <div class="grid-content">
+                            <h1 class="text-white text-[15px] mt-5">
+                                Hoo Smart Chain Heads Towards a New Journey.
+                                <el-link
+                                    class="text-[15px] leading-[19.29px]"
+                                    :underline="true"
+                                    href="https://hoo.com"
+                                    target="_blank"
+                                >
+                                    Read Documentation
+                                    <!-- <i class="el-icon-view el-icon--right"></i> -->
+                                    <el-icon>
+                                        <arrow-right />
+                                    </el-icon>
+                                </el-link>
+                            </h1>
+                        </div>
+                    </el-col>
+                    <el-col :lg="3">
+                        <div class="grid-content">
+                            <el-button
+                                type="info"
+                                plain
+                                class="hover:bg-black hover:text-white mt-4 ml-[30px] border-black text-black"
+                            >See more news</el-button>
+                        </div>
+                    </el-col>
+                </el-col>
+            </el-row>
+            <el-row :gutter="20">
+                <el-col :lg="24" justify="center">
+                    <h1 class="text-white text-[40px] mt-5 text-center">Infinite Innovation</h1>>
+                    <h1
+                        class="text-white text-[18px] mt-5 text-center"
+                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h1>>
                 </el-col>
             </el-row>
         </div>
