@@ -253,6 +253,7 @@ function jump(path) {
                         }
                     }
                     .el-sub-menu__title {
+                        color: $color-white;
                         &:hover,
                         &.is-opened {
                             color: $color-primary !important;
