@@ -21,14 +21,27 @@
                 <br />
                 <br />
                 <br />
-                <br />
                 <p
                     class="text-[15px] leading-[30px] font-[500] italic text-white"
                 >Deploy here and apply for supports</p>
-                <el-button
-                    class="el-primary-button bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3"
-                    type="primary"
-                >Register</el-button>
+                <CustomButton
+                    class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px]"
+                    title="Register"
+                    target="_blank"
+                />
+
+                <el-link
+                    class="text-[15px] leading-[19.29px]"
+                    :underline="true"
+                    href="https://hoo.com"
+                    target="_blank"
+                >
+                    Read Documentation
+                    <!-- <i class="el-icon-view el-icon--right"></i> -->
+                    <el-icon>
+                        <arrow-right />
+                    </el-icon>
+                </el-link>
             </div>
 
             <!-- <el-row>
@@ -39,6 +52,11 @@
         </div>
     </el-main>
 </template>
+<script setup>
+import CustomButton from '../../components/CustomButton.vue';
+import { ArrowRight } from '@element-plus/icons-vue';
+</script>
+
 
 <style lang="scss">
 @import '../../sass/common/_var.scss';
@@ -50,35 +68,20 @@
     }
 }
 
-.el-primary-button {
-    border: 0;
-    background: $color-primary;
-    background-color: 'red' !important;
-    border-radius: 4px;
-    box-shadow: 0 5px 0 #02ead0;
-    color: $color-black;
-    cursor: pointer;
-    // font: bold;
-    font-weight: 600;
-    line-height: 18.92px;
-    text-align: center;
-    width: 120px;
-    height: 38px;
-    margin: 0;
-    outline: 0;
-    padding: 12px 20px;
-    transition: all 0.1s linear;
-    size: 15px;
-}
-.el-primary-button:active {
-    box-shadow: 0 2px 0 #02ead0;
-    transform: translateY(3px);
+.el-link--default {
+    color: white !important;
+    text-decoration: underline !important;
     &:hover {
-        // background: "linear-gradient(180deg, #8FFDFF 0%, #02EAD0 100%)";​
-        box-shadow: 0px 3px 0px #8ffdff;
+        text-decoration: none !important;
+        // color: 'inherit' !important;
+        .el-link--inner {
+            color: rgb(59 130 246 / 0.5) !important;
+        }
+    }
+    &::after {
+        text-decoration: none !important;
     }
 }
-
 // .home-con {
 //     background: url('../../images/banner/main-banner.png') no-repeat left center;
 //     background-size: 100%;

@@ -99,7 +99,7 @@
                 </el-menu>
             </div>
 
-            <div class="fr lang">
+            <div class="fr lang float-right">
                 <el-popover
                     placement="bottom"
                     trigger="hover"
@@ -128,12 +128,22 @@
                     </template>
                 </el-popover>
             </div>
+            <!-- <el-button
+                class="el-primary-button bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 float-right mr-[30px]"
+                type="primary"
+            >Register</el-button>-->
+            <CustomButton
+                class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] float-right"
+                title="Register"
+                @click="testnet"
+            />
         </div>
     </div>
 </template>
 <script setup>
 import { ref, computed, onMounted, watchEffect } from 'vue';
 import { Edit, ArrowDown } from '@element-plus/icons-vue';
+import CustomButton from '../components/CustomButton.vue';
 
 const activeIndex = ref('/');
 // mobile
@@ -161,6 +171,7 @@ onMounted(() => console.log('on mounted works'));
 function toggleMenu() {
     this.isOpen = !this.isOpen;
 }
+const testnet = () => alert('testnet');
 // 语言字典
 const langOptions = (lang) => {
     console.log('calling langOptions is: ', lang);
