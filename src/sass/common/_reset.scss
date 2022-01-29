@@ -1,30 +1,29 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*CSS reset*/
 
 /* 全局重置 */
 
 html {
-  -webkit-text-size-adjust: none;
-  font-size: 100px;
-  -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    font-size: 100px;
+    -webkit-user-select: none;
 }
 
 html,
 body {
-  font: 13px/1.5 -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    font: 13px/1.5 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
 }
-
 
 /*用到的元素盒模型重置*/
 
@@ -49,88 +48,84 @@ strong,
 a,
 span,
 i {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
 }
 
 * {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *:before,
 *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
-
 
 /*列表重置*/
 
 li {
-  list-style: none;
+    list-style: none;
 }
-
 
 /*表格重置*/
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 caption,
 th,
 td {
-  text-align: left;
+    text-align: left;
 }
-
 
 /*表单重置*/
 
 select {
-  -webkit-appearance: none;
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
 }
 
 input {
-  background-color: transparent;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -webkit-appearance: none;
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
 }
 
-input[type=button],
-input[type=submit] {
-  -webkit-appearance: none;
+input[type='button'],
+input[type='submit'] {
+    -webkit-appearance: none;
 }
 
 input::-webkit-input-placeholder {
-  color: #999;
+    color: #999;
 }
 
-input[type=file] {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+input[type='file'] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 
 textarea {
-  resize: none;
-  border: 0
+    resize: none;
+    border: 0;
 }
 
 button {
-  background-color: transparent;
-  -webkit-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
 }
-
 
 /*文本重置*/
 
@@ -147,38 +142,36 @@ td,
 strong,
 em,
 i {
-  font-size: 100%;
-  font-style: normal;
-  font-weight: normal;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
 }
 
 del,
 ins {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 q::before,
 q::after {
-  content: '';
+    content: '';
 }
-
 
 /*链接重置*/
 
 a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 a:active {
-  outline: 0;
+    outline: 0;
 }
-
 
 /*去掉图片4px下边距*/
 
 img {
-  display: block;
-  width: 100%;
-  -webkit-touch-callout: none;
+    display: block;
+    width: 100%;
+    -webkit-touch-callout: none;
 }
