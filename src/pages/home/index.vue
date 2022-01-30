@@ -132,14 +132,14 @@
 
             <!-- Infinite Innovation section start -->
 
-            <el-row :gutter="20" class="mt-20 absolute !ml-[25%]">
+            <el-row :gutter="20" class="mt-20">
                 <el-col :lg="24" justify="center">
                     <h2
                         class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
-                    >Infinite Innovation</h2>>
+                    >Infinite Innovation</h2>
                     <h5
                         class="text-white text-[18px] text-center leading-[30px]"
-                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>>
+                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>
                 </el-col>
             </el-row>
             <!-- Infinite Innovation section start -->
@@ -147,9 +147,9 @@
             <!-- Staging section start -->
             <el-row justify="center">
                 <!-- first row start -->
-                <el-col :span="21">
-                    <el-row :gutter="20" class="absolute mt-[300px] z-10 text-white">
-                        <el-col :span="6" class="mt-[300px] !pl-[140px]">
+                <el-col :span="21" :md="24">
+                    <el-row :gutter="20" class="absolute mt-[160px] z-10 text-white">
+                        <el-col :span="6" class="mt-[320px] !pl-[15%]">
                             <div class="grid-content w-60">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
@@ -157,7 +157,7 @@
                                 <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="!pl-[120px] !mt-[90px]">
+                        <el-col :span="6" class="!pl-[10%] !mt-[75px]">
                             <div class="grid-content w-65">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
@@ -165,14 +165,14 @@
                                 <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="mt-[300px] !pl-[130px]">
+                        <el-col :span="6" class="mt-[320px] !pl-[12%]">
                             <div class="grid-content w-60">
                                 <h4 class="text-[18px] leading-[21.94px] font-[600] mb-4">Social-Fi</h4>
                                 <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6">
-                            <div class="grid-content w-60">
+                        <el-col :span="6" class="!pl-[3%]">
+                            <div class="grid-content w-[18rem]">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
                                 >Metaverse Chain</h4>
