@@ -83,20 +83,17 @@
                 </el-col>
             </el-row>
 
-            <!-- number counter section start  -->
+            <!-- number counter section ends  -->
 
-            <el-row :gutter="20">
-                <el-col
-                    :lg="16"
-                    :offset="4"
-                    class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
-                >
-                    <el-col :lg="8" :md="12">
+            <!-- new and update section start -->
+            <el-row :gutter="20" justify="center">
+                <el-col :lg="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                    <el-col :lg="6" :md="12">
                         <div class="grid-content">
                             <h2 class="text-[15px] text-white leading-[19.29px] mt-5">News & Update:</h2>
                         </div>
                     </el-col>
-                    <el-col :lg="18">
+                    <el-col :lg="15">
                         <div class="grid-content">
                             <h1 class="text-white text-[15px] mt-5">
                                 Hoo Smart Chain Heads Towards a New Journey.
@@ -115,17 +112,21 @@
                             </h1>
                         </div>
                     </el-col>
-                    <el-col :lg="3">
+                    <el-col :lg="3" justify="center">
                         <div class="grid-content">
                             <el-button
                                 type="info"
                                 plain
-                                class="hover:bg-black hover:text-white mt-4 ml-[30px] border-black text-black"
+                                class="hover:bg-black hover:text-white mt-4 ml-[70px] border-black text-black"
                             >See more news</el-button>
                         </div>
                     </el-col>
                 </el-col>
             </el-row>
+            <!-- new and update section ends -->
+
+            <!-- Infinite Innovation section start -->
+
             <el-row :gutter="20">
                 <el-col :lg="24" justify="center">
                     <h1 class="text-white text-[40px] mt-5 text-center">Infinite Innovation</h1>>
@@ -134,6 +135,7 @@
                     >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h1>>
                 </el-col>
             </el-row>
+            <!-- Infinite Innovation section start -->
         </div>
     </el-main>
 </template>
