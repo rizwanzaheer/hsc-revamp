@@ -241,7 +241,7 @@
             <!-- developer/user section start -->
             <!-- <div class="section-2"> -->
             <!-- <div class="container"> -->
-            <el-row :gutter="40" justify="center">
+            <el-row :gutter="40" justify="center" class>
                 <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <span v-html="$t('home.block2.title')"></span>
                 </el-col>-->
@@ -293,6 +293,27 @@
                             </a>
                         </div>
                     </div>
+                    <el-row justify="center" class="mt-5">
+                        <!-- <el-col :span="24">
+                            <p
+                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
+                            >Start visualising your journey and apply grant</p>
+                        </el-col>-->
+                        <el-col :span="10" :offset="1">
+                            <CustomButton
+                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
+                                title="Register Now"
+                                target="_blank"
+                                href="https://hoo.com"
+                            />
+                            <!-- <CustomButton
+                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
+                                title="White Paper"
+                                target="_blank"
+                                href="https://hoo.com"
+                            />-->
+                        </el-col>
+                    </el-row>
                 </el-col>
                 <el-col
                     :md="10"
@@ -341,6 +362,21 @@
                             </a>
                         </div>
                     </div>
+                    <el-row justify="center" class="mt-5">
+                        <!-- <el-col :span="24">
+                            <p
+                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
+                            >Start visualising your journey and apply grant</p>
+                        </el-col>-->
+                        <el-col :span="10" :offset="1">
+                            <CustomButton
+                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
+                                title="Learn more"
+                                target="_blank"
+                                href="https://hoo.com"
+                            />
+                        </el-col>
+                    </el-row>
                 </el-col>
             </el-row>
             <!-- </div> -->
