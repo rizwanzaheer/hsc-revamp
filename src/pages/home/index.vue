@@ -224,12 +224,12 @@
             <el-row justify="center">
                 <el-col :span="24">
                     <p
-                        class="text-[15px] leading-[30px] font-[500] italic text-white text-center"
+                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
                     >Start visualising your journey and apply grant</p>
                 </el-col>
-                <el-col :span="2">
+                <el-col :span="6" :offset="3">
                     <CustomButton
-                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center"
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
                         title="Apply Now"
                         target="_blank"
                         href="https://hoo.com"
