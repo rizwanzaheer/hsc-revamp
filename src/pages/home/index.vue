@@ -258,25 +258,38 @@
                             class="title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
                             v-html="$t('home.block2.item1.title')"
                         ></p>
+                        <p class="text-[#12171B] leading-[24px] font-[500] text-[15px]">
+                            Hoo provides you with the documentation, resources,
+                            and support you need to get your project up and running.
+                        </p>
                         <p class="info" v-html="$t('home.block2.item1.desc')"></p>
-                        <div class="steps flex justify-center" style="align-items:center;">
+                        <div
+                            class="steps flex place-content-evenly mt-10"
+                            style="align-items:center;"
+                        >
                             <a class="step p-2">
                                 <img src="../../images/icon/use/dev1.svg" alt="dev" />
-                                <p>{{ $t('home.block2.item1.content1') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-[124px] mt-5"
+                                >{{ $t('home.block2.item1.content1') }}</p>
                             </a>
                             <a class="arrow p-2">
                                 <img src="../../images/icon/use/arrow.svg" alt="arrow" />
                             </a>
                             <a class="step p-2">
                                 <img src="../../images/icon/use/dev2.svg" alt="dev2" />
-                                <p>{{ $t('home.block2.item1.content2') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-[124px] mt-5"
+                                >{{ $t('home.block2.item1.content2') }}</p>
                             </a>
                             <a class="arrow p-2">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
                             <a class="step p-2">
                                 <img src="../../images/icon/use/dev3.svg" alt="dev3" />
-                                <p>{{ $t('home.block2.item1.content3') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-[124px] mt-5"
+                                >{{ $t('home.block2.item1.content3') }}</p>
                             </a>
                         </div>
                     </div>
@@ -285,36 +298,46 @@
                     :md="10"
                     :sm="12"
                     :xs="12"
-                    class="desc desc-2 ml-[30px] h-[390px] w-[540px !p-[40px]]"
-                    style="background:  linear-gradient(284.46deg, #719EE6 -2.02%, #02EAD0 33.84%)"
+                    class="desc desc-2 ml-[30px] h-[390px] w-[540px] !p-[40px]"
+                    style="background: linear-gradient(284.46deg, #719EE6 -2.02%, #02EAD0 33.84%)"
+                    :gutter="40"
                 >
-                    <div class="desc-con p-[20px]">
+                    <div class="desc-con">
                         <p
                             class="title title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
                             v-html="$t('home.block2.item2.title')"
                         ></p>
+                        <p
+                            class="text-[#12171B] leading-[24px] font-[500] text-[15px]"
+                        >We want to make sure that users can easily accomplish goals by providing support and resources</p>
                         <p class="info" v-html="$t('home.block2.item2.desc')"></p>
                         <div
-                            class="steps flex justify-center align-center"
+                            class="steps flex place-content-evenly align-center mt-10"
                             style="align-items:center;"
                         >
                             <a class="step p-2">
                                 <img src="../../images/icon/use/user1.svg" alt />
-                                <p>{{ $t('home.block2.item2.content1') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-5 mt-5"
+                                >{{ $t('home.block2.item2.content1') }}</p>
                             </a>
                             <a class="arrow p-2">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
                             <a class="step p-2">
                                 <img src="../../images/icon/use/user2.svg" alt />
-                                <p>{{ $t('home.block2.item2.content2') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-5 mt-5"
+                                >{{ $t('home.block2.item2.content2') }}</p>
                             </a>
                             <a class="arrow p-2">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
                             <a class="step p-2">
                                 <img src="../../images/icon/use/user3.svg" alt />
-                                <p>{{ $t('home.block2.item2.content3') }}</p>
+                                <p
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] w-5 mt-5"
+                                >{{ $t('home.block2.item2.content3') }}</p>
                             </a>
                         </div>
                     </div>
