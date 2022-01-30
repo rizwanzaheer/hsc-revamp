@@ -47,35 +47,35 @@
             <!-- number counter section start  -->
 
             <el-row :gutter="20" justify="center" class="mt-[70px]">
-                <el-col :lg="3" :offset="1">
+                <el-col :lg="4" :offset="1">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">181M</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Total value locked (USDT)</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="3">
+                <el-col :lg="4">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">25,425</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Number of transactions</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="3">
+                <el-col :lg="4">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">126</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">transaction per second</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="3">
+                <el-col :lg="4">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">65,098</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Active addresses</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
-                <el-col :lg="3">
+                <el-col :lg="4">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px]">27</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase">Active Projects</h5>
@@ -87,7 +87,7 @@
 
             <!-- new and update section start -->
             <el-row class="mt-20" justify="center">
-                <el-col :span="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                <el-col :span="21" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <el-row justify="center" :gutter="10">
                         <el-col :span="5">
                             <div class="grid-content text-center flex justify-center items-center">
@@ -134,13 +134,32 @@
 
             <el-row :gutter="20">
                 <el-col :lg="24" justify="center">
-                    <h1 class="text-white text-[40px] mt-5 text-center">Infinite Innovation</h1>>
-                    <h1
-                        class="text-white text-[18px] mt-5 text-center"
-                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h1>>
+                    <h2
+                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
+                    >Infinite Innovation</h2>>
+                    <h5
+                        class="text-white text-[18px] text-center leading-[30px]"
+                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>>
                 </el-col>
             </el-row>
             <!-- Infinite Innovation section start -->
+
+            <!-- Staging section start -->
+            <el-row :gutter="20">
+                <el-col :span="6">
+                    <div class="grid-content bg-purple"></div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="grid-content bg-purple"></div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="grid-content bg-purple"></div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="grid-content bg-purple"></div>
+                </el-col>
+            </el-row>
+            <!-- Staging section ends -->
         </div>
     </el-main>
 </template>
