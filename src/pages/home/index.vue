@@ -299,19 +299,18 @@
                                 class="text-[16px] leading-[30px] font-[500] text-white text-center"
                             >Start visualising your journey and apply grant</p>
                         </el-col>-->
-                        <el-col :span="10" :offset="1">
+                        <el-col :span="24" class="flex justify-center">
                             <CustomButton
                                 class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
                                 title="Register Now"
                                 target="_blank"
                                 href="https://hoo.com"
                             />
-                            <!-- <CustomButton
-                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
-                                title="White Paper"
-                                target="_blank"
-                                href="https://hoo.com"
-                            />-->
+                            <el-button
+                                type="info"
+                                plain
+                                class="hover:bg-black hover:text-white mt-3 border-black text-black w-[226px] h-[57px] leading-[18px] font-[600] text-[15px]"
+                            >View White Paper</el-button>
                         </el-col>
                     </el-row>
                 </el-col>
