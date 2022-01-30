@@ -200,7 +200,7 @@
 
                 <!-- third row start -->
 
-                <el-col :span="21">
+                <!-- <el-col :span="21">
                     <el-row :gutter="20">
                         <el-col :span="6">
                             <div class="grid-content bg-purple"></div>
@@ -215,10 +215,28 @@
                             <div class="grid-content bg-purple"></div>
                         </el-col>
                     </el-row>
-                </el-col>
+                </el-col>-->
                 <!-- third row ends -->
             </el-row>
             <!-- Staging section ends -->
+
+            <!-- visualization section starts -->
+            <el-row justify="center">
+                <el-col :span="24">
+                    <p
+                        class="text-[15px] leading-[30px] font-[500] italic text-white text-center"
+                    >Start visualising your journey and apply grant</p>
+                </el-col>
+                <el-col :span="2">
+                    <CustomButton
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center"
+                        title="Apply Now"
+                        target="_blank"
+                        href="https://hoo.com"
+                    />
+                </el-col>
+            </el-row>
+            <!-- visualization section ends -->
         </div>
     </el-main>
 </template>
