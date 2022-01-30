@@ -237,6 +237,43 @@
                 </el-col>
             </el-row>
             <!-- visualization section ends -->
+
+            <!-- Join cosmic section starts -->
+            <el-row class="mt-20" justify="center">
+                <el-col :span="21" class="bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                    <el-row justify="center" :gutter="10" class="!items-center">
+                        <el-col :span="14" class="h-32">
+                            <div class="grid-content">
+                                <h1
+                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mt-[4%] ml-20"
+                                >Join Cosmic Origin Project</h1>
+                            </div>
+                        </el-col>
+                        <el-col :span="10">
+                            <div class="grid-content text-center">
+                                <el-button
+                                    type="info"
+                                    plain
+                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
+                                >Register Now</el-button>
+                                <el-link
+                                    class="text-[15px] leading-[24px] font-[500] ml-8 mt-3"
+                                    :underline="true"
+                                    href="https://hoo.com"
+                                    target="_blank"
+                                >
+                                    Read Documentation
+                                    <!-- <i class="el-icon-view el-icon--right"></i> -->
+                                    <el-icon>
+                                        <arrow-right />
+                                    </el-icon>
+                                </el-link>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row>
+            <!-- Join cosmic section ends -->
         </div>
     </el-main>
 </template>
