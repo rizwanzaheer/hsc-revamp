@@ -89,14 +89,15 @@
             <el-row class="mt-20" justify="center">
                 <el-col :span="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <el-row justify="center" :gutter="10">
-                        <el-col :span="4">
-                            <div class="grid-content text-center">
+                        <el-col :span="5">
+                            <div class="grid-content text-center flex justify-center items-center">
+                                <img src="../../images/news/news.svg" class="mt-5" />
                                 <h2
-                                    class="text-[15px] text-white leading-[24px] mt-5"
+                                    class="text-[15px] text-white leading-[24px] mt-5 ml-5"
                                 >News & Update:</h2>
                             </div>
                         </el-col>
-                        <el-col :span="15">
+                        <el-col :span="14">
                             <div class="grid-content text-center">
                                 <h1 class="text-white text-[15px] mt-5">
                                     Hoo Smart Chain Heads Towards a New Journey.
