@@ -39,6 +39,9 @@
         > .bd {
             padding-top: 60px;
             width: 100%;
+            background: url('../images/stars/stars.svg') repeat; //left center;
+            // background-size: contain;
+            // background-repeat: repeat;
         }
     }
 }
