@@ -90,7 +90,7 @@
                 <el-col :lg="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <el-col :lg="6" :md="12">
                         <div class="grid-content">
-                            <h2 class="text-[15px] text-white leading-[19.29px] mt-5">News & Update:</h2>
+                            <h2 class="text-[15px] text-white leading-[24px] mt-5">News & Update:</h2>
                         </div>
                     </el-col>
                     <el-col :lg="15">
@@ -98,7 +98,7 @@
                             <h1 class="text-white text-[15px] mt-5">
                                 Hoo Smart Chain Heads Towards a New Journey.
                                 <el-link
-                                    class="text-[15px] leading-[19.29px]"
+                                    class="text-[15px] leading-[24px] font-[500] ml-8"
                                     :underline="true"
                                     href="https://hoo.com"
                                     target="_blank"
