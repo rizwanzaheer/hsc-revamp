@@ -29,7 +29,7 @@
         height: 100%;
         > .hd {
             background-color: transparent;
-            position: fixed;
+            position: relative;
             left: 0;
             top: 0;
             height: 60px;
