@@ -86,41 +86,45 @@
             <!-- number counter section ends  -->
 
             <!-- new and update section start -->
-            <el-row :gutter="20" justify="center">
-                <el-col :lg="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
-                    <el-col :lg="6" :md="12">
-                        <div class="grid-content">
-                            <h2 class="text-[15px] text-white leading-[24px] mt-5">News & Update:</h2>
-                        </div>
-                    </el-col>
-                    <el-col :lg="15">
-                        <div class="grid-content">
-                            <h1 class="text-white text-[15px] mt-5">
-                                Hoo Smart Chain Heads Towards a New Journey.
-                                <el-link
-                                    class="text-[15px] leading-[24px] font-[500] ml-8"
-                                    :underline="true"
-                                    href="https://hoo.com"
-                                    target="_blank"
-                                >
-                                    Read Documentation
-                                    <!-- <i class="el-icon-view el-icon--right"></i> -->
-                                    <el-icon>
-                                        <arrow-right />
-                                    </el-icon>
-                                </el-link>
-                            </h1>
-                        </div>
-                    </el-col>
-                    <el-col :lg="3" justify="center">
-                        <div class="grid-content">
-                            <el-button
-                                type="info"
-                                plain
-                                class="hover:bg-black hover:text-white mt-4 ml-[70px] border-black text-black"
-                            >See more news</el-button>
-                        </div>
-                    </el-col>
+            <el-row class="mt-20" justify="center">
+                <el-col :span="16" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                    <el-row justify="center" :gutter="10">
+                        <el-col :span="4">
+                            <div class="grid-content text-center">
+                                <h2
+                                    class="text-[15px] text-white leading-[24px] mt-5"
+                                >News & Update:</h2>
+                            </div>
+                        </el-col>
+                        <el-col :span="15">
+                            <div class="grid-content text-center">
+                                <h1 class="text-white text-[15px] mt-5">
+                                    Hoo Smart Chain Heads Towards a New Journey.
+                                    <el-link
+                                        class="text-[15px] leading-[24px] font-[500] ml-8"
+                                        :underline="true"
+                                        href="https://hoo.com"
+                                        target="_blank"
+                                    >
+                                        Read Documentation
+                                        <!-- <i class="el-icon-view el-icon--right"></i> -->
+                                        <el-icon>
+                                            <arrow-right />
+                                        </el-icon>
+                                    </el-link>
+                                </h1>
+                            </div>
+                        </el-col>
+                        <el-col :span="5">
+                            <div class="grid-content text-center">
+                                <el-button
+                                    type="info"
+                                    plain
+                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
+                                >See more news</el-button>
+                            </div>
+                        </el-col>
+                    </el-row>
                 </el-col>
             </el-row>
             <!-- new and update section ends -->
