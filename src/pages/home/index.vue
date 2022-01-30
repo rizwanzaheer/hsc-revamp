@@ -132,7 +132,7 @@
 
             <!-- Infinite Innovation section start -->
 
-            <el-row :gutter="20">
+            <el-row :gutter="20" class="mt-20 absolute !ml-[25%]">
                 <el-col :lg="24" justify="center">
                     <h2
                         class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
@@ -145,19 +145,78 @@
             <!-- Infinite Innovation section start -->
 
             <!-- Staging section start -->
-            <el-row :gutter="20">
-                <el-col :span="6">
-                    <div class="grid-content bg-purple"></div>
+            <el-row justify="center">
+                <!-- first row start -->
+                <el-col :span="21">
+                    <el-row :gutter="20" class="absolute mt-[300px] z-10 text-white">
+                        <el-col :span="6" class="mt-[300px] !pl-[140px]">
+                            <div class="grid-content w-60">
+                                <h4
+                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                >Visual Blockchain</h4>
+                                <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
+                            </div>
+                        </el-col>
+                        <el-col :span="6" class="!pl-[120px] !mt-[90px]">
+                            <div class="grid-content w-65">
+                                <h4
+                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                >3D Blockchain</h4>
+                                <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
+                            </div>
+                        </el-col>
+                        <el-col :span="6" class="mt-[300px] !pl-[130px]">
+                            <div class="grid-content w-60">
+                                <h4 class="text-[18px] leading-[21.94px] font-[600] mb-4">Social-Fi</h4>
+                                <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
+                            </div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content w-60">
+                                <h4
+                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                >Metaverse Chain</h4>
+                                <p>When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
+                            </div>
+                        </el-col>
+                    </el-row>
                 </el-col>
-                <el-col :span="6">
-                    <div class="grid-content bg-purple"></div>
+
+                <!-- first row ends -->
+                <!-- second row starts -->
+                <el-col :span="21">
+                    <el-row justify="center">
+                        <el-col :span="24">
+                            <div class="grid-content place-items-center">
+                                <img
+                                    src="../../images/stages/4-stages.png"
+                                    alt="4-stages-image.png"
+                                />
+                            </div>
+                        </el-col>
+                    </el-row>
                 </el-col>
-                <el-col :span="6">
-                    <div class="grid-content bg-purple"></div>
+                <!-- second row ends -->
+
+                <!-- third row start -->
+
+                <el-col :span="21">
+                    <el-row :gutter="20">
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                    </el-row>
                 </el-col>
-                <el-col :span="6">
-                    <div class="grid-content bg-purple"></div>
-                </el-col>
+                <!-- third row ends -->
             </el-row>
             <!-- Staging section ends -->
         </div>
