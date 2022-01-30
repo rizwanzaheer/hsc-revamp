@@ -241,7 +241,7 @@
             <!-- developer/user section start -->
             <!-- <div class="section-2"> -->
             <!-- <div class="container"> -->
-            <el-row :gutter="40" justify="center" class>
+            <el-row :gutter="40" justify="center" class="mt-40">
                 <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <span v-html="$t('home.block2.title')"></span>
                 </el-col>-->
@@ -249,7 +249,7 @@
                     :md="10"
                     :sm="12"
                     :xs="12"
-                    class="desc desc-1 mr-[30px] !p-[40px]"
+                    class="desc desc-1 mr-[30px] !p-[40px] h-[390px] w-[540px]"
                     :gutter="40"
                     style="background: linear-gradient(284.46deg, #8071E6 -2.02%, #02EAD0 33.84%);"
                 >
