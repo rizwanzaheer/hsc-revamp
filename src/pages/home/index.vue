@@ -238,9 +238,113 @@
             </el-row>
             <!-- visualization section ends -->
 
+            <!-- developer/user section start -->
+            <!-- <div class="section-2"> -->
+            <!-- <div class="container"> -->
+            <el-row :gutter="40" justify="center">
+                <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                    <span v-html="$t('home.block2.title')"></span>
+                </el-col>-->
+                <el-col
+                    :md="10"
+                    :sm="12"
+                    :xs="12"
+                    class="desc desc-1 mr-[30px] !p-[40px]"
+                    :gutter="40"
+                    style="background: linear-gradient(284.46deg, #8071E6 -2.02%, #02EAD0 33.84%);"
+                >
+                    <div class="desc-con">
+                        <p
+                            class="title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
+                            v-html="$t('home.block2.item1.title')"
+                        ></p>
+                        <p class="info" v-html="$t('home.block2.item1.desc')"></p>
+                        <div class="steps flex justify-center" style="align-items:center;">
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/dev1.svg" alt="dev" />
+                                <p>{{ $t('home.block2.item1.content1') }}</p>
+                            </a>
+                            <a class="arrow p-2">
+                                <img src="../../images/icon/use/arrow.svg" alt="arrow" />
+                            </a>
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/dev2.svg" alt="dev2" />
+                                <p>{{ $t('home.block2.item1.content2') }}</p>
+                            </a>
+                            <a class="arrow p-2">
+                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
+                            </a>
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/dev3.svg" alt="dev3" />
+                                <p>{{ $t('home.block2.item1.content3') }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </el-col>
+                <el-col
+                    :md="10"
+                    :sm="12"
+                    :xs="12"
+                    class="desc desc-2 ml-[30px] h-[390px] w-[540px !p-[40px]]"
+                    style="background:  linear-gradient(284.46deg, #719EE6 -2.02%, #02EAD0 33.84%)"
+                >
+                    <div class="desc-con p-[20px]">
+                        <p
+                            class="title title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
+                            v-html="$t('home.block2.item2.title')"
+                        ></p>
+                        <p class="info" v-html="$t('home.block2.item2.desc')"></p>
+                        <div
+                            class="steps flex justify-center align-center"
+                            style="align-items:center;"
+                        >
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/user1.svg" alt />
+                                <p>{{ $t('home.block2.item2.content1') }}</p>
+                            </a>
+                            <a class="arrow p-2">
+                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
+                            </a>
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/user2.svg" alt />
+                                <p>{{ $t('home.block2.item2.content2') }}</p>
+                            </a>
+                            <a class="arrow p-2">
+                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
+                            </a>
+                            <a class="step p-2">
+                                <img src="../../images/icon/use/user3.svg" alt />
+                                <p>{{ $t('home.block2.item2.content3') }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </el-col>
+            </el-row>
+            <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- developer/user section ends -->
+
+            <!-- cosmic origin project section start -->
+
+            <el-row :gutter="20" class="mt-20" justify="center">
+                <el-col :lg="12">
+                    <h2
+                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
+                    >Cosmic Origin Project</h2>
+                    <h5
+                        class="text-white text-[18px] text-center leading-[30px]"
+                    >We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.</h5>
+                </el-col>
+            </el-row>
+            <!-- cosmic origin project section start -->
+
             <!-- Join cosmic section starts -->
             <el-row class="mt-20" justify="center">
-                <el-col :span="21" class="bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+                <el-col
+                    :span="21"
+                    style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
+                >
                     <el-row justify="center" :gutter="10" class="!items-center">
                         <el-col :span="14" class="h-32">
                             <div class="grid-content">
@@ -257,7 +361,7 @@
                                     class="hover:bg-black hover:text-white mt-4 border-black text-black"
                                 >Register Now</el-button>
                                 <el-link
-                                    class="text-[15px] leading-[24px] font-[500] ml-8 mt-3"
+                                    class="text-[15px] leading-[24px] font-[500] ml-8 mt-3 text-white"
                                     :underline="true"
                                     href="https://hoo.com"
                                     target="_blank"
@@ -345,5 +449,176 @@ import { ArrowRight } from '@element-plus/icons-vue';
 .row-bg {
     padding: 10px 0;
     background-color: #f9fafc;
+}
+
+.section-2 {
+    margin-top: 70px;
+    background: url('~@/images/banner/use-bg.png') no-repeat center 108px;
+    background-size: 1920px 410px;
+    .s-title {
+        text-align: center;
+        font-weight: normal;
+        font-size: 30px;
+        color: $color-secondary;
+        margin-bottom: 80px;
+        .t-mark {
+            background: rgba($color: $color-primary, $alpha: 0.4);
+        }
+    }
+    .row {
+        margin-right: -40px;
+        margin-left: -40px;
+    }
+    .desc {
+        margin-bottom: 50px;
+        &.desc-1 {
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+        &.desc-2 {
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+        .desc-con {
+            height: 342px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            position: relative;
+            .title {
+                text-align: center;
+                font-size: 30px;
+                color: $color-secondary;
+                padding-top: 20px;
+                span {
+                    color: $color-primary;
+                }
+            }
+            .info {
+                text-align: center;
+                font-size: 20px;
+                color: rgba($color: $color-secondary, $alpha: 0.8);
+                span {
+                    font-size: 36px;
+                    color: rgba($color: $color-primary, $alpha: 0.8);
+                }
+                margin-bottom: 30px;
+            }
+            .steps {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                padding: 0 33px;
+                align-items: center;
+                a {
+                    display: block;
+                    text-align: center;
+                    &.step {
+                        width: 160px;
+                        height: 174px;
+                        border-radius: 10px;
+                        padding-top: 40px;
+                        transition: all 0.3s ease-out;
+                        &:hover {
+                            background-color: $color-white;
+                            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+                        }
+                    }
+                    &.arrow {
+                        margin-top: 56px;
+                        img {
+                            width: 26px;
+                            height: 21px;
+                        }
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p {
+                        font-size: 16px;
+                        margin-top: 18px;
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+</style>
+
+<style lang="scss">
+@media (max-width: 1000px) {
+    .home-con {
+        .section-2 {
+            margin-top: 30px;
+            background: none;
+            background-size: none;
+            .s-title {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+            .row {
+                margin-right: -5px;
+                margin-left: -5px;
+            }
+            .desc {
+                background: #f9f9f9;
+                border-radius: 10px;
+                margin-bottom: 0;
+                &.desc-1 {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-bottom: 25px;
+                }
+                &.desc-2 {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .desc-con {
+                    height: 230px;
+                    .title {
+                        font-size: 18px;
+                        margin-bottom: 0;
+                        padding-top: 25px;
+                    }
+                    .info {
+                        font-size: 13px;
+                        span {
+                            font-size: 30px;
+                        }
+                        margin-bottom: 10px;
+                    }
+                    .steps {
+                        padding: 0 10px;
+                        a {
+                            &.step {
+                                width: 96px;
+                                height: 158px;
+                                padding-top: 10px;
+                                &:hover {
+                                    background-color: transparent;
+                                    box-shadow: none;
+                                }
+                            }
+                            &.arrow {
+                                margin-top: 26px;
+                                img {
+                                    width: 20px;
+                                    height: 16px;
+                                }
+                            }
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
