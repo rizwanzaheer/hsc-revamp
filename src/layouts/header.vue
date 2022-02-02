@@ -207,7 +207,7 @@ function jump(path) {
     height: 60px;
     box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.03);
     .pc {
-        max-width: 1200px;
+        max-width: auto;
         margin: 0 auto;
         .logo {
             margin-top: 15px;

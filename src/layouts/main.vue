@@ -36,6 +36,8 @@
             height: 60px;
             width: 100%;
             z-index: 100;
+            padding-left: 40px;
+            padding-right: 40px;
         }
         > .bd {
             padding-top: 60px;
@@ -43,6 +45,8 @@
             background: url('../images/stars/stars.svg') repeat; //left center;
             // background-size: contain;
             // background-repeat: repeat;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }
