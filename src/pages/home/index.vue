@@ -392,6 +392,27 @@
                     >We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.</h5>
                 </el-col>
             </el-row>
+
+            <!-- cosmic tab section start  -->
+            <!-- <CustomTabs /> -->
+
+            <!-- cosmic tab section start  -->
+            <el-row :gutter="20" class="mt-20" justify="center">
+                <el-col :lg="12">
+                    <p
+                        class="text-white text-[18px] text-center leading-[30px]"
+                    >Be part of Cosmic Origin Project.</p>
+
+                    <el-col :span="12" :push="8">
+                        <CustomButton
+                            class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
+                            title="Apply Now"
+                            target="_blank"
+                            href="https://hoo.com"
+                        />
+                    </el-col>
+                </el-col>
+            </el-row>
             <!-- cosmic origin project section start -->
 
             <!-- Join cosmic section starts -->
@@ -437,8 +458,9 @@
     </el-main>
 </template>
 <script setup>
-import CustomButton from '../../components/CustomButton.vue';
 import { ArrowRight } from '@element-plus/icons-vue';
+import CustomButton from '../../components/CustomButton.vue';
+import CustomTabs from '../../components/CustomTabs.vue';
 </script>
 
 <style lang="scss">
