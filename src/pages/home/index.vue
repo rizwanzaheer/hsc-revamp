@@ -248,9 +248,8 @@
                     :md="10"
                     :sm="12"
                     :xs="12"
-                    class="desc desc-1 mr-[30px] !p-[40px] h-[390px] w-[540px]"
+                    class="desc desc-1 mr-[30px] !p-[40px] h-[390px] w-[540px] for-dev rounded-[10px]"
                     :gutter="40"
-                    style="background: linear-gradient(284.46deg, #8071E6 -2.02%, #02EAD0 33.84%);"
                 >
                     <div class="desc-con">
                         <p
@@ -317,8 +316,7 @@
                     :md="10"
                     :sm="12"
                     :xs="12"
-                    class="desc desc-2 ml-[30px] h-[390px] w-[540px] !p-[40px]"
-                    style="background: linear-gradient(284.46deg, #719EE6 -2.02%, #02EAD0 33.84%)"
+                    class="desc desc-2 ml-[30px] h-[390px] w-[540px] !p-[40px] rounded-[10px] for-user"
                     :gutter="40"
                 >
                     <div class="desc-con">
@@ -467,6 +465,7 @@ import { ArrowRight } from '@element-plus/icons-vue';
         text-decoration: none !important;
     }
 }
+
 // .home-con {
 //     background: url('../../images/banner/main-banner.png') no-repeat left center;
 //     background-size: 100%;
@@ -600,6 +599,12 @@ import { ArrowRight } from '@element-plus/icons-vue';
             }
         }
     }
+}
+.for-dev {
+    background: linear-gradient(284.46deg, #8071e6 -2.02%, #02ead0 33.84%);
+}
+.for-user {
+    background: linear-gradient(284.46deg, #719ee6 -2.02%, #02ead0 33.84%);
 }
 </style>
 

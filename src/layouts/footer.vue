@@ -373,7 +373,7 @@ function toBrand() {
 <style lang="scss">
 @import '../sass/common/_var.scss';
 .main-footer {
-    background: #232e42;
+    // background: #232e42;
     position: relative;
     .bd {
         max-width: 1200px;
