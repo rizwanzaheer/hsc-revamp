@@ -467,6 +467,8 @@ function toBrand() {
 <style lang="scss">
 @import '../sass/common/_var.scss';
 .main-footer {
+    background-image: url('../images/stars/stars.svg'); //left center;
+    background-repeat: repeat;
     background: $footer-bg-color;
     position: relative;
     .bd {
