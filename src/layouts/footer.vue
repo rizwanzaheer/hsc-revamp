@@ -376,7 +376,7 @@ function toBrand() {
     // background: #232e42;
     position: relative;
     .bd {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
         flex-flow: row nowrap;
