@@ -49,8 +49,12 @@
             padding-right: 20px;
         }
         > .ft {
-            padding-left: 40px;
-            padding-right: 40px;
+            > .main-footer {
+                > .bd {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
         }
     }
 }

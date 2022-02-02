@@ -15,12 +15,12 @@
                         target="_blank"
                     >{{ $t('common.docs') }}</a>
                 </p>
-                <p>
+                <!-- <p>
                     <a
                         href="https://github.com/hoosmartchain/hoo-smartchain"
                         target="_blank"
                     >{{ $t('common.github') }}</a>
-                </p>
+                </p>-->
                 <p>
                     <a href="https://testnet.hscscan.com/" target="_blank">{{ $t('common.hscte') }}</a>
                 </p>
@@ -373,7 +373,7 @@ function toBrand() {
 <style lang="scss">
 @import '../sass/common/_var.scss';
 .main-footer {
-    // background: #232e42;
+    background: $footer-bg-color;
     position: relative;
     .bd {
         max-width: 100%;
@@ -397,9 +397,10 @@ function toBrand() {
                 padding: 0;
                 line-height: 32px;
                 a {
-                    color: #8f92a1;
+                    color: $color-white;
                     transition: all 0.3s ease-out;
-                    font-size: 16px;
+                    font-size: 14px;
+                    line-height: 35px;
                     &:hover {
                         color: $color-white;
                         text-decoration: none;
@@ -514,9 +515,9 @@ function toBrand() {
         }
     }
     .copyright {
-        background: #0a172d;
+        background: #12171b;
         .copyright-con {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 70px auto 0;
             .copyright-l {
                 height: 80px;
