@@ -7,12 +7,14 @@
                     <a
                         :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.whitePaper') }}</a>
                 </p>
                 <p>
                     <a
                         href="https://docs.hoosmartchain.com/"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.docs') }}</a>
                 </p>
                 <!-- <p>
@@ -22,12 +24,17 @@
                     >{{ $t('common.github') }}</a>
                 </p>-->
                 <p>
-                    <a href="https://testnet.hscscan.com/" target="_blank">{{ $t('common.hscte') }}</a>
+                    <a
+                        href="https://testnet.hscscan.com/"
+                        target="_blank"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.hscte') }}</a>
                 </p>
                 <p>
                     <a
                         href="https://testnet.hscscan.com/hydrant"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.ffhsct') }}</a>
                 </p>
             </div>
@@ -37,28 +44,42 @@
                     <a
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.wallet') }}</a>
                 </p>
                 <p>
                     <a
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.buygasfee') }}</a>
                 </p>
                 <p>
-                    <a>{{ $t('common.dapps') }}</a>
+                    <a class="hover:underline hover:underline-offset-4">{{ $t('common.dapps') }}</a>
                 </p>
             </div>
             <div class="ft-con">
                 <h4>{{ $t('common.explorer') }}</h4>
                 <p>
-                    <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
+                    <a
+                        href="https://hooscan.com/"
+                        target="_blank"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.hscmen') }}</a>
                 </p>
                 <p>
-                    <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
+                    <a
+                        href="https://hscscan.com/"
+                        target="_blank"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.hscme') }}</a>
                 </p>
                 <p>
-                    <a href="https://testnet.hscscan.com/" target="_blank">{{ $t('common.hscte') }}</a>
+                    <a
+                        href="https://testnet.hscscan.com/"
+                        target="_blank"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.hscte') }}</a>
                 </p>
             </div>
             <div class="ft-con">
@@ -67,57 +88,79 @@
                     <a
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.aboutus') }}</a>
                 </p>
                 <p>
-                    <a href="javascript:;" @click="toBrand()">{{ $t('common.brandresoures') }}</a>
+                    <a
+                        href="javascript:;"
+                        @click="toBrand()"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.brandresoures') }}</a>
                 </p>
                 <p>
                     <a
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'"
                         target="_blank"
-                    >{{ $t('common.disclaimer') }}</a>
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.disclaimer') }} fadfadfadf</a>
                 </p>
             </div>
             <div class="ft-con">
                 <h4>{{ $t('common.contactus') }}</h4>
                 <p>
-                    <router-link to="/ama/request">AMA Request Form</router-link>
+                    <router-link
+                        to="/ama/request"
+                        class="hover:underline hover:underline-offset-4"
+                    >AMA Request Form</router-link>
                 </p>
                 <p>
-                    <a href="http://hk.mikecrm.com/yQ3un8R" target="_blank">{{ $t('common.paf') }}</a>
+                    <a
+                        href="http://hk.mikecrm.com/yQ3un8R"
+                        target="_blank"
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.paf') }}</a>
                 </p>
                 <p>
-                    <a href="http://hk.mikecrm.com/Ojim7jO" target="_blank">{{ $t('common.caf') }}</a>
+                    <a
+                        class="hover:underline hover:underline-offset-4"
+                        href="http://hk.mikecrm.com/Ojim7jO"
+                        target="_blank"
+                    >{{ $t('common.caf') }}</a>
                 </p>
                 <p>
                     <a
                         href="mailto:support@hoosmartchain.com"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.techinicalSupport') }}</a>
                 </p>
                 <p>
                     <a
                         href="mailto:service@hoosmartchain.com"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.userService') }}</a>
                 </p>
                 <p>
                     <a
                         href="mailto:foundation@hoosmartchain.com"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.seekInvestments') }}</a>
                 </p>
                 <p>
                     <a
                         href="mailto:hsc@hoosmartchain.com"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.businessContacts') }}</a>
                 </p>
                 <p>
                     <a
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/faq' : 'https://docs.hoosmartchain.com/#/faq'"
                         target="_blank"
+                        class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.faq') }}</a>
                 </p>
             </div>
@@ -152,14 +195,14 @@
             </div>
         </div>
 
-        <div class="friend-link">
+        <!-- <div class="friend-link">
             <p>
                 <span>{{ $t('common.friend-link') }}</span>
                 <a href="https://eapy.com/" target="_blank">{{ $t('common.link-explorer') }}</a>
                 <a href="https://hooscan.com/" target="_blank">{{ $t('common.browser') }}</a>
                 <a href="https://hoo.as/" target="_blank">{{ $t('common.hoo') }}</a>
             </p>
-        </div>
+        </div>-->
         <div class="mobile">
             <el-menu
                 class="m-menu-bd"
@@ -175,30 +218,35 @@
                         <a
                             :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.whitePaper') }}</a>
                     </el-menu-item>
                     <el-menu-item index="1-0">
                         <a
                             href="https://docs.hoosmartchain.com/"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.developer') }}</a>
                     </el-menu-item>
                     <el-menu-item index="1-2">
                         <a
                             href="https://github.com/hoosmartchain/hoo-smartchain"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.github') }}</a>
                     </el-menu-item>
                     <el-menu-item index="1-3">
                         <a
                             href="https://testnet.hscscan.com/"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.hscte') }}</a>
                     </el-menu-item>
                     <el-menu-item index="1-4">
                         <a
                             href="https://testnet.hscscan.com/hydrant"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.ffhsct') }}</a>
                     </el-menu-item>
                 </el-submenu>
@@ -208,12 +256,14 @@
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.wallet') }}</a>
                     </el-menu-item>
                     <el-menu-item index="2-2">
                         <a
                             href="https://docs.hoosmartchain.com/#/buy_hoo"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.buygasfee') }}</a>
                     </el-menu-item>
                     <el-menu-item index="2-3">{{ $t('common.dapps') }}</el-menu-item>
@@ -221,14 +271,23 @@
                 <el-submenu index="3">
                     <template slot="title">{{ $t('common.explorer') }}</template>
                     <el-menu-item index="3-1">
-                        <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
+                        <a
+                            href="https://hooscan.com/"
+                            target="_blank"
+                            class="hover:underline hover:underline-offset-4"
+                        >{{ $t('common.hscmen') }}</a>
                     </el-menu-item>
                     <el-menu-item index="3-1">
-                        <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
+                        <a
+                            class="hover:underline hover:underline-offset-4"
+                            href="https://hscscan.com/"
+                            target="_blank"
+                        >{{ $t('common.hscme') }}</a>
                     </el-menu-item>
                     <el-menu-item index="3-2">
                         <a
                             href="https://testnet.hscscan.com/"
+                            class="hover:underline hover:underline-offset-4"
                             target="_blank"
                         >{{ $t('common.hscte') }}</a>
                     </el-menu-item>
@@ -239,15 +298,21 @@
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.aboutus') }}</a>
                     </el-menu-item>
                     <el-menu-item index="4-4">
-                        <a href="javascript:;" @click="toBrand()">{{ $t('common.brandresoures') }}</a>
+                        <a
+                            href="javascript:;"
+                            @click="toBrand()"
+                            class="hover:underline hover:underline-offset-4"
+                        >{{ $t('common.brandresoures') }}</a>
                     </el-menu-item>
                     <el-menu-item index="4-5">
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.disclaimer') }}</a>
                     </el-menu-item>
                 </el-submenu>
@@ -260,42 +325,49 @@
                         <a
                             href="http://hk.mikecrm.com/yQ3un8R"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.paf') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-3">
                         <a
                             href="http://hk.mikecrm.com/Ojim7jO"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.caf') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-4">
                         <a
                             href="mailto:support@hoosmartchain.com"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.techinicalSupport') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-5">
                         <a
                             href="mailto:service@hoosmartchain.com"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.userService') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-6">
                         <a
                             href="mailto:foundation@hoosmartchain.com"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.seekInvestments') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-7">
                         <a
                             href="mailto:hsc@hoosmartchain.com"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.businessContacts') }}</a>
                     </el-menu-item>
                     <el-menu-item index="5-8">
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/faq' : 'https://docs.hoosmartchain.com/#/faq'"
                             target="_blank"
+                            class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.faq') }}</a>
                     </el-menu-item>
                 </el-submenu>
@@ -338,18 +410,42 @@
         <div class="copyright">
             <div class="copyright-con clearfix">
                 <div class="fl copyright-l">
-                    <img src="../images/logo/logo-white.svg" alt height="18" />
+                    <!-- <img src="../images/logo/logo-white.svg" alt height="18" /> -->
                     <div class="mobile">
-                        <a>{{ $t('common.privacy') }}</a>
-                        <a>{{ $t('common.terms') }}</a>
-                        <a>{{ $t('common.cookies') }}</a>
+                        <a
+                            class="hover:underline hover:underline-offset-4"
+                        >{{ $t('common.privacy') }}</a>
+                        <a class="hover:underline hover:underline-offset-4">{{ $t('common.terms') }}</a>
+                        <a
+                            class="hover:underline hover:underline-offset-4"
+                        >{{ $t('common.cookies') }}</a>
                     </div>
-                    <p>© 2020 - 2021 Hoosmartchain.com. All rights reserved.</p>
+                    <p
+                        class="text-[14px] leading-[35px]"
+                    >© 2020 - 2021 Hoosmartchain.com. All rights reserved.</p>
                 </div>
-                <div class="fr copyright-r">
-                    <a>{{ $t('common.privacy') }}</a>
-                    <a>{{ $t('common.terms') }}</a>
-                    <a>{{ $t('common.cookies') }}</a>
+                <div class="fr copyright-r text-white">
+                    <a
+                        class="hover:underline hover:underline-offset-4"
+                    >{{ $t('common.friend-link') }}</a>
+                    <a
+                        class="hover:underline hover:underline-offset-4"
+                        href="https://eapy.com/"
+                        target="_blank"
+                    >{{ $t('common.link-explorer') }}</a>
+                    <a
+                        class="hover:underline hover:underline-offset-4"
+                        href="https://hooscan.com/"
+                        target="_blank"
+                    >{{ $t('common.browser') }}</a>
+                    <a
+                        class="hover:underline hover:underline-offset-4"
+                        href="https://hoo.as/"
+                        target="_blank"
+                    >{{ $t('common.hoo') }}</a>
+                    <a class="hover:underline hover:underline-offset-4">{{ $t('common.privacy') }}</a>
+                    <a class="hover:underline hover:underline-offset-4">{{ $t('common.terms') }}</a>
+                    <a class="hover:underline hover:underline-offset-4">{{ $t('common.cookies') }}</a>
                 </div>
             </div>
         </div>
@@ -403,7 +499,7 @@ function toBrand() {
                     line-height: 35px;
                     &:hover {
                         color: $color-white;
-                        text-decoration: none;
+                        // text-decoration: underline;
                     }
                 }
             }
@@ -537,14 +633,21 @@ function toBrand() {
             .copyright-r {
                 height: 80px;
                 line-height: 80px;
+                padding-right: 40px;
+
                 a {
                     margin-left: 50px;
-                    font-size: 16px;
-                    color: #8f92a1;
+                    font-size: 14px;
+                    color: $color-white;
+                    font-weight: normal;
                     transition: all 0.3s ease-out;
+                    line-height: 35px;
                     &:hover {
                         color: $color-white;
                     }
+                }
+                :first-child {
+                    font-weight: 600;
                 }
             }
         }
