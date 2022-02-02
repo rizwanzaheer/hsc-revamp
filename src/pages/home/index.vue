@@ -29,7 +29,6 @@
                     title="Register"
                     target="_blank"
                 />
-
                 <el-link
                     class="text-[15px] leading-[19.29px]"
                     :underline="true"
