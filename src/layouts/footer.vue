@@ -420,9 +420,7 @@
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.cookies') }}</a>
                     </div>
-                    <p
-                        class="text-[14px] leading-[35px]"
-                    >© 2020 - 2021 Hoosmartchain.com. All rights reserved.</p>
+                    <p>© 2020 - 2021 Hoosmartchain.com. All rights reserved.</p>
                 </div>
                 <div class="fr copyright-r text-white">
                     <a
@@ -622,9 +620,10 @@ function toBrand() {
                     display: inline-block;
                     margin-left: 50px;
                     margin-bottom: 0;
-                    font-size: 16px;
-                    color: #8f92a1;
+                    font-size: 14px;
+                    color: $color-white;
                     vertical-align: -2px;
+                    line-height: 35px;
                 }
                 .mobile {
                     display: none;
