@@ -469,7 +469,7 @@ function toBrand() {
 .main-footer {
     background-image: url('../images/stars/stars.svg'); //left center;
     background-repeat: repeat;
-    background: $footer-bg-color;
+    background-color: $footer-bg-color;
     position: relative;
     .bd {
         max-width: 100%;
