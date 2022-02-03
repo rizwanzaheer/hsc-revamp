@@ -147,7 +147,7 @@
             <el-row justify="center">
                 <!-- first row start -->
                 <el-col :span="21" :md="24">
-                    <el-row :gutter="20" class="absolute mt-[160px] z-10 text-white">
+                    <el-row :gutter="20" class="absolute mt-[140px] z-10 text-white">
                         <el-col :span="6" class="mt-[18%] !pl-[15%]">
                             <div class="grid-content w-60">
                                 <h4
@@ -226,9 +226,9 @@
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
                     >Start visualising your journey and apply grant</p>
                 </el-col>
-                <el-col :span="6" :offset="3">
+                <el-col :span="24" class="flex justify-center">
                     <CustomButton
-                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
                         title="Apply Now"
                         target="_blank"
                         href="https://hoo.com"
@@ -397,20 +397,20 @@
             <!-- <CustomTabs /> -->
 
             <!-- cosmic tab section start  -->
-            <el-row :gutter="20" class="mt-20" justify="center">
-                <el-col :lg="12">
-                    <p
-                        class="text-white text-[18px] text-center leading-[30px]"
-                    >Be part of Cosmic Origin Project.</p>
 
-                    <el-col :span="12" :push="8">
-                        <CustomButton
-                            class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[226px] h-[57px]"
-                            title="Apply Now"
-                            target="_blank"
-                            href="https://hoo.com"
-                        />
-                    </el-col>
+            <el-row justify="center">
+                <el-col :span="24">
+                    <p
+                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
+                    >Be part of Cosmic Origin Project.</p>
+                </el-col>
+                <el-col :span="24" class="flex justify-center">
+                    <CustomButton
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
+                        title="Apply Now"
+                        target="_blank"
+                        href="https://hoo.com"
+                    />
                 </el-col>
             </el-row>
             <!-- cosmic origin project section start -->
