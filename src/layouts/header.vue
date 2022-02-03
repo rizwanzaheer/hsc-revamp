@@ -175,7 +175,11 @@
                 </el-menu>
             </div>
 
-            <div class="fr lang float-right">
+            <div
+                class="fr lang float-right"
+                @mouseover="onMouseHoverOver"
+                @mouseleave="onMouseHoverOverLeave"
+            >
                 <el-popover
                     placement="bottom"
                     trigger="hover"
@@ -196,7 +200,18 @@
                         <div style="display:flex; justify-content: space-evenly;">
                             <!-- <i class="el-icon-arrow-down"></i> -->
 
-                            <img src="../images/header/icon-world-white.svg" alt="logo" height="26" />
+                            <img
+                                v-if="onMenuHover"
+                                src="../images/header/icon-world.svg"
+                                alt="logo"
+                                height="26"
+                            />
+                            <img
+                                v-else
+                                src="../images/header/icon-world-white.svg"
+                                alt="logo"
+                                height="26"
+                            />
                             <span class="lang-text">{{ langOptions(curLang) }}</span>
                             <!-- <img src="../images/logo/logo.svg" alt="logo" height="26" /> -->
                             <el-icon>
@@ -369,10 +384,6 @@ function onMouseHoverOverLeave() {
                 }
             }
             &:hover {
-                background-color: $color-white;
-                .main-header {
-                    background-color: $color-white;
-                }
                 .el-menu {
                     .el-sub-menu__title {
                         color: $color-bg;
@@ -384,10 +395,12 @@ function onMouseHoverOverLeave() {
                             .main-header {
                                 background-color: $color-white;
                             }
-                            .el-sub-menu__title {
-                                color: $color-bg;
-                                font-size: 15px;
-                                font-weight: 600;
+                            .el-menu-item {
+                                .el-sub-menu__title {
+                                    color: $color-bg;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                }
                             }
                         }
                     }
@@ -410,6 +423,38 @@ function onMouseHoverOverLeave() {
                     }
                 }
             }
+            .el-menu,
+            .el-sub-menu {
+                .el-sub-menu__title {
+                    color: $color-bg;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .el-menu-item {
+                    &:hover {
+                        .main-header {
+                            background-color: $color-white;
+                        }
+                        .el-menu-item {
+                            .el-sub-menu__title {
+                                color: $color-bg;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .main-header {
+                        background-color: $color-white;
+                    }
+                    .el-sub-menu__title {
+                        color: $color-bg;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+            }
         }
         .lang {
             margin-top: 15px;
@@ -429,6 +474,11 @@ function onMouseHoverOverLeave() {
             .el-tooltip__trigger {
                 .el-icon {
                     padding-top: 4px;
+                }
+            }
+            &:hover {
+                .el-tooltip__trigger {
+                    color: $color-bg;
                 }
             }
         }
@@ -489,6 +539,20 @@ function onMouseHoverOverLeave() {
         }
     }
 }
+// .el-menu-item {
+//     &:hover {
+//         .main-header {
+//             background-color: $color-white;
+//         }
+//         .el-menu-item {
+//             .el-sub-menu__title {
+//                 color: $color-bg;
+//                 font-size: 15px;
+//                 font-weight: 600;
+//             }
+//         }
+//     }
+// }
 </style>
 
 <style lang="scss">

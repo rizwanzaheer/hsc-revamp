@@ -394,7 +394,11 @@
             </el-row>
 
             <!-- cosmic tab section start  -->
-            <!-- <CustomTabs /> -->
+            <el-row :gutter="20" justify="center">
+                <el-col :span="20">
+                    <CustomTabs :tabPosition="left" />
+                </el-col>
+            </el-row>
 
             <!-- cosmic tab section start  -->
 
