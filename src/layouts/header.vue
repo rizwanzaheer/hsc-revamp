@@ -1,37 +1,65 @@
 <template>
-    <div class="main-header">
+    <div
+        class="main-header"
+        :style="onMenuHover ? {'background-color': 'white'} : {'background-color': 'transparent'}"
+    >
         <div class="clearfix pc">
             <div class="fl logo">
                 <a style="cursor: pointer" @click="jump('/')">
-                    <img src="../images/logo/logo-white.svg" alt="logo" height="26" />
+                    <img v-if="onMenuHover" src="../images/logo/logo.svg" alt="logo" height="26" />
+                    <img v-else src="../images/logo/logo-white.svg" alt="logo" height="26" />
                 </a>
             </div>
 
-            <div class="fl menu-con">
+            <div
+                class="fl menu-con"
+                @mouseover="onMouseHoverOver"
+                @mouseleave="onMouseHoverOverLeave"
+            >
                 <el-menu class="menu-bd" :default-active="activeIndex" mode="horizontal">
                     <!-- <el-menu-item index="/" @click="jump('/')" style="visibility:hidden;">{{ $t('common.home') }}</el-menu-item> -->
                     <el-sub-menu index="/" popper-class="el-menu-popper-reset">
-                        <template #title>{{ $t('common.developer') }}</template>
-                        <el-menu-item index="/-0">
+                        <template
+                            #title
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >{{ $t('common.developer') }}</template>
+                        <el-menu-item
+                            index="/-0"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="/-1">
+                        <el-menu-item
+                            index="/-1"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 href="https://docs.hoosmartchain.com/"
                                 target="_blank"
                             >{{ $t('common.docs') }}</a>
                         </el-menu-item>
                         <!-- <el-menu-item index="2-2">{{ $t('common.github') }}</el-menu-item> -->
-                        <el-menu-item index="/-3">
+                        <el-menu-item
+                            index="/-3"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
                             >{{ $t('common.hscte') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="/-4">
+                        <el-menu-item
+                            index="/-4"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 href="https://testnet.hscscan.com/hydrant"
                                 target="_blank"
@@ -39,15 +67,28 @@
                         </el-menu-item>
                     </el-sub-menu>
 
-                    <el-sub-menu index="2" popper-class="el-menu-popper-reset">
+                    <el-sub-menu
+                        index="2"
+                        popper-class="el-menu-popper-reset"
+                        @mouseover="onMouseHoverOver"
+                        @mouseleave="onMouseHoverOverLeave"
+                    >
                         <template #title>{{ $t('common.usehsc') }}</template>
-                        <el-menu-item index="2-1">
+                        <el-menu-item
+                            index="2-1"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
                                 target="_blank"
                             >{{ $t('common.wallet') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="2-2">
+                        <el-menu-item
+                            index="2-2"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'"
                                 target="_blank"
@@ -57,16 +98,33 @@
                     </el-sub-menu>
 
                     <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
-                    <el-sub-menu index="3" popper-class="el-menu-popper-reset">
+                    <el-sub-menu
+                        index="3"
+                        popper-class="el-menu-popper-reset"
+                        @mouseover="onMouseHoverOver"
+                        @mouseleave="onMouseHoverOverLeave"
+                    >
                         <template #title>{{ $t('common.explorer') }}</template>
-                        <el-menu-item index="3-1">
+                        <el-menu-item
+                            index="3-1"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a href="https://hooscan.com/" target="_blank">{{ $t('common.hscmen') }}</a>
                         </el-menu-item>
 
-                        <el-menu-item index="3-1">
+                        <el-menu-item
+                            index="3-1"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="3-2">
+                        <el-menu-item
+                            index="3-2"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
@@ -74,20 +132,36 @@
                         </el-menu-item>
                     </el-sub-menu>
 
-                    <el-sub-menu index="4" popper-class="el-menu-popper-reset">
+                    <el-sub-menu
+                        index="4"
+                        popper-class="el-menu-popper-reset"
+                        @mouseover="onMouseHoverOver"
+                        @mouseleave="onMouseHoverOverLeave"
+                    >
                         <template #title>
                             <el-badge
                                 style="line-height: 29px"
                                 value="HOT"
+                                @mouseover="onMouseHoverOver"
+                                @mouseleave="onMouseHoverOverLeave"
                             >{{ $t('common.activity') }}</el-badge>
                         </template>
-                        <el-menu-item index="4-1">
+                        <el-menu-item
+                            index="4-1"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a
                                 target="_blank"
                                 @click="jump('/activity/unicorn-program')"
                             >{{ $t('common.activity.unicorn') }}</a>
                         </el-menu-item>
-                        <el-menu-item v-if="curLang==='zh_cn'" index="4-2">
+                        <el-menu-item
+                            v-if="curLang==='zh_cn'"
+                            index="4-2"
+                            @mouseover="onMouseHoverOver"
+                            @mouseleave="onMouseHoverOverLeave"
+                        >
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
                         </el-menu-item>
                     </el-sub-menu>
@@ -95,6 +169,8 @@
                         index="5"
                         @click="jump('/memorabilia')"
                         style="visibility: hidden !important;"
+                        @mouseover="onMouseHoverOver"
+                        @mouseleave="onMouseHoverOverLeave"
                     >大事记</el-menu-item>
                 </el-menu>
             </div>
@@ -112,7 +188,11 @@
                         <p class="lang-item" @click="setLang('en')">English</p>
                         <!-- <p class="lang-item" @click="setLang('ko')">한국어</p> -->
                     </div>
-                    <template #reference class="lang-con">
+                    <template
+                        #reference
+                        class="lang-con"
+                        :style=" onMenuHover? '{color: white}' : '{color:black}'"
+                    >
                         <div style="display:flex; justify-content: space-evenly;">
                             <!-- <i class="el-icon-arrow-down"></i> -->
 
@@ -149,6 +229,7 @@ const activeIndex = ref('/');
 // mobile
 const isOpen = ref(false);
 let curLang = ref('en');
+let onMenuHover = ref(false);
 watchEffect(() => {
     // $route: {
     //     immutable: true,
@@ -199,6 +280,14 @@ function jump(path) {
         path,
     });
 }
+function onMouseHoverOver() {
+    onMenuHover.value = true;
+    console.log('@mouseover calling!!!, ', onMenuHover.value);
+}
+function onMouseHoverOverLeave() {
+    onMenuHover.value = false;
+    console.log('@mouseover onMouseHoverOverLeave calling!!!', onMenuHover.value);
+}
 </script>
 
 <style lang="scss">
@@ -206,6 +295,8 @@ function jump(path) {
 .main-header {
     height: 60px;
     box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.03);
+    padding-left: 40px;
+    padding-right: 40px;
     .pc {
         max-width: 100%;
         margin: 0 auto;
@@ -222,6 +313,9 @@ function jump(path) {
             .el-menu {
                 .el-sub-menu__hide-arrow {
                     visibility: hidden !important;
+                }
+                &:hover {
+                    background-color: $color-white;
                 }
             }
             .menu-bd {
@@ -271,6 +365,48 @@ function jump(path) {
                         &.is-opened {
                             color: $color-primary !important;
                         }
+                    }
+                }
+            }
+            &:hover {
+                background-color: $color-white;
+                .main-header {
+                    background-color: $color-white;
+                }
+                .el-menu {
+                    .el-sub-menu__title {
+                        color: $color-bg;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                    .el-menu-item {
+                        &:hover {
+                            .main-header {
+                                background-color: $color-white;
+                            }
+                            .el-sub-menu__title {
+                                color: $color-bg;
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .main-header {
+                            background-color: $color-white;
+                        }
+                        .el-sub-menu__title {
+                            color: $color-bg;
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .lang-con {
+                    .lang-text {
+                        font-size: 14px;
+                        color: $color-bg;
+                        margin-right: 3px;
                     }
                 }
             }

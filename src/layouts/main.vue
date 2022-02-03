@@ -29,15 +29,15 @@
         width: 100%;
         height: 100%;
         > .hd {
-            background-color: transparent;
+            // background-color: transparent;
             position: relative;
             left: 0;
             top: 0;
             height: 60px;
             width: 100%;
             z-index: 100;
-            padding-left: 40px;
-            padding-right: 40px;
+            // padding-left: 40px;
+            // padding-right: 40px;
         }
         > .bd {
             padding-top: 60px;
