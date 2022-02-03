@@ -209,13 +209,15 @@ function jump(path) {
     .pc {
         max-width: 100%;
         margin: 0 auto;
+        // display: flex;
+        // justify-content: space-between;
         .logo {
             margin-top: 15px;
             height: 26px;
             width: 220px;
         }
         .menu-con {
-            margin-left: 60px;
+            margin-left: 15%;
             margin-top: 0px;
             .el-menu {
                 .el-sub-menu__hide-arrow {
