@@ -637,7 +637,7 @@ function toBrand() {
                 padding-right: 40px;
 
                 a {
-                    margin-left: 50px;
+                    margin-left: 30px;
                     font-size: 14px;
                     color: $color-white;
                     font-weight: normal;

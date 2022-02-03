@@ -148,7 +148,7 @@
                 <!-- first row start -->
                 <el-col :span="21" :md="24">
                     <el-row :gutter="20" class="absolute mt-[160px] z-10 text-white">
-                        <el-col :span="6" class="mt-[320px] !pl-[15%]">
+                        <el-col :span="6" class="mt-[18%] !pl-[15%]">
                             <div class="grid-content w-60">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
@@ -156,7 +156,7 @@
                                 <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="!pl-[10%] !mt-[75px]">
+                        <el-col :span="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
                             <div class="grid-content w-65">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
@@ -164,7 +164,7 @@
                                 <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="mt-[320px] !pl-[12%]">
+                        <el-col :span="6" class="mt-[18%] !pl-[12%]">
                             <div class="grid-content w-60">
                                 <h4 class="text-[18px] leading-[21.94px] font-[600] mb-4">Social-Fi</h4>
                                 <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
