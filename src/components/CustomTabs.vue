@@ -348,7 +348,7 @@ const marks = reactive<Marks>({
 .el-slider__bar {
     background-color: $color-primary;
     // --el-slider-main-bg-color: $color-primary !important;
-    height: 35px;
+    height: 23px;
     width: 35px;
     border-radius: 20px;
 }
@@ -358,7 +358,7 @@ const marks = reactive<Marks>({
     border-radius: 20px;
 }
 .el-slider__button-wrapper {
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 12%);
     .el-slider__button {
         height: 35px;
         width: 35px;
@@ -366,6 +366,9 @@ const marks = reactive<Marks>({
 }
 .el-slider__marks-text {
     margin-top: 50px;
+}
+.el-slider__marks-stop {
+    background-color: transparent;
 }
 </style>
 
