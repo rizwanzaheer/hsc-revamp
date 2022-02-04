@@ -16,6 +16,7 @@
                     <!-- <span>Route</span> -->
                 </div>
             </template>
+            <!-- content section starts -->
             <el-row :gutter="60" class="pl-[12%]">
                 <el-col :span="24">
                     <h1 class="text-white">Estimate your rewards</h1>
@@ -39,13 +40,13 @@
                 </el-col>
                 <el-col :span="8">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px]"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Basic Grants</h6>
                     <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">10K</h2>
                 </el-col>
                 <el-col :span="16">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px]"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Monthly continuous Rewards</h6>
                     <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2>
                 </el-col>
@@ -61,6 +62,7 @@
                     <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
                 </el-col>
             </el-row>
+            <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 1 ends -->
         <!-- tab 2 start -->
@@ -78,7 +80,57 @@
                     <!-- <span>Route</span> -->
                 </div>
             </template>
-            Estimate your rewards Volume bonus
+            <!-- content section starts -->
+            <el-row :gutter="60" class="pl-[12%]">
+                <el-col :span="24">
+                    <h1 class="text-white">Estimate your rewards</h1>
+                </el-col>
+                <el-col :span="24">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
+                    >Real transaction volume (Monthly)</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1M</h2>
+                </el-col>
+                <el-col :span="24">
+                    <div class="custom-slider-container pr-[12%]">
+                        <el-slider
+                            v-model="value"
+                            :marks="marks"
+                            :show-tooltip="false"
+                            height="24"
+                            size="large"
+                        ></el-slider>
+                    </div>
+                </el-col>
+                <el-col :span="8">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Reward coefficient: X</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">x 0.1</h2>
+                </el-col>
+                <el-col :span="7">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Reward Bonus A</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1K</h2>
+                </el-col>
+                <el-col :span="9">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Rewards Bonus B</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">400</h2>
+                </el-col>
+                <el-col :span="24">
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
+                        *In USDT
+                        <!-- <el-icon>
+                            <arrow-right />
+                        </el-icon>-->
+                    </h6>
+                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                </el-col>
+            </el-row>
+            <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 2 ends -->
         <!-- tab 3 start -->
@@ -97,7 +149,67 @@
                     <!-- <span>Route</span> -->
                 </div>
             </template>
-            Estimate your rewards Capital Hub
+            <!-- content section starts -->
+            <el-row :gutter="60" class="pl-[12%]">
+                <el-col :span="24">
+                    <h1 class="text-white">Estimate your rewards</h1>
+                </el-col>
+                <el-col :span="24">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
+                    >Requirement 1：Net inflow</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">22k</h2>
+                </el-col>
+                <el-col :span="24">
+                    <div class="custom-slider-container pr-[12%]">
+                        <el-slider
+                            v-model="value"
+                            :marks="marks"
+                            :show-tooltip="false"
+                            height="24"
+                            size="large"
+                        ></el-slider>
+                    </div>
+                </el-col>
+                <el-col :span="8">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >
+                        Requirement 2：
+                        <br />Standards monthly
+                        <br />trading volume
+                    </h6>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                    >10K</h2>
+                </el-col>
+                <el-col :span="7">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Monthly Rewards</h6>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                    >1960</h2>
+                </el-col>
+                <el-col :span="9">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >HSC capital allocation</h6>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                    >50K</h2>
+                </el-col>
+                <el-col :span="24">
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[0px] text-right">
+                        *In USDT
+                        <!-- <el-icon>
+                            <arrow-right />
+                        </el-icon>-->
+                    </h6>
+                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                </el-col>
+            </el-row>
+            <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 3 ends -->
         <!-- tab 4 start -->
@@ -116,7 +228,57 @@
                     <!-- <span>Route</span> -->
                 </div>
             </template>
-            Estimate your rewards HOO Bonus
+            <!-- content section starts -->
+            <el-row :gutter="60" class="pl-[12%]">
+                <el-col :span="24">
+                    <h1 class="text-white">Estimate your rewards</h1>
+                </el-col>
+                <el-col :span="24">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
+                    >Staking number</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">100k</h2>
+                </el-col>
+                <el-col :span="24">
+                    <div class="custom-slider-container pr-[12%]">
+                        <el-slider
+                            v-model="value"
+                            :marks="marks"
+                            :show-tooltip="false"
+                            height="24"
+                            size="large"
+                        ></el-slider>
+                    </div>
+                </el-col>
+                <el-col :span="8">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Reward coefficient: y</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">x 0.1</h2>
+                </el-col>
+                <el-col :span="7">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Standard Staking Bonus</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1K</h2>
+                </el-col>
+                <el-col :span="9">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                    >Monthly Staking Bonus</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">400</h2>
+                </el-col>
+                <el-col :span="24">
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
+                        *In USDT
+                        <!-- <el-icon>
+                            <arrow-right />
+                        </el-icon>-->
+                    </h6>
+                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                </el-col>
+            </el-row>
+            <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 4 ends -->
         <!-- <el-tab-pane label="`TVL Basic rewards plan <br />All projects`">Config</el-tab-pane>
