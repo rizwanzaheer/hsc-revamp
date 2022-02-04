@@ -16,7 +16,27 @@
                     <!-- <span>Route</span> -->
                 </div>
             </template>
-            Estimate your rewards
+            <el-row :gutter="60" class="pl-[12%]">
+                <el-col :span="24">
+                    <h1 class="text-white">Estimate your rewards</h1>
+                </el-col>
+                <el-col :span="24">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
+                    >Net TVL</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1M</h2>
+                </el-col>
+                <el-col :span="24">
+                    <div class="custom-slider-container pr-[12%]">
+                        <el-slider
+                            v-model="value"
+                            :marks="marks"
+                            :show-tooltip="false"
+                            size="large"
+                        ></el-slider>
+                    </div>
+                </el-col>
+            </el-row>
         </el-tab-pane>
         <!-- tab 1 ends -->
         <!-- tab 2 start -->
@@ -81,8 +101,9 @@
     </el-tabs>
 </template>
 
-<script setup>
-import { defineProps, toRefs } from 'vue';
+<script  lang="ts" setup>
+import { defineProps, toRefs, ref, reactive } from 'vue';
+import type { CSSProperties } from 'vue';
 import { Calendar, ArrowRight } from '@element-plus/icons-vue';
 const props = defineProps({
     tabPosition: String,
@@ -90,7 +111,50 @@ const props = defineProps({
 const { tabPosition } = toRefs(props);
 
 console.log('props are : ', tabPosition);
+
+// for slider section
+interface Mark {
+    style: CSSProperties;
+    label: string;
+}
+
+type Marks = Record<number, Mark | string>;
+
+const value = ref([30, 60]);
+const marks = reactive<Marks>({
+    0: '0',
+    20: '1M',
+    40: '5M',
+    60: '10M',
+    80: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '50M',
+    },
+    100: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '100M',
+    },
+});
 </script>
+<style scoped lang="scss">
+@import '../sass/common/_var.scss';
+.custom-slider-container {
+    display: flex;
+    align-items: center;
+}
+.custom-slider-container .el-slider {
+    margin-top: 0;
+    margin-left: 12px;
+}
+.el-slider__bar {
+    background-color: $color-primary !important;
+}
+</style>
+
 <style lang="scss">
 @import '../sass/common/_var.scss';
 .custom-tabs {
@@ -108,17 +172,23 @@ console.log('props are : ', tabPosition);
         height: 387px;
         min-height: 387px;
     }
+    // .el-tabs__nav {
+    //     background: $tabs-bg-color;
+    // }
+
     .el-tabs__item {
         height: 97px;
         color: #a6a6a6;
         width: 316px;
+        // background-color: $tabs-bg-color;
     }
     .is-active {
         color: $color-primary;
         .el-icon {
             visibility: hidden;
         }
-        ::after {
+        // background-color: transparent !important;
+        &::after {
             content: '';
             position: absolute;
             top: 100%;
@@ -131,6 +201,16 @@ console.log('props are : ', tabPosition);
             border-bottom-right-radius: 2px;
             border-bottom-left-radius: 2px;
             background: linear-gradient(270deg, #02ead0 0%, rgba(2, 234, 208, 0) 100%);
+        }
+    }
+    .el-tabs__active-bar {
+        visibility: hidden;
+    }
+    .el-tabs__nav-scroll,
+    .el-tabs__nav,
+    .el-tabs__nav-wrap {
+        &::after {
+            background-color: transparent !important;
         }
     }
 }
