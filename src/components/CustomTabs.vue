@@ -92,6 +92,7 @@ const { tabPosition } = toRefs(props);
 console.log('props are : ', tabPosition);
 </script>
 <style lang="scss">
+@import '../sass/common/_var.scss';
 .custom-tabs {
     /* height: 387px;
     min-height: 387px; */
@@ -111,6 +112,26 @@ console.log('props are : ', tabPosition);
         height: 97px;
         color: #a6a6a6;
         width: 316px;
+    }
+    .is-active {
+        color: $color-primary;
+        .el-icon {
+            visibility: hidden;
+        }
+        ::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            height: 3px;
+            border-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            background: linear-gradient(270deg, #02ead0 0%, rgba(2, 234, 208, 0) 100%);
+        }
     }
 }
 .custom-tabs > .el-tabs__content {
