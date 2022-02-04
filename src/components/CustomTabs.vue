@@ -32,6 +32,7 @@
                             v-model="value"
                             :marks="marks"
                             :show-tooltip="false"
+                            height="24"
                             size="large"
                         ></el-slider>
                     </div>
@@ -140,8 +141,11 @@ const marks = reactive<Marks>({
     },
 });
 </script>
-<style scoped lang="scss">
+<style  lang="scss">
 @import '../sass/common/_var.scss';
+:root {
+    --el-color-primary: var($color-primary);
+}
 .custom-slider-container {
     display: flex;
     align-items: center;
@@ -151,7 +155,26 @@ const marks = reactive<Marks>({
     margin-left: 12px;
 }
 .el-slider__bar {
-    background-color: $color-primary !important;
+    background-color: $color-primary;
+    // --el-slider-main-bg-color: $color-primary !important;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
+.el-slider__runway {
+    height: 23px;
+    background: rgba(1, 1, 1, 0.31);
+    border-radius: 20px;
+}
+.el-slider__button-wrapper {
+    transform: translate(-50%, 25%);
+    .el-slider__button {
+        height: 35px;
+        width: 35px;
+    }
+}
+.el-slider__marks-text {
+    margin-top: 50px;
 }
 </style>
 
