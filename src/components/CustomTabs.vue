@@ -55,9 +55,15 @@
                         class="text-white text-[12px] leading-[20px] mt-[20px] underline text-right underline-offset-2"
                     >
                         *In USDT — maintain at least 1 month
-                        <el-icon>
-                            <arrow-right />
-                        </el-icon>
+                        <span
+                            style="transform: translateY(3px);
+                            display: inline-block;
+                            font-size: 12px;"
+                        >
+                            <el-icon>
+                                <arrow-right />
+                            </el-icon>
+                        </span>
                     </h6>
                     <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
                 </el-col>
