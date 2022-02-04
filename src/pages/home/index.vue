@@ -400,7 +400,16 @@
                 </el-col>
             </el-row>
 
-            <!-- cosmic tab section start  -->
+            <!-- cosmic tab section ends  -->
+
+            <!-- road map section start  -->
+            <el-row :gutter="20" justify="center">
+                <el-col :span="20">
+                    <h1 class="text-white text-[40px] leading-[49px] font-[600] text-center">Roadmap</h1>
+                </el-col>
+            </el-row>
+
+            <!-- road map section ends  -->
 
             <el-row justify="center">
                 <el-col :span="24">
