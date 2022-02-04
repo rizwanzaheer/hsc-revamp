@@ -37,6 +37,29 @@
                         ></el-slider>
                     </div>
                 </el-col>
+                <el-col :span="8">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px]"
+                    >Basic Grants</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">10K</h2>
+                </el-col>
+                <el-col :span="16">
+                    <h6
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px]"
+                    >Monthly continuous Rewards</h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2>
+                </el-col>
+                <el-col :span="24">
+                    <h6
+                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-right underline-offset-2"
+                    >
+                        *In USDT — maintain at least 1 month
+                        <el-icon>
+                            <arrow-right />
+                        </el-icon>
+                    </h6>
+                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                </el-col>
             </el-row>
         </el-tab-pane>
         <!-- tab 1 ends -->
