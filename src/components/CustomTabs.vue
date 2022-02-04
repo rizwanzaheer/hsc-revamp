@@ -1,5 +1,6 @@
 <template>
     <el-tabs class="custom-tabs" tabPosition="left" :stretch="true">
+        <!-- tab 1 start -->
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
@@ -17,9 +18,66 @@
             </template>
             Estimate your rewards
         </el-tab-pane>
-        <el-tab-pane label="`TVL Basic rewards plan <br />All projects`">Config</el-tab-pane>
+        <!-- tab 1 ends -->
+        <!-- tab 2 start -->
+        <el-tab-pane>
+            <template #label>
+                <div class="flex justify-center items-center custom-tab-container">
+                    <h1 class="w-[60%] text-left">
+                        Volume bonus
+                        <br />
+                        <span>GameFi, NFT</span>
+                    </h1>
+                    <el-icon>
+                        <arrow-right />
+                    </el-icon>
+                    <!-- <span>Route</span> -->
+                </div>
+            </template>
+            Estimate your rewards Volume bonus
+        </el-tab-pane>
+        <!-- tab 2 ends -->
+        <!-- tab 3 start -->
+        <el-tab-pane>
+            <template #label>
+                <div class="flex justify-center items-center custom-tab-container">
+                    <h1 class="w-[60%] text-left">
+                        Capital Hub
+                        <br />Rewards Plan
+                        <br />
+                        <span>Cross-chain Projects</span>
+                    </h1>
+                    <el-icon>
+                        <arrow-right />
+                    </el-icon>
+                    <!-- <span>Route</span> -->
+                </div>
+            </template>
+            Estimate your rewards Capital Hub
+        </el-tab-pane>
+        <!-- tab 3 ends -->
+        <!-- tab 4 start -->
+        <el-tab-pane>
+            <template #label>
+                <div class="flex justify-center items-center custom-tab-container">
+                    <h1 class="w-[60%] text-left">
+                        HOO Bonus
+                        <!-- <br />Rewards Plan -->
+                        <br />
+                        <span>Stake HOO to get Bonus</span>
+                    </h1>
+                    <el-icon>
+                        <arrow-right />
+                    </el-icon>
+                    <!-- <span>Route</span> -->
+                </div>
+            </template>
+            Estimate your rewards HOO Bonus
+        </el-tab-pane>
+        <!-- tab 4 ends -->
+        <!-- <el-tab-pane label="`TVL Basic rewards plan <br />All projects`">Config</el-tab-pane>
         <el-tab-pane label="Role">Role</el-tab-pane>
-        <el-tab-pane :label="`TVL Basic rewards plan <br />All projects`">Task</el-tab-pane>
+        <el-tab-pane :label="`TVL Basic rewards plan <br />All projects`">Task</el-tab-pane>-->
     </el-tabs>
 </template>
 
@@ -50,8 +108,9 @@ console.log('props are : ', tabPosition);
         min-height: 387px;
     }
     .el-tabs__item {
-        height: auto;
+        height: 97px;
         color: #a6a6a6;
+        width: 316px;
     }
 }
 .custom-tabs > .el-tabs__content {
