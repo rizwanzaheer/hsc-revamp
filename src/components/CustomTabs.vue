@@ -104,17 +104,20 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Real transaction volume (Monthly)</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">{{value }}</h2>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">
+                        {{volumeBonusValue }} and
+                        {{typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label}}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
                         <el-slider
-                            v-model="value"
-                            :marks="marks"
+                            v-model="volumeBonusValue"
+                            :marks="volumeBonusMarks"
                             :show-tooltip="false"
                             height="24"
                             size="large"
-                            :step="30"
+                            :step="20"
                         ></el-slider>
                     </div>
                 </el-col>
@@ -122,19 +125,25 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Reward coefficient: X</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">x 0.1</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >x {{volumeBonusRewardCoefficientX[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="7">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Reward Bonus A</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1K</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{volumeBonusRewardsBonusA[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="9">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Rewards Bonus B</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">400</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{volumeBonusRewardsBonusB[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
@@ -376,6 +385,49 @@ const tvlMarksMonthlyRewards = reactive<Marks>({
     '10M': '20K',
     '50M': '80K',
     '100M': '150K',
+});
+const volumeBonusValue = ref(0);
+const volumeBonusMarks = reactive<Marks>({
+    0: '0',
+    20: '1M',
+    40: '5M',
+    60: '10M',
+    80: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '50M',
+    },
+    100: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '100M',
+    },
+});
+const volumeBonusRewardCoefficientX = reactive<Marks>({
+    '0': '0',
+    '1M': '0.1',
+    '5M': '0.3',
+    '10M': '0.5',
+    '50M': '1',
+    '100M': '2',
+});
+const volumeBonusRewardsBonusA = reactive<Marks>({
+    '0': '0',
+    '1M': '1K',
+    '5M': '6K',
+    '10M': '25K',
+    '50M': '200K',
+    '100M': '800K',
+});
+const volumeBonusRewardsBonusB = reactive<Marks>({
+    '0': '0',
+    '1M': '400',
+    '5M': '3K',
+    '10M': '10K',
+    '50M': '80K',
+    '100M': '300K',
 });
 </script>
 <style  lang="scss">
