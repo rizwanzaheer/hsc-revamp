@@ -21,7 +21,7 @@ export default {
     'home.block2.item1.title': 'For <span>developer</span>',
     'home.block2.item1.desc': '',
     'home.block2.item1.content1': 'Connect to testnet',
-    'home.block2.item1.content2': 'Compile and run',
+    'home.block2.item1.content2': 'Compile & run',
     'home.block2.item1.content3': 'Debug & Released DApp',
 
     'home.block2.item2.title': 'For <span>user</span>',
