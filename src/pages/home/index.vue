@@ -427,44 +427,79 @@
                         </el-col>
                     </el-row>
 
-                    <el-row justify="center">
+                    <el-row justify="center" class="road-map-con-body">
                         <!-- first row start -->
-                        <!-- <el-col :span="20" :md="24">
-                            <el-row :gutter="20" class="absolute mt-[140px] z-10 text-white">
-                                <el-col :span="6" class="mt-[18%] !pl-[15%]">
-                                    <div class="grid-content w-60">
-                                        <h4
+                        <el-col :span="24" :md="24">
+                            <el-row :gutter="20" class="z-10 text-white">
+                                <el-col :span="2" class="text-center" :offset="2">
+                                    <div class="grid-content flex justify-center">
+                                        <!-- <h4
                                             class="text-[18px] leading-[21.94px] font-[600] mb-4"
-                                        >Visual Blockchain</h4>
-                                        <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
+                                        >Maine Launches 215 Days</h4>-->
+                                        <img
+                                            src="../../images/roadmap/road1-normal.svg"
+                                            alt="planedline.png"
+                                        />
                                     </div>
                                 </el-col>
-                                <el-col :span="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
-                                    <div class="grid-content w-65">
+                                <el-col :span="3" class="text-center lg:mt-[0%] xl:mt-[0%]">
+                                    <div class="grid-content flex justify-center">
                                         <h4
-                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
-                                        >3D Blockchain</h4>
-                                        <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
+                                            class="text-[16px] leading-[20px] font-[600] uppercase"
+                                        >TVL 123M USD</h4>
                                     </div>
                                 </el-col>
-                                <el-col :span="6" class="mt-[18%] !pl-[12%]">
-                                    <div class="grid-content w-60">
-                                        <h4
-                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
-                                        >Social-Fi</h4>
-                                        <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
+                                <el-col :span="2" class="text-center">
+                                    <div class="grid-content flex justify-center">
+                                        <img
+                                            src="../../images/roadmap/road1-normal.svg"
+                                            alt="planedline.png"
+                                        />
                                     </div>
                                 </el-col>
-                                <el-col :span="6" class="!pl-[3%]">
-                                    <div class="grid-content w-[18rem]">
+                                <el-col :span="3" class="text-center">
+                                    <div class="grid-content flex justify-center">
                                         <h4
-                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
-                                        >Metaverse Chain</h4>
-                                        <p>When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
+                                            class="text-[16px] leading-[20px] font-[600] uppercase"
+                                        >TPS 116</h4>
+                                    </div>
+                                </el-col>
+                                <el-col :span="2" class="text-center">
+                                    <div class="grid-content flex justify-center">
+                                        <img
+                                            src="../../images/roadmap/road1-normal.svg"
+                                            alt="planedline.png"
+                                        />
+                                    </div>
+                                </el-col>
+                                <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
+                                    <div class="grid-content flex justify-center">
+                                        <h4
+                                            class="text-[16px] leading-[20px] font-[600]"
+                                        >1085234 Addresses</h4>
+                                    </div>
+                                </el-col>
+                                <el-col :span="2" class="text-center" :offset="1">
+                                    <div class="grid-content flex justify-center">
+                                        <img
+                                            src="../../images/roadmap/road1-normal.svg"
+                                            alt="planedline.png"
+                                        />
+                                    </div>
+                                </el-col>
+                                <el-col :span="4" class="text-center">
+                                    <div class="grid-content flex justify-center">
+                                        <h4 class="text-[27px] leading-[21px] font-[600] uppercase">
+                                            Metaverse
+                                            <br />
+                                            <span
+                                                class="text-[15px] leading-[35px] font-[600]"
+                                            >World</span>
+                                        </h4>
                                     </div>
                                 </el-col>
                             </el-row>
-                        </el-col>-->
+                        </el-col>
 
                         <!-- first row ends -->
                         <!-- second row starts -->
