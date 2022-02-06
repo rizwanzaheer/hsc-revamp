@@ -238,8 +238,7 @@
             <!-- visualization section ends -->
 
             <!-- developer/user section start -->
-            <!-- <div class="section-2"> -->
-            <!-- <div class="container"> -->
+
             <el-row :gutter="40" justify="center" class="mt-40">
                 <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <span v-html="$t('home.block2.title')"></span>
@@ -375,8 +374,6 @@
                     </el-row>
                 </el-col>
             </el-row>
-            <!-- </div> -->
-            <!-- </div> -->
 
             <!-- developer/user section ends -->
 
@@ -402,16 +399,7 @@
 
             <!-- cosmic tab section ends  -->
 
-            <!-- road map section start  -->
-            <el-row :gutter="20" justify="center">
-                <el-col :span="20">
-                    <h1 class="text-white text-[40px] leading-[49px] font-[600] text-center">Roadmap</h1>
-                </el-col>
-            </el-row>
-
-            <!-- road map section ends  -->
-
-            <el-row justify="center">
+            <el-row justify="center" class="mt-10">
                 <el-col :span="24">
                     <p
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
@@ -427,6 +415,97 @@
                 </el-col>
             </el-row>
             <!-- cosmic origin project section start -->
+
+            <!-- road map section start  -->
+            <el-row class="road-map-con mt-20">
+                <el-col :span="24">
+                    <el-row :gutter="20" justify="center ">
+                        <el-col :span="24">
+                            <h1
+                                class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
+                            >Roadmap</h1>
+                        </el-col>
+                    </el-row>
+
+                    <el-row justify="center">
+                        <!-- first row start -->
+                        <!-- <el-col :span="20" :md="24">
+                            <el-row :gutter="20" class="absolute mt-[140px] z-10 text-white">
+                                <el-col :span="6" class="mt-[18%] !pl-[15%]">
+                                    <div class="grid-content w-60">
+                                        <h4
+                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                        >Visual Blockchain</h4>
+                                        <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
+                                    <div class="grid-content w-65">
+                                        <h4
+                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                        >3D Blockchain</h4>
+                                        <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6" class="mt-[18%] !pl-[12%]">
+                                    <div class="grid-content w-60">
+                                        <h4
+                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                        >Social-Fi</h4>
+                                        <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6" class="!pl-[3%]">
+                                    <div class="grid-content w-[18rem]">
+                                        <h4
+                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                        >Metaverse Chain</h4>
+                                        <p>When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </el-col>-->
+
+                        <!-- first row ends -->
+                        <!-- second row starts -->
+                        <el-col :span="24">
+                            <img
+                                src="../../images/roadmap/planetline.svg"
+                                alt="planedline.png"
+                                style="width:100%; padding-left:2.2%; padding-right:2.2%;"
+                            />
+                            <!-- <el-row justify="center">
+                                <el-col :span="24">
+                                    <div class="grid-content place-items-center">
+                                    </div>
+                                </el-col>
+                            </el-row>-->
+                        </el-col>
+                        <!-- second row ends -->
+
+                        <!-- third row start -->
+
+                        <!-- <el-col :span="21">
+                    <el-row :gutter="20">
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                        <el-col :span="6">
+                            <div class="grid-content bg-purple"></div>
+                        </el-col>
+                    </el-row>
+                        </el-col>-->
+                        <!-- third row ends -->
+                    </el-row>
+                </el-col>
+            </el-row>
+            <!-- road map section ends  -->
 
             <!-- Join cosmic section starts -->
             <el-row class="mt-20" justify="center">
@@ -478,6 +557,11 @@ import CustomTabs from '../../components/CustomTabs.vue';
 
 <style lang="scss">
 @import '../../sass/common/_var.scss';
+
+.banner-con {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .new-journey {
     &:hover {
         span {
@@ -686,6 +770,12 @@ import CustomTabs from '../../components/CustomTabs.vue';
 }
 .for-user {
     background: linear-gradient(284.46deg, #719ee6 -2.02%, #02ead0 33.84%);
+}
+
+.road-map-con {
+    background: linear-gradient(90.98deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
+    box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
+    min-height: 538px;
 }
 </style>
 

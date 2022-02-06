@@ -45,8 +45,12 @@
             background: url('../images/stars/stars.svg') repeat; //left center;
             // background-size: contain;
             // background-repeat: repeat;
-            padding-left: 20px;
-            padding-right: 20px;
+            // padding-left: 20px;
+            // padding-right: 20px;
+            .el-main {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
         }
         > .ft {
             > .main-footer {
