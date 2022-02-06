@@ -617,6 +617,30 @@
             </el-row>
             <!-- road map section ends  -->
 
+            <!-- HSC landing projects section start -->
+            <el-row justify="center" class="mt-10">
+                <el-col :span="24">
+                    <h6
+                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
+                    >HSC Landscape</h6>
+                </el-col>
+                <el-col :span="24">
+                    <h1 class="text-[40px] leading-[48.76px] font-[600] text-white text-center">
+                        Over
+                        <span class="text-[#02EAD0]">20+</span> Projects on HSC
+                    </h1>
+                </el-col>
+                <el-col :span="24" class="flex justify-center">
+                    <el-link :underline="false" class="text-white">
+                        See All Projects
+                        <el-icon>
+                            <arrow-right />
+                        </el-icon>
+                    </el-link>
+                </el-col>
+            </el-row>
+            <!-- HSC landing projects section ends -->
+
             <!-- Join cosmic section starts -->
             <el-row class="mt-20" justify="center">
                 <el-col
