@@ -104,10 +104,9 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Real transaction volume (Monthly)</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">
-                        {{volumeBonusValue }} and
-                        {{typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label}}
-                    </h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
@@ -183,16 +182,19 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Requirement 1：Net inflow</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">22k</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
                         <el-slider
-                            v-model="value"
-                            :marks="marks"
+                            v-model="capitalHubValue"
+                            :marks="capitalHubMarks"
                             :show-tooltip="false"
                             height="24"
                             size="large"
+                            :step="33"
                         ></el-slider>
                     </div>
                 </el-col>
@@ -206,7 +208,7 @@
                     </h6>
                     <h2
                         class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
-                    >10K</h2>
+                    >{{capitalHubRequireStandardMonthlyVolume[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
                 <el-col :span="7">
                     <h6
@@ -214,7 +216,7 @@
                     >Monthly Rewards</h6>
                     <h2
                         class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
-                    >1960</h2>
+                    >{{capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
                 <el-col :span="9">
                     <h6
@@ -222,7 +224,7 @@
                     >HSC capital allocation</h6>
                     <h2
                         class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
-                    >50K</h2>
+                    >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <h6 class="text-white text-[12px] leading-[20px] mt-[0px] text-right">
@@ -350,7 +352,7 @@ const marks = reactive<Marks>({
         label: '100M',
     },
 });
-
+// tvl section start here
 const tvlValue = ref(0);
 const tvlMarks = reactive<Marks>({
     0: '0',
@@ -386,6 +388,9 @@ const tvlMarksMonthlyRewards = reactive<Marks>({
     '50M': '80K',
     '100M': '150K',
 });
+// tvl section start here
+
+// Volume bonus section start here
 const volumeBonusValue = ref(0);
 const volumeBonusMarks = reactive<Marks>({
     0: '0',
@@ -429,6 +434,40 @@ const volumeBonusRewardsBonusB = reactive<Marks>({
     '50M': '80K',
     '100M': '300K',
 });
+// Volume bonus section ends here
+
+// capital hub section start here
+const capitalHubValue = ref(0);
+const capitalHubMarks = reactive<Marks>({
+    0: '0',
+    33: '200k',
+    66: '400k',
+    99: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '1M',
+    },
+});
+const capitalHubRequireStandardMonthlyVolume = reactive<Marks>({
+    '0': '0',
+    '200k': '1M',
+    '400k': '2M',
+    '1M': '5M',
+});
+const capitalHubMonthlyRewards = reactive<Marks>({
+    '0': '0',
+    '200k': '1960',
+    '400k': '4200',
+    '1M': '11200',
+});
+const capitalHubCapitalAllocation = reactive<Marks>({
+    '0': '0',
+    '200k': '50k',
+    '400k': '100k',
+    '1M': '200k',
+});
+// Volume bonus section ends here
 </script>
 <style  lang="scss">
 @import '../sass/common/_var.scss';
