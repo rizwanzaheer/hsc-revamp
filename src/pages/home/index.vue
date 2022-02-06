@@ -530,7 +530,7 @@
                         <!-- third row start -->
                         <el-col :span="24" :md="24">
                             <el-row :gutter="20" class="z-10 text-white">
-                                <el-col :span="2" class="text-center" :offset="2">
+                                <el-col :span="2" class="text-center mt-[12px]" :offset="2">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
@@ -542,7 +542,7 @@
                                         />-->
                                     </div>
                                 </el-col>
-                                <el-col :span="3" class="text-center lg:mt-[0%] xl:mt-[0%]">
+                                <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
                                     <div class="grid-content flex justify-center">
                                         <!-- <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
@@ -550,31 +550,31 @@
                                         <img
                                             src="../../images/roadmap/road2.svg"
                                             alt="planedline.png"
-                                            class="ml-[-8%]"
+                                            class="ml-[50%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" class="text-center">
+                                <el-col :span="2" :offset="1" class="text-center mt-[12px]">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >TPS 116</h4>
+                                        >10716574 Transactions</h4>
                                     </div>
                                 </el-col>
-                                <el-col :span="3" class="text-center">
+                                <el-col :span="2" :offset="1" class="text-center">
                                     <div class="grid-content flex justify-center">
                                         <img
                                             src="../../images/roadmap/road4.svg"
                                             alt="planedline.png"
-                                            class="ml-[-6%]"
+                                            class="ml-[-60%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" class="text-center">
+                                <el-col :span="2" class="text-center mt-[12px]">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >1085234 Addresses</h4>
+                                        >20+ Projects</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
@@ -582,22 +582,23 @@
                                         <img
                                             src="../../images/roadmap/road6.svg"
                                             alt="planedline.png"
-                                            class="ml-[-6%]"
+                                            class="ml-[55%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" class="text-center" :offset="1">
+                                <el-col :span="2" class="text-center mt-[12px]" :offset="1">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >1085234 Addresses</h4>
+                                        >Infinite Innovation</h4>
                                     </div>
                                 </el-col>
-                                <el-col :span="4" class="text-center">
+                                <el-col :span="2" :offset="1" class="text-center">
                                     <div class="grid-content flex justify-center">
                                         <img
                                             src="../../images/roadmap/road8.svg"
                                             alt="planedline.png"
+                                            class="ml-[-12%]"
                                         />
                                         <!-- <h4 class="text-[27px] leading-[21px] font-[600] uppercase">
                                             Metaverse
