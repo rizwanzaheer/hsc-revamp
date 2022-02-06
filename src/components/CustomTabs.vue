@@ -25,16 +25,20 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Net TVL</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1M</h2>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">
+                        <!-- {{tvlValue}}M and -->
+                        {{typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label}}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
                         <el-slider
-                            v-model="value"
-                            :marks="marks"
+                            v-model="tvlValue"
+                            :marks="tvlMarks"
                             :show-tooltip="false"
                             height="24"
                             size="large"
+                            step="20"
                         ></el-slider>
                     </div>
                 </el-col>
@@ -42,13 +46,18 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Basic Grants</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">10K</h2>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">
+                        <!-- 10K -->
+                        {{tvlMarksBasicGrants[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}
+                    </h2>
                 </el-col>
                 <el-col :span="16">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Monthly continuous Rewards</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{tvlMarksMonthlyRewards[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <h6
@@ -95,7 +104,7 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Real transaction volume (Monthly)</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1M</h2>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">{{value }}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
@@ -105,6 +114,7 @@
                             :show-tooltip="false"
                             height="24"
                             size="large"
+                            :step="30"
                         ></el-slider>
                     </div>
                 </el-col>
@@ -330,6 +340,42 @@ const marks = reactive<Marks>({
         },
         label: '100M',
     },
+});
+
+const tvlValue = ref(0);
+const tvlMarks = reactive<Marks>({
+    0: '0',
+    20: '1M',
+    40: '5M',
+    60: '10M',
+    80: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '50M',
+    },
+    100: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '100M',
+    },
+});
+const tvlMarksBasicGrants = reactive<Marks>({
+    '0': '0',
+    '1M': '10K',
+    '5M': '20K',
+    '10M': '50K',
+    '50M': '200K',
+    '100M': '400K',
+});
+const tvlMarksMonthlyRewards = reactive<Marks>({
+    '0': '0',
+    '1M': '4K',
+    '5M': '10K',
+    '10M': '20K',
+    '50M': '80K',
+    '100M': '150K',
 });
 </script>
 <style  lang="scss">
