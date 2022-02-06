@@ -264,16 +264,19 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Staking number</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">100k</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
                         <el-slider
-                            v-model="value"
-                            :marks="marks"
+                            v-model="stakeHooBonusValue"
+                            :marks="stakeHooBonusMarks"
                             :show-tooltip="false"
                             height="24"
                             size="large"
+                            step="20"
                         ></el-slider>
                     </div>
                 </el-col>
@@ -281,19 +284,25 @@
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Reward coefficient: y</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">x 0.1</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >x {{stakeHooBonusRewardCoefficientY[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="7">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Standard Staking Bonus</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">1K</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{stakeHooBonusStandard[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="9">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Monthly Staking Bonus</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">400</h2>
+                    <h2
+                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                    >{{stakeHooBonusMonthlyStakingBonus[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
@@ -468,6 +477,52 @@ const capitalHubCapitalAllocation = reactive<Marks>({
     '1M': '200k',
 });
 // Volume bonus section ends here
+
+// Stake Hoo Bonus section start here
+const stakeHooBonusValue = ref(0);
+const stakeHooBonusMarks = reactive<Marks>({
+    0: '0',
+    20: '100K',
+    40: '500K',
+    60: '1M',
+    80: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '2M',
+    },
+    100: {
+        style: {
+            color: '#C1C9D2',
+        },
+        label: '5M',
+    },
+});
+const stakeHooBonusRewardCoefficientY = reactive<Marks>({
+    '0': '0',
+    '100K': '0.1',
+    '500K': '0.2',
+    '1M': '0.3',
+    '2M': '0.5',
+    '5M': '1',
+});
+const stakeHooBonusStandard = reactive<Marks>({
+    '0': '0',
+    '100K': '1K',
+    '500K': '4K',
+    '1M': '15K',
+    '2M': '100K',
+    '5M': '400K',
+});
+const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
+    '0': '0',
+    '100K': '400',
+    '500K': '2K',
+    '1M': '6K',
+    '2M': '40K',
+    '5M': '150K',
+});
+// stake Hoo Bonus section start here
 </script>
 <style  lang="scss">
 @import '../sass/common/_var.scss';
