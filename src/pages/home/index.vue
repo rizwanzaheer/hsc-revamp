@@ -646,7 +646,7 @@ import CustomTabs from '../../components/CustomTabs.vue';
         // display: block;
         // text-align: center;
         &.step {
-            width: 160px;
+            // width: 160px;
             height: 105px;
             display: flex;
             flex-direction: column;
