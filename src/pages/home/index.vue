@@ -745,7 +745,7 @@
             <!-- hsc community section ends -->
 
             <!-- Join cosmic section starts -->
-            <el-row class="mt-20" justify="center">
+            <el-row class="mt-20 !mb-20" justify="center">
                 <el-col
                     :span="21"
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
