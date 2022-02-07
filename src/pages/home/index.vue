@@ -910,6 +910,7 @@ import CustomTabs from '../../components/CustomTabs.vue';
     background: linear-gradient(90.98deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
     min-height: 538px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
 }
 </style>
 
