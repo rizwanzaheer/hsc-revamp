@@ -1,78 +1,17 @@
 <template>
     <el-main>
-        <div class="home-con">
-            <!-- new and update section start -->
-            <el-row class="mt-20" justify="center">
-                <el-col :span="21" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
-                    <el-row justify="center" :gutter="10">
-                        <el-col :span="5">
-                            <div
-                                class="grid-content text-center flex justify-center items-center news-container"
-                            >
-                                <img src="../../images/news/news.svg" class />
-                                <h2
-                                    class="text-[15px] text-white leading-[24px] ml-5"
-                                >News & Update:</h2>
-                            </div>
-                        </el-col>
-                        <el-col :span="14">
-                            <div class="grid-content text-center">
-                                <h1 class="text-white text-[15px] mt-5">
-                                    Hoo Smart Chain Heads Towards a New Journey.
-                                    <el-link
-                                        class="text-[15px] leading-[24px] font-[500] ml-8"
-                                        :underline="true"
-                                        href="https://hoo.com"
-                                        target="_blank"
-                                    >
-                                        Read Documentation
-                                        <!-- <i class="el-icon-view el-icon--right"></i> -->
-                                        <el-icon>
-                                            <arrow-right />
-                                        </el-icon>
-                                    </el-link>
-                                </h1>
-                            </div>
-                        </el-col>
-                        <el-col :span="5">
-                            <div class="grid-content text-center">
-                                <el-button
-                                    type="info"
-                                    plain
-                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
-                                >See more news</el-button>
-                            </div>
-                        </el-col>
-                    </el-row>
-                </el-col>
-            </el-row>
-            <!-- new and update section ends -->
-
-            <!-- Infinite Innovation section start -->
-
-            <el-row :gutter="20" class="mt-20">
-                <el-col :lg="24" justify="center">
+        <div class="landing-con">
+            <!-- visualization section starts -->
+            <el-row justify="center" class="first-main-banner">
+                <el-col :span="24" class="mt-[16%]">
                     <h2
                         class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
-                    >Infinite Innovation</h2>
-                    <h5
-                        class="text-white text-[18px] text-center leading-[30px]"
-                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>
-                </el-col>
-            </el-row>
-            <!-- Infinite Innovation section start -->
-
-            <!-- visualization section starts -->
-            <el-row justify="center">
-                <el-col :span="24">
-                    <p
-                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                    >Start visualising your journey and apply grant</p>
+                    >HMC Project Rewards Programme</h2>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
-                        title="Apply Now"
+                        title="Enroll Now"
                         target="_blank"
                         href="https://hoo.com"
                     />
@@ -80,156 +19,22 @@
             </el-row>
             <!-- visualization section ends -->
 
-            <!-- developer/user section start -->
-
-            <el-row :gutter="40" justify="center" class="mt-40">
-                <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
-                    <span v-html="$t('home.block2.title')"></span>
-                </el-col>-->
-                <el-col
-                    :md="10"
-                    :sm="12"
-                    :xs="12"
-                    class="desc desc-1 mr-[30px] !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px]"
-                    :gutter="40"
-                >
-                    <div class="desc-con">
-                        <p
-                            class="title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
-                            v-html="$t('home.block2.item1.title')"
-                        ></p>
-                        <p class="text-[#12171B] leading-[24px] font-[500] text-[15px]">
-                            Hoo provides you with the documentation, resources,
-                            and support you need to get your project up and running.
-                        </p>
-                        <p class="info" v-html="$t('home.block2.item1.desc')"></p>
-                        <div
-                            class="steps flex place-content-evenly mt-10"
-                            style="align-items:center;"
-                        >
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/dev1.svg" alt="dev" />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item1.content1') }}</p>
-                            </a>
-                            <a class="arrow p-2">
-                                <img src="../../images/icon/use/arrow.svg" alt="arrow" />
-                            </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/dev2.svg" alt="dev2" />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item1.content2') }}</p>
-                            </a>
-                            <a class="arrow p-2">
-                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
-                            </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/dev3.svg" alt="dev3" />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item1.content3') }}</p>
-                            </a>
-                        </div>
-                    </div>
-                    <el-row justify="center" class="mt-10">
-                        <!-- <el-col :span="24">
-                            <p
-                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                            >Start visualising your journey and apply grant</p>
-                        </el-col>-->
-                        <el-col :span="24" class="flex justify-center">
-                            <CustomButton
-                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
-                                title="Register Now"
-                                target="_blank"
-                                href="https://hoo.com"
-                            />
-                            <el-button
-                                type="info"
-                                plain
-                                class="hover:bg-black hover:text-white mt-3 border-black text-black w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
-                            >View White Paper</el-button>
-                        </el-col>
-                    </el-row>
-                </el-col>
-                <el-col
-                    :md="10"
-                    :sm="12"
-                    :xs="12"
-                    class="desc desc-2 ml-[30px] min-h-[390px] w-[540px] !p-[40px] rounded-[10px] for-user"
-                    :gutter="40"
-                >
-                    <div class="desc-con">
-                        <p
-                            class="title title text-[#12171B] leading-[36.57px] font-[600] text-[30px] capitalize"
-                            v-html="$t('home.block2.item2.title')"
-                        ></p>
-                        <p
-                            class="text-[#12171B] leading-[24px] font-[500] text-[15px]"
-                        >We want to make sure that users can easily accomplish goals by providing support and resources</p>
-                        <p class="info" v-html="$t('home.block2.item2.desc')"></p>
-                        <div
-                            class="steps flex place-content-evenly align-center mt-10"
-                            style="align-items:center;"
-                        >
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user1.svg" alt />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item2.content1') }}</p>
-                            </a>
-                            <a class="arrow p-2">
-                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
-                            </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user2.svg" alt />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item2.content2') }}</p>
-                            </a>
-                            <a class="arrow p-2">
-                                <img src="../../images/icon/use/arrow.svg" alt="allow" />
-                            </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user3.svg" alt />
-                                <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
-                                >{{ $t('home.block2.item2.content3') }}</p>
-                            </a>
-                        </div>
-                    </div>
-                    <el-row justify="center" class="mt-10">
-                        <!-- <el-col :span="24">
-                            <p
-                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                            >Start visualising your journey and apply grant</p>
-                        </el-col>-->
-                        <el-col :span="24" class="flex justify-center">
-                            <CustomButton
-                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
-                                title="Learn more"
-                                target="_blank"
-                                href="https://hoo.com"
-                            />
-                        </el-col>
-                    </el-row>
-                </el-col>
-            </el-row>
-
-            <!-- developer/user section ends -->
-
             <!-- cosmic origin project section start -->
 
-            <el-row :gutter="20" class="mt-20" justify="center">
-                <el-col :lg="12">
+            <el-row :gutter="20" class="mt-20 mb-16">
+                <el-col :lg="20" :offset="2">
                     <h2
-                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
-                    >Cosmic Origin Project</h2>
-                    <h5
-                        class="text-white text-[18px] text-center leading-[30px]"
-                    >We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.</h5>
+                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
+                    >Project Vision</h2>
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
+                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to an entire planets, from insignificance to greatness and perhaps into decline. At HMC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
+                        <br />
+                        <br />Hoo Meta Chain (HMC) believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
+                        We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.
+                        <br />
+                        <br />
+                        <span class="text-[400]">Go fast alone, but we will go further together!</span>
+                    </p>
                 </el-col>
             </el-row>
 
@@ -345,56 +150,6 @@ import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
 </script>
 
-<style  lang="scss">
-@import '../../sass/common/_var.scss';
-/* // just for carousel start */
-
-.el-carousel__container {
-    height: 40px;
-}
-.el-carousel__indicators--horizontal {
-    display: none;
-}
-.el-carousel__item {
-    display: flex;
-    justify-content: space-evenly;
-    // margin-left: 70px;
-    // margin-right: 70px;
-}
-.el-carousel__item h3 {
-    /* color: #475669; */
-    font-size: 18px;
-    opacity: 0.75;
-    line-height: 300px;
-    margin: 0;
-    text-align: center;
-}
-
-.el-carousel__item:nth-child(2n) {
-    /* background-color: #99a9bf; */
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-    /* background-color: #CBCBCB; */
-}
-.el-carousel__arrow {
-    margin-top: 10px;
-    .el-icon {
-        color: #cbcbcb;
-        font-size: 16px;
-        font-weight: bold;
-    }
-}
-
-.el-carousel__arrow--right {
-    margin-right: -30px;
-}
-.el-carousel__arrow--left {
-    margin-left: -30px;
-}
-/* // just for carousel ends */
-</style>
-
 
 <style lang="scss">
 @import '../../sass/common/_var.scss';
@@ -425,10 +180,14 @@ import CustomTabs from '../../components/CustomTabs.vue';
         text-decoration: none !important;
     }
 }
-.news-container {
-    clip-path: polygon(0px 0px, 100% 0px, 95% 100%, 0% 100%);
-    background: #3e8fb9;
-    height: 108%;
+.first-main-banner {
+    background: url('../../images/landing-page-header/confetti-main.png') no-repeat;
+    background-size: cover;
+    min-height: 390px;
+    // padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-position: center;
 }
 
 // .home-con {
