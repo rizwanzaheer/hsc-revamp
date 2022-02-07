@@ -620,7 +620,7 @@
             <!-- road map section ends  -->
 
             <!-- HSC landing projects section start -->
-            <el-row justify="center" class="mt-10">
+            <el-row justify="center" class="mt-20 mb-20">
                 <el-col :span="24">
                     <h6
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
@@ -654,7 +654,7 @@
                     </el-link>
                 </el-col>
                 <!-- carousel section start -->
-                <el-col :span="20" class="mt-20">
+                <el-col :span="20" class="mt-20 mb-20">
                     <!-- <h1 class="text-white">carousel section</h1> -->
                     <el-carousel :interval="5000" arrow="always">
                         <el-carousel-item>
