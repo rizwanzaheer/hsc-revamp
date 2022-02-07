@@ -718,7 +718,7 @@
                     :span="21"
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
                 >
-                    <el-row justify="center" :gutter="10" class="!items-center">
+                    <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
                         <el-col :span="14" class="h-32">
                             <div class="grid-content">
                                 <h1
