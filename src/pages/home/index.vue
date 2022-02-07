@@ -680,14 +680,30 @@
                         </el-col>
                     </el-row>
 
-                    <el-row :gutter="20" justify="center ">
+                    <el-row :gutter="20" justify="center " class="mt-14">
                         <el-col :span="12">
-                            <h5
-                                class="text-white text-[18px] leading-[30px] font-[500] text-center"
-                            >
-                                Join the discussions and stay up to date with the
-                                <br />latest news and announcements.
-                            </h5>
+                            <div class="hsc-community-icon-con flex justify-evenly">
+                                <p class="hsc-community-icon-1">
+                                    <a href>Website</a>
+                                </p>
+                                <p class="hsc-community-icon-2">
+                                    <a href>Medium</a>
+                                </p>
+                                <p class="hsc-community-icon-3">
+                                    <a href>Telegram</a>
+                                </p>
+                                <p class="hsc-community-icon-4">
+                                    <a href>Twitter</a>
+                                </p>
+                                <p class="hsc-community-icon-5">
+                                    <a href>Discord</a>
+                                </p>
+                            </div>
+                            <!-- <el-col :span="4" class="grid-content">1</el-col>
+                            <el-col :span="4" class="grid-content">2</el-col>
+                            <el-col :span="4" class="grid-content">3</el-col>
+                            <el-col :span="4" class="grid-content">4</el-col>
+                            <el-col :span="4" class="grid-content">5</el-col>-->
                         </el-col>
                     </el-row>
                 </el-col>
@@ -968,8 +984,93 @@ import CustomTabs from '../../components/CustomTabs.vue';
 .hsc-community-con {
     background: linear-gradient(269.99deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
-    min-height: 538px;
+    min-height: 408px;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hsc-community-icon-con {
+    min-height: 104px;
+    p {
+        padding-top: 70px;
+        min-width: 60px;
+        text-align: center;
+        a {
+            color: $community-icon-text-bg;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 30px;
+        }
+    }
+    .hsc-community-icon-1 {
+        background: url('../../images/social/web.svg') no-repeat top center;
+        background-size: 60px 60px;
+        &:hover {
+            background: url('../../images/social/web-hover.svg') no-repeat top center;
+            background-size: 60px 60px;
+            a {
+                color: $color-white;
+                text-decoration: none;
+                // margin-left: 5px;
+            }
+            cursor: pointer;
+        }
+    }
+    .hsc-community-icon-2 {
+        background: url('../../images/social/medium.svg') no-repeat top center;
+        background-size: 60px 60px;
+        &:hover {
+            background: url('../../images/social/medium-hover.svg') no-repeat top center;
+            background-size: 60px 60px;
+            a {
+                color: $color-white;
+                text-decoration: none;
+                // margin-left: 5px;
+            }
+            cursor: pointer;
+        }
+    }
+    .hsc-community-icon-3 {
+        background: url('../../images/social/telegram.svg') no-repeat top center;
+        background-size: 60px 60px;
+        &:hover {
+            background: url('../../images/social/telegram-hover.svg') no-repeat top center;
+            background-size: 60px 60px;
+            a {
+                color: $color-white;
+                text-decoration: none;
+                // margin-left: 5px;
+            }
+            cursor: pointer;
+        }
+    }
+    .hsc-community-icon-4 {
+        background: url('../../images/social/twitter.svg') no-repeat top center;
+        background-size: 60px 60px;
+        &:hover {
+            background: url('../../images/social/twitter-hover.svg') no-repeat top center;
+            background-size: 60px 60px;
+            a {
+                color: $color-white;
+                text-decoration: none;
+                // margin-left: 5px;
+            }
+            cursor: pointer;
+        }
+    }
+    .hsc-community-icon-5 {
+        background: url('../../images/social/discord.svg') no-repeat top center;
+        background-size: 60px 60px;
+        &:hover {
+            background: url('../../images/social/discord-hover.svg') no-repeat top center;
+            background-size: 60px 60px;
+            a {
+                color: $color-white;
+                text-decoration: none;
+                // margin-left: 5px;
+            }
+            cursor: pointer;
+        }
+    }
 }
 </style>
 
