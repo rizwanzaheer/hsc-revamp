@@ -631,11 +631,24 @@
                     </h1>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
-                    <el-link :underline="false" class="text-white">
+                    <el-link
+                        :underline="false"
+                        class="text-white !hover:text-white !focus:text-white !active:bg-violet-400 text-[15px] leading-[18.29px] font-[500]"
+                        href="https://eapy.com/en/project/list"
+                        target="_blank"
+                    >
                         See All Projects
-                        <el-icon>
-                            <arrow-right />
-                        </el-icon>
+                        <span
+                            style="transform: translateY(2px);
+                            display: inline-block;
+                            font-size: 12px;
+                            "
+                            class="ml-1"
+                        >
+                            <el-icon>
+                                <arrow-right />
+                            </el-icon>
+                        </span>
                     </el-link>
                 </el-col>
             </el-row>
