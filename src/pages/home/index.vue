@@ -681,7 +681,7 @@
                     </el-row>
 
                     <el-row :gutter="20" justify="center " class="mt-14">
-                        <el-col :span="12">
+                        <el-col :span="10">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <p class="hsc-community-icon-1">
                                     <a href>Website</a>
