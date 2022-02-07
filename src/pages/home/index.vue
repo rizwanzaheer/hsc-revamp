@@ -651,8 +651,37 @@
                         </span>
                     </el-link>
                 </el-col>
+                <!-- carousel section start -->
+                <el-col :span="24" class="flex justify-center">
+                    <h1 class="text-white">carousel section</h1>
+                </el-col>
+                <!-- carousel section ends -->
             </el-row>
             <!-- HSC landing projects section ends -->
+
+            <!-- hsc community section start -->
+            <el-row class="hsc-community-con mt-20">
+                <el-col :span="24">
+                    <el-row :gutter="20" justify="center ">
+                        <el-col :span="24">
+                            <h1
+                                class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
+                            >Connect to the HSC Community</h1>
+                        </el-col>
+                    </el-row>
+                    <el-row :gutter="20" justify="center ">
+                        <el-col :span="24">
+                            <h5
+                                class="text-white text-[18px] leading-[30px] font-[500] text-center"
+                            >
+                                Join the discussions and stay up to date with the
+                                <br />latest news and announcements.
+                            </h5>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row>
+            <!-- hsc community section ends -->
 
             <!-- Join cosmic section starts -->
             <el-row class="mt-20" justify="center">
@@ -921,6 +950,12 @@ import CustomTabs from '../../components/CustomTabs.vue';
 
 .road-map-con {
     background: linear-gradient(90.98deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
+    box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
+    min-height: 538px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
+}
+.hsc-community-con {
+    background: linear-gradient(269.99deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
     min-height: 538px;
     clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
