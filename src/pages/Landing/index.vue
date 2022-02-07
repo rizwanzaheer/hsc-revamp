@@ -178,14 +178,14 @@
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
                 >
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
-                        <el-col :span="14" class="h-32">
+                        <el-col :span="16" class="h-32">
                             <div class="grid-content">
                                 <h1
-                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mt-[4%] ml-20"
+                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mt-[3%] ml-20"
                                 >Be part of HMC Project Rewards Programme</h1>
                             </div>
                         </el-col>
-                        <el-col :span="10">
+                        <el-col :span="8">
                             <div class="grid-content text-center">
                                 <!-- <el-button
                                     type="info"
