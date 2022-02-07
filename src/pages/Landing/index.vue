@@ -45,6 +45,69 @@
                 </el-col>
             </el-row>
 
+            <!-- terms and conditions section start -->
+            <el-row :gutter="20" class="mt-20 mb-16">
+                <el-col :lg="20" :offset="2">
+                    <h2
+                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
+                    >Terms and Conditions</h2>
+                    <h2
+                        class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
+                    >Rewards Date</h2>
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
+                        This Phase HSC Projects Growing Plan Rewards Date: 0:00 January 14, 2022 to 24:00 July 30, 2022.
+                        <br />
+                        <br />
+                    </p>
+                    <h2
+                        class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
+                    >Details</h2>
+                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px]">
+                        <li>
+                            TVL rewards will be evaluated based on the value of mainstream tokens **, and other tokens will not be included in the standard of TVL. You may find a list of
+                            <span>mainstream tokens here.</span>
+                        </li>
+                        <li>TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
+                        <li>Game-fi and NFT Volume Bonus can also be redeemed once, on top of TVL Rewards A and B.</li>
+                        <li>All projects metrics for rewards will be calculated by a random snapshot. If project does not reached the reward requirements at the time of which the snapshot was taken, the bonus will be cancelled.</li>
+                        <li>If malicious trading behaviour is found including bots, the reward will be cancelled with immediate effect. HMC Foundation Reserves the Right to interpret what is malicious trading behaviour.</li>
+                        <li>Transaction Volume Bonus Rewards are based on TVL Rewards A & B. They are awarded based on corresponding reward level x the coefficient which is a given percentage of the reward.</li>
+                        <li>All rewards will be paid out in USDT.</li>
+                    </ol>
+                    <br />
+                    <h2
+                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
+                    >Reward payment</h2>
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
+                        All rewards are accumulated in the bonus pool, with the following two withdrawal methods:
+                        <br />
+                        <br />
+                    </p>
+                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px]">
+                        <li>One-time withdrawal: the reward is accumulated for one year, and you can apply for one-time withdrawal after one year.</li>
+                        <li>Withdrawal in batches: you can apply for withdrawal of 10% of the bonus pool every month. If the project develops to a high reward level, the monthly withdrawal volume can be increased by 10%. The remaining reward can be withdrawn directly after one year.</li>
+                    </ol>
+                    <br />
+                    <br />
+
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400] italic">
+                        HMC Foundation reserves the right to interpret the terms of the grants and rewards programme in event of any dispute.
+                        <br />
+                        <br />
+                    </p>
+                </el-col>
+            </el-row>
+            <!-- terms and conditions section ends -->
+
+            <!-- cosmic tab section ends  -->
+
+            <el-row justify="center" class="mt-10">
+                <el-col :span="12">
+                    <img src="../../images/million/100-MILLION.png" style="width: 100%" />
+                </el-col>
+            </el-row>
+            <!-- cosmic origin project section start -->
+
             <!-- cosmic tab section ends  -->
 
             <el-row justify="center" class="mt-10">
