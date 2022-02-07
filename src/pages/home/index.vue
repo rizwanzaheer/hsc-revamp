@@ -654,8 +654,40 @@
                     </el-link>
                 </el-col>
                 <!-- carousel section start -->
-                <el-col :span="24" class="flex justify-center">
-                    <h1 class="text-white">carousel section</h1>
+                <el-col :span="20" class="mt-20">
+                    <!-- <h1 class="text-white">carousel section</h1> -->
+                    <el-carousel :interval="5000" arrow="always">
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/seekers-logo.png" />
+                            <img src="../../images/all-projects-logos/lendoo-logo.png" />
+                            <img src="../../images/all-projects-logos/same-coin-logo.png" />
+                            <img src="../../images/all-projects-logos/logo-lootdex.png" />
+                            <img src="../../images/all-projects-logos/pudding-logo.png" />
+                            <img src="../../images/all-projects-logos/logo-roolend.png" />
+                            <img src="../../images/all-projects-logos/logo-yunge.png" />
+                            <img src="../../images/all-projects-logos/logo-hooscan.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/gamedao-logo.png" />
+                            <img src="../../images/all-projects-logos/logo-bala.png" />
+                            <img src="../../images/all-projects-logos/logo-claim.png" />
+                            <img src="../../images/all-projects-logos/logo-daostarter.png" />
+                            <img src="../../images/all-projects-logos/logo-evodefi.png" />
+                            <img src="../../images/all-projects-logos/logo-fansforce.png" />
+                            <img src="../../images/all-projects-logos/logo-galaxy.png" />
+                            <img src="../../images/all-projects-logos/logo-punkworld.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-heshiswap.png" />
+                            <img src="../../images/all-projects-logos/logo-same-finance.png" />
+                            <img src="../../images/all-projects-logos/logo-hexch.png" />
+                            <img src="../../images/all-projects-logos/logo-hoo-moon.png" />
+                            <img src="../../images/all-projects-logos/swap-all.png" />
+                            <img src="../../images/all-projects-logos/logo-stk.png" />
+                            <img src="../../images/all-projects-logos/shouyi-logo.png" />
+                            <img src="../../images/all-projects-logos/seekers-logo.png" />
+                        </el-carousel-item>
+                    </el-carousel>
                 </el-col>
                 <!-- carousel section ends -->
             </el-row>
@@ -759,6 +791,57 @@ import { ArrowRight } from '@element-plus/icons-vue';
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
 </script>
+
+<style  lang="scss">
+@import '../../sass/common/_var.scss';
+/* // just for carousel start */
+
+.el-carousel__container {
+    height: 40px;
+}
+.el-carousel__indicators--horizontal {
+    display: none;
+}
+.el-carousel__item {
+    display: flex;
+    justify-content: space-evenly;
+    // margin-left: 70px;
+    // margin-right: 70px;
+}
+.el-carousel__item h3 {
+    /* color: #475669; */
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.el-carousel__item:nth-child(2n) {
+    /* background-color: #99a9bf; */
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+    /* background-color: #CBCBCB; */
+}
+.el-carousel__arrow {
+    margin-top: 10px;
+    .el-icon {
+        color: #cbcbcb;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.el-carousel__arrow--right {
+    margin-right: -30px;
+}
+.el-carousel__arrow--left {
+    margin-left: -30px;
+}
+/* // just for carousel ends */
+</style>
+
 
 <style lang="scss">
 @import '../../sass/common/_var.scss';
