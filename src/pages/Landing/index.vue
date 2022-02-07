@@ -110,7 +110,7 @@
 
             <!-- cosmic tab section ends  -->
 
-            <el-row justify="center" class="mt-10">
+            <!-- <el-row justify="center" class="mt-10">
                 <el-col :span="24">
                     <p
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
@@ -124,7 +124,7 @@
                         href="https://hoo.com"
                     />
                 </el-col>
-            </el-row>
+            </el-row>-->
             <!-- cosmic origin project section start -->
 
             <!-- hsc community section start -->
@@ -172,7 +172,7 @@
             <!-- hsc community section ends -->
 
             <!-- Join cosmic section starts -->
-            <el-row class="mt-20" justify="center">
+            <el-row class="mt-24 !mb-20" justify="center">
                 <el-col
                     :span="21"
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
