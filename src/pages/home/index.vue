@@ -89,10 +89,12 @@
                 <el-col :span="21" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <el-row justify="center" :gutter="10">
                         <el-col :span="5">
-                            <div class="grid-content text-center flex justify-center items-center">
-                                <img src="../../images/news/news.svg" class="mt-5" />
+                            <div
+                                class="grid-content text-center flex justify-center items-center news-container"
+                            >
+                                <img src="../../images/news/news.svg" class />
                                 <h2
-                                    class="text-[15px] text-white leading-[24px] mt-5 ml-5"
+                                    class="text-[15px] text-white leading-[24px] ml-5"
                                 >News & Update:</h2>
                             </div>
                         </el-col>
@@ -786,6 +788,11 @@ import CustomTabs from '../../components/CustomTabs.vue';
     &::after {
         text-decoration: none !important;
     }
+}
+.news-container {
+    clip-path: polygon(0px 0px, 100% 0px, 95% 100%, 0% 100%);
+    background: #3e8fb9;
+    height: 108%;
 }
 
 // .home-con {
