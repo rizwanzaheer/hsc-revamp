@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '/src/pages/home/index.vue';
+import LandingPage from '/src/pages/landing/index.vue';
+
 import About from '/src/components/About.vue';
 
 const routes = [
@@ -12,6 +14,11 @@ const routes = [
         path: '/hsc-revamp/', // this url only use for github pages
         name: 'Home',
         component: Home,
+    },
+    {
+        path: '/hsc-revamp/landing-page',
+        name: 'LandingPage',
+        component: LandingPage,
     },
     {
         path: '/about',
