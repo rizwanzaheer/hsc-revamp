@@ -61,7 +61,9 @@
                 </el-col>
                 <el-col :span="24">
                     <h6
-                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-right underline-offset-2"
+                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-right underline-offset-2 cursor-pointer"
+                        native-type="button"
+                        @click="$router.push({name: 'LandingPage'})"
                     >
                         *In USDT — maintain at least 1 month
                         <span

@@ -190,7 +190,7 @@
                 </p>-->
                 <!-- <p class="join-4"><a href="mailto:hsc@hoosmartchain.com" target="_blank">Email</a></p> -->
                 <p class="join-6">
-                    <a href="https://t.me/HooSmartChain" target="_blank">Discord</a>
+                    <a href="https://discord.com/invite/n6ahyKV24d" target="_blank">Discord</a>
                 </p>
             </div>
         </div>
@@ -383,7 +383,7 @@
                     </el-menu-item>
                     <el-menu-item index="6-3">
                         <img src="../images/icon/join/telegram-1.svg" alt height="10" />
-                        <a href="https://t.me/HooSmartChain" target="_blank">Discord</a>
+                        <a href="https://discord.com/invite/n6ahyKV24d" target="_blank">Discord</a>
                     </el-menu-item>
                     <!-- <el-menu-item index="6-2"><img src="../images/icon/join/wechat-1.svg" alt="" height="10" />
             <el-popover placement="top-start" width="200" trigger="hover">
