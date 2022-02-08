@@ -4,7 +4,7 @@
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1 class="w-[60%] text-left">
+                    <h1 class="w-[70%] text-left">
                         TVL Basic
                         <br />rewards plan
                         <br />
@@ -554,6 +554,7 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
     .el-slider__button {
         height: 35px;
         width: 35px;
+        border: none;
     }
 }
 .el-slider__marks-text {

@@ -484,6 +484,11 @@ function onMouseHoverOverLeave() {
         }
         .el-badge__content {
             border: none;
+            border-radius: 3px;
+            font-size: 8px;
+            font-weight: 600;
+            // line-height: 10px;
+            font-style: normal;
         }
     }
     .mobile {
