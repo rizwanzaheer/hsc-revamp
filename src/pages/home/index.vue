@@ -26,8 +26,9 @@
                 >Deploy here and apply for supports</p>
                 <CustomButton
                     class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px]"
-                    title="Register"
-                    target="_blank"
+                    title="Apply now"
+                    native-type="button"
+                    @click="$router.push({name: 'LandingPage'})"
                 />
                 <el-link
                     class="text-[15px] leading-[19.29px]"
@@ -799,12 +800,19 @@
 </template>
 <script setup>
 import { ArrowRight } from '@element-plus/icons-vue';
+
+import router from '../../router';
+
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
 const forDeveloperRegisterNow = () => {
     // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
     window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
+};
+const applyNowBtnClick = () => {
+    // by using the router import object instance
+    router.push({ name: 'LandingPage' });
 };
 </script>
 
