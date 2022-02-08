@@ -320,7 +320,9 @@
                             <el-button
                                 type="info"
                                 plain
-                                class="hover:bg-black hover:text-white mt-3 border-black text-black w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
+                                class="hover:bg-black hover:text-white mt-3 border-black hover:border-transparent text-black w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
+                                native-type="button"
+                                @click="viewWhitePaperBtnClick"
                             >View White Paper</el-button>
                         </el-col>
                     </el-row>
@@ -809,6 +811,9 @@ const forDeveloperRegisterNow = () => {
     // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
     window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
+};
+const viewWhitePaperBtnClick = () => {
+    window.open('https://www.hoosmartchain.com/HooSmartChain_EN.pdf', '_blank', '');
 };
 const seeMoreNewsBtnClick = () => {
     // alert('forDeveloperRegisterNow calling!!');
