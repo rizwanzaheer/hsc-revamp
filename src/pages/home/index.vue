@@ -115,7 +115,7 @@
                                     <el-link
                                         class="text-[15px] leading-[24px] font-[500] ml-8"
                                         :underline="true"
-                                        href="https://hoo.com"
+                                        href="https://docs.hoosmartchain.com/#/en-us/Announcement"
                                         target="_blank"
                                     >
                                         Read Documentation
@@ -132,7 +132,7 @@
                                 <el-button
                                     type="info"
                                     native-type="button"
-                                    @click="forDeveloperRegisterNow"
+                                    @click="seeMoreNewsBtnClick"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
@@ -244,8 +244,8 @@
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
                         title="Apply Now"
-                        target="_blank"
-                        href="https://hoo.com"
+                        native-type="button"
+                        @click="$router.push({name: 'LandingPage'})"
                     />
                 </el-col>
             </el-row>
@@ -809,6 +809,11 @@ const forDeveloperRegisterNow = () => {
     // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
     window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
+};
+const seeMoreNewsBtnClick = () => {
+    // alert('forDeveloperRegisterNow calling!!');
+    // window.open(document.URL, '_blank', '');
+    window.open('https://docs.hoosmartchain.com/#/en-us/intro', '_blank', '');
 };
 const applyNowBtnClick = () => {
     // by using the router import object instance
