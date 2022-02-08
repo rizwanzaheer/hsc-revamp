@@ -103,7 +103,7 @@
                             >
                                 <img src="../../images/news/news.svg" class />
                                 <h2
-                                    class="text-[15px] text-white leading-[24px] ml-5"
+                                    class="text-[16px] text-white leading-[20px] ml-5 font-[600]"
                                 >News & Update:</h2>
                             </div>
                         </el-col>
@@ -130,6 +130,8 @@
                             <div class="grid-content text-center">
                                 <el-button
                                     type="info"
+                                    native-type="button"
+                                    @click="testingClickOnButton"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
@@ -145,10 +147,10 @@
             <el-row :gutter="20" class="mt-20">
                 <el-col :lg="24" justify="center">
                     <h2
-                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
+                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] font-[600] not-italic"
                     >Infinite Innovation</h2>
                     <h5
-                        class="text-white text-[18px] text-center leading-[30px]"
+                        class="text-white text-[18px] font-[500] text-center leading-[30px]"
                     >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>
                 </el-col>
             </el-row>
@@ -309,7 +311,7 @@
                         </el-col>-->
                         <el-col :span="24" class="flex justify-center">
                             <CustomButton
-                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
+                                class="custom-button-reg-hover bg-black text-white hover:text-white mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Register Now"
                                 target="_blank"
                                 href="https://hoo.com"
@@ -799,7 +801,13 @@
 import { ArrowRight } from '@element-plus/icons-vue';
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
+const testingClickOnButton = () => {
+    // alert('testingClickOnButton calling!!');
+    // window.open(document.URL, '_blank', '');
+    window.open('https://www.google.com/', '_blank', '');
+};
 </script>
+
 
 <style  lang="scss">
 @import '../../sass/common/_var.scss';
@@ -887,6 +895,11 @@ import CustomTabs from '../../components/CustomTabs.vue';
     height: 108%;
 }
 
+.custom-button-reg-hover {
+    &:hover {
+        background: linear-gradient(180deg, #343d45 0%, #12171b 100%);
+    }
+}
 // .home-con {
 //     background: url('../../images/banner/main-banner.png') no-repeat left center;
 //     background-size: 100%;
