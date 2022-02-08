@@ -230,7 +230,8 @@
             <CustomButton
                 class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] float-right"
                 title="Register"
-                @click="testnet"
+                native-type="button"
+                @click="register"
             />
         </div>
     </div>
@@ -267,7 +268,7 @@ onMounted(() => console.log('on mounted works'));
 function toggleMenu() {
     this.isOpen = !this.isOpen;
 }
-const testnet = () => alert('testnet');
+const register = () => window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
 // 语言字典
 const langOptions = (lang) => {
     console.log('calling langOptions is: ', lang);
