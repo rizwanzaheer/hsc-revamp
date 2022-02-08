@@ -425,8 +425,8 @@
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
                         title="Apply Now"
-                        target="_blank"
-                        href="https://hoo.com"
+                        native-type="button"
+                        @click="$router.push({name: 'LandingPage'})"
                     />
                 </el-col>
             </el-row>
