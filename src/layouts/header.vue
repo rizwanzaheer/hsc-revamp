@@ -482,6 +482,9 @@ function onMouseHoverOverLeave() {
                 }
             }
         }
+        .el-badge__content {
+            border: none;
+        }
     }
     .mobile {
         display: none;
