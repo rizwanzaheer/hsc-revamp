@@ -132,7 +132,7 @@
                                 <el-button
                                     type="info"
                                     native-type="button"
-                                    @click="seeMoreNewsBtnClick"
+                                    @click="openURL('https://docs.hoosmartchain.com/#/en-us/intro')"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
@@ -315,14 +315,14 @@
                                 class="custom-button-reg-hover bg-black text-white hover:text-white mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Register Now"
                                 native-type="button"
-                                @click="forDeveloperRegisterNow"
+                                @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                             />
                             <el-button
                                 type="info"
                                 plain
                                 class="hover:bg-black hover:text-white mt-3 border-black hover:border-transparent text-black w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
                                 native-type="button"
-                                @click="viewWhitePaperBtnClick"
+                                @click="openURL('https://www.hoosmartchain.com/HooSmartChain_EN.pdf')"
                             >View White Paper</el-button>
                         </el-col>
                     </el-row>
@@ -383,8 +383,8 @@
                             <CustomButton
                                 class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Learn more"
-                                target="_blank"
-                                href="https://hoo.com"
+                                native-type="button"
+                                @click="openURL('https://docs.hoosmartchain.com/#/en-us/intro')"
                             />
                         </el-col>
                     </el-row>
@@ -807,18 +807,11 @@ import router from '../../router';
 
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
-const forDeveloperRegisterNow = () => {
+
+const openURL = (uri) => {
     // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
-    window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
-};
-const viewWhitePaperBtnClick = () => {
-    window.open('https://www.hoosmartchain.com/HooSmartChain_EN.pdf', '_blank', '');
-};
-const seeMoreNewsBtnClick = () => {
-    // alert('forDeveloperRegisterNow calling!!');
-    // window.open(document.URL, '_blank', '');
-    window.open('https://docs.hoosmartchain.com/#/en-us/intro', '_blank', '');
+    window.open(uri, '_blank', '');
 };
 const applyNowBtnClick = () => {
     // by using the router import object instance
