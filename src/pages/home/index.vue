@@ -131,7 +131,7 @@
                                 <el-button
                                     type="info"
                                     plain
-                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
+                                    class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
                             </div>
                         </el-col>
