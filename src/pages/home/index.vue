@@ -48,36 +48,42 @@
             <el-row :gutter="20" justify="center" class="mt-[70px]">
                 <el-col :lg="4" :offset="1">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px]">181M</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase">Total value locked (USDT)</h5>
+                        <h1 class="text-white text-[35px] font-[600]">181M</h1>
+                        <h5
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                        >Total value locked (USDT)</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
                 <el-col :lg="4">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px]">25,425</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase">Number of transactions</h5>
+                        <h1 class="text-white text-[35px] font-[600]">25,425</h1>
+                        <h5
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                        >Number of transactions</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
                 <el-col :lg="4">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px]">126</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase">transaction per second</h5>
+                        <h1 class="text-white text-[35px] font-[600]">126</h1>
+                        <h5
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                        >transaction per second</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
                 <el-col :lg="4">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px]">65,098</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase">Active addresses</h5>
+                        <h1 class="text-white text-[35px] font-[600]">65,098</h1>
+                        <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active addresses</h5>
                     </div>
                 </el-col>
                 <span class="border-l-2 border-white w-[25px] h-[25px] ml-2 mt-[25px]"></span>
                 <el-col :lg="4">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px]">27</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase">Active Projects</h5>
+                        <h1 class="text-white text-[35px] font-[600]">27</h1>
+                        <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active Projects</h5>
                     </div>
                 </el-col>
             </el-row>
