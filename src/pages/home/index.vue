@@ -731,20 +731,35 @@
                     <el-row :gutter="20" justify="center" class="mt-14">
                         <el-col :span="10">
                             <div class="hsc-community-icon-con flex justify-evenly">
-                                <p class="hsc-community-icon-1">
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://discord.com/invite/n6ahyKV24d')"
+                                >
                                     <a href>Website</a>
                                 </p>
-                                <p class="hsc-community-icon-2">
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://medium.com/@HooSmartChain1')"
+                                >
                                     <a href>Medium</a>
                                 </p>
-                                <p class="hsc-community-icon-3">
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://t.me/HooSmartChain')"
+                                >
                                     <a href>Telegram</a>
                                 </p>
-                                <p class="hsc-community-icon-4">
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://twitter.com/HooSmartChain')"
+                                >
                                     <a href>Twitter</a>
                                 </p>
-                                <p class="hsc-community-icon-5">
-                                    <a href>Discord</a>
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://discord.com/invite/n6ahyKV24d')"
+                                >
+                                    <a>Discord</a>
                                 </p>
                             </div>
                             <!-- <el-col :span="4" class="grid-content">1</el-col>
@@ -778,11 +793,13 @@
                                     type="info"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black text-black"
+                                    native-type="button"
+                                    @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                                 >Register Now</el-button>
                                 <el-link
                                     class="text-[15px] leading-[24px] font-[500] ml-8 mt-3 text-white"
                                     :underline="true"
-                                    href="https://hoo.com"
+                                    href="https://docs.hoosmartchain.com/#/en-us/intro"
                                     target="_blank"
                                 >
                                     Read Documentation
