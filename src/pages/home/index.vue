@@ -85,8 +85,11 @@
             <!-- number counter section ends  -->
 
             <!-- new and update section start -->
-            <el-row class="mt-20" justify="center">
-                <el-col :span="21" class="h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
+            <el-row class="mt-10" justify="center">
+                <el-col
+                    :span="21"
+                    class="min-h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
+                >
                     <el-row justify="center" :gutter="10">
                         <el-col :span="5">
                             <div
@@ -421,7 +424,7 @@
             <!-- road map section start  -->
             <el-row class="road-map-con mt-20">
                 <el-col :span="24">
-                    <el-row :gutter="20" justify="center ">
+                    <el-row :gutter="20" justify="center">
                         <el-col :span="24">
                             <h1
                                 class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
@@ -696,14 +699,14 @@
             <!-- hsc community section start -->
             <el-row class="hsc-community-con mt-20">
                 <el-col :span="24" class="mt-[6rem]">
-                    <el-row :gutter="20" justify="center ">
+                    <el-row :gutter="20" justify="center">
                         <el-col :span="24">
                             <h1
                                 class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
                             >Connect to the HSC Community</h1>
                         </el-col>
                     </el-row>
-                    <el-row :gutter="20" justify="center ">
+                    <el-row :gutter="20" justify="center">
                         <el-col :span="24">
                             <h5
                                 class="text-white text-[18px] leading-[30px] font-[500] text-center"
@@ -714,7 +717,7 @@
                         </el-col>
                     </el-row>
 
-                    <el-row :gutter="20" justify="center " class="mt-14">
+                    <el-row :gutter="20" justify="center" class="mt-14">
                         <el-col :span="10">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <p class="hsc-community-icon-1">
