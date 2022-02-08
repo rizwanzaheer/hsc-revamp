@@ -131,7 +131,7 @@
                                 <el-button
                                     type="info"
                                     native-type="button"
-                                    @click="testingClickOnButton"
+                                    @click="forDeveloperRegisterNow"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
@@ -313,8 +313,8 @@
                             <CustomButton
                                 class="custom-button-reg-hover bg-black text-white hover:text-white mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Register Now"
-                                target="_blank"
-                                href="https://hoo.com"
+                                native-type="button"
+                                @click="forDeveloperRegisterNow"
                             />
                             <el-button
                                 type="info"
@@ -801,10 +801,10 @@
 import { ArrowRight } from '@element-plus/icons-vue';
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
-const testingClickOnButton = () => {
-    // alert('testingClickOnButton calling!!');
+const forDeveloperRegisterNow = () => {
+    // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
-    window.open('https://www.google.com/', '_blank', '');
+    window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
 };
 </script>
 
