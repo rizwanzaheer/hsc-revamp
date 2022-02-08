@@ -241,15 +241,15 @@
 
             <!-- developer/user section start -->
 
-            <el-row :gutter="40" justify="center" class="mt-40">
+            <el-row :gutter="20" class="justify-evenly mt-40">
                 <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
                     <span v-html="$t('home.block2.title')"></span>
                 </el-col>-->
                 <el-col
                     :md="10"
-                    :sm="12"
-                    :xs="12"
-                    class="desc desc-1 mr-[30px] !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px]"
+                    :sm="20"
+                    :xs="20"
+                    class="desc desc-1 !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px] m-1"
                     :gutter="40"
                 >
                     <div class="desc-con">
@@ -315,9 +315,9 @@
                 </el-col>
                 <el-col
                     :md="10"
-                    :sm="12"
-                    :xs="12"
-                    class="desc desc-2 ml-[30px] min-h-[390px] w-[540px] !p-[40px] rounded-[10px] for-user"
+                    :sm="20"
+                    :xs="20"
+                    class="desc desc-2 min-h-[390px] w-[540px] !p-[40px] rounded-[10px] for-user m-1"
                     :gutter="40"
                 >
                     <div class="desc-con">
