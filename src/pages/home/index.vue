@@ -33,7 +33,7 @@
                 <el-link
                     class="text-[15px] leading-[19.29px]"
                     :underline="true"
-                    href="https://hoo.com"
+                    href="https://docs.hoosmartchain.com/#/en-us/intro"
                     target="_blank"
                 >
                     Read Documentation
