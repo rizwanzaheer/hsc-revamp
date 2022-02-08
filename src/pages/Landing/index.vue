@@ -12,8 +12,8 @@
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
                         title="Enroll Now"
-                        target="_blank"
-                        href="https://hoo.com"
+                        native-type="button"
+                        @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                     />
                 </el-col>
             </el-row>
@@ -62,10 +62,16 @@
                     <h2
                         class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
                     >Details</h2>
-                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px]">
+                    <ol
+                        class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] font-[400]"
+                    >
                         <li>
                             TVL rewards will be evaluated based on the value of mainstream tokens **, and other tokens will not be included in the standard of TVL. You may find a list of
-                            <span>mainstream tokens here.</span>
+                            <span
+                                class="underline underline-offset-2 cursor-pointer"
+                                native-type="button"
+                                @click="openURL('https://docs.hoosmartchain.com/#/en-us/crosschain')"
+                            >mainstream tokens here.</span>
                         </li>
                         <li>TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
                         <li>Game-fi and NFT Volume Bonus can also be redeemed once, on top of TVL Rewards A and B.</li>
@@ -195,7 +201,7 @@
                                 <a
                                     class="text-[15px] bg-[#12171B] leading-[18px] no-underline font-[600] text-white"
                                     style="box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.37); border-radius: 6px; text-decoration: none !important; padding:12px 25px !important; "
-                                    href="https://hoo.com"
+                                    href="http://hk.mikecrm.com/NtPoo5v"
                                     target="_blank"
                                 >Join now</a>
                             </div>
@@ -211,6 +217,11 @@
 import { ArrowRight } from '@element-plus/icons-vue';
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
+const openURL = (uri) => {
+    // alert('forDeveloperRegisterNow calling!!');
+    // window.open(document.URL, '_blank', '');
+    window.open(uri, '_blank', '');
+};
 </script>
 
 
