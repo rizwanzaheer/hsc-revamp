@@ -240,6 +240,7 @@
 import { ref, computed, onMounted, watchEffect } from 'vue';
 import { Edit, ArrowDown } from '@element-plus/icons-vue';
 import CustomButton from '../components/CustomButton.vue';
+import router from '../router';
 
 const activeIndex = ref('/');
 // mobile
@@ -292,7 +293,7 @@ function setLang(lang) {
 //     // 路由跳转
 function jump(path) {
     this.isOpen = false;
-    this.$router.push({
+    router.push({
         path,
     });
 }

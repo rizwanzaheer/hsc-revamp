@@ -28,7 +28,7 @@ export default {
     'home.block2.item2.desc': '',
     'home.block2.item2.content1': 'Choose Wallets',
     'home.block2.item2.content2': 'Cross Chain',
-    'home.block2.item2.content3': 'Start Mining',
+    'home.block2.item2.content3': 'Start earning',
 
     'home.block3.title': 'Partner',
 };
