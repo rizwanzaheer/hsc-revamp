@@ -704,7 +704,7 @@ function onMouseHoverOverLeave() {
             .m-menu-con {
                 // background: $color-white;
                 // background: transparent; // or
-                background-color: #12171b;
+                background-color: #12171b; //
                 height: calc(100vh - 40px);
                 width: 100%;
                 .m-menu-bd {
@@ -721,6 +721,7 @@ function onMouseHoverOverLeave() {
                         }
                         &:hover {
                             background-color: $color-white;
+                            color: $color-secondary; //
                         }
                     }
                     .el-sub-menu {
@@ -746,6 +747,7 @@ function onMouseHoverOverLeave() {
                             }
                             &:hover {
                                 background-color: $color-white;
+                                color: $color-secondary; //
                             }
                         }
                         &:hover {
