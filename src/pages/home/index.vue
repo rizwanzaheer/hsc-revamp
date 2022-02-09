@@ -203,17 +203,18 @@
 
                 <!-- first row ends -->
                 <!-- second row starts -->
-                <el-col :span="21">
-                    <el-row justify="center">
+                <el-col :span="21" style="overflow-y: scroll;">
+                    <img
+                        src="../../images/stages/4-stages.png"
+                        class="max-h-[800px] max-w-[300%]"
+                        alt="4-stages-image.png"
+                    />
+                    <!-- <el-row justify="center">
                         <el-col :span="24">
                             <div class="grid-content place-items-center">
-                                <img
-                                    src="../../images/stages/4-stages.png"
-                                    alt="4-stages-image.png"
-                                />
                             </div>
                         </el-col>
-                    </el-row>
+                    </el-row>-->
                 </el-col>
                 <!-- second row ends -->
 
