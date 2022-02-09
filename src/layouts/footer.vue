@@ -454,11 +454,12 @@
 import { ref } from 'vue';
 import logoSrc from '../images/icon/join/wechat.svg';
 let curLang = ref('en');
+import router from '../router';
 
 console.log('this.$i18n is: ', this);
 
 function toBrand() {
-    this.$router.push({
+    router.push({
         path: '/brand',
     });
 }
