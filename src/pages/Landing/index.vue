@@ -156,13 +156,22 @@
                                 <p class="hsc-community-icon-2">
                                     <a href>Medium</a>
                                 </p>-->
-                                <p class="hsc-community-icon-5">
+                                <p
+                                    class="hsc-community-icon-5"
+                                    @click="openURL('https://discord.com/invite/n6ahyKV24d')"
+                                >
                                     <a href>Discord</a>
                                 </p>
-                                <p class="hsc-community-icon-3">
+                                <p
+                                    class="hsc-community-icon-3"
+                                    @click="openURL('https://t.me/HooSmartChain')"
+                                >
                                     <a href>Telegram</a>
                                 </p>
-                                <p class="hsc-community-icon-4">
+                                <p
+                                    class="hsc-community-icon-4"
+                                    @click="openURL('https://twitter.com/HooSmartChain')"
+                                >
                                     <a href>Twitter</a>
                                 </p>
                             </div>

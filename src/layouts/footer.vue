@@ -103,7 +103,7 @@
                         :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
-                    >{{ $t('common.disclaimer') }} fadfadfadf</a>
+                    >{{ $t('common.disclaimer') }}</a>
                 </p>
             </div>
             <div class="ft-con">
