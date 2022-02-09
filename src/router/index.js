@@ -11,15 +11,20 @@ const routes = [
         component: Home,
     },
     {
-        path: '/hsc-revamp/', // this url only use for github pages
-        name: 'Home',
-        component: Home,
-    },
-    {
-        path: '/hsc-revamp/landing-page',
+        path: '/landing-page',
         name: 'LandingPage',
         component: LandingPage,
     },
+    // {
+    //     path: '/hsc-revamp/', // this url only use for github pages
+    //     name: 'Home',
+    //     component: Home,
+    // },
+    // {
+    //     path: '/hsc-revamp/landing-page', // this url only use for github pages
+    //     name: 'LandingPage',
+    //     component: LandingPage,
+    // },
     {
         path: '/about',
         name: 'About',
