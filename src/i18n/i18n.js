@@ -12,7 +12,7 @@ export function createI18n() {
     return _createI18n({
         legacy: false,
         globalInjection: true,
-        locale: 'en ',
+        locale: 'en',
         fallbackLocale: 'en',
         messages,
     });
