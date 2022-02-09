@@ -1,5 +1,5 @@
 <template>
-    <el-main>
+    <el-main class="home-main-bg-container">
         <div class="home-con">
             <!-- <h1>Dynamic home page loading here!</h1> -->
             <div class="banner-con">
@@ -847,6 +847,12 @@ const applyNowBtnClick = () => {
 @import '../../sass/common/_var.scss';
 /* // just for carousel start */
 
+.home-main-bg-container {
+    padding-top: 100px;
+    transform: translateY(-60px);
+    background: url('../../images/banner/main-banner.png') no-repeat;
+    background-size: contain;
+}
 .el-carousel__container {
     height: 40px;
 }
