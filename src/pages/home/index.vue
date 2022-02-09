@@ -2,7 +2,7 @@
     <el-main class="home-main-bg-container">
         <div class="home-con">
             <!-- <h1>Dynamic home page loading here!</h1> -->
-            <div class="banner-con text-center sm:text-left md:text-left lg:text-left">
+            <div class="banner-con text-center sm:text-left md:text-left lgs:text-left">
                 <el-button
                     type="text"
                     class="uppercase text-[#E2459A] text-[15px] hover:text-[#02ead0] text-lg new-journey"
@@ -11,11 +11,13 @@
                     <span class="border-b-2 border-[#E2459A] w-[25px] ml-2"></span>
                 </el-button>
                 <h3
-                    class="text-[34px] font-[600] leading-[41.45px] text-white"
+                    class="text-[26px] sm:text-[34px] font-[600] leading-[41.45px] text-white"
                 >Building an Ecological</h3>
-                <h1 class="text-[90px] font-[700] leading-[109.71px] text-white ml-[-4px]">Metaverse</h1>
+                <h1
+                    class="text-[55px] sm:text-[90px] font-[700] leading-[67px] sm:leading-[109.71px] text-white ml-[-4px]"
+                >Metaverse</h1>
                 <p
-                    class="text-[18px] leading-[21.94px] text-white"
+                    class="text-[16px] sm:text-[18px] leading-[21.94px] text-white"
                 >Providing innovative solutions for growth in world of Blockchains</p>
 
                 <br />
