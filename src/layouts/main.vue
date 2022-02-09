@@ -87,7 +87,7 @@
                 height: 50px;
             }
             > .bd {
-                padding-top: 50px;
+                // padding-top: 50px;
             }
         }
     }
