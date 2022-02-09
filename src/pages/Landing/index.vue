@@ -24,7 +24,7 @@
             <el-row :gutter="20" class="mt-20 mb-16">
                 <el-col :lg="20" :offset="2">
                     <h2
-                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
+                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
                     >Project Vision</h2>
                     <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
                         Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to an entire planets, from insignificance to greatness and perhaps into decline. At HMC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
