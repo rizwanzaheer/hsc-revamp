@@ -2,7 +2,7 @@
     <el-main class="home-main-bg-container">
         <div class="home-con">
             <!-- <h1>Dynamic home page loading here!</h1> -->
-            <div class="banner-con">
+            <div class="banner-con text-center sm:text-left md:text-left lg:text-left">
                 <el-button
                     type="text"
                     class="uppercase text-[#E2459A] text-[15px] hover:text-[#02ead0] text-lg new-journey"
