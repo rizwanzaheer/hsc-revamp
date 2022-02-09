@@ -31,16 +31,22 @@
                     @click="$router.push({name: 'LandingPage'})"
                 />
                 <el-link
-                    class="text-[15px] leading-[19.29px]"
-                    :underline="true"
+                    class="text-[15px] text-white leading-[19.29px] hover:text-red-900 mt-1"
+                    :underline="false"
                     href="https://docs.hoosmartchain.com/#/en-us/intro"
                     target="_blank"
                 >
                     Read Documentation
                     <!-- <i class="el-icon-view el-icon--right"></i> -->
-                    <el-icon>
-                        <arrow-right />
-                    </el-icon>
+                    <span
+                        style="transform: translateY(2px);
+                            display: inline-block;
+                            font-size: 12px;"
+                    >
+                        <el-icon>
+                            <arrow-right />
+                        </el-icon>
+                    </span>
                 </el-link>
             </div>
 
