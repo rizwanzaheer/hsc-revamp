@@ -54,8 +54,8 @@
 
             <!-- number counter section start  -->
 
-            <el-row :gutter="20" justify="center" class="mt-[70px]">
-                <el-col :lg="4" :xs="22" :offset="1">
+            <el-row justify="center" class="mt-[70px]">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[4%]">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">181M</h1>
                         <h5
@@ -64,9 +64,9 @@
                     </div>
                 </el-col>
                 <span
-                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[90%] md:w-[2px] h-[25px] ml-2 md:mt-[25px] md:mr-[25px]"
+                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
-                <el-col :lg="4" :xs="22">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">25,425</h1>
                         <h5
@@ -75,9 +75,9 @@
                     </div>
                 </el-col>
                 <span
-                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[90%] md:w-[2px] h-[25px] ml-2 md:mt-[25px] md:mr-[25px]"
+                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
-                <el-col :lg="4" :xs="22">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">126</h1>
                         <h5
@@ -86,18 +86,18 @@
                     </div>
                 </el-col>
                 <span
-                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[90%] md:w-[2px] h-[25px] ml-2 md:mt-[25px] md:mr-[25px]"
+                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
-                <el-col :lg="4" :xs="22">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">65,098</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active addresses</h5>
                     </div>
                 </el-col>
                 <span
-                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[90%] md:w-[2px] h-[25px] ml-2 md:mt-[25px] md:mr-[25px]"
+                    class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
-                <el-col :lg="4" :xs="22">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">27</h1>
                         <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active Projects</h5>
