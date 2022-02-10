@@ -423,9 +423,12 @@
                                 class="text-[16px] leading-[30px] font-[500] text-white text-center"
                             >Start visualising your journey and apply grant</p>
                         </el-col>-->
-                        <el-col :span="24" class="flex justify-center">
+                        <el-col
+                            :span="24"
+                            class="flex-col flex md:flex-row items-center justify-center"
+                        >
                             <CustomButton
-                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
+                                class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[100%] md:w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Learn more"
                                 native-type="button"
                                 @click="openURL('https://docs.hoosmartchain.com/#/en-us/intro')"
