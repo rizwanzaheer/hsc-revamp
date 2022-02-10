@@ -324,7 +324,7 @@
                                 class="custom-button-reg-hover bg-black text-white hover:text-white mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Register Now"
                                 native-type="button"
-                                @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
+                                @click="$router.push({name: 'LandingPage'})"
                             />
                             <el-button
                                 type="info"
