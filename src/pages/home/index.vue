@@ -304,31 +304,37 @@
                         </p>
                         <p class="info" v-html="$t('home.block2.item1.desc')"></p>
                         <div
-                            class="steps flex place-content-evenly mt-10"
+                            class="steps flex place-content-evenly mt-10 flex-col md:flex-row"
                             style="align-items:center;"
                         >
-                            <a class="step p-2 w-[130px]">
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
                                 <img src="../../images/icon/use/dev1.svg" alt="dev" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content1') }}</p>
                             </a>
-                            <a class="arrow p-2">
+                            <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
                                 <img src="../../images/icon/use/arrow.svg" alt="arrow" />
                             </a>
-                            <a class="step p-2 w-[130px]">
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
                                 <img src="../../images/icon/use/dev2.svg" alt="dev2" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content2') }}</p>
                             </a>
-                            <a class="arrow p-2">
+                            <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
-                            <a class="step p-2 w-[130px]">
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
                                 <img src="../../images/icon/use/dev3.svg" alt="dev3" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content3') }}</p>
                             </a>
                         </div>
