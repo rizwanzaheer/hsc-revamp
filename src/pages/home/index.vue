@@ -140,7 +140,7 @@
                                 <el-button
                                     type="info"
                                     native-type="button"
-                                    @click="openURL('https://docs.hoosmartchain.com/#/en-us/intro')"
+                                    @click="openURL('https://medium.com/@HooSmartChain1')"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
                                 >See more news</el-button>
