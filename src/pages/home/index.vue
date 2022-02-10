@@ -122,15 +122,21 @@
                                     Hoo Smart Chain Heads Towards a New Journey.
                                     <el-link
                                         class="text-[15px] leading-[24px] font-[500] ml-8"
-                                        :underline="true"
+                                        :underline="false"
                                         href="https://docs.hoosmartchain.com/#/en-us/Announcement"
                                         target="_blank"
                                     >
                                         Read Documentation
                                         <!-- <i class="el-icon-view el-icon--right"></i> -->
-                                        <el-icon>
-                                            <arrow-right />
-                                        </el-icon>
+                                        <span
+                                            style="transform: translateY(1px);
+                                                display: inline-block;
+                                                font-size: 12px;"
+                                        >
+                                            <el-icon>
+                                                <arrow-right />
+                                            </el-icon>
+                                        </span>
                                     </el-link>
                                 </h1>
                             </div>
@@ -806,16 +812,22 @@
                                     @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                                 >Register Now</el-button>
                                 <el-link
-                                    class="text-[15px] leading-[24px] font-[500] ml-8 mt-3 text-white"
-                                    :underline="true"
+                                    class="!text-black text-[15px] leading-[24px] font-[500] ml-8 mt-3"
+                                    :underline="false"
                                     href="https://docs.hoosmartchain.com/#/en-us/intro"
                                     target="_blank"
                                 >
                                     Read Documentation
                                     <!-- <i class="el-icon-view el-icon--right"></i> -->
-                                    <el-icon>
-                                        <arrow-right />
-                                    </el-icon>
+                                    <span
+                                        style="transform: translateY(1px);
+                                                display: inline-block;
+                                                font-size: 12px;"
+                                    >
+                                        <el-icon>
+                                            <arrow-right />
+                                        </el-icon>
+                                    </span>
                                 </el-link>
                             </div>
                         </el-col>
