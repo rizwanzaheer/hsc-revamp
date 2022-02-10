@@ -114,7 +114,7 @@
                     class="min-h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
                 >
                     <el-row justify="center" :gutter="10">
-                        <el-col :span="5">
+                        <el-col :md="5" :sm="24">
                             <div
                                 class="grid-content text-center flex justify-center items-center news-container"
                             >
@@ -124,7 +124,7 @@
                                 >News & Update:</h2>
                             </div>
                         </el-col>
-                        <el-col :span="14">
+                        <el-col :md="14" :xs="18">
                             <div class="grid-content text-center">
                                 <h1 class="text-white text-[15px] mt-5">
                                     Hoo Smart Chain Heads Towards a New Journey.
@@ -149,7 +149,7 @@
                                 </h1>
                             </div>
                         </el-col>
-                        <el-col :span="5">
+                        <el-col :md="5">
                             <div class="grid-content text-center">
                                 <el-button
                                     type="info"
