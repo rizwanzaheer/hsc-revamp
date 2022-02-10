@@ -393,9 +393,7 @@
                                     class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item2.content1') }}</p>
                             </a>
-                            <a
-                                class="arrow p-2 arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0"
-                            >
+                            <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
                             <a
@@ -406,9 +404,7 @@
                                     class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item2.content2') }}</p>
                             </a>
-                            <a
-                                class="arrow p-2 arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0"
-                            >
+                            <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
                             <a
