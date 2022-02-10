@@ -110,7 +110,9 @@
             <!-- new and update section start -->
             <el-row class="mt-10" justify="center">
                 <el-col
-                    :span="21"
+                    :md="21"
+                    :sm="24"
+                    :xs="24"
                     class="min-h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
                 >
                     <el-row justify="center" :gutter="10" class="h-[100%]">
@@ -153,7 +155,7 @@
                         </el-col>
                         <el-col :md="5">
                             <div
-                                class="grid-content text-center h-[100%] flex justify-center align-center"
+                                class="grid-content text-center h-[100%] flex justify-center align-center mb-[10px] md:mb-[0px]"
                             >
                                 <el-button
                                     type="info"
