@@ -415,15 +415,37 @@
             <div class="copyright-con clearfix">
                 <div class="fl copyright-l">
                     <!-- <img src="../images/logo/logo-white.svg" alt height="18" /> -->
-                    <div class="mobile">
-                        <a
-                            class="hover:underline hover:underline-offset-4"
-                        >{{ $t('common.privacy') }}</a>
-                        <a class="hover:underline hover:underline-offset-4">{{ $t('common.terms') }}</a>
-                        <a
-                            class="hover:underline hover:underline-offset-4"
-                        >{{ $t('common.cookies') }}</a>
-                    </div>
+                    <el-row class="mobile md:!hidden text-left" :gutter="100">
+                        <el-col :xs="12" :sm="12" class="!flex flex-col">
+                            <a>{{ $t('common.friend-link') }}</a>
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                                href="https://eapy.com/"
+                                target="_blank"
+                            >{{ $t('common.link-explorer') }}</a>
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                                href="https://hooscan.com/"
+                                target="_blank"
+                            >{{ $t('common.browser') }}</a>
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                                href="https://hoo.as/"
+                                target="_blank"
+                            >{{ $t('common.hoo') }}</a>
+                        </el-col>
+                        <el-col :xs="12" :sm="12" class="!flex flex-col">
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                            >{{ $t('common.privacy') }}</a>
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                            >{{ $t('common.terms') }}</a>
+                            <a
+                                class="hover:underline hover:underline-offset-4"
+                            >{{ $t('common.cookies') }}</a>
+                        </el-col>
+                    </el-row>
                     <p>{{ $t('common.app.copyright') }}</p>
                 </div>
                 <div class="fr copyright-r text-white">
