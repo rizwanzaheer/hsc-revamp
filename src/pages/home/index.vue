@@ -760,14 +760,14 @@
                     <el-row :gutter="20" justify="center">
                         <el-col :span="24">
                             <h1
-                                class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
+                                class="text-white text-[35px] md:text-[40px] leading-[43px] md:leading-[49px] font-[600] text-center mt-10 pr-[10%] pl-[10%] md:pr-[0%] md:pl-[0%]"
                             >Connect to the HSC Community</h1>
                         </el-col>
                     </el-row>
                     <el-row :gutter="20" justify="center">
                         <el-col :span="24">
                             <h5
-                                class="text-white text-[18px] leading-[30px] font-[500] text-center"
+                                class="text-white text-[16px] md:text-[18px] leading-[25px] md:leading-[30px] font-[500] text-center pr-[10%] pl-[10%] md:pr-[0%] md:pl-[0%]"
                             >
                                 Join the discussions and stay up to date with the
                                 <br />latest news and announcements.
@@ -776,7 +776,7 @@
                     </el-row>
 
                     <el-row :gutter="20" justify="center" class="mt-14">
-                        <el-col :span="10">
+                        <el-col :span="10" :xs="24" :sm="24">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <p
                                     class="hsc-community-icon-1"
