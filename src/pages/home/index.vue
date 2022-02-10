@@ -741,25 +741,25 @@
                         <el-col :span="10">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <p
-                                    class="hsc-community-icon-5"
+                                    class="hsc-community-icon-1"
                                     @click="openURL('https://discord.com/invite/n6ahyKV24d')"
                                 >
                                     <a href>Website</a>
                                 </p>
                                 <p
-                                    class="hsc-community-icon-5"
+                                    class="hsc-community-icon-2"
                                     @click="openURL('https://medium.com/@HooSmartChain1')"
                                 >
                                     <a href>Medium</a>
                                 </p>
                                 <p
-                                    class="hsc-community-icon-5"
+                                    class="hsc-community-icon-3"
                                     @click="openURL('https://t.me/HooSmartChain')"
                                 >
                                     <a href>Telegram</a>
                                 </p>
                                 <p
-                                    class="hsc-community-icon-5"
+                                    class="hsc-community-icon-4"
                                     @click="openURL('https://twitter.com/HooSmartChain')"
                                 >
                                     <a href>Twitter</a>
