@@ -290,7 +290,7 @@
                     :md="10"
                     :sm="20"
                     :xs="20"
-                    class="desc desc-1 !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px] m-1"
+                    class="desc desc-1 !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px] m-1 mb-[10%] md:mb-0"
                     :gutter="40"
                 >
                     <div class="desc-con">
