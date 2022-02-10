@@ -334,7 +334,7 @@ const props = defineProps({
 });
 const { tabPosition } = toRefs(props);
 
-console.log('props are : ', tabPosition);
+// console.log('props are : ', tabPosition);
 
 // for slider section
 interface Mark {

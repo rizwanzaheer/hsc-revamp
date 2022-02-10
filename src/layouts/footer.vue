@@ -109,10 +109,11 @@
             <div class="ft-con">
                 <h4>{{ $t('common.contactus') }}</h4>
                 <p>
-                    <router-link
-                        to="/ama/request"
+                    <a
+                        href="https://www.hoosmartchain.com/en/ama/request"
+                        target="_blank"
                         class="hover:underline hover:underline-offset-4"
-                    >AMA Request Form</router-link>
+                    >AMA Request Form</a>
                 </p>
                 <p>
                     <a
@@ -212,7 +213,7 @@
                 text-color="#8F92A1"
                 active-text-color="#fff"
             >
-                <el-submenu index="1">
+                <el-sub-menu index="1">
                     <template slot="title">{{ $t('common.developer') }}</template>
                     <el-menu-item index="1-1">
                         <a
@@ -249,8 +250,8 @@
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.ffhsct') }}</a>
                     </el-menu-item>
-                </el-submenu>
-                <el-submenu index="2">
+                </el-sub-menu>
+                <el-sub-menu index="2">
                     <template slot="title">{{ $t('common.usehsc') }}</template>
                     <el-menu-item index="2-1">
                         <a
@@ -267,8 +268,8 @@
                         >{{ $t('common.buygasfee') }}</a>
                     </el-menu-item>
                     <el-menu-item index="2-3">{{ $t('common.dapps') }}</el-menu-item>
-                </el-submenu>
-                <el-submenu index="3">
+                </el-sub-menu>
+                <el-sub-menu index="3">
                     <template slot="title">{{ $t('common.explorer') }}</template>
                     <el-menu-item index="3-1">
                         <a
@@ -291,8 +292,8 @@
                             target="_blank"
                         >{{ $t('common.hscte') }}</a>
                     </el-menu-item>
-                </el-submenu>
-                <el-submenu index="4">
+                </el-sub-menu>
+                <el-sub-menu index="4">
                     <template slot="title">{{ $t('common.abouthsc') }}</template>
                     <el-menu-item index="4-1">
                         <a
@@ -315,11 +316,14 @@
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.disclaimer') }}</a>
                     </el-menu-item>
-                </el-submenu>
-                <el-submenu index="5">
+                </el-sub-menu>
+                <el-sub-menu index="5">
                     <template slot="title">{{ $t('common.contactus') }}</template>
                     <el-menu-item index="5-1">
-                        <router-link to="/ama/request">AMA Request Form</router-link>
+                        <a
+                            href="https://www.hoosmartchain.com/en/ama/request"
+                            target="_blank"
+                        >AMA Request Form</a>
                     </el-menu-item>
                     <el-menu-item index="5-2">
                         <a
@@ -370,8 +374,8 @@
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.faq') }}</a>
                     </el-menu-item>
-                </el-submenu>
-                <el-submenu index="6">
+                </el-sub-menu>
+                <el-sub-menu index="6">
                     <template slot="title">{{ $t('common.keepInTouch') }}</template>
                     <el-menu-item index="6-1">
                         <img src="../images/icon/join/twitter-1.svg" alt height="10" />
@@ -404,7 +408,7 @@
                     </el-menu-item>-->
 
                     <!-- <el-menu-item index="6-4"><img src="../images/icon/join/email-1.svg" alt="" height="10"> <a href="mailto:hsc@hoosmartchain.com" target="_blank">Email</a></el-menu-item> -->
-                </el-submenu>
+                </el-sub-menu>
             </el-menu>
         </div>
         <div class="copyright">
@@ -450,11 +454,9 @@
 
 <script setup>
 import { ref } from 'vue';
-import logoSrc from '../images/icon/join/wechat.svg';
+// import logoSrc from '../images/icon/join/wechat.svg';
 let curLang = ref('en');
 import router from '../router';
-
-console.log('this.$i18n is: ', this);
 
 function toBrand() {
     router.push({
