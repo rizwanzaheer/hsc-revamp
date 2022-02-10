@@ -416,8 +416,8 @@
                 <div class="fl copyright-l">
                     <!-- <img src="../images/logo/logo-white.svg" alt height="18" /> -->
                     <el-row class="mobile md:!hidden text-left" :gutter="100">
-                        <el-col :xs="12" :sm="12" class="!flex flex-col">
-                            <a>{{ $t('common.friend-link') }}</a>
+                        <el-col :xs="12" :sm="12" class="!flex flex-col mt-[1%]">
+                            <a class="font-[600]">{{ $t('common.friend-link') }}</a>
                             <a
                                 class="hover:underline hover:underline-offset-4"
                                 href="https://eapy.com/"
@@ -434,7 +434,7 @@
                                 target="_blank"
                             >{{ $t('common.hoo') }}</a>
                         </el-col>
-                        <el-col :xs="12" :sm="12" class="!flex flex-col">
+                        <el-col :xs="12" :sm="12" class="!flex flex-col mt-[8.2%]">
                             <a
                                 class="hover:underline hover:underline-offset-4"
                             >{{ $t('common.privacy') }}</a>
@@ -711,9 +711,9 @@ function toBrand() {
                     .el-sub-menu__title {
                         font-size: 16px;
                         color: $color-white;
-                        background-color: #232e42 !important;
+                        // background-color: #232e42 !important;
                         &:hover {
-                            background-color: $color-white;
+                            background-color: $color-primary;
                         }
                     }
                     .el-menu-item {
@@ -730,7 +730,7 @@ function toBrand() {
                             width: calc(100% - 40px);
                         }
                         &:hover {
-                            background-color: $color-white;
+                            background-color: $color-primary;
                         }
                     }
                 }
@@ -756,14 +756,15 @@ function toBrand() {
                     }
                     p {
                         font-size: 12px;
-                        margin: 20px 0 50px;
+                        margin: 20px 0 20px;
                     }
                     .mobile {
                         display: block;
                         a {
                             color: $color-white;
-                            font-size: 16px;
+                            font-size: 12px;
                             margin: 0 10px;
+                            line-height: 35px;
                         }
                     }
                 }
