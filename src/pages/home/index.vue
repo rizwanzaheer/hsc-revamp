@@ -445,10 +445,10 @@
             <el-row :gutter="20" class="mt-20" justify="center">
                 <el-col :lg="12">
                     <h2
-                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
+                        class="text-white text-[35px] md:text-[40px] mt-5 p-[7%] md:p-0 text-center leading-[43px] md:leading-[48.76px] text-[600] not-italic"
                     >Cosmic Origin Project</h2>
                     <h5
-                        class="text-white text-[18px] text-center leading-[30px]"
+                        class="text-white text-[16px] md:text-[18px] text-center leading-[25px] md:leading-[30px] p-[7%] md:p-0"
                     >We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.</h5>
                 </el-col>
             </el-row>
