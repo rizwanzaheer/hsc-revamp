@@ -113,7 +113,7 @@
                     :span="21"
                     class="min-h-[55px] bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]"
                 >
-                    <el-row justify="center" :gutter="10">
+                    <el-row justify="center" :gutter="10" class="h-[100%]">
                         <el-col :md="5" :sm="24">
                             <div
                                 class="grid-content text-center flex justify-center items-center news-container"
@@ -125,7 +125,9 @@
                             </div>
                         </el-col>
                         <el-col :md="14" :xs="18">
-                            <div class="grid-content text-center">
+                            <div
+                                class="grid-content text-center h-[100%] flex justify-center align-center"
+                            >
                                 <h1 class="text-white text-[15px] mt-5">
                                     Hoo Smart Chain Heads Towards a New Journey.
                                     <el-link
@@ -150,7 +152,9 @@
                             </div>
                         </el-col>
                         <el-col :md="5">
-                            <div class="grid-content text-center">
+                            <div
+                                class="grid-content text-center h-[100%] flex justify-center align-center"
+                            >
                                 <el-button
                                     type="info"
                                     native-type="button"
@@ -957,7 +961,7 @@ const applyNowBtnClick = () => {
 .news-container {
     clip-path: polygon(0px 0px, 100% 0px, 95% 100%, 0% 100%);
     background: #3e8fb9;
-    height: 108%;
+    height: 100%;
 }
 
 .custom-button-reg-hover {
