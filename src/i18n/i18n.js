@@ -6,8 +6,6 @@ import messages from './locales/index';
 
 export const SUPPORT_LOCALES = ['en', 'ko', 'zh_cn', 'zh_tw', 'ar'];
 
-console.log('messages file is: ', messages);
-
 export function createI18n() {
     return _createI18n({
         legacy: false,

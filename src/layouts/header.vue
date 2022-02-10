@@ -31,7 +31,7 @@
                             @mouseleave="onMouseHoverOverLeave"
                         >
                             <a
-                                :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
+                                :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
