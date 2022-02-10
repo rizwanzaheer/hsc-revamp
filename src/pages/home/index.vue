@@ -122,7 +122,7 @@
                             >
                                 <img src="../../images/news/news.svg" class />
                                 <h2
-                                    class="text-[16px] text-white leading-[20px] ml-5 font-[600]"
+                                    class="text-[15px] md:text-[16px] text-white leading-[24px] md:leading-[20px] ml-5 font-[400] md:font-[600]"
                                 >News & Update:</h2>
                             </div>
                         </el-col>
@@ -174,12 +174,12 @@
             <!-- Infinite Innovation section start -->
 
             <el-row :gutter="20" class="mt-20">
-                <el-col :lg="24" justify="center">
+                <el-col :xs="24" :sm="24" :lg="24" justify="center">
                     <h2
-                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] font-[600] not-italic"
+                        class="text-white text-[35px] md:text-[40px] mt-5 text-center leading-[42.67px] md:leading-[48.76px] font-[600] not-italic"
                     >Infinite Innovation</h2>
                     <h5
-                        class="text-white text-[18px] font-[500] text-center leading-[30px]"
+                        class="text-white text-[16px] md:text-[18px] font-[500] text-center leading-[25px] md:leading-[30px]"
                     >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>
                 </el-col>
             </el-row>
@@ -1258,6 +1258,7 @@ const applyNowBtnClick = () => {
 </style>
 
 <style lang="scss">
+@import '../../sass/common/_var.scss';
 @media (max-width: 1000px) {
     .home-con {
         .section-2 {
@@ -1330,6 +1331,10 @@ const applyNowBtnClick = () => {
                 }
             }
         }
+    }
+    .news-container {
+        clip-path: none;
+        background: $new-tabs-bg-color;
     }
 }
 </style>
