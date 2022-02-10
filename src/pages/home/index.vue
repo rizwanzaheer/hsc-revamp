@@ -264,9 +264,9 @@
 
             <!-- visualization section starts -->
             <el-row justify="center">
-                <el-col :span="24">
+                <el-col :span="24" :xs="24" :sm="24">
                     <p
-                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
+                        class="text-[16px] leading-[22px] md:leading-[30px] font-[500] text-white text-center pr-[20%] pl-[20%]"
                     >Start visualising your journey and apply grant</p>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
