@@ -209,12 +209,12 @@
                 class="m-menu-bd"
                 unique-opened
                 mode="vertical"
-                background-color="#232E42"
-                text-color="#8F92A1"
+                background-color="#181D22"
+                text-color="white"
                 active-text-color="#fff"
             >
                 <el-sub-menu index="1">
-                    <template slot="title">{{ $t('common.developer') }}</template>
+                    <template #title>{{ $t('common.developer') }}</template>
                     <el-menu-item index="1-1">
                         <a
                             :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
@@ -252,7 +252,7 @@
                     </el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="2">
-                    <template slot="title">{{ $t('common.usehsc') }}</template>
+                    <template #title>{{ $t('common.usehsc') }}</template>
                     <el-menu-item index="2-1">
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
@@ -270,7 +270,7 @@
                     <el-menu-item index="2-3">{{ $t('common.dapps') }}</el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="3">
-                    <template slot="title">{{ $t('common.explorer') }}</template>
+                    <template #title>{{ $t('common.explorer') }}</template>
                     <el-menu-item index="3-1">
                         <a
                             href="https://hooscan.com/"
@@ -294,7 +294,7 @@
                     </el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="4">
-                    <template slot="title">{{ $t('common.abouthsc') }}</template>
+                    <template #title>{{ $t('common.abouthsc') }}</template>
                     <el-menu-item index="4-1">
                         <a
                             :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'"
@@ -318,7 +318,7 @@
                     </el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="5">
-                    <template slot="title">{{ $t('common.contactus') }}</template>
+                    <template #title>{{ $t('common.contactus') }}</template>
                     <el-menu-item index="5-1">
                         <a
                             href="https://www.hoosmartchain.com/en/ama/request"
@@ -376,7 +376,7 @@
                     </el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="6">
-                    <template slot="title">{{ $t('common.keepInTouch') }}</template>
+                    <template #title>{{ $t('common.keepInTouch') }}</template>
                     <el-menu-item index="6-1">
                         <img src="../images/icon/join/twitter-1.svg" alt height="10" />
                         <a href="https://twitter.com/HooSmartChain" target="_blank">Twitter</a>
@@ -699,7 +699,7 @@ function toBrand() {
                 }
                 .el-menu-item {
                     font-size: 16px;
-                    color: $color-secondary;
+                    color: $color-white;
                     &.is-active {
                         color: $color-primary;
                     }
@@ -707,10 +707,10 @@ function toBrand() {
                         background-color: $color-white;
                     }
                 }
-                .el-submenu {
-                    .el-submenu__title {
+                .el-sub-menu {
+                    .el-sub-menu__title {
                         font-size: 16px;
-                        color: $color-secondary;
+                        color: $color-white;
                         background-color: #232e42 !important;
                         &:hover {
                             background-color: $color-white;
@@ -720,10 +720,12 @@ function toBrand() {
                         height: 40px;
                         font-size: 14px;
                         line-height: 40px;
-                        color: rgba($color: $color-secondary, $alpha: 0.7);
+                        color: rgba($color: $color-white, $alpha: 0.7);
+                        // color: $color-white;
                         padding: 0 20px !important;
                         a {
-                            color: #8f92a1;
+                            // color: #8f92a1;
+                            color: $color-white;
                             display: inline-block;
                             width: calc(100% - 40px);
                         }
@@ -759,7 +761,7 @@ function toBrand() {
                     .mobile {
                         display: block;
                         a {
-                            color: #8f92a1;
+                            color: $color-white;
                             font-size: 16px;
                             margin: 0 10px;
                         }
