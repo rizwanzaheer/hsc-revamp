@@ -345,9 +345,12 @@
                                 class="text-[16px] leading-[30px] font-[500] text-white text-center"
                             >Start visualising your journey and apply grant</p>
                         </el-col>-->
-                        <el-col :span="24" class="flex justify-center">
+                        <el-col
+                            :span="24"
+                            class="flex-col flex md:flex-row items-center justify-center"
+                        >
                             <CustomButton
-                                class="custom-button-reg-hover bg-black text-white hover:text-white mt-3 mr-[30px] justify:center w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
+                                class="custom-button-reg-hover bg-black text-white hover:text-white md:mt-3 md:mr-[30px] justify:center w-[100%] md:w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
                                 title="Register Now"
                                 native-type="button"
                                 @click="$router.push({name: 'LandingPage'})"
@@ -355,7 +358,7 @@
                             <el-button
                                 type="info"
                                 plain
-                                class="hover:bg-black hover:text-white mt-3 border-black hover:border-transparent text-black w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
+                                class="!ml-0 hover:bg-black hover:text-white mt-3 border-black hover:border-transparent text-black w-[100%] md:w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
                                 native-type="button"
                                 @click="openURL('https://www.hoosmartchain.com/HooSmartChain_EN.pdf')"
                             >View White Paper</el-button>
