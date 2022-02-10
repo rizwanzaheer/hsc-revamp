@@ -382,31 +382,41 @@
                         >We want to make sure that users can easily accomplish goals by providing support and resources</p>
                         <p class="info" v-html="$t('home.block2.item2.desc')"></p>
                         <div
-                            class="steps flex place-content-evenly align-center mt-10"
+                            class="steps flex place-content-evenly mt-10 flex-col md:flex-row"
                             style="align-items:center;"
                         >
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user1.svg" alt />
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
+                                <img src="../../images/icon/use/user1.svg" alt="user1.svg" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item2.content1') }}</p>
                             </a>
-                            <a class="arrow p-2">
+                            <a
+                                class="arrow p-2 arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0"
+                            >
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user2.svg" alt />
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
+                                <img src="../../images/icon/use/user2.svg" alt="user2.svg" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item2.content2') }}</p>
                             </a>
-                            <a class="arrow p-2">
+                            <a
+                                class="arrow p-2 arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0"
+                            >
                                 <img src="../../images/icon/use/arrow.svg" alt="allow" />
                             </a>
-                            <a class="step p-2 w-[130px]">
-                                <img src="../../images/icon/use/user3.svg" alt />
+                            <a
+                                class="step p-2 w-[100%] justify-start md:justify-start md:w-[130px] flex !flex-row md:!flex-col ml-[10%] md:ml-[0%]"
+                            >
+                                <img src="../../images/icon/use/user3.svg" alt="user3.svg" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item2.content3') }}</p>
                             </a>
                         </div>
