@@ -796,14 +796,16 @@
                 >
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
                         <el-col :span="14" class="h-32">
-                            <div class="grid-content">
+                            <div class="grid-content flex items-center h-[inherit]">
                                 <h1
-                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mt-[4%] ml-20"
+                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] ml-20"
                                 >Join Cosmic Origin Project</h1>
                             </div>
                         </el-col>
-                        <el-col :span="10">
-                            <div class="grid-content text-center">
+                        <el-col :span="10" class="h-32">
+                            <div
+                                class="grid-content text-center flex justify-center items-center h-[inherit]"
+                            >
                                 <el-button
                                     type="info"
                                     plain
