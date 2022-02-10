@@ -130,7 +130,7 @@
                 </p>
                 <p>
                     <a
-                        href="mailto:support@hoosmartchain.com"
+                        href="https://discord.com/invite/n6ahyKV24d"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.techinicalSupport') }}</a>
