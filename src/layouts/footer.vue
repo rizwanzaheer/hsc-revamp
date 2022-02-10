@@ -420,12 +420,10 @@
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.cookies') }}</a>
                     </div>
-                    <p>© 2020 - 2021 Hoosmartchain.com. All rights reserved.</p>
+                    <p>{{ $t('common.app.copyright') }}</p>
                 </div>
                 <div class="fr copyright-r text-white">
-                    <a
-                        class="hover:underline hover:underline-offset-4"
-                    >{{ $t('common.friend-link') }}</a>
+                    <a>{{ $t('common.friend-link') }}</a>
                     <a
                         class="hover:underline hover:underline-offset-4"
                         href="https://eapy.com/"
