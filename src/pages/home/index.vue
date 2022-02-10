@@ -823,25 +823,27 @@
             <!-- Join cosmic section starts -->
             <el-row class="mt-20 !mb-20" justify="center">
                 <el-col
-                    :span="21"
+                    :lg="21"
+                    :xs="24"
+                    :sm="24"
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
                 >
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
-                        <el-col :span="14" class="h-32">
+                        <el-col :lg="14" :xs="24" :sm="24" class="h-32">
                             <div class="grid-content flex items-center h-[inherit]">
                                 <h1
-                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] ml-20"
+                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mr-20 md:mr-0 ml-20 text-center md:text-left"
                                 >Join Cosmic Origin Project</h1>
                             </div>
                         </el-col>
-                        <el-col :span="10" class="h-32">
+                        <el-col :lg="10" :xs="24" :sm="24" class="h-32">
                             <div
-                                class="grid-content text-center flex justify-center items-center h-[inherit]"
+                                class="grid-content text-center flex-col flex md:flex-row justify-center items-center h-[inherit]"
                             >
                                 <el-button
                                     type="info"
                                     plain
-                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
+                                    class="hover:bg-black hover:text-white text-[15px] leading-[18px] md:mt-4 border-black text-black w-[60%] md:w-[150px] h-[45px]"
                                     native-type="button"
                                     @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                                 >Register Now</el-button>
