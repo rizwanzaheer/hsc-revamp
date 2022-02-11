@@ -110,7 +110,7 @@
                 <h4>{{ $t('common.contactus') }}</h4>
                 <p>
                     <a
-                        href="https://www.hoosmartchain.com/en/ama/request"
+                        href="http://hk.mikecrm.com/GADM58m"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >AMA Request Form</a>
@@ -320,10 +320,7 @@
                 <el-sub-menu index="5">
                     <template #title>{{ $t('common.contactus') }}</template>
                     <el-menu-item index="5-1">
-                        <a
-                            href="https://www.hoosmartchain.com/en/ama/request"
-                            target="_blank"
-                        >AMA Request Form</a>
+                        <a href="http://hk.mikecrm.com/GADM58m" target="_blank">AMA Request Form</a>
                     </el-menu-item>
                     <el-menu-item index="5-2">
                         <a
