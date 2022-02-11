@@ -354,7 +354,7 @@ function resizeHandler() {
     curWidth.value = window.innerWidth;
     console.log('curHeight.value is calling: ', curHeight.value);
     console.log('curWidth.value is calling: ', curWidth.value);
-    if ((curHeight.value || curWidth.value) < 900) {
+    if (curHeight.value < 900 || curWidth.value < 900) {
         currentTabPosition.value = 'top';
     } else currentTabPosition.value = 'left';
 }
