@@ -1,5 +1,5 @@
 <template>
-    <el-tabs class="custom-tabs" tabPosition="top" :stretch="true">
+    <el-tabs class="custom-tabs" tabPosition="left" :stretch="true">
         <!-- tab 1 start -->
         <el-tab-pane>
             <template #label>
@@ -19,7 +19,9 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[12%]">
                 <el-col :span="24">
-                    <h1 class="text-white">Estimate your rewards</h1>
+                    <h1
+                        class="text-white text-[19px] font-[600] leading-[23px]"
+                    >Estimate your rewards</h1>
                 </el-col>
                 <el-col :span="24">
                     <h6
@@ -100,7 +102,9 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[12%]">
                 <el-col :span="24">
-                    <h1 class="text-white">Estimate your rewards</h1>
+                    <h1
+                        class="text-white text-[19px] font-[600] leading-[23px]"
+                    >Estimate your rewards</h1>
                 </el-col>
                 <el-col :span="24">
                     <h6
@@ -178,7 +182,9 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[12%]">
                 <el-col :span="24">
-                    <h1 class="text-white">Estimate your rewards</h1>
+                    <h1
+                        class="text-white text-[19px] font-[600] leading-[23px]"
+                    >Estimate your rewards</h1>
                 </el-col>
                 <el-col :span="24">
                     <h6
@@ -260,7 +266,9 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[12%]">
                 <el-col :span="24">
-                    <h1 class="text-white">Estimate your rewards</h1>
+                    <h1
+                        class="text-white text-[19px] font-[600] leading-[23px]"
+                    >Estimate your rewards</h1>
                 </el-col>
                 <el-col :span="24">
                     <h6
