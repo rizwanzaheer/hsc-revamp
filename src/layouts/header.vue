@@ -354,7 +354,7 @@ import router from '../router';
 
 const activeIndex = ref('/');
 // mobile
-const isOpen = ref(false);
+let isOpen = ref(false);
 let curLang = ref('en');
 let onMenuHover = ref(false);
 watchEffect(() => {
@@ -377,7 +377,7 @@ watchEffect(() => {
 
 //     // 移动端导航展开与收起
 function toggleMenu() {
-    this.isOpen = !this.isOpen;
+    isOpen.value = !isOpen.value;
 }
 const register = () => window.open('http://hk.mikecrm.com/NtPoo5v', '_blank', '');
 // 语言字典
@@ -393,7 +393,7 @@ const langOptions = (lang) => {
 };
 //     // 设置语言
 function setLang(lang) {
-    curLang = 'en';
+    curLang.value = 'en';
     // cookie.set('hsc_i18n', lang)
     // window.location.reload()
     console.log('this.$route is: ', this.$route);
@@ -401,7 +401,7 @@ function setLang(lang) {
 }
 //     // 路由跳转
 function jump(path) {
-    this.isOpen = false;
+    isOpen.value = false;
     router.push({
         path,
     });
