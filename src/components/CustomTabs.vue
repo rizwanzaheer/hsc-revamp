@@ -1,5 +1,5 @@
 <template>
-    <el-tabs class="custom-tabs" tabPosition="left" :stretch="true">
+    <el-tabs class="custom-tabs" tabPosition="top" :stretch="true">
         <!-- tab 1 start -->
         <el-tab-pane>
             <template #label>
@@ -664,8 +664,8 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
 @media (max-width: 1000px) {
     .custom-tabs {
         .el-tabs__header,
-        // .el-tabs__nav-wrap,
-        // .el-tabs__nav-scroll,
+        .el-tabs__nav-wrap,
+        .el-tabs__nav-scroll,
         .el-tabs__nav {
             height: 100px;
             min-height: 100px;
@@ -677,6 +677,10 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
             width: 140px;
             padding-left: 0px;
             // background-color: $tabs-bg-color;
+        }
+        .el-tabs__nav-prev,
+        .el-tabs__nav-next {
+            top: 30%;
         }
     }
     .custom-tabs > .el-tabs__content {
