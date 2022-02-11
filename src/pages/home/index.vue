@@ -678,6 +678,16 @@
                     </el-row>
                 </el-col>
             </el-row>
+
+            <!-- road map only for mobile version start -->
+            <div class="road-map-mob-con mt-10">
+                <img
+                    src="../../images/roadmap/roadmap-mobile-v.svg"
+                    alt="roadmap-mobile-version.png"
+                />
+            </div>
+            <!-- road map only for mobile version ends -->
+
             <!-- road map section ends  -->
 
             <!-- HSC landing projects section start -->
@@ -1267,6 +1277,9 @@ const applyNowBtnClick = () => {
     min-height: 538px;
     clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
 }
+.road-map-mob-con {
+    display: none;
+}
 .hsc-community-con {
     background: linear-gradient(269.99deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
@@ -1455,6 +1468,23 @@ const applyNowBtnClick = () => {
     }
     .road-map-con {
         display: none;
+    }
+    .road-map-mob-con {
+        display: inline-block;
+        overflow-x: scroll;
+        // height: 100vh;
+        // width: 100vw;
+        background: linear-gradient(90.98deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
+        box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
+        min-height: auto;
+        clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
+        > img {
+            max-width: 1000%;
+            // height: 500px;
+            // width: 1700px;
+            margin-left: -70%;
+            margin-top: 7%;
+        }
     }
 }
 </style>
