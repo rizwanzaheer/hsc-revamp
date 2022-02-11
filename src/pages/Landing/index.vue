@@ -46,7 +46,7 @@
 
             <!-- terms and conditions section start -->
             <el-row :gutter="20" class="mt-20 mb-16">
-                <el-col :lg="20" :offset="2">
+                <el-col :xs="24" :sm="24" lg="20" :offset="2">
                     <h2
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
                     >Terms and Conditions</h2>
@@ -138,7 +138,7 @@
                     <el-row :gutter="20" justify="center ">
                         <el-col :span="24">
                             <h1
-                                class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
+                                class="text-white text-[30px] md:text-[40px] leading-[42px] md:leading-[49px] font-[600] text-center mt-10"
                             >
                                 Join our community below
                                 <br />& we’ll help you out!
@@ -147,7 +147,7 @@
                     </el-row>
 
                     <el-row :gutter="20" justify="center " class="mt-14">
-                        <el-col :span="6">
+                        <el-col :xs="24" :sm="24" md="6">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <!-- <p class="hsc-community-icon-1">
                                     <a href>Website</a>
