@@ -186,7 +186,7 @@
             <!-- Infinite Innovation section start -->
 
             <!-- Staging section start -->
-            <el-row justify="center">
+            <el-row justify="center" class="staging-container">
                 <!-- first row start -->
                 <el-col :span="21" :md="24">
                     <el-row :gutter="20" class="absolute mt-[140px] z-10 text-white">
@@ -260,6 +260,10 @@
                 </el-col>-->
                 <!-- third row ends -->
             </el-row>
+
+            <div class="staging-container-mob-v">
+                <img src="../../images/stages/stages-mob.png" alt="stages-mob.png" />
+            </div>
             <!-- Staging section ends -->
 
             <!-- visualization section starts -->
@@ -1277,7 +1281,8 @@ const applyNowBtnClick = () => {
     min-height: 538px;
     clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
 }
-.road-map-mob-con {
+.road-map-mob-con,
+.staging-container-mob-v {
     display: none;
 }
 .hsc-community-con {
@@ -1466,13 +1471,15 @@ const applyNowBtnClick = () => {
     .el-carousel__arrow--right {
         margin-right: -20px;
     }
-    .road-map-con {
+    .road-map-con,
+    .staging-container {
         display: none;
     }
     .road-map-mob-con {
         display: inline-block;
         overflow-x: scroll;
-        // height: 100vh;
+        overflow-y: hidden;
+        height: 600px;
         // width: 100vw;
         background: linear-gradient(90.98deg, rgba(125, 114, 179, 0.165) 0.7%, rgba(110, 105, 119, 0.012) 99.98%);
         box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
@@ -1484,6 +1491,21 @@ const applyNowBtnClick = () => {
             // width: 1700px;
             margin-left: -70%;
             margin-top: 7%;
+        }
+    }
+    .staging-container-mob-v {
+        display: inline-block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 600px;
+        min-height: auto;
+        transform: translateY(-12%);
+        > img {
+            max-width: 1000%;
+            // height: 500px;
+            // width: 1700px;
+            margin-left: -30%;
+            // margin-top: 7%;
         }
     }
 }
