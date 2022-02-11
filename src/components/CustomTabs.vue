@@ -1,5 +1,5 @@
 <template>
-    <el-tabs class="custom-tabs" tabPosition="top" :stretch="true">
+    <el-tabs class="custom-tabs" :tabPosition="currentTabPosition" :stretch="true">
         <!-- tab 1 start -->
         <el-tab-pane>
             <template #label>
@@ -334,15 +334,34 @@
 </template>
 
 <script  lang="ts" setup>
-import { defineProps, toRefs, ref, reactive } from 'vue';
+import { defineProps, toRefs, ref, reactive, onMounted, onBeforeUnmount } from 'vue';
 import type { CSSProperties } from 'vue';
 import { Calendar, ArrowRight } from '@element-plus/icons-vue';
 const props = defineProps({
     tabPosition: String,
 });
 const { tabPosition } = toRefs(props);
+let currentTabPosition = ref('left');
+let curWidth = ref(0);
+let curHeight = ref(0);
 
-// console.log('props are : ', tabPosition);
+onMounted(() => {
+    window.addEventListener('resize', resizeHandler);
+});
+function resizeHandler() {
+    console.log('resizeHandler is calling: ');
+    curHeight.value = window.innerHeight;
+    curWidth.value = window.innerWidth;
+    console.log('curHeight.value is calling: ', curHeight.value);
+    console.log('curWidth.value is calling: ', curWidth.value);
+    if ((curHeight.value || curWidth.value) < 900) {
+        currentTabPosition.value = 'top';
+    } else currentTabPosition.value = 'left';
+}
+
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', resizeHandler);
+});
 
 // for slider section
 interface Mark {
@@ -689,9 +708,8 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
         color: #6b778c;
         font-size: 32px;
         font-weight: 600;
-        // height: 100px;
-        // min-height: 100px;
-        // max-height: 101px;
+        height: 420px;
+        min-height: 420px;
     }
     .custom-tab-container {
         padding: 20px 10px;
