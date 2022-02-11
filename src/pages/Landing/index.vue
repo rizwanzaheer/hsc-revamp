@@ -6,7 +6,7 @@
                 <el-col :span="24" class="mt-[16%]">
                     <h2
                         class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
-                    >HMC Project Rewards Programme</h2>
+                    >Cosmic Origin Project</h2>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
@@ -27,10 +27,9 @@
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
                     >Project Vision</h2>
                     <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
-                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to an entire planets, from insignificance to greatness and perhaps into decline. At HMC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
+                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to an entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
                         <br />
-                        <br />Hoo Meta Chain (HMC) believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
-                        We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.
+                        <br />HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
                         <br />
                         <br />
                         <span class="text-[400]">Go fast alone, but we will go further together!</span>
@@ -55,7 +54,7 @@
                         class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
                     >Rewards Date</h2>
                     <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
-                        This Phase HSC Projects Growing Plan Rewards Date: 0:00 January 14, 2022 to 24:00 July 30, 2022.
+                        Phase 1 of Cosmic Origins Project Date: 0:00 January 14, 2022 to 24:00 July 30, 2022. With a plan for Phase 2 to be announced for second half of 2022.
                         <br />
                         <br />
                     </p>
@@ -71,12 +70,12 @@
                                 class="underline underline-offset-2 cursor-pointer"
                                 native-type="button"
                                 @click="openURL('https://docs.hoosmartchain.com/#/en-us/crosschain')"
-                            >mainstream tokens here.</span>
+                            >mainstream tokens.</span>
                         </li>
                         <li>TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
                         <li>Game-fi and NFT Volume Bonus can also be redeemed once, on top of TVL Rewards A and B.</li>
                         <li>All projects metrics for rewards will be calculated by a random snapshot. If project does not reached the reward requirements at the time of which the snapshot was taken, the bonus will be cancelled.</li>
-                        <li>If malicious trading behaviour is found including bots, the reward will be cancelled with immediate effect. HMC Foundation Reserves the Right to interpret what is malicious trading behaviour.</li>
+                        <li>If malicious trading behaviour is found including bots, the reward will be cancelled with immediate effect. HSC Foundation Reserves the Right to interpret what is malicious trading behaviour.</li>
                         <li>Transaction Volume Bonus Rewards are based on TVL Rewards A & B. They are awarded based on corresponding reward level x the coefficient which is a given percentage of the reward.</li>
                         <li>All rewards will be paid out in USDT.</li>
                     </ol>
@@ -97,7 +96,7 @@
                     <br />
 
                     <p class="text-white text-[15px] leading-[23px] text-left text-[400] italic">
-                        HMC Foundation reserves the right to interpret the terms of the grants and rewards programme in event of any dispute.
+                        The HSC Foundation reserves the right to interpret the terms of the grants and rewards programme in event of any dispute.
                         <br />
                         <br />
                     </p>
