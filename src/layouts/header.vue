@@ -7,8 +7,18 @@
         <div class="clearfix pc">
             <div class="fl logo">
                 <a style="cursor: pointer" @click="jump('/')">
-                    <img v-if="onMenuHover" src="../images/logo/logo.svg" alt="logo" height="26" />
-                    <img v-else src="../images/logo/logo-white.svg" alt="logo" height="26" />
+                    <img
+                        v-if="onMenuHover"
+                        src="../images/logo/logo.svg"
+                        alt="logo"
+                        style="height:28px"
+                    />
+                    <img
+                        v-else
+                        src="../images/logo/logo-white.svg"
+                        alt="logo-white"
+                        style="height:28px"
+                    />
                 </a>
             </div>
 
@@ -396,8 +406,8 @@ function setLang(lang) {
     curLang.value = 'en';
     // cookie.set('hsc_i18n', lang)
     // window.location.reload()
-    console.log('this.$route is: ', this.$route);
-    window.location.href = `/${lang}${this.$route.path}`;
+    console.log('router is: ', router);
+    window.location.href = `/${lang}${router.path}`;
 }
 //     // 路由跳转
 function jump(path) {
