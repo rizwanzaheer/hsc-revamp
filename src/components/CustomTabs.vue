@@ -1,10 +1,10 @@
 <template>
-    <el-tabs class="custom-tabs" tabPosition="left" :stretch="true">
+    <el-tabs class="custom-tabs" tabPosition="top" :stretch="true">
         <!-- tab 1 start -->
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1 class="w-[70%] text-left">
+                    <h1 class="w-[100%] md:w-[70%] text-left">
                         TVL Basic
                         <br />rewards plan
                         <br />
@@ -645,6 +645,56 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
             font-size: 12px;
             line-height: 14.64px;
             font-weight: 400;
+        }
+    }
+}
+</style>
+
+
+<style lang="scss">
+@import '../sass/common/_var.scss';
+@media (max-width: 1000px) {
+    .custom-tabs {
+        .el-tabs__header,
+        // .el-tabs__nav-wrap,
+        // .el-tabs__nav-scroll,
+        .el-tabs__nav {
+            height: 100px;
+            min-height: 100px;
+            max-height: 101px;
+        }
+        .el-tabs__item {
+            height: calc(100% - 10px);
+            color: #a6a6a6;
+            width: 140px;
+            padding-left: 0px;
+            // background-color: $tabs-bg-color;
+        }
+    }
+    .custom-tabs > .el-tabs__content {
+        padding: 32px;
+        /* background-color: #f4f5f7; */
+        color: #6b778c;
+        font-size: 32px;
+        font-weight: 600;
+        // height: 100px;
+        // min-height: 100px;
+        // max-height: 101px;
+    }
+    .custom-tab-container {
+        padding: 20px 10px;
+        h1 {
+            font-size: 16px;
+            line-height: 19.5px;
+            font-weight: 600;
+            span {
+                font-size: 12px;
+                line-height: 14.64px;
+                font-weight: 400;
+            }
+        }
+        .el-icon {
+            display: none;
         }
     }
 }
