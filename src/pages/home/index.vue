@@ -1447,10 +1447,14 @@ const applyNowBtnClick = () => {
     }
     .mobile-carousel {
         display: block;
+        height: 60px;
     }
 
     .el-carousel__arrow--right {
         margin-right: -20px;
+    }
+    .road-map-con {
+        display: none;
     }
 }
 </style>
