@@ -17,7 +17,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
                     <h1
                         class="text-white text-[19px] font-[600] leading-[23px]"
@@ -63,7 +63,7 @@
                 </el-col>
                 <el-col :span="24">
                     <h6
-                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-right underline-offset-2 cursor-pointer"
+                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-left md:text-right underline-offset-2 cursor-pointer"
                         native-type="button"
                         @click="$router.push({name: 'LandingPage'})"
                     >
@@ -100,7 +100,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
                     <h1
                         class="text-white text-[19px] font-[600] leading-[23px]"
@@ -151,7 +151,9 @@
                     >{{volumeBonusRewardsBonusB[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
-                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
+                    <h6
+                        class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right"
+                    >
                         *In USDT
                         <!-- <el-icon>
                             <arrow-right />
@@ -180,7 +182,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
                     <h1
                         class="text-white text-[19px] font-[600] leading-[23px]"
@@ -235,7 +237,9 @@
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
-                    <h6 class="text-white text-[12px] leading-[20px] mt-[0px] text-right">
+                    <h6
+                        class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right"
+                    >
                         *In USDT
                         <!-- <el-icon>
                             <arrow-right />
@@ -264,7 +268,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
                     <h1
                         class="text-white text-[19px] font-[600] leading-[23px]"
@@ -315,7 +319,9 @@
                     >{{stakeHooBonusMonthlyStakingBonus[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
-                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-right">
+                    <h6
+                        class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right"
+                    >
                         *In USDT
                         <!-- <el-icon>
                             <arrow-right />
