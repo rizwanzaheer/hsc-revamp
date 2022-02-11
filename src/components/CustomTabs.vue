@@ -44,21 +44,23 @@
                         ></el-slider>
                     </div>
                 </el-col>
-                <el-col :span="8">
+                <el-col :xs="24" :sm="24" :md="8">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[12px] leading-[15px] md:text-[14px] md:leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Basic Grants</h6>
-                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">
+                    <h2
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
+                    >
                         <!-- 10K -->
                         {{tvlMarksBasicGrants[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}
                     </h2>
                 </el-col>
-                <el-col :span="16">
+                <el-col :xs="24" :sm="24" :md="16">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase"
                     >Monthly continuous Rewards</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >{{tvlMarksMonthlyRewards[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
@@ -126,28 +128,28 @@
                         ></el-slider>
                     </div>
                 </el-col>
-                <el-col :span="8">
+                <el-col :xs="24" :sm="24" :md="8">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Reward coefficient: X</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >x {{volumeBonusRewardCoefficientX[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
-                <el-col :span="7">
+                <el-col :xs="24" :sm="24" :md="7">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >Reward Bonus A</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >{{volumeBonusRewardsBonusA[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
-                <el-col :span="9">
+                <el-col :xs="24" :sm="24" :md="9">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >Rewards Bonus B</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >{{volumeBonusRewardsBonusB[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
                 </el-col>
                 <el-col :span="24">
@@ -208,7 +210,7 @@
                         ></el-slider>
                     </div>
                 </el-col>
-                <el-col :span="8">
+                <el-col :sm="24" :xs="24" :md="8">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >
@@ -217,26 +219,26 @@
                         <br />trading volume
                     </h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase"
                     >{{capitalHubRequireStandardMonthlyVolume[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
-                <el-col :span="7">
+                <el-col :sm="24" :xs="24" :md="7">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >Monthly Rewards</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase"
                     >{{capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
-                <el-col :span="9">
+                <el-col :sm="24" :xs="24" :md="9">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >HSC capital allocation</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] uppercase"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase"
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
-                <el-col :span="24">
+                <el-col :sm="24" :xs="24" :md="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right"
                     >
@@ -279,7 +281,7 @@
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px]"
                     >Staking number</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >{{typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label}}</h2>
                 </el-col>
                 <el-col :span="24">
@@ -294,33 +296,33 @@
                         ></el-slider>
                     </div>
                 </el-col>
-                <el-col :span="8">
+                <el-col :sm="24" :xs="24" :md="8">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
                     >Reward coefficient: y</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >x {{stakeHooBonusRewardCoefficientY[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
-                <el-col :span="7">
+                <el-col :sm="24" :xs="24" :md="7">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >Standard Staking Bonus</h6>
                     <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
+                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600]"
                     >{{stakeHooBonusStandard[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
-                <el-col :span="9">
+                <el-col :sm="24" :xs="24" :md="9">
                     <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase"
+                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase"
                     >Monthly Staking Bonus</h6>
                     <h2
                         class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]"
                     >{{stakeHooBonusMonthlyStakingBonus[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
                 </el-col>
-                <el-col :span="24">
+                <el-col :sm="24" :xs="24" :md="24">
                     <h6
-                        class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right"
+                        class="text-white text-[12px] leading-[20px] mt-1 md:mt-[20px] text-left md:text-right"
                     >
                         *In USDT
                         <!-- <el-icon>
@@ -714,8 +716,8 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
         color: #6b778c;
         font-size: 32px;
         font-weight: 600;
-        height: 420px;
-        min-height: 420px;
+        height: 480px;
+        min-height: 480px;
     }
     .custom-tab-container {
         padding: 20px 10px;
