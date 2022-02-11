@@ -717,7 +717,8 @@
                 <!-- carousel section start -->
                 <el-col :span="20" class="mt-20 mb-20">
                     <!-- <h1 class="text-white">carousel section</h1> -->
-                    <el-carousel :interval="5000" arrow="always">
+                    <!-- pc-carousel start  -->
+                    <el-carousel :interval="5000" arrow="always" class="pc-carousel">
                         <el-carousel-item>
                             <img src="../../images/all-projects-logos/seekers-logo.png" />
                             <img src="../../images/all-projects-logos/lendoo-logo.png" />
@@ -749,6 +750,88 @@
                             <img src="../../images/all-projects-logos/seekers-logo.png" />
                         </el-carousel-item>
                     </el-carousel>
+
+                    <!-- pc-carousel ends  -->
+                    <!-- mobile-carousel start  -->
+                    <el-carousel :interval="5000" arrow="always" class="mobile-carousel">
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/seekers-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/gamedao-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/lendoo-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/same-coin-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-lootdex.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/pudding-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-roolend.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-yunge.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-hooscan.png" />
+                        </el-carousel-item>
+
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/gamedao-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-bala.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-claim.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-daostarter.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-evodefi.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-fansforce.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-galaxy.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-punkworld.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-heshiswap.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-same-finance.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-hexch.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-hoo-moon.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/swap-all.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/logo-stk.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/shouyi-logo.png" />
+                        </el-carousel-item>
+                        <el-carousel-item>
+                            <img src="../../images/all-projects-logos/seekers-logo.png" />
+                        </el-carousel-item>
+                    </el-carousel>
+                    <!-- mobile-carousel start  -->
                 </el-col>
                 <!-- carousel section ends -->
             </el-row>
@@ -1275,6 +1358,9 @@ const applyNowBtnClick = () => {
         }
     }
 }
+.mobile-carousel {
+    display: none;
+}
 </style>
 
 <style lang="scss">
@@ -1355,6 +1441,16 @@ const applyNowBtnClick = () => {
     .news-container {
         clip-path: none;
         background: $new-tabs-bg-color;
+    }
+    .pc-carousel {
+        display: none;
+    }
+    .mobile-carousel {
+        display: block;
+    }
+
+    .el-carousel__arrow--right {
+        margin-right: -20px;
     }
 }
 </style>
