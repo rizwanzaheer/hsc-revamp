@@ -3,9 +3,9 @@
         <div class="landing-con">
             <!-- visualization section starts -->
             <el-row justify="center" class="first-main-banner">
-                <el-col :span="24" class="mt-[16%]">
+                <el-col :span="24" class="mt-[50%] md:mt-[16%]">
                     <h2
-                        class="text-white text-[40px] mt-5 text-center leading-[48.76px] text-[600] not-italic"
+                        class="text-white text-[30px] md:text-[40px] mt-5 text-center leading-[42px] md:leading-[48.76px] text-[600] not-italic"
                     >Cosmic Origin Project</h2>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
@@ -107,7 +107,7 @@
             <!-- cosmic tab section ends  -->
 
             <el-row justify="center" class="mt-10">
-                <el-col :span="12">
+                <el-col :xs="20" :sm="20" :md="12">
                     <img src="../../images/million/100-MILLION.png" style="width: 100%" />
                 </el-col>
             </el-row>
@@ -195,7 +195,7 @@
                         <el-col :span="16" class="h-32">
                             <div class="grid-content">
                                 <h1
-                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mt-[3%] ml-20"
+                                    class="text-[#12171B] leading-[28px] md:leading-[36.57px] font-[600] text-[16px] md:text-[30px] mt-[1%] md:mt-[3%] ml-2 md:ml-20"
                                 >Be part of HMC Project Rewards Programme</h1>
                             </div>
                         </el-col>
@@ -207,7 +207,7 @@
                                     class="hover:bg-black hover:text-white mt-4 border-black text-black"
                                 >Register Now</el-button>-->
                                 <a
-                                    class="text-[15px] bg-[#12171B] leading-[18px] no-underline font-[600] text-white"
+                                    class="text-[8px] md:text-[15px] bg-[#12171B] leading-[16px] md:leading-[18px] no-underline font-[600] text-white"
                                     style="box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.37); border-radius: 6px; text-decoration: none !important; padding:12px 25px !important; "
                                     href="http://hk.mikecrm.com/NtPoo5v"
                                     target="_blank"
@@ -631,6 +631,13 @@ const openURL = (uri) => {
                 }
             }
         }
+    }
+    .first-main-banner {
+        background-size: contain;
+        min-height: 390px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: center;
     }
 }
 </style>
