@@ -3,7 +3,7 @@
         <div class="landing-con">
             <!-- visualization section starts -->
             <el-row justify="center" class="first-main-banner">
-                <el-col :span="24" class="mt-[50%] md:mt-[16%]">
+                <el-col :span="24" class="mt-[20%] md:mt-[16%]">
                     <h2
                         class="text-white text-[30px] md:text-[40px] mt-5 text-center leading-[42px] md:leading-[48.76px] text-[600] not-italic"
                     >Cosmic Origin Project</h2>
@@ -22,7 +22,7 @@
             <!-- cosmic origin project section start -->
 
             <el-row :gutter="20" class="mt-20 mb-16">
-                <el-col :lg="20" :offset="2">
+                <el-col :xs="20" :sm="20" lg="20" :offset="2">
                     <h2
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
                     >Project Vision</h2>
@@ -45,8 +45,8 @@
             </el-row>
 
             <!-- terms and conditions section start -->
-            <el-row :gutter="20" class="mt-20 mb-16">
-                <el-col :xs="24" :sm="24" lg="20" :offset="2">
+            <el-row class="mt-20 mb-16">
+                <el-col :xs="20" :sm="20" lg="20" :offset="2">
                     <h2
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
                     >Terms and Conditions</h2>
@@ -107,7 +107,7 @@
             <!-- cosmic tab section ends  -->
 
             <el-row justify="center" class="mt-10">
-                <el-col :xs="20" :sm="20" :md="12">
+                <el-col :xs="22" :sm="22" :md="12">
                     <img src="../../images/million/100-MILLION.png" style="width: 100%" />
                 </el-col>
             </el-row>
@@ -136,7 +136,7 @@
             <el-row class="hsc-community-con mt-20">
                 <el-col :span="24" class="mt-[6rem]">
                     <el-row :gutter="20" justify="center ">
-                        <el-col :span="24">
+                        <el-col :span="24" :xs="20" :sm="20">
                             <h1
                                 class="text-white text-[30px] md:text-[40px] leading-[42px] md:leading-[49px] font-[600] text-center mt-10"
                             >
@@ -147,7 +147,7 @@
                     </el-row>
 
                     <el-row :gutter="20" justify="center " class="mt-14">
-                        <el-col :xs="24" :sm="24" md="6">
+                        <el-col :xs="20" :sm="20" md="6">
                             <div class="hsc-community-icon-con flex justify-evenly">
                                 <!-- <p class="hsc-community-icon-1">
                                     <a href>Website</a>
@@ -192,15 +192,17 @@
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
                 >
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
-                        <el-col :span="16" class="h-32">
-                            <div class="grid-content">
+                        <el-col :span="16" class="h-[inherit]">
+                            <div class="grid-content pl-3 md:pl-0 flex justify-left items-center">
                                 <h1
-                                    class="text-[#12171B] leading-[28px] md:leading-[36.57px] font-[600] text-[16px] md:text-[30px] mt-[1%] md:mt-[3%] ml-2 md:ml-20"
+                                    class="text-[#12171B] leading-[28px] md:leading-[36.57px] font-[600] text-[16px] md:text-[30px] ml-2 md:ml-20"
                                 >Be part of HMC Project Rewards Programme</h1>
                             </div>
                         </el-col>
-                        <el-col :span="8">
-                            <div class="grid-content text-center">
+                        <el-col :span="8" class="h-[inherit]">
+                            <div
+                                class="grid-content text-center flex justify-center md:justify-end items-center md:pr-[10%]"
+                            >
                                 <!-- <el-button
                                     type="info"
                                     plain
@@ -634,10 +636,10 @@ const openURL = (uri) => {
     }
     .first-main-banner {
         background-size: contain;
-        min-height: 390px;
+        min-height: 0px;
         margin-left: 10px;
         margin-right: 10px;
-        background-position: center;
+        background-position: top;
     }
 }
 </style>
