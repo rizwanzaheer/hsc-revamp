@@ -311,7 +311,9 @@
                                 target="_blank"
                             >{{ $t('common.buygasfee') }}</a>
                         </el-menu-item>
-                        <el-menu-item index="3-3">{{ $t('common.dapps') }}</el-menu-item>
+                        <el-menu-item index="3-3">
+                            <a href="#" target="_blank">{{ $t('common.dapps') }}</a>
+                        </el-menu-item>
                     </el-sub-menu>
                     <!-- <el-menu-item index="4"><a href="https://www.defibox.com/defirange/?type=all&chain=huc" target="_blank">生态应用</a></el-menu-item> -->
                     <el-sub-menu index="5" popper-class="el-menu-popper-reset">
@@ -732,32 +734,40 @@ function onMouseHoverOverLeave() {
                             color: $color-primary;
                         }
                         &:hover {
-                            background-color: $color-white;
-                            color: $color-secondary; //
+                            background-color: transparent;
+                            color: $color-white; //
                         }
                     }
                     .el-sub-menu {
+                        .el-menu--inline {
+                            background-color: transparent;
+                            color: $color-white;
+                        }
                         .el-sub-menu__title {
                             font-size: 18px;
                             color: $color-white;
                             font-weight: 600;
                             line-height: 20px;
                             // &:hover {
-                            //     background-color: $color-white;
-                            // }
+                            //     }
                             &:hover {
                                 color: $color-primary !important;
+                                background-color: transparent;
                             }
                         }
                         .el-menu-item {
                             height: 40px;
                             font-size: 14px;
                             line-height: 40px;
-                            color: rgba($color: $color-secondary, $alpha: 0.7);
+                            // color: rgba($color: $color-secondary, $alpha: 0.7);
+                            color: $color-white;
+                            // margin-left: 10%;
                             padding: 0 20px !important;
                             a {
                                 display: block;
-                                color: rgba($color: $color-secondary, $alpha: 0.7);
+                                // color: rgba($color: $color-secondary, $alpha: 0.7);
+                                color: $color-white;
+                                margin-left: 10%;
                             }
                             &:hover {
                                 background-color: $color-white;
@@ -766,6 +776,7 @@ function onMouseHoverOverLeave() {
                         }
                         &:hover {
                             color: $color-primary !important;
+                            // background-color: transparent !important;
                         }
                     }
                 }
