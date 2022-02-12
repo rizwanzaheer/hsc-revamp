@@ -272,6 +272,10 @@
                         <template #title>{{ $t('common.developer') }}</template>
                         <el-menu-item index="2-0">
                             <!-- :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'" -->
+                            <!-- <el-icon>
+                                <wallet />
+                            </el-icon>-->
+
                             <a
                                 :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'"
                                 target="_blank"
@@ -300,6 +304,9 @@
                     <el-sub-menu index="3" popper-class="el-menu-popper-reset">
                         <template #title>{{ $t('common.usehsc') }}</template>
                         <el-menu-item index="3-1">
+                            <!-- <el-icon>
+                                <wallet />
+                            </el-icon>-->
                             <a
                                 href="https://docs.hoosmartchain.com/#/wallet"
                                 target="_blank"
@@ -312,6 +319,9 @@
                             >{{ $t('common.buygasfee') }}</a>
                         </el-menu-item>
                         <el-menu-item index="3-3">
+                            <!-- <el-icon>
+                                <Menu />
+                            </el-icon>-->
                             <a href="#" target="_blank">{{ $t('common.dapps') }}</a>
                         </el-menu-item>
                     </el-sub-menu>
@@ -360,7 +370,7 @@
 </template>
 <script setup>
 import { ref, computed, onMounted, watchEffect } from 'vue';
-import { Edit, ArrowDown } from '@element-plus/icons-vue';
+import { Edit, ArrowDown, Wallet, Menu } from '@element-plus/icons-vue';
 import CustomButton from '../components/CustomButton.vue';
 import router from '../router';
 
@@ -742,6 +752,10 @@ function onMouseHoverOverLeave() {
                         .el-menu--inline {
                             background-color: transparent;
                             color: $color-white;
+                            .el-icon {
+                                color: $color-primary;
+                                margin-left: 5%;
+                            }
                         }
                         .el-sub-menu__title {
                             font-size: 18px;
@@ -767,7 +781,7 @@ function onMouseHoverOverLeave() {
                                 display: block;
                                 // color: rgba($color: $color-secondary, $alpha: 0.7);
                                 color: $color-white;
-                                margin-left: 10%;
+                                margin-left: 4%;
                             }
                             &:hover {
                                 background-color: $color-white;
