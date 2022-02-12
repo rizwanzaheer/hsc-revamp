@@ -412,7 +412,7 @@
             <div class="copyright-con clearfix">
                 <div class="fl copyright-l">
                     <!-- <img src="../images/logo/logo-white.svg" alt height="18" /> -->
-                    <el-row class="mobile md:!hidden text-left" :gutter="100">
+                    <el-row class="mobile md:!hidden text-left">
                         <el-col :xs="12" :sm="12" class="!flex flex-col mt-[1%]">
                             <a class="font-[600]">{{ $t('common.friend-link') }}</a>
                             <a
@@ -443,7 +443,11 @@
                             >{{ $t('common.cookies') }}</a>
                         </el-col>
                     </el-row>
-                    <p>{{ $t('common.app.copyright') }}</p>
+                    <el-row>
+                        <el-col :xs="24">
+                            <p>{{ $t('common.app.copyright') }}</p>
+                        </el-col>
+                    </el-row>
                 </div>
                 <div class="fr copyright-r text-white">
                     <a>{{ $t('common.friend-link') }}</a>
@@ -737,8 +741,8 @@ function toBrand() {
             bottom: 170px;
         }
         .copyright {
-            padding-left: 20px;
-            padding-right: 20px;
+            // padding-left: 20px;
+            // padding-right: 20px;
             .copyright-con {
                 text-align: center;
                 margin-top: 0;
@@ -756,12 +760,13 @@ function toBrand() {
                         margin: 20px 0 20px;
                     }
                     .mobile {
-                        display: block;
+                        display: flex;
                         a {
                             color: $color-white;
                             font-size: 12px;
                             margin: 0 10px;
                             line-height: 35px;
+                            padding-left: 10px;
                         }
                     }
                 }
