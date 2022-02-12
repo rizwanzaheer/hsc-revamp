@@ -696,18 +696,20 @@
 
             <!-- HSC landing projects section start -->
             <el-row justify="center" class="mt-20 mb-20">
-                <el-col :span="24">
+                <el-col :span="24" :xs="20" :sm="20">
                     <h6
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
                     >HSC Landscape</h6>
                 </el-col>
-                <el-col :span="24">
-                    <h1 class="text-[40px] leading-[48.76px] font-[600] text-white text-center">
+                <el-col :span="24" :xs="20" :sm="20">
+                    <h1
+                        class="text-[35px] md:text-[40px] leading-[43px] md:leading-[48.76px] font-[600] text-white text-center"
+                    >
                         Over
                         <span class="text-[#02EAD0]">20+</span> Projects on HSC
                     </h1>
                 </el-col>
-                <el-col :span="24" class="flex justify-center">
+                <el-col :span="24" class="flex justify-center mt-5 md:mt-0">
                     <el-link
                         :underline="false"
                         class="text-white !hover:text-white !focus:text-white !active:bg-violet-400 text-[15px] leading-[18.29px] font-[500]"
