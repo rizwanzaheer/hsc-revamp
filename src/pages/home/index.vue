@@ -188,42 +188,59 @@
             <!-- Staging section start -->
             <el-row justify="center" class="staging-container">
                 <!-- first row start -->
-                <el-col :span="21" :md="24">
+                <el-col :span="21" :md="24" :xl="24">
                     <el-row
                         :gutter="20"
-                        class="absolute mt-[10%] lg:mt-[5%] xl:mt-[10%] z-10 text-white"
+                        class="absolute mt-[10%] lg:mt-[5%] xl:mt-[10%] z-10 text-white 2xl:w-[100%]"
                     >
-                        <el-col :span="6" class="mt-[18%] lg:mt-[25%] xl:mt-[20%] !pl-[15%]">
-                            <div class="grid-content w-60">
+                        <el-col
+                            :span="6"
+                            :lg="6"
+                            :xl="6"
+                            class="mt-[18%] lg:mt-[25%] xl:mt-[20%] 2xl:mt-[20%] !pl-[15%] 2xl:!pl-[16%]"
+                        >
+                            <div class="grid-content w-60 2xl:w-[100%]">
                                 <h4
-                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                    class="text-[18px] 2xl:text-[50px] leading-[21.94px] 2xl:leading-[50px] font-[600] mb-4"
                                 >Visual Blockchain</h4>
-                                <p>All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
+                                <p
+                                    class="2xl:text-[18px]"
+                                >All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
-                            <div class="grid-content w-65">
+                        <el-col :span="6" :lg="6" :xl="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
+                            <div class="grid-content w-65 2xl:w-[100%]">
                                 <h4
-                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                    class="text-[18px] 2xl:text-[50px] leading-[21.94px] 2xl:leading-[50px] font-[600] mb-4"
                                 >3D Blockchain</h4>
-                                <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
+                                <p
+                                    class="2xl:text-[18px]"
+                                >Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
                             </div>
                         </el-col>
                         <el-col
                             :span="6"
+                            :lg="6"
+                            :xl="6"
                             class="mt-[18%] lg:mt-[25%] xl:mt-[20%] !pl-[12%] lg:!pl-[9%] xl:!pl-[12%]"
                         >
-                            <div class="grid-content w-60">
-                                <h4 class="text-[18px] leading-[21.94px] font-[600] mb-4">Social-Fi</h4>
-                                <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
+                            <div class="grid-content w-60 2xl:w-[100%]">
+                                <h4
+                                    class="text-[18px] 2xl:text-[50px] leading-[21.94px] 2xl:leading-[50px] font-[600] mb-4"
+                                >Social-Fi</h4>
+                                <p
+                                    class="2xl:text-[18px]"
+                                >Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="!pl-[3%]">
-                            <div class="grid-content w-[18rem]">
+                        <el-col :span="6" :lg="6" :xl="6" class="!pl-[3%]">
+                            <div class="grid-content w-[18rem] 2xl:w-[100%]">
                                 <h4
-                                    class="text-[18px] leading-[21.94px] font-[600] mb-4"
+                                    class="text-[18px] 2xl:text-[60px] leading-[21.94px] 2xl:leading-[60px] font-[600] mb-4"
                                 >Metaverse Chain</h4>
-                                <p>When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
+                                <p
+                                    class="2xl:text-[20px]"
+                                >When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
                             </div>
                         </el-col>
                     </el-row>
