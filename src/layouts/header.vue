@@ -504,7 +504,7 @@ function onMouseHoverOverLeave() {
                         }
                     }
                     .el-sub-menu__title {
-                        color: $color-white;
+                        color: #bbbbbb;
                         &:hover,
                         &.is-opened {
                             color: $color-primary !important;
