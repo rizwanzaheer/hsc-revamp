@@ -190,6 +190,7 @@
                 class="fr lang float-right"
                 @mouseover="onMouseHoverOver"
                 @mouseleave="onMouseHoverOverLeave"
+                :style="onMenuHover ? {'color': 'black'} : {'color': 'white'}"
             >
                 <el-popover
                     placement="bottom"
@@ -203,11 +204,7 @@
                         <p class="lang-item" @click="setLang('en')">English</p>
                         <!-- <p class="lang-item" @click="setLang('ko')">한국어</p> -->
                     </div>
-                    <template
-                        #reference
-                        class="lang-con"
-                        :style=" onMenuHover? '{color: white}' : '{color:black}'"
-                    >
+                    <template #reference class="lang-con">
                         <div style="display:flex; justify-content: space-evenly;">
                             <!-- <i class="el-icon-arrow-down"></i> -->
 
@@ -223,11 +220,10 @@
                                 alt="logo"
                                 height="26"
                             />
-                            <span class="lang-text">{{ langOptions(curLang) }}</span>
+                            <span class="lang-text !hover:bg-red-900">{{ langOptions(curLang) }}</span>
                             <!-- <img src="../images/logo/logo.svg" alt="logo" height="26" /> -->
                             <el-icon>
                                 <arrow-down />
-                                <br />
                             </el-icon>
                         </div>
                         <!-- <i class="el-icon el-sub-menu__icon-arrow"></i> -->
@@ -655,18 +651,24 @@ function onMouseHoverOverLeave() {
         }
     }
 }
-// .el-sub-menu.is-opened {
-//     .el-sub-menu__title {
-//         color: $color-primary !important;
-//     }
-//     &:hover {
+// // .el-sub-menu {
+// .el-menu-item {
+//     :hover {
 //         .el-sub-menu {
 //             .el-sub-menu__title {
-//                 color: black !important;
+//                 color: red !important;
 //             }
 //         }
 //     }
 // }
+// // &:hover {
+// //     .el-sub-menu {
+// //         .el-sub-menu__title {
+// //             color: black !important;
+// //         }
+// //     }
+// // }
+// // }
 
 .lang-popup {
     &.el-popover {
