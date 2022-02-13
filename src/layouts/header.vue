@@ -452,7 +452,8 @@ function onMouseHoverOverLeave() {
             width: 220px;
         }
         .menu-con {
-            margin-left: 15%;
+            // margin-left: 15%;
+            min-width: 50%;
             margin-top: 0px;
             .el-menu {
                 .el-sub-menu__hide-arrow {
@@ -465,6 +466,7 @@ function onMouseHoverOverLeave() {
             .menu-bd {
                 border-bottom: none;
                 background-color: transparent;
+                justify-content: flex-end;
                 .el-menu-item {
                     padding: 0 16px;
                     font-size: 16px;
