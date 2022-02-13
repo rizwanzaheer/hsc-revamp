@@ -176,13 +176,13 @@
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
                         </el-menu-item>
                     </el-sub-menu>
-                    <el-menu-item
+                    <!-- <el-menu-item
                         index="5"
                         @click="jump('/memorabilia')"
-                        style="visibility: hidden !important;"
+                        style="display: none !important;"
                         @mouseover="onMouseHoverOver"
                         @mouseleave="onMouseHoverOverLeave"
-                    >大事记</el-menu-item>
+                    >大事记</el-menu-item>-->
                 </el-menu>
             </div>
 
@@ -198,7 +198,11 @@
                     :show-arrow="true"
                     popper-class="lang-popup"
                 >
-                    <div class="lang-item-con">
+                    <div
+                        class="lang-item-con"
+                        @mouseover="onMouseHoverOver"
+                        @mouseleave="onMouseHoverOverLeave"
+                    >
                         <p class="lang-item" @click="setLang('zh_cn')">简体中文</p>
                         <!-- <p class="lang-item" @click="setLang('zh_tw')">繁體中文</p> -->
                         <p class="lang-item" @click="setLang('en')">English</p>
@@ -642,6 +646,7 @@ function onMouseHoverOverLeave() {
             a {
                 color: $color-secondary;
                 display: block;
+                width: 100%;
                 &:hover {
                     color: $color-primary;
                 }
@@ -653,24 +658,6 @@ function onMouseHoverOverLeave() {
         }
     }
 }
-// // .el-sub-menu {
-// .el-menu-item {
-//     :hover {
-//         .el-sub-menu {
-//             .el-sub-menu__title {
-//                 color: red !important;
-//             }
-//         }
-//     }
-// }
-// // &:hover {
-// //     .el-sub-menu {
-// //         .el-sub-menu__title {
-// //             color: black !important;
-// //         }
-// //     }
-// // }
-// // }
 
 .lang-popup {
     &.el-popover {
@@ -696,20 +683,6 @@ function onMouseHoverOverLeave() {
         }
     }
 }
-// .el-menu-item {
-//     &:hover {
-//         .main-header {
-//             background-color: $color-white;
-//         }
-//         .el-menu-item {
-//             .el-sub-menu__title {
-//                 color: $color-bg;
-//                 font-size: 15px;
-//                 font-weight: 600;
-//             }
-//         }
-//     }
-// }
 </style>
 
 <style lang="scss">
