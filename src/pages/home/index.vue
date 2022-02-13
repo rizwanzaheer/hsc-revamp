@@ -189,8 +189,11 @@
             <el-row justify="center" class="staging-container">
                 <!-- first row start -->
                 <el-col :span="21" :md="24">
-                    <el-row :gutter="20" class="absolute mt-[140px] z-10 text-white">
-                        <el-col :span="6" class="mt-[18%] !pl-[15%]">
+                    <el-row
+                        :gutter="20"
+                        class="absolute mt-[10%] lg:mt-[5%] xl:mt-[10%] z-10 text-white"
+                    >
+                        <el-col :span="6" class="mt-[18%] lg:mt-[25%] xl:mt-[20%] !pl-[15%]">
                             <div class="grid-content w-60">
                                 <h4
                                     class="text-[18px] leading-[21.94px] font-[600] mb-4"
@@ -206,7 +209,10 @@
                                 <p>Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
                             </div>
                         </el-col>
-                        <el-col :span="6" class="mt-[18%] !pl-[12%]">
+                        <el-col
+                            :span="6"
+                            class="mt-[18%] lg:mt-[25%] xl:mt-[20%] !pl-[12%] lg:!pl-[9%] xl:!pl-[12%]"
+                        >
                             <div class="grid-content w-60">
                                 <h4 class="text-[18px] leading-[21.94px] font-[600] mb-4">Social-Fi</h4>
                                 <p>Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
@@ -226,11 +232,8 @@
                 <!-- first row ends -->
                 <!-- second row starts -->
                 <el-col :span="21" style="overflow-y: scroll;">
-                    <img
-                        src="../../images/stages/4-stages.png"
-                        class="max-h-[800px] max-w-[300%]"
-                        alt="4-stages-image.png"
-                    />
+                    <img src="../../images/stages/4-stages.png" alt="4-stages-image.png" />
+                    <!-- class="max-h-[800px] max-w-[300%]" -->
                     <!-- <el-row justify="center">
                         <el-col :span="24">
                             <div class="grid-content place-items-center">
@@ -239,26 +242,6 @@
                     </el-row>-->
                 </el-col>
                 <!-- second row ends -->
-
-                <!-- third row start -->
-
-                <!-- <el-col :span="21">
-                    <el-row :gutter="20">
-                        <el-col :span="6">
-                            <div class="grid-content bg-purple"></div>
-                        </el-col>
-                        <el-col :span="6">
-                            <div class="grid-content bg-purple"></div>
-                        </el-col>
-                        <el-col :span="6">
-                            <div class="grid-content bg-purple"></div>
-                        </el-col>
-                        <el-col :span="6">
-                            <div class="grid-content bg-purple"></div>
-                        </el-col>
-                    </el-row>
-                </el-col>-->
-                <!-- third row ends -->
             </el-row>
 
             <div class="staging-container-mob-v">
