@@ -90,7 +90,7 @@
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1 class="w-[60%] text-left">
+                    <h1 class="w-[100%] md:w-[70%] text-left">
                         Volume bonus
                         <br />
                         <span>GameFi, NFT</span>
@@ -171,7 +171,7 @@
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1 class="w-[60%] text-left">
+                    <h1 class="w-[100%] md:w-[70%] text-left">
                         Capital Hub
                         <br />Rewards Plan
                         <br />
@@ -257,7 +257,7 @@
         <el-tab-pane>
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1 class="w-[60%] text-left">
+                    <h1 class="w-[100%] md:w-[70%] text-left">
                         HOO Bonus
                         <!-- <br />Rewards Plan -->
                         <br />
@@ -357,11 +357,8 @@ onMounted(() => {
     window.addEventListener('resize', resizeHandler);
 });
 function resizeHandler() {
-    console.log('resizeHandler is calling: ');
     curHeight.value = window.innerHeight;
     curWidth.value = window.innerWidth;
-    console.log('curHeight.value is calling: ', curHeight.value);
-    console.log('curWidth.value is calling: ', curWidth.value);
     if (curHeight.value < 900 || curWidth.value < 900) {
         currentTabPosition.value = 'top';
     } else currentTabPosition.value = 'left';

@@ -640,7 +640,7 @@ function onMouseHoverOverLeave() {
         // margin-left: 15px;
         border-radius: 5px;
         .el-menu-item {
-            color: $color-secondary !important;
+            color: $color-secondary;
             a {
                 color: $color-secondary;
                 display: block;
@@ -655,6 +655,18 @@ function onMouseHoverOverLeave() {
         }
     }
 }
+// .el-sub-menu.is-opened {
+//     .el-sub-menu__title {
+//         color: $color-primary !important;
+//     }
+//     &:hover {
+//         .el-sub-menu {
+//             .el-sub-menu__title {
+//                 color: black !important;
+//             }
+//         }
+//     }
+// }
 
 .lang-popup {
     &.el-popover {
@@ -784,7 +796,7 @@ function onMouseHoverOverLeave() {
                                 margin-left: 4%;
                             }
                             &:hover {
-                                background-color: $color-white;
+                                background-color: $color-primary;
                                 color: $color-secondary; //
                             }
                         }
