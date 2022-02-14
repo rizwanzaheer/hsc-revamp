@@ -132,7 +132,7 @@
                         >
                             <a href="https://hscscan.com/" target="_blank">{{ $t('common.hscme') }}</a>
                         </el-menu-item>
-                        <el-menu-item
+                        <!-- <el-menu-item
                             index="3-2"
                             @mouseover="onMouseHoverOver"
                             @mouseleave="onMouseHoverOverLeave"
@@ -141,7 +141,7 @@
                                 href="https://testnet.hscscan.com/"
                                 target="_blank"
                             >{{ $t('common.hscte') }}</a>
-                        </el-menu-item>
+                        </el-menu-item>-->
                     </el-sub-menu>
 
                     <el-sub-menu
