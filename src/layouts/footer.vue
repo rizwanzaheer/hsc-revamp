@@ -711,7 +711,7 @@ function toBrand() {
         > .mobile {
             display: block;
             padding-top: 35px;
-            padding-bottom: 35px;
+            // padding-bottom: 35px;
             .m-menu-bd {
                 &.el-menu {
                     border-right: none;
@@ -741,7 +741,7 @@ function toBrand() {
                         line-height: 40px;
                         color: rgba($color: $color-white, $alpha: 0.7);
                         // color: $color-white;
-                        padding: 0 20px !important;
+                        // padding: 0 20px !important;
                         a {
                             // color: #8f92a1;
                             color: $color-white;
