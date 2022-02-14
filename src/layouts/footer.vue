@@ -4,8 +4,9 @@
             <div class="ft-con">
                 <h4>{{ $t('common.developer') }}</h4>
                 <p>
+                    <!-- :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'" -->
                     <a
-                        :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
+                        href="HooSmartChain_EN.pdf"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.whitePaper') }}</a>
@@ -41,15 +42,17 @@
             <div class="ft-con">
                 <h4>{{ $t('common.usehsc') }}</h4>
                 <p>
+                    <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'" -->
                     <a
-                        :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
+                        href="https://docs.hoosmartchain.com/#/en-us/wallet"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.wallet') }}</a>
                 </p>
                 <p>
+                    <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'" -->
                     <a
-                        :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/buy_hoo' : 'https://docs.hoosmartchain.com/#/buy_hoo'"
+                        href="https://docs.hoosmartchain.com/#/en-us/buy_hoo"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.buygasfee') }}</a>
@@ -85,22 +88,24 @@
             <div class="ft-con">
                 <h4>{{ $t('common.abouthsc') }}</h4>
                 <p>
+                    <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'" -->
                     <a
-                        :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'"
+                        href="https://docs.hoosmartchain.com/#/en-us/intro"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.aboutus') }}</a>
                 </p>
                 <p>
                     <a
-                        href="javascript:;"
-                        @click="toBrand()"
+                        href="https://www.hoosmartchain.com/en/brand"
+                        target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.brandresoures') }}</a>
                 </p>
                 <p>
+                    <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'" -->
                     <a
-                        :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'"
+                        href="https://docs.hoosmartchain.com/#/en-us/disclaimer"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.disclaimer') }}</a>
@@ -158,8 +163,9 @@
                     >{{ $t('common.businessContacts') }}</a>
                 </p>
                 <p>
+                    <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/faq' : 'https://docs.hoosmartchain.com/#/faq'" -->
                     <a
-                        :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/faq' : 'https://docs.hoosmartchain.com/#/faq'"
+                        href="https://docs.hoosmartchain.com/#/en-us/faq"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.faq') }}</a>
@@ -216,8 +222,9 @@
                 <el-sub-menu index="1">
                     <template #title>{{ $t('common.developer') }}</template>
                     <el-menu-item index="1-1">
+                        <!-- :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'" -->
                         <a
-                            :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'"
+                            href="/HooSmartChain_EN.pdf"
                             target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.whitePaper') }}</a>
@@ -254,8 +261,9 @@
                 <el-sub-menu index="2">
                     <template #title>{{ $t('common.usehsc') }}</template>
                     <el-menu-item index="2-1">
+                        <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'" -->
                         <a
-                            :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/wallet' : 'https://docs.hoosmartchain.com/#/wallet'"
+                            href="https://docs.hoosmartchain.com/#/en-us/wallet"
                             target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.wallet') }}</a>
@@ -296,8 +304,9 @@
                 <el-sub-menu index="4">
                     <template #title>{{ $t('common.abouthsc') }}</template>
                     <el-menu-item index="4-1">
+                        <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'" -->
                         <a
-                            :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/intro' : 'https://docs.hoosmartchain.com/#/intro'"
+                            href="https://docs.hoosmartchain.com/#/en-us/intro"
                             target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.aboutus') }}</a>
@@ -305,13 +314,14 @@
                     <el-menu-item index="4-4">
                         <a
                             href="https://www.hoosmartchain.com/en/brand"
-                            @click="toBrand()"
+                            target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.brandresoures') }}</a>
                     </el-menu-item>
                     <el-menu-item index="4-5">
+                        <!-- :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'" -->
                         <a
-                            :href="curLang==='en' ? 'https://docs.hoosmartchain.com/#/en-us/disclaimer' : 'https://docs.hoosmartchain.com/#/disclaimer'"
+                            href="https://docs.hoosmartchain.com/#/en-us/disclaimer"
                             target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.disclaimer') }}</a>
