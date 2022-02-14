@@ -52,7 +52,7 @@
                             @mouseleave="onMouseHoverOverLeave"
                         >
                             <a
-                                href="https://docs.hoosmartchain.com/"
+                                href="https://docs.hoosmartchain.com/#/en-us/intro"
                                 target="_blank"
                             >{{ $t('common.docs') }}</a>
                         </el-menu-item>
@@ -685,6 +685,9 @@ function onMouseHoverOverLeave() {
             }
         }
     }
+}
+.el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
+    border-bottom: none;
 }
 </style>
 

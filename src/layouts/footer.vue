@@ -13,7 +13,7 @@
                 </p>
                 <p>
                     <a
-                        href="https://docs.hoosmartchain.com/"
+                        href="https://docs.hoosmartchain.com/#/en-us/intro/"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.docs') }}</a>
