@@ -151,12 +151,14 @@
                         @mouseleave="onMouseHoverOverLeave"
                     >
                         <template #title>
-                            <el-badge
+                            <!-- <el-badge
                                 style="line-height: 29px"
                                 value="HOT"
                                 @mouseover="onMouseHoverOver"
                                 @mouseleave="onMouseHoverOverLeave"
-                            >{{ $t('common.activity') }}</el-badge>
+                            >
+                            </el-badge>-->
+                            {{ $t('common.activity') }}
                         </template>
                         <el-menu-item
                             index="4-1"
