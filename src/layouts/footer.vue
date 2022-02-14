@@ -304,7 +304,7 @@
                     </el-menu-item>
                     <el-menu-item index="4-4">
                         <a
-                            href="javascript:;"
+                            href="https://www.hoosmartchain.com/en/brand"
                             @click="toBrand()"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.brandresoures') }}</a>
@@ -376,15 +376,23 @@
                     <template #title>{{ $t('common.keepInTouch') }}</template>
                     <el-menu-item index="6-1">
                         <img src="../images/icon/join/twitter-1.svg" alt height="10" />
-                        <a href="https://twitter.com/HooSmartChain" target="_blank">Twitter</a>
+                        <a
+                            class="pl-2"
+                            href="https://twitter.com/HooSmartChain"
+                            target="_blank"
+                        >Twitter</a>
                     </el-menu-item>
                     <el-menu-item index="6-2">
                         <img src="../images/icon/join/telegram-1.svg" alt height="10" />
-                        <a href="https://t.me/HooSmartChain" target="_blank">Telegram</a>
+                        <a class="pl-3" href="https://t.me/HooSmartChain" target="_blank">Telegram</a>
                     </el-menu-item>
                     <el-menu-item index="6-3">
-                        <img src="../images/icon/join/telegram-1.svg" alt height="10" />
-                        <a href="https://discord.com/invite/n6ahyKV24d" target="_blank">Discord</a>
+                        <img src="../images/icon/join/discord.svg" alt height="10" />
+                        <a
+                            class="pl-3"
+                            href="https://discord.com/invite/n6ahyKV24d"
+                            target="_blank"
+                        >Discord</a>
                     </el-menu-item>
                     <!-- <el-menu-item index="6-2"><img src="../images/icon/join/wechat-1.svg" alt="" height="10" />
             <el-popover placement="top-start" width="200" trigger="hover">
