@@ -446,7 +446,7 @@ function onMouseHoverOverLeave() {
 .main-header {
     height: 60px;
     box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.03);
-    padding-left: 40px;
+    padding-left: 3.2%;
     padding-right: 40px;
     .pc {
         max-width: 100%;

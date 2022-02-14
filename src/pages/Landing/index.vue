@@ -238,10 +238,10 @@ const openURL = (uri) => {
 <style lang="scss">
 @import '../../sass/common/_var.scss';
 
-.banner-con {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+// .banner-con {
+//     padding-left: 40px;
+//     padding-right: 40px;
+// }
 .new-journey {
     &:hover {
         span {

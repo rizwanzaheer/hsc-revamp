@@ -55,7 +55,7 @@
             <!-- number counter section start  -->
 
             <el-row justify="center" class="mt-[70px]">
-                <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[4%]">
+                <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[5%]">
                     <div class="grid-content">
                         <h1 class="text-white text-[35px] font-[600]">181M</h1>
                         <h5
@@ -1054,7 +1054,7 @@ const applyNowBtnClick = () => {
 @import '../../sass/common/_var.scss';
 
 .banner-con {
-    padding-left: 40px;
+    padding-left: 6.3%;
     padding-right: 40px;
 }
 .new-journey {
