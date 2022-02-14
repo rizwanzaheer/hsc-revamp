@@ -24,20 +24,20 @@
                         target="_blank"
                     >{{ $t('common.github') }}</a>
                 </p>-->
-                <p>
+                <!-- <p>
                     <a
                         href="https://testnet.hscscan.com/"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.hscte') }}</a>
-                </p>
-                <p>
+                </p>-->
+                <!-- <p>
                     <a
                         href="https://testnet.hscscan.com/hydrant"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.ffhsct') }}</a>
-                </p>
+                </p>-->
             </div>
             <div class="ft-con">
                 <h4>{{ $t('common.usehsc') }}</h4>
@@ -77,13 +77,13 @@
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.hscme') }}</a>
                 </p>
-                <p>
+                <!-- <p>
                     <a
                         href="https://testnet.hscscan.com/"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.hscte') }}</a>
-                </p>
+                </p>-->
             </div>
             <div class="ft-con">
                 <h4>{{ $t('common.abouthsc') }}</h4>
