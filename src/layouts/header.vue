@@ -40,8 +40,9 @@
                             @mouseover="onMouseHoverOver"
                             @mouseleave="onMouseHoverOverLeave"
                         >
+                            <!-- :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'" -->
                             <a
-                                :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'"
+                                href="https://www.hoosmartchain.com/HooSmartChain_EN.pdf"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
