@@ -514,10 +514,10 @@
                                     :span="3"
                                     class="text-center lg:mt-[0%] xl:mt-[0%] !flex flex-col justify-end"
                                 >
-                                    <div class="grid-content flex justify-center">
+                                    <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >TVL 123M USD</h4>
+                                        >HIGHEST DAILY TRANSACTION 186K</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center">
@@ -530,10 +530,10 @@
                                     </div>
                                 </el-col>
                                 <el-col :span="3" class="text-center !flex flex-col justify-end">
-                                    <div class="grid-content flex justify-center">
+                                    <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >TPS 116</h4>
+                                        >NEW MISSION LAUNCH</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center">
@@ -549,10 +549,10 @@
                                     :span="2"
                                     class="text-center lg:mt-[0%] xl:mt-[0%] !flex flex-col justify-end"
                                 >
-                                    <div class="grid-content flex justify-center">
+                                    <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] ml-[50%]"
-                                        >1085234 Addresses</h4>
+                                        >VISIUAL BLOCKCHAIN</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center" :offset="1">
@@ -560,12 +560,15 @@
                                         <img
                                             src="../../images/roadmap/road7.svg"
                                             alt="planedline.png"
+                                            class="ml-[1%]"
                                         />
                                     </div>
                                 </el-col>
                                 <el-col :span="4" class="text-center !flex flex-col justify-end">
                                     <div class="grid-content flex justify-center">
-                                        <h4 class="text-[27px] leading-[21px] font-[600] uppercase">
+                                        <h4
+                                            class="text-[27px] leading-[21px] font-[600] uppercase ml-[-10.5%]"
+                                        >
                                             Metaverse
                                             <br />
                                             <span
@@ -596,12 +599,12 @@
 
                         <!-- third row start -->
                         <el-col :span="24" :md="24">
-                            <el-row :gutter="20" class="z-10 text-white">
-                                <el-col :span="2" class="text-center mt-[12px]" :offset="2">
+                            <el-row class="z-10 text-white">
+                                <el-col :span="4" class="text-center mt-[12px]" :offset="1">
                                     <div class="grid-content flex justify-center">
                                         <h4
-                                            class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >Maine Launches 215 Days</h4>
+                                            class="text-[16px] leading-[20px] font-[600] uppercase pr-[12%]"
+                                        >MAINNET LAUNCHED ON MAY 1ST 2021</h4>
                                         <!-- <img
                                             src="../../images/roadmap/road1.svg"
                                             alt="planedline.png"
@@ -617,31 +620,31 @@
                                         <img
                                             src="../../images/roadmap/road2.svg"
                                             alt="planedline.png"
-                                            class="ml-[50%]"
+                                            class="ml-[-65%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" :offset="1" class="text-center mt-[12px]">
+                                <el-col :span="2" class="text-center mt-[12px] ml-[-0.5%]">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >10716574 Transactions</h4>
+                                        >UNICORN PROGRAM</h4>
                                     </div>
                                 </el-col>
-                                <el-col :span="2" :offset="1" class="text-center">
+                                <el-col :span="2" class="text-center">
                                     <div class="grid-content flex justify-center">
                                         <img
                                             src="../../images/roadmap/road4.svg"
                                             alt="planedline.png"
-                                            class="ml-[-60%]"
+                                            class="ml-[58%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" class="text-center mt-[12px]">
+                                <el-col :span="3" class="text-center mt-[12px] ml-[2.5%]">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >20+ Projects</h4>
+                                        >COSMIC ORIGIN PROJECT</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
@@ -649,15 +652,15 @@
                                         <img
                                             src="../../images/roadmap/road6.svg"
                                             alt="planedline.png"
-                                            class="ml-[55%]"
+                                            class="ml-[3%]"
                                         />
                                     </div>
                                 </el-col>
-                                <el-col :span="2" class="text-center mt-[12px]" :offset="1">
+                                <el-col :span="2" class="text-center mt-[12px] ml-[2.6%]">
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >Infinite Innovation</h4>
+                                        >DAO GOVERNANCE</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" :offset="1" class="text-center">
@@ -667,13 +670,6 @@
                                             alt="planedline.png"
                                             class="ml-[-12%]"
                                         />
-                                        <!-- <h4 class="text-[27px] leading-[21px] font-[600] uppercase">
-                                            Metaverse
-                                            <br />
-                                            <span
-                                                class="text-[15px] leading-[35px] font-[600]"
-                                            >World</span>
-                                        </h4>-->
                                     </div>
                                 </el-col>
                             </el-row>
