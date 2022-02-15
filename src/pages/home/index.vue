@@ -248,7 +248,7 @@
 
                 <!-- first row ends -->
                 <!-- second row starts -->
-                <el-col :span="21" style="overflow-y: scroll;">
+                <el-col :span="21">
                     <img src="../../images/stages/4-stages.png" alt="4-stages-image.png" />
                     <!-- class="max-h-[800px] max-w-[300%]" -->
                     <!-- <el-row justify="center">
@@ -1002,6 +1002,7 @@ const applyNowBtnClick = () => {
     transform: translateY(-60px);
     background: url('../../images/banner/main-banner.png') no-repeat;
     background-size: contain;
+    overflow-x: hidden;
 }
 .el-carousel__container {
     height: 40px;
