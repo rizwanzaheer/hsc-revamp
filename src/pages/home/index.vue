@@ -474,7 +474,7 @@
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
-                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[80%] md:w-[226px] h-[57px]"
                         title="Apply Now"
                         native-type="button"
                         @click="$router.push({name: 'LandingPage'})"
