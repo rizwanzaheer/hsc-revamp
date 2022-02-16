@@ -30,6 +30,34 @@ export default {
     'home.block2.item2.content2': 'Cross Chain',
     'home.block2.item2.content3': 'Start earning',
 
+    'home.newJourneyTitle': 'New Journey',
+    'home.banner.subTitleMain': 'Building an Ecological',
+    'home.banner.Title': 'Metaverse',
+    'home.banner.slogan': 'Providing innovative solutions for growth in world of Blockchains',
+
+    'home.banner.supportTitle': 'Deploy here and apply for supports',
+
+    'home.counter.sectionOneValue': '181M',
+    'home.counter.sectionOneTitle': 'Total value locked (USDT)',
+
+    'home.counter.sectionTwoValue': '25,425',
+    'home.counter.sectionTwoTitle': 'Number of transactions',
+
+    'home.counter.sectionThreeValue': '126',
+    'home.counter.sectionThreeTitle': 'transaction per second',
+
+    'home.counter.sectionFourValue': '65,098',
+    'home.counter.sectionFourTitle': 'Active addresses',
+
+    'home.counter.sectionFiveValue': '27',
+    'home.counter.sectionFiveTitle': 'Active Projects',
+
+    'home.news.updateTitle': 'News & Update:',
+    'home.news.newsTitle': 'Hoo Smart Chain Heads Towards a New Journey.',
+
+    'home.infiniteSection.title': 'Infinite Innovation',
+    'home.infiniteSection.para': 'Our vision for a vertically integrated blockchain ecosystem will take place in four stages',
+
     'home.block3.title': 'Partner',
     'home.roadmap.title': 'Roadmap',
     'home.roadmap.upper.blockOne': 'HIGHEST DAILY TRANSACTION 186K',

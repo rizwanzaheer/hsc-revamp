@@ -7,25 +7,27 @@
                     type="text"
                     class="uppercase text-[#E2459A] text-[15px] hover:text-[#02ead0] text-lg new-journey"
                 >
-                    New Journey
-                    <span class="border-b-2 border-[#E2459A] w-[25px] ml-2"></span>
+                    {{$t('home.newJourneyTitle')}}
+                    <span
+                        class="border-b-2 border-[#E2459A] w-[25px] ml-2"
+                    ></span>
                 </el-button>
                 <h3
                     class="text-[26px] sm:text-[34px] font-[600] leading-[41.45px] text-white"
-                >Building an Ecological</h3>
+                >{{$t('home.banner.subTitleMain')}}</h3>
                 <h1
                     class="text-[55px] sm:text-[90px] font-[700] leading-[67px] sm:leading-[109.71px] text-white ml-[-4px]"
-                >Metaverse</h1>
+                >{{$t('home.banner.Title')}}</h1>
                 <p
                     class="text-[16px] sm:text-[18px] leading-[21.94px] text-white"
-                >Providing innovative solutions for growth in world of Blockchains</p>
+                >{{$t('home.banner.slogan')}}</p>
 
                 <br />
                 <br />
                 <br />
                 <p
                     class="text-[15px] leading-[30px] font-[500] italic text-white"
-                >Deploy here and apply for supports</p>
+                >{{$t('home.banner.supportTitle')}}</p>
                 <CustomButton
                     class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px]"
                     title="Apply now"
@@ -57,10 +59,12 @@
             <el-row justify="center" class="mt-[70px]">
                 <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[5%]">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px] font-[600]">181M</h1>
+                        <h1
+                            class="text-white text-[35px] font-[600]"
+                        >{{$t('home.counter.sectionOneValue')}}</h1>
                         <h5
                             class="text-[#02EAD0] text-[12px] uppercase font-[700]"
-                        >Total value locked (USDT)</h5>
+                        >{{$t('home.counter.sectionOneTitle')}}</h5>
                     </div>
                 </el-col>
                 <span
@@ -68,10 +72,12 @@
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px] font-[600]">25,425</h1>
+                        <h1
+                            class="text-white text-[35px] font-[600]"
+                        >{{$t('home.counter.sectionTwoValue')}}</h1>
                         <h5
                             class="text-[#02EAD0] text-[12px] uppercase font-[700]"
-                        >Number of transactions</h5>
+                        >{{$t('home.counter.sectionTwoTitle')}}</h5>
                     </div>
                 </el-col>
                 <span
@@ -79,10 +85,12 @@
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px] font-[600]">126</h1>
+                        <h1
+                            class="text-white text-[35px] font-[600]"
+                        >{{$t('home.counter.sectionThreeValue')}}</h1>
                         <h5
                             class="text-[#02EAD0] text-[12px] uppercase font-[700]"
-                        >transaction per second</h5>
+                        >{{$t('home.counter.sectionThreeTitle')}}</h5>
                     </div>
                 </el-col>
                 <span
@@ -90,8 +98,12 @@
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px] font-[600]">65,098</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active addresses</h5>
+                        <h1
+                            class="text-white text-[35px] font-[600]"
+                        >{{$t('home.counter.sectionFourValue')}}</h1>
+                        <h5
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                        >{{$t('home.counter.sectionFourTitle')}}</h5>
                     </div>
                 </el-col>
                 <span
@@ -99,8 +111,12 @@
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
                     <div class="grid-content">
-                        <h1 class="text-white text-[35px] font-[600]">27</h1>
-                        <h5 class="text-[#02EAD0] text-[12px] uppercase font-[700]">Active Projects</h5>
+                        <h1
+                            class="text-white text-[35px] font-[600]"
+                        >{{$t('home.counter.sectionFiveValue')}}</h1>
+                        <h5
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                        >{{$t('home.counter.sectionFiveTitle')}}</h5>
                     </div>
                 </el-col>
             </el-row>
@@ -123,7 +139,7 @@
                                 <img src="../../images/news/news.svg" class />
                                 <h2
                                     class="text-[15px] md:text-[16px] text-white leading-[24px] md:leading-[20px] ml-5 font-[400] md:font-[600]"
-                                >News & Update:</h2>
+                                >{{$t('home.news.updateTitle')}}</h2>
                             </div>
                         </el-col>
                         <el-col :md="14" :xs="18">
@@ -131,7 +147,7 @@
                                 class="grid-content text-center h-[100%] flex justify-center align-center"
                             >
                                 <h1 class="text-white text-[15px] mt-5">
-                                    Hoo Smart Chain Heads Towards a New Journey.
+                                    {{$t('home.news.newsTitle')}}
                                     <el-link
                                         class="text-[15px] leading-[24px] font-[500] ml-8"
                                         :underline="false"
@@ -177,10 +193,10 @@
                 <el-col :xs="24" :sm="24" :lg="24" justify="center">
                     <h2
                         class="text-white text-[35px] md:text-[40px] mt-5 text-center leading-[42.67px] md:leading-[48.76px] font-[600] not-italic"
-                    >Infinite Innovation</h2>
+                    >{{$t('home.infiniteSection.title')}}</h2>
                     <h5
                         class="text-white text-[16px] md:text-[18px] font-[500] text-center leading-[25px] md:leading-[30px]"
-                    >Our vision for a vertically integrated blockchain ecosystem will take place in four stages</h5>
+                    >{{$t('home.infiniteSection.para')}}</h5>
                 </el-col>
             </el-row>
             <!-- Infinite Innovation section start -->
