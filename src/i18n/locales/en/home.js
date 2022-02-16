@@ -31,4 +31,24 @@ export default {
     'home.block2.item2.content3': 'Start earning',
 
     'home.block3.title': 'Partner',
+    'home.roadmap.title': 'Roadmap',
+    'home.roadmap.upper.blockOne': 'HIGHEST DAILY TRANSACTION 186K',
+    'home.roadmap.upper.blockTwo': 'NEW MISSION LAUNCH',
+    'home.roadmap.upper.blockThree': 'VISUAL BLOCKCHAIN',
+    'home.roadmap.upper.blockFour': `Metaverse <br /> <span class="text-[15px] leading-[35px] font-[600]">World</span>`,
+
+    'home.roadmap.lower.blockOne': 'MAINNET LAUNCHED ON MAY 1ST 2021',
+    'home.roadmap.lower.blockTwo': 'UNICORN PROGRAM',
+    'home.roadmap.lower.blockThree': 'COSMIC ORIGIN PROJECT',
+    'home.roadmap.lower.blockFour': `DAO GOVERNANCE`,
+
+    'home.stages.upper.blockOneTitle': `3D Blockchain`,
+    'home.stages.upper.blockOnePara': `Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.`,
+    'home.stages.upper.blockTwoTitle': `Metaverse Chain`,
+    'home.stages.upper.blockTwoPara': `When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.`,
+
+    'home.stages.lower.blockOneTitle': `Visual Blockchain`,
+    'home.stages.lower.blockOnePara': `All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.`,
+    'home.stages.lower.blockTwoTitle': `Social-Fi`,
+    'home.stages.lower.blockTwoPara': `Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.`,
 };

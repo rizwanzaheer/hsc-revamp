@@ -202,20 +202,16 @@
                             <div class="grid-content w-60 2xl:w-[100%]">
                                 <h4
                                     class="text-[18px] 2xl:text-[30px] leading-[21.94px] 2xl:leading-[32px] font-[600] mb-4"
-                                >Visual Blockchain</h4>
-                                <p
-                                    class="2xl:text-[16px]"
-                                >All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.</p>
+                                >{{$t('home.stages.lower.blockOneTitle')}}</h4>
+                                <p class="2xl:text-[16px]">{{$t('home.stages.lower.blockOnePara')}}</p>
                             </div>
                         </el-col>
                         <el-col :span="6" :lg="6" :xl="6" class="!pl-[10%] lg:mt-[0%] xl:mt-[0%]">
                             <div class="grid-content w-65 2xl:w-[100%]">
                                 <h4
                                     class="text-[18px] 2xl:text-[30px] leading-[21.94px] 2xl:leading-[32px] font-[600] mb-4"
-                                >3D Blockchain</h4>
-                                <p
-                                    class="2xl:text-[16px]"
-                                >Interactions with Defi protocols, NFTs will become 3D representations on chain to be collected and shown off by the metaverse's inhabitants. Communities will inhabit and thrive.</p>
+                                >{{$t('home.stages.upper.blockOneTitle')}}</h4>
+                                <p class="2xl:text-[16px]">{{$t('home.stages.upper.blockOnePara')}}</p>
                             </div>
                         </el-col>
                         <el-col
@@ -227,20 +223,16 @@
                             <div class="grid-content w-60 2xl:w-[100%]">
                                 <h4
                                     class="text-[18px] 2xl:text-[30px] leading-[21.94px] 2xl:leading-[32px] font-[600] mb-4"
-                                >Social-Fi</h4>
-                                <p
-                                    class="2xl:text-[16px]"
-                                >Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.</p>
+                                >{{$t('home.stages.lower.blockTwoTitle')}}</h4>
+                                <p class="2xl:text-[16px]">{{$t('home.stages.lower.blockTwoPara')}}</p>
                             </div>
                         </el-col>
                         <el-col :span="6" :lg="6" :xl="6" class="!pl-[3%]">
                             <div class="grid-content w-[18rem] 2xl:w-[100%]">
                                 <h4
                                     class="text-[18px] 2xl:text-[32px] leading-[21.94px] 2xl:leading-[32px] font-[600] mb-4"
-                                >Metaverse Chain</h4>
-                                <p
-                                    class="2xl:text-[18px]"
-                                >When visualization, blockchain technology and a thriving ecosystem are brought together, HSC will enter the Metaverse phase. Combining VR, wearable devices and bleeding edge technologies to bring immersive, interaction and innovative concepts.</p>
+                                >{{$t('home.stages.upper.blockTwoTitle')}}</h4>
+                                <p class="2xl:text-[18px]">{{$t('home.stages.upper.blockTwoPara')}}</p>
                             </div>
                         </el-col>
                     </el-row>
@@ -490,7 +482,7 @@
                         <el-col :span="24">
                             <h1
                                 class="text-white text-[40px] leading-[49px] font-[600] text-center mt-10"
-                            >Roadmap</h1>
+                            >{{ $t('home.roadmap.title') }}</h1>
                         </el-col>
                     </el-row>
 
@@ -517,7 +509,7 @@
                                     <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >HIGHEST DAILY TRANSACTION 186K</h4>
+                                        >{{ $t('home.roadmap.upper.blockOne') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center">
@@ -533,7 +525,7 @@
                                     <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >NEW MISSION LAUNCH</h4>
+                                        >{{ $t('home.roadmap.upper.blockTwo') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center">
@@ -552,7 +544,7 @@
                                     <div class="grid-content flex justify-center pb-[9px]">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] ml-[50%]"
-                                        >VISIUAL BLOCKCHAIN</h4>
+                                        >{{ $t('home.roadmap.upper.blockThree') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center" :offset="1">
@@ -568,13 +560,8 @@
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[27px] leading-[21px] font-[600] uppercase ml-[-10.5%]"
-                                        >
-                                            Metaverse
-                                            <br />
-                                            <span
-                                                class="text-[15px] leading-[35px] font-[600]"
-                                            >World</span>
-                                        </h4>
+                                            v-html="$t('home.roadmap.upper.blockFour')"
+                                        ></h4>
                                     </div>
                                 </el-col>
                             </el-row>
@@ -604,7 +591,7 @@
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase pr-[12%]"
-                                        >MAINNET LAUNCHED ON MAY 1ST 2021</h4>
+                                        >{{ $t('home.roadmap.lower.blockOne') }}</h4>
                                         <!-- <img
                                             src="../../images/roadmap/road1.svg"
                                             alt="planedline.png"
@@ -628,7 +615,7 @@
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >UNICORN PROGRAM</h4>
+                                        >{{ $t('home.roadmap.lower.blockTwo') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center">
@@ -644,7 +631,7 @@
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >COSMIC ORIGIN PROJECT</h4>
+                                        >{{ $t('home.roadmap.lower.blockThree') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
@@ -660,7 +647,7 @@
                                     <div class="grid-content flex justify-center">
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600]"
-                                        >DAO GOVERNANCE</h4>
+                                        >{{ $t('home.roadmap.lower.blockFour') }}</h4>
                                     </div>
                                 </el-col>
                                 <el-col :span="2" :offset="1" class="text-center">
