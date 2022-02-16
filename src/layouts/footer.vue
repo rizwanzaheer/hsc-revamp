@@ -6,7 +6,7 @@
                 <p>
                     <!-- :href="curLang==='en'?'/HooSmartChain_EN.pdf':'/HooSmartChain.pdf'" -->
                     <a
-                        href="HooSmartChain_EN.pdf"
+                        href="/HooSmartChain_EN.pdf"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.whitePaper') }}</a>

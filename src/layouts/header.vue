@@ -42,7 +42,7 @@
                         >
                             <!-- :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'" -->
                             <a
-                                href="https://www.hoosmartchain.com/HooSmartChain_EN.pdf"
+                                href="/HooSmartChain_EN.pdf"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
@@ -279,8 +279,9 @@
                                 <wallet />
                             </el-icon>-->
 
+                            <!-- :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'" -->
                             <a
-                                :href="curLang==='en'?'https://www.hoosmartchain.com/HooSmartChain_EN.pdf':'https://www.hoosmartchain.com/HooSmartChain.pdf'"
+                                href="/HooSmartChain_EN.pdf"
                                 target="_blank"
                             >{{ $t('common.whitePaper') }}</a>
                         </el-menu-item>
