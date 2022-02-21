@@ -28,30 +28,37 @@
                 <p
                     class="text-[15px] leading-[30px] font-[500] italic text-white"
                 >{{$t('home.banner.supportTitle')}}</p>
-                <CustomButton
-                    class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px]"
-                    title="Apply now"
-                    native-type="button"
-                    @click="$router.push({name: 'LandingPage'})"
-                />
-                <el-link
-                    class="text-[15px] text-white leading-[19.29px] hover:text-red-900 mt-1"
-                    :underline="false"
-                    href="https://docs.hoosmartchain.com/#/en-us/intro"
-                    target="_blank"
+
+                <div
+                    class="flex flex-wrap md:justify-start justify-center gap-[3rem] items-center mt-4"
                 >
-                    Read Documentation
-                    <!-- <i class="el-icon-view el-icon--right"></i> -->
-                    <span
-                        style="transform: translateY(2px);
+                    <CustomButton
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black w-10/12 md:w-52"
+                        title="Apply now"
+                        native-type="button"
+                        @click="$router.push({name: 'LandingPage'})"
+                    />
+                    <div class="flex items-center gap-2">
+                        <el-link
+                            class="text-[15px] text-white leading-[19.29px] hover:text-red-900"
+                            :underline="false"
+                            href="https://docs.hoosmartchain.com/#/en-us/intro"
+                            target="_blank"
+                        >
+                            Read Documentation
+                            <!-- <i class="el-icon-view el-icon--right"></i> -->
+                            <span
+                                style="transform: translateY(2px);
                             display: inline-block;
                             font-size: 12px;"
-                    >
-                        <el-icon>
-                            <arrow-right />
-                        </el-icon>
-                    </span>
-                </el-link>
+                            >
+                                <el-icon>
+                                    <arrow-right />
+                                </el-icon>
+                            </span>
+                        </el-link>
+                    </div>
+                </div>
             </div>
 
             <!-- number counter section start  -->
@@ -1055,7 +1062,7 @@ const applyNowBtnClick = () => {
 
 .banner-con {
     padding-left: 6.3%;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 .new-journey {
     &:hover {
