@@ -80,5 +80,32 @@ export default {
     'home.stages.lower.blockTwoTitle': `Social-Fi`,
     'home.stages.lower.blockTwoPara': `Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.`,
 
+    'home.priceCalculator.tabOne.Title': `TVL Basic<br />rewards plan<br /><span>All projects</span>`,
+    'home.priceCalculator.sectionOne.Title': `Estimate your rewards`,
+    'home.priceCalculator.sectionOne.calcTitle': `Net TVL`,
+    'home.priceCalculator.sectionOne.footerTitleOne': `Basic Grants`,
+    'home.priceCalculator.sectionOne.footerTitleTwo': `Monthly continuous Rewards`,
+
+    'home.priceCalculator.tabTwo.Title': `Volume bonus<br /><span>GameFi, NFT</span>`,
+    'home.priceCalculator.sectionTwo.Title': `Estimate your rewards`,
+    'home.priceCalculator.sectionTwo.calcTitle': `Real transaction volume (Monthly)`,
+    'home.priceCalculator.sectionTwo.footerTitleOne': `Reward coefficient: X`,
+    'home.priceCalculator.sectionTwo.footerTitleTwo': `Reward Bonus A`,
+    'home.priceCalculator.sectionTwo.footerTitleThree': `Rewards Bonus B`,
+
+    'home.priceCalculator.tabThree.Title': `Capital Hub<br />Rewards Plan<br /><span>Cross-chain Projects</span>`,
+    'home.priceCalculator.sectionThree.Title': `Estimate your rewards`,
+    'home.priceCalculator.sectionThree.calcTitle': `Requirement 1：Net inflow`,
+    'home.priceCalculator.sectionThree.footerTitleOne': `Requirement 2：<br />Standards monthly<br />trading volume`,
+    'home.priceCalculator.sectionThree.footerTitleTwo': `Monthly Rewards`,
+    'home.priceCalculator.sectionThree.footerTitleThree': `HSC capital allocation`,
+
+    'home.priceCalculator.tabFour.Title': `HOO Bonus<br /><span>Stake HOO to get Bonus</span>`,
+    'home.priceCalculator.sectionFour.Title': `Estimate your rewards`,
+    'home.priceCalculator.sectionFour.calcTitle': `Staking number`,
+    'home.priceCalculator.sectionFour.footerTitleOne': `Reward coefficient: y`,
+    'home.priceCalculator.sectionFour.footerTitleTwo': `Standard Staking Bonus`,
+    'home.priceCalculator.sectionFour.footerTitleThree': `Monthly Staking Bonus`,
+
     'home.visualization.Title': `Start visualizing your journey and apply grant`,
 };
