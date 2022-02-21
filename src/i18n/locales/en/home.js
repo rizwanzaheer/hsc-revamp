@@ -108,4 +108,10 @@ export default {
     'home.priceCalculator.sectionFour.footerTitleThree': `Monthly Staking Bonus`,
 
     'home.visualization.Title': `Start visualizing your journey and apply grant`,
+    'home.hsc.landScape': `HSC Landscape`,
+    'home.hsc.landScapeOverView': `Over<span class="text-[#02EAD0]">20+</span> Projects on HSC`,
+
+    'home.hsc.cosmic.title': `Cosmic Origin Project`,
+    'home.hsc.cosmic.slogan': `Be part of Cosmic Origin Project.`,
+    'home.hsc.cosmic.para': `We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.`,
 };

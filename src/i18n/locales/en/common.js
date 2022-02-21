@@ -42,6 +42,12 @@ export default {
 
     'common.readDocumentation': `Read Documentation`,
     'common.news.seeMoreNews': `See more news`,
+    'common.news.seeAllProjects': `See All Projects`,
 
     'common.btn.applyNow': `Apply Now`,
+    'common.btn.registerNow': `Register Now`,
+    'common.btn.whitePaper': `View White Paper`,
+    'common.btn.learnMore': `Learn More`,
+
+    'common.btn.joinCosmicProject': `Join Cosmic Origin Project`,
 };

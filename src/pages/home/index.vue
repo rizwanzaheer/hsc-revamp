@@ -16,7 +16,7 @@
                     class="text-[26px] sm:text-[34px] font-[600] leading-[41.45px] text-white"
                 >{{$t('home.banner.subTitleMain')}}</h3>
                 <h1
-                    class="text-[50px] sm:text-[90px] font-[700] leading-[67px] sm:leading-[109.71px] text-white ml-[-4px]"
+                    class="text-[50px] sm:text-[90px] font-[700] sm:leading-[109.71px] md:leading-none text-white ml-[-4px]"
                 >{{$t('home.banner.Title')}}</h1>
                 <p
                     class="text-[16px] sm:text-[18px] leading-[21.94px] text-white"
@@ -382,7 +382,7 @@
                                 class="!ml-0 hover:bg-black hover:text-white mt-3 border-black hover:border-transparent text-black w-[100%] md:w-[170px] h-[45px] leading-[18px] font-[600] text-[15px]"
                                 native-type="button"
                                 @click="openURL('https://www.hoosmartchain.com/HooSmartChain_EN.pdf')"
-                            >View White Paper</el-button>
+                            >{{$t('common.btn.whitePaper')}}</el-button>
                         </el-col>
                     </el-row>
                 </el-col>
@@ -454,7 +454,7 @@
                         >
                             <CustomButton
                                 class="bg-black text-white hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[100%] md:w-[150px] h-[45px] leading-[18.29px] font-[600] text-[15px]"
-                                title="Learn more"
+                                :title="$t('common.btn.learnMore')"
                                 native-type="button"
                                 @click="openURL('https://docs.hoosmartchain.com/#/en-us/intro')"
                             />
@@ -471,10 +471,10 @@
                 <el-col :lg="12">
                     <h2
                         class="text-white text-[35px] md:text-[40px] mt-5 p-[7%] md:p-0 text-center leading-[43px] md:leading-[48.76px] text-[600] not-italic"
-                    >Cosmic Origin Project</h2>
+                    >{{$t('home.hsc.cosmic.title')}}</h2>
                     <h5
                         class="text-white text-[16px] md:text-[18px] text-center leading-[25px] md:leading-[30px] p-[7%] md:p-0"
-                    >We provide support to all developers though grants, bonus schemes, technical Support, as well as Media exposure, marketing to grow our ecosystem.</h5>
+                    >{{$t('home.hsc.cosmic.para')}}</h5>
                 </el-col>
             </el-row>
 
@@ -491,7 +491,7 @@
                 <el-col :span="24">
                     <p
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                    >Be part of Cosmic Origin Project.</p>
+                    >{{$t('home.hsc.cosmic.slogan')}}</p>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
@@ -711,15 +711,13 @@
                 <el-col :span="24" :xs="20" :sm="20">
                     <h6
                         class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                    >HSC Landscape</h6>
+                    >{{$t('home.hsc.landScape')}}</h6>
                 </el-col>
                 <el-col :span="24" :xs="20" :sm="20">
                     <h1
                         class="text-[35px] md:text-[40px] leading-[43px] md:leading-[48.76px] font-[600] text-white text-center"
-                    >
-                        Over
-                        <span class="text-[#02EAD0]">20+</span> Projects on HSC
-                    </h1>
+                        v-html="$t('home.hsc.landScapeOverView')"
+                    ></h1>
                 </el-col>
                 <el-col :span="24" class="flex justify-center mt-5 md:mt-0">
                     <el-link
@@ -728,7 +726,7 @@
                         href="https://eapy.com/en/project/list"
                         target="_blank"
                     >
-                        See All Projects
+                        {{$t('common.news.seeAllProjects')}}
                         <span
                             style="transform: translateY(2px);
                             display: inline-block;
@@ -888,7 +886,9 @@
 
                     <el-row :gutter="20" justify="center" class="mt-14">
                         <el-col :span="10" :xs="24" :sm="24">
-                            <div class="hsc-community-icon-con flex justify-evenly">
+                            <div
+                                class="hsc-community-icon-con flex justify-center items-center gap-12 flex-wrap"
+                            >
                                 <p
                                     class="hsc-community-icon-1"
                                     @click="openURL('https://discord.com/invite/n6ahyKV24d')"
@@ -940,14 +940,16 @@
                     style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
                 >
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
-                        <el-col :lg="14" :xs="24" :sm="24" class="h-32">
-                            <div class="grid-content flex items-center h-[inherit]">
+                        <el-col :lg="14" :xs="24" :md="12" :sm="24" class="h-32">
+                            <div
+                                class="grid-content flex items-center h-[inherit] justify-center lg:justify-start"
+                            >
                                 <h1
-                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mr-20 md:mr-0 ml-20 text-center md:text-left"
-                                >Join Cosmic Origin Project</h1>
+                                    class="text-[#12171B] leading-[36.57px] font-[600] text-[30px] mr-20 sm:mr-0 ml-20 sm:ml-0 md:ml-20 text-center md:text-left"
+                                >{{$t('common.btn.joinCosmicProject')}}</h1>
                             </div>
                         </el-col>
-                        <el-col :lg="10" :xs="24" :sm="24" class="h-32">
+                        <el-col :lg="10" :xs="24" :md="12" :sm="24" class="h-32">
                             <div
                                 class="grid-content text-center flex-col flex md:flex-row justify-center items-center h-[inherit]"
                             >
@@ -957,14 +959,14 @@
                                     class="hover:bg-black hover:text-white text-[15px] leading-[18px] md:mt-4 border-black text-black w-[60%] md:w-[150px] h-[45px]"
                                     native-type="button"
                                     @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
-                                >Register Now</el-button>
+                                >{{$t('common.btn.registerNow')}}</el-button>
                                 <el-link
                                     class="!text-black text-[15px] leading-[24px] font-[500] ml-8 mt-3"
                                     :underline="false"
                                     href="https://docs.hoosmartchain.com/#/en-us/intro"
                                     target="_blank"
                                 >
-                                    Read Documentation
+                                    {{$t('common.readDocumentation')}}
                                     <!-- <i class="el-icon-view el-icon--right"></i> -->
                                     <span
                                         style="transform: translateY(1px);
