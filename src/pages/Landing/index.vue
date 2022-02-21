@@ -113,25 +113,6 @@
             </el-row>
             <!-- cosmic origin project section start -->
 
-            <!-- cosmic tab section ends  -->
-
-            <!-- <el-row justify="center" class="mt-10">
-                <el-col :span="24">
-                    <p
-                        class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                    >Be part of Cosmic Origin Project.</p>
-                </el-col>
-                <el-col :span="24" class="flex justify-center">
-                    <CustomButton
-                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
-                        :title="$t('common.btn.applyNow')"
-                        target="_blank"
-                        href="https://hoo.com"
-                    />
-                </el-col>
-            </el-row>-->
-            <!-- cosmic origin project section start -->
-
             <!-- hsc community section start -->
             <el-row class="hsc-community-con mt-20">
                 <el-col :span="24" class="mt-[6rem]">
@@ -149,12 +130,6 @@
                     <el-row :gutter="20" justify="center " class="mt-14">
                         <el-col :xs="20" :sm="20" md="6">
                             <div class="hsc-community-icon-con flex justify-evenly">
-                                <!-- <p class="hsc-community-icon-1">
-                                    <a href>Website</a>
-                                </p>
-                                <p class="hsc-community-icon-2">
-                                    <a href>Medium</a>
-                                </p>-->
                                 <p
                                     class="hsc-community-icon-5"
                                     @click="openURL('https://discord.com/invite/n6ahyKV24d')"
@@ -174,11 +149,6 @@
                                     <a href>Twitter</a>
                                 </p>
                             </div>
-                            <!-- <el-col :span="4" class="grid-content">1</el-col>
-                            <el-col :span="4" class="grid-content">2</el-col>
-                            <el-col :span="4" class="grid-content">3</el-col>
-                            <el-col :span="4" class="grid-content">4</el-col>
-                            <el-col :span="4" class="grid-content">5</el-col>-->
                         </el-col>
                     </el-row>
                 </el-col>
@@ -203,11 +173,6 @@
                             <div
                                 class="grid-content text-center flex justify-center md:justify-end items-center md:pr-[10%]"
                             >
-                                <!-- <el-button
-                                    type="info"
-                                    plain
-                                    class="hover:bg-black hover:text-white mt-4 border-black text-black"
-                                >Register Now</el-button>-->
                                 <a
                                     class="text-[8px] md:text-[15px] bg-[#12171B] leading-[16px] md:leading-[18px] no-underline font-[600] text-white"
                                     style="box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.37); border-radius: 6px; text-decoration: none !important; padding:12px 25px !important; "
@@ -237,11 +202,6 @@ const openURL = (uri) => {
 
 <style lang="scss">
 @import '../../sass/common/_var.scss';
-
-// .banner-con {
-//     padding-left: 40px;
-//     padding-right: 40px;
-// }
 .new-journey {
     &:hover {
         span {
@@ -255,7 +215,6 @@ const openURL = (uri) => {
     text-decoration: underline !important;
     &:hover {
         text-decoration: none !important;
-        // color: 'inherit' !important;
         .el-link--inner {
             color: rgb(59 130 246 / 0.5) !important;
         }
@@ -273,21 +232,6 @@ const openURL = (uri) => {
     margin-right: 100px;
     background-position: center;
 }
-
-// .home-con {
-//     background: url('../../images/banner/main-banner.png') no-repeat left center;
-//     background-size: 100%;
-//     // &:hover {
-//     //     background: url('../images/icon/join/twitter.svg') no-repeat left center;
-//     //     background-size: 25px 28px;
-//     //     a {
-//     //         color: $color-white;
-//     //         text-decoration: none;
-//     //         margin-left: 5px;
-//     //     }
-//     //     cursor: pointer;
-//     // }
-// }
 .el-row {
     margin-bottom: 20px;
     &:last-child {
@@ -410,47 +354,17 @@ const openURL = (uri) => {
     }
 }
 .steps {
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: space-between;
-    // padding: 0 33px;
-    // align-items: center;
     a {
-        // display: block;
-        // text-align: center;
         &.step {
-            // width: 160px;
             height: 105px;
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            // border-radius: 10px;
-            // padding-top: 40px;
-
             transition: all 0.3s ease-out;
-            // &:hover {
-            //     background-color: $color-bg;
-            //     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
-            // }
         }
         &.arrow {
-            // margin-top: 56px;
             transform: translate(-16px, -70%);
-            // img {
-            //     width: 26px;
-            //     height: 21px;
-            // }
         }
-        // img {
-        //     width: 50px;
-        //     height: 50px;
-        // }
-        // p {
-        //     font-size: 16px;
-        //     margin-top: 18px;
-        //     color: $color-secondary;
-        // }
     }
 }
 
@@ -496,7 +410,6 @@ const openURL = (uri) => {
             a {
                 color: $color-white;
                 text-decoration: none;
-                // margin-left: 5px;
             }
             cursor: pointer;
         }
@@ -510,7 +423,6 @@ const openURL = (uri) => {
             a {
                 color: $color-white;
                 text-decoration: none;
-                // margin-left: 5px;
             }
             cursor: pointer;
         }
@@ -524,7 +436,6 @@ const openURL = (uri) => {
             a {
                 color: $color-white;
                 text-decoration: none;
-                // margin-left: 5px;
             }
             cursor: pointer;
         }
@@ -538,7 +449,6 @@ const openURL = (uri) => {
             a {
                 color: $color-white;
                 text-decoration: none;
-                // margin-left: 5px;
             }
             cursor: pointer;
         }
@@ -552,7 +462,6 @@ const openURL = (uri) => {
             a {
                 color: $color-white;
                 text-decoration: none;
-                // margin-left: 5px;
             }
             cursor: pointer;
         }
