@@ -284,7 +284,7 @@
                 <el-col :span="24" :xs="20" :sm="20">
                     <p
                         class="text-[16px] leading-[22px] md:leading-[30px] font-[500] text-white text-center"
-                    >Start visualising your journey and apply grant</p>
+                    >{{$t('home.visualization.Title')}}</p>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton

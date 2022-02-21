@@ -79,4 +79,6 @@ export default {
     'home.stages.lower.blockOnePara': `All data, interactions on chain will be visualised in a physical way. Allowing a intuitive and unique experience.`,
     'home.stages.lower.blockTwoTitle': `Social-Fi`,
     'home.stages.lower.blockTwoPara': `Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.`,
+
+    'home.visualization.Title': `Start visualizing your journey and apply grant`,
 };
