@@ -307,7 +307,7 @@
                     :md="10"
                     :sm="20"
                     :xs="20"
-                    class="desc desc-1 !p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px] m-1 mb-[10%] md:mb-0"
+                    class="desc desc-1 !p-[30px] md:!p-[40px] min-h-[390px] w-[540px] for-dev rounded-[10px] m-1 mb-[10%] lg:mb-0"
                     :gutter="40"
                 >
                     <div class="desc-con">
@@ -390,7 +390,7 @@
                     :md="10"
                     :sm="20"
                     :xs="20"
-                    class="desc desc-2 min-h-[390px] w-[540px] !p-[40px] rounded-[10px] for-user m-1"
+                    class="desc desc-2 min-h-[390px] w-[540px] !p-[30px] md:!p-[40px] rounded-[10px] for-user m-1"
                     :gutter="40"
                 >
                     <div class="desc-con">
@@ -403,7 +403,7 @@
                         >We want to make sure that users can easily accomplish goals by providing support and resources</p>
                         <p class="info" v-html="$t('home.block2.item2.desc')"></p>
                         <div
-                            class="steps flex place-content-evenly mt-4 mt-10 flex-col md:flex-row"
+                            class="steps flex place-content-evenly mt-4 md:mt-10 flex-col md:flex-row"
                             style="align-items:center;"
                         >
                             <a
