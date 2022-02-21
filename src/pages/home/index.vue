@@ -176,7 +176,7 @@
                         </el-col>
                         <el-col :md="5">
                             <div
-                                class="grid-content text-center h-[100%] flex justify-center align-center mb-[10px] md:mb-[0px]"
+                                class="grid-content text-center h-[100%] flex justify-center align-center mb-14 md:mb-[0px]"
                             >
                                 <el-button
                                     type="info"
@@ -194,8 +194,8 @@
 
             <!-- Infinite Innovation section start -->
 
-            <el-row :gutter="20" class="mt-20">
-                <el-col :xs="24" :sm="24" :lg="24" justify="center">
+            <el-row :gutter="20" class="mt-20 justify-center">
+                <el-col :xs="20" :sm="20" :lg="24" justify="center">
                     <h2
                         class="text-white text-[35px] md:text-[40px] mt-5 text-center leading-[42.67px] md:leading-[48.76px] font-[600] not-italic"
                     >{{$t('home.infiniteSection.title')}}</h2>
@@ -280,10 +280,10 @@
             <!-- Staging section ends -->
 
             <!-- visualization section starts -->
-            <el-row justify="center">
-                <el-col :span="24" :xs="24" :sm="24">
+            <el-row justify="center" class="gap-4">
+                <el-col :span="24" :xs="20" :sm="20">
                     <p
-                        class="text-[16px] leading-[22px] md:leading-[30px] font-[500] text-white text-center pr-[20%] pl-[20%]"
+                        class="text-[16px] leading-[22px] md:leading-[30px] font-[500] text-white text-center"
                     >Start visualising your journey and apply grant</p>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
