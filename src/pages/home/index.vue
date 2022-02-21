@@ -1,7 +1,6 @@
 <template>
     <el-main class="home-main-bg-container">
         <div class="home-con">
-            <!-- <h1>Dynamic home page loading here!</h1> -->
             <div class="banner-con text-center sm:text-left md:text-left lgs:text-left">
                 <el-button
                     type="text"
@@ -263,13 +262,6 @@
                 <!-- second row starts -->
                 <el-col :span="21">
                     <img src="../../images/stages/4-stages.png" alt="4-stages-image.png" />
-                    <!-- class="max-h-[800px] max-w-[300%]" -->
-                    <!-- <el-row justify="center">
-                        <el-col :span="24">
-                            <div class="grid-content place-items-center">
-                            </div>
-                        </el-col>
-                    </el-row>-->
                 </el-col>
                 <!-- second row ends -->
             </el-row>
@@ -300,9 +292,6 @@
             <!-- developer/user section start -->
 
             <el-row :gutter="20" class="justify-evenly mt-40">
-                <!-- <el-col :span="12" class="s-title bg-gradient-to-r from-[#559BC8] to-[#2BE5C3]">
-                    <span v-html="$t('home.block2.title')"></span>
-                </el-col>-->
                 <el-col
                     :md="10"
                     :sm="20"
@@ -361,11 +350,6 @@
                         </div>
                     </div>
                     <el-row justify="center" class="mt-10">
-                        <!-- <el-col :span="24">
-                            <p
-                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                            >Start visualising your journey and apply grant</p>
-                        </el-col>-->
                         <el-col
                             :span="24"
                             class="flex-col flex md:flex-row items-center justify-center"
@@ -443,11 +427,6 @@
                         </div>
                     </div>
                     <el-row justify="center" class="mt-10">
-                        <!-- <el-col :span="24">
-                            <p
-                                class="text-[16px] leading-[30px] font-[500] text-white text-center"
-                            >Start visualising your journey and apply grant</p>
-                        </el-col>-->
                         <el-col
                             :span="24"
                             class="flex-col flex md:flex-row items-center justify-center"
@@ -521,9 +500,6 @@
                             <el-row :gutter="20" class="z-10 text-white">
                                 <el-col :span="2" class="text-center" :offset="2">
                                     <div class="grid-content flex justify-center">
-                                        <!-- <h4
-                                            class="text-[18px] leading-[21.94px] font-[600] mb-4"
-                                        >Maine Launches 215 Days</h4>-->
                                         <img
                                             src="../../images/roadmap/road1.svg"
                                             alt="planedline.png"
@@ -604,12 +580,6 @@
                                 alt="planedline.png"
                                 style="width:100%; padding-left:2.2%; padding-right:2.2%;"
                             />
-                            <!-- <el-row justify="center">
-                                <el-col :span="24">
-                                    <div class="grid-content place-items-center">
-                                    </div>
-                                </el-col>
-                            </el-row>-->
                         </el-col>
                         <!-- second row ends -->
 
@@ -621,18 +591,10 @@
                                         <h4
                                             class="text-[16px] leading-[20px] font-[600] uppercase pr-[12%]"
                                         >{{ $t('home.roadmap.lower.blockOne') }}</h4>
-                                        <!-- <img
-                                            src="../../images/roadmap/road1.svg"
-                                            alt="planedline.png"
-                                            class="ml-[-8%]"
-                                        />-->
                                     </div>
                                 </el-col>
                                 <el-col :span="2" class="text-center lg:mt-[0%] xl:mt-[0%]">
                                     <div class="grid-content flex justify-center">
-                                        <!-- <h4
-                                            class="text-[16px] leading-[20px] font-[600] uppercase"
-                                        >TVL 123M USD</h4>-->
                                         <img
                                             src="../../images/roadmap/road2.svg"
                                             alt="planedline.png"
@@ -742,7 +704,6 @@
                 </el-col>
                 <!-- carousel section start -->
                 <el-col :span="20" class="mt-20 mb-20">
-                    <!-- <h1 class="text-white">carousel section</h1> -->
                     <!-- pc-carousel start  -->
                     <el-carousel :interval="5000" arrow="always" class="pc-carousel">
                         <el-carousel-item>
@@ -920,11 +881,6 @@
                                     <a>Discord</a>
                                 </p>
                             </div>
-                            <!-- <el-col :span="4" class="grid-content">1</el-col>
-                            <el-col :span="4" class="grid-content">2</el-col>
-                            <el-col :span="4" class="grid-content">3</el-col>
-                            <el-col :span="4" class="grid-content">4</el-col>
-                            <el-col :span="4" class="grid-content">5</el-col>-->
                         </el-col>
                     </el-row>
                 </el-col>
@@ -967,7 +923,6 @@
                                     target="_blank"
                                 >
                                     {{$t('common.readDocumentation')}}
-                                    <!-- <i class="el-icon-view el-icon--right"></i> -->
                                     <span
                                         style="transform: translateY(1px);
                                                 display: inline-block;
