@@ -321,7 +321,7 @@
                         </p>
                         <p class="info" v-html="$t('home.block2.item1.desc')"></p>
                         <div
-                            class="steps flex place-content-evenly mt-10 flex-col md:flex-row"
+                            class="steps flex place-content-evenly mt-4 md:mt-10 flex-col md:flex-row"
                             style="align-items:center;"
                         >
                             <a
@@ -329,7 +329,7 @@
                             >
                                 <img src="../../images/icon/use/dev1.svg" alt="dev" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-0 md:mt-5 text-left md:text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content1') }}</p>
                             </a>
                             <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
@@ -340,7 +340,7 @@
                             >
                                 <img src="../../images/icon/use/dev2.svg" alt="dev2" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-0 md:mt-5 text-left md:text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content2') }}</p>
                             </a>
                             <a class="arrow p-2 md:translate-y-[-16px] !rotate-90 md:!rotate-0">
@@ -351,7 +351,7 @@
                             >
                                 <img src="../../images/icon/use/dev3.svg" alt="dev3" />
                                 <p
-                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-5 text-center ml-[10%] md:ml-0"
+                                    class="text-[#12171B] leading-[24px] font-[500] text-[15px] mt-0 md:mt-5 text-left md:text-center ml-[10%] md:ml-0"
                                 >{{ $t('home.block2.item1.content3') }}</p>
                             </a>
                         </div>
@@ -1444,7 +1444,8 @@ const applyNowBtnClick = () => {
                         a {
                             &.step {
                                 width: 96px;
-                                height: 158px;
+                                // height: 158px;
+
                                 padding-top: 10px;
                                 &:hover {
                                     background-color: transparent;
@@ -1466,6 +1467,17 @@ const applyNowBtnClick = () => {
                                 font-size: 12px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .steps {
+            a {
+                &.step {
+                    height: auto;
+                    &:hover {
+                        background-color: transparent;
+                        box-shadow: none;
                     }
                 }
             }

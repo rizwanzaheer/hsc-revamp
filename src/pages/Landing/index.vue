@@ -575,63 +575,6 @@ const openURL = (uri) => {
                 margin-right: -5px;
                 margin-left: -5px;
             }
-            .desc {
-                background: #f9f9f9;
-                border-radius: 10px;
-                margin-bottom: 0;
-                &.desc-1 {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    margin-bottom: 25px;
-                }
-                &.desc-2 {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .desc-con {
-                    height: 230px;
-                    .title {
-                        font-size: 18px;
-                        margin-bottom: 0;
-                        padding-top: 25px;
-                    }
-                    .info {
-                        font-size: 13px;
-                        span {
-                            font-size: 30px;
-                        }
-                        margin-bottom: 10px;
-                    }
-                    .steps {
-                        padding: 0 10px;
-                        a {
-                            &.step {
-                                width: 96px;
-                                height: 158px;
-                                padding-top: 10px;
-                                &:hover {
-                                    background-color: transparent;
-                                    box-shadow: none;
-                                }
-                            }
-                            &.arrow {
-                                margin-top: 26px;
-                                img {
-                                    width: 20px;
-                                    height: 16px;
-                                }
-                            }
-                            img {
-                                width: 50px;
-                                height: 50px;
-                            }
-                            p {
-                                font-size: 12px;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
     .first-main-banner {
