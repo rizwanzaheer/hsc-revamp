@@ -11,7 +11,6 @@
                     <el-icon>
                         <arrow-right />
                     </el-icon>
-                    <!-- <span>Route</span> -->
                 </div>
             </template>
             <!-- content section starts -->
@@ -29,10 +28,7 @@
                     ></h6>
                     <h2
                         class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider"
-                    >
-                        <!-- {{tvlValue}}M and -->
-                        {{typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label}}
-                    </h2>
+                    >{{typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label}}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
@@ -84,7 +80,6 @@
                             </el-icon>
                         </span>
                     </h6>
-                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -101,7 +96,6 @@
                     <el-icon>
                         <arrow-right />
                     </el-icon>
-                    <!-- <span>Route</span> -->
                 </div>
             </template>
             <!-- content section starts -->
@@ -163,13 +157,7 @@
                 <el-col :span="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider"
-                    >
-                        *In USDT
-                        <!-- <el-icon>
-                            <arrow-right />
-                        </el-icon>-->
-                    </h6>
-                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                    >*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -186,7 +174,6 @@
                     <el-icon>
                         <arrow-right />
                     </el-icon>
-                    <!-- <span>Route</span> -->
                 </div>
             </template>
             <!-- content section starts -->
@@ -248,13 +235,7 @@
                 <el-col :sm="24" :xs="24" :md="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right tracking-wider"
-                    >
-                        *In USDT
-                        <!-- <el-icon>
-                            <arrow-right />
-                        </el-icon>-->
-                    </h6>
-                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                    >*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -271,7 +252,6 @@
                     <el-icon>
                         <arrow-right />
                     </el-icon>
-                    <!-- <span>Route</span> -->
                 </div>
             </template>
             <!-- content section starts -->
@@ -333,21 +313,12 @@
                 <el-col :sm="24" :xs="24" :md="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-1 md:mt-[20px] text-left md:text-right tracking-wider"
-                    >
-                        *In USDT
-                        <!-- <el-icon>
-                            <arrow-right />
-                        </el-icon>-->
-                    </h6>
-                    <!-- <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600]">4K</h2> -->
+                    >*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 4 ends -->
-        <!-- <el-tab-pane label="`TVL Basic rewards plan <br />All projects`">Config</el-tab-pane>
-        <el-tab-pane label="Role">Role</el-tab-pane>
-        <el-tab-pane :label="`TVL Basic rewards plan <br />All projects`">Task</el-tab-pane>-->
     </el-tabs>
 </template>
 
