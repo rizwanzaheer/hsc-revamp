@@ -130,7 +130,7 @@
             <!-- number counter section ends  -->
 
             <!-- new and update section start -->
-            <el-row class="mt-10" justify="center">
+            <el-row class="mt-20 md:mt-10" justify="center">
                 <el-col
                     :md="21"
                     :sm="24"
@@ -148,30 +148,30 @@
                                 >{{$t('home.news.updateTitle')}}</h2>
                             </div>
                         </el-col>
-                        <el-col :md="14" :xs="18">
+                        <el-col :md="14" :xs="20">
                             <div
-                                class="grid-content text-center h-[100%] flex justify-center align-center"
+                                class="grid-content text-center h-[100%] flex flex-col lg:flex-row justify-center align-center"
                             >
-                                <h1 class="text-white text-[15px] mt-5">
-                                    {{$t('home.news.newsTitle')}}
-                                    <el-link
-                                        class="text-[15px] leading-[24px] font-[500] ml-8"
-                                        :underline="false"
-                                        href="https://docs.hoosmartchain.com/#/en-us/Announcement"
-                                        target="_blank"
-                                    >
-                                        {{$t('common.readDocumentation')}}
-                                        <span
-                                            style="transform: translateY(1px);
+                                <h1
+                                    class="text-white text-[15px] mt-5"
+                                >{{$t('home.news.newsTitle')}}</h1>
+                                <el-link
+                                    class="text-[15px] leading-[24px] font-[500] ml-8"
+                                    :underline="false"
+                                    href="https://docs.hoosmartchain.com/#/en-us/Announcement"
+                                    target="_blank"
+                                >
+                                    {{$t('common.readDocumentation')}}
+                                    <span
+                                        style="transform: translateY(1px);
                                                 display: inline-block;
                                                 font-size: 12px;"
-                                        >
-                                            <el-icon>
-                                                <arrow-right />
-                                            </el-icon>
-                                        </span>
-                                    </el-link>
-                                </h1>
+                                    >
+                                        <el-icon>
+                                            <arrow-right />
+                                        </el-icon>
+                                    </span>
+                                </el-link>
                             </div>
                         </el-col>
                         <el-col :md="5">
@@ -183,7 +183,7 @@
                                     native-type="button"
                                     @click="openURL('https://medium.com/@HooSmartChain1')"
                                     plain
-                                    class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
+                                    class="hover:bg-black hover:text-white my-auto border-black hover:border-transparent text-black py-[1.6rem] md:py-1"
                                 >{{$t('common.news.seeMoreNews')}}</el-button>
                             </div>
                         </el-col>
