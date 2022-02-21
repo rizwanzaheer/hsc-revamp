@@ -704,7 +704,12 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
         }
         .el-tabs__nav-prev,
         .el-tabs__nav-next {
-            top: 30%;
+            top: 0;
+            bottom: 0;
+            font-size: 2rem;
+            .el-icon {
+                top: 30%;
+            }
         }
     }
     .custom-tabs > .el-tabs__content {
