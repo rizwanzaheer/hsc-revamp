@@ -39,4 +39,9 @@ export default {
     'common.activity.unicorn': 'HSC Unicorn Program',
     'common.community.qqgroup': 'QQ Group',
     'common.app.copyright': `© 2020 - 2022 Hoosmartchain.com. All rights reserved.`,
+
+    'common.readDocumentation': `Read Documentation`,
+    'common.news.seeMoreNews': `See more news`,
+
+    'common.btn.applyNow': `Apply Now`,
 };

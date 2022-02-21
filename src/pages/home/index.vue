@@ -16,7 +16,7 @@
                     class="text-[26px] sm:text-[34px] font-[600] leading-[41.45px] text-white"
                 >{{$t('home.banner.subTitleMain')}}</h3>
                 <h1
-                    class="text-[55px] sm:text-[90px] font-[700] leading-[67px] sm:leading-[109.71px] text-white ml-[-4px]"
+                    class="text-[50px] sm:text-[90px] font-[700] leading-[67px] sm:leading-[109.71px] text-white ml-[-4px]"
                 >{{$t('home.banner.Title')}}</h1>
                 <p
                     class="text-[16px] sm:text-[18px] leading-[21.94px] text-white"
@@ -34,7 +34,7 @@
                 >
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black w-10/12 md:w-52"
-                        title="Apply now"
+                        :title="$t('common.btn.applyNow')"
                         native-type="button"
                         @click="$router.push({name: 'LandingPage'})"
                     />
@@ -45,8 +45,7 @@
                             href="https://docs.hoosmartchain.com/#/en-us/intro"
                             target="_blank"
                         >
-                            Read Documentation
-                            <!-- <i class="el-icon-view el-icon--right"></i> -->
+                            {{ $t('common.readDocumentation') }}
                             <span
                                 style="transform: translateY(2px);
                             display: inline-block;
@@ -161,8 +160,7 @@
                                         href="https://docs.hoosmartchain.com/#/en-us/Announcement"
                                         target="_blank"
                                     >
-                                        Read Documentation
-                                        <!-- <i class="el-icon-view el-icon--right"></i> -->
+                                        {{$t('common.readDocumentation')}}
                                         <span
                                             style="transform: translateY(1px);
                                                 display: inline-block;
@@ -186,7 +184,7 @@
                                     @click="openURL('https://medium.com/@HooSmartChain1')"
                                     plain
                                     class="hover:bg-black hover:text-white mt-4 border-black hover:border-transparent text-black"
-                                >See more news</el-button>
+                                >{{$t('common.news.seeMoreNews')}}</el-button>
                             </div>
                         </el-col>
                     </el-row>
@@ -291,7 +289,7 @@
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[226px] h-[57px]"
-                        title="Apply Now"
+                        :title="$t('common.btn.applyNow')"
                         native-type="button"
                         @click="$router.push({name: 'LandingPage'})"
                     />
@@ -490,7 +488,7 @@
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
                         class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 justify:center w-[80%] md:w-[226px] h-[57px]"
-                        title="Apply Now"
+                        :title="$t('common.btn.applyNow')"
                         native-type="button"
                         @click="$router.push({name: 'LandingPage'})"
                     />
