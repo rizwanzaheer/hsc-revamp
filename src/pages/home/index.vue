@@ -62,7 +62,7 @@
 
             <!-- number counter section start  -->
 
-            <el-row justify="center" class="mt-[70px]">
+            <el-row justify="center" class="mt-[70px] pricing-container mr-4 ml-4 md:mr-0 md:ml-0">
                 <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[5%]">
                     <div class="grid-content">
                         <h1
@@ -1052,6 +1052,10 @@ const applyNowBtnClick = () => {
     margin-left: -30px;
 }
 /* // just for carousel ends */
+
+.pricing-container {
+    background: linear-gradient(180deg, rgba(166, 180, 181, 0.02) 0%, rgba(18, 23, 27, 0.02) 100%);
+}
 </style>
 
 
