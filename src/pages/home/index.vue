@@ -64,12 +64,12 @@
 
             <el-row justify="center" class="mt-[70px] pricing-container mr-4 ml-4 md:mr-0 md:ml-0">
                 <el-col :sm="22" :md="3" :lg="4" :xs="22" class="md:ml-[5%]">
-                    <div class="grid-content">
+                    <div class="grid-content my-2">
                         <h1
                             class="text-white text-[35px] font-[600]"
                         >{{$t('home.counter.sectionOneValue')}}</h1>
                         <h5
-                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700] tracking-wider"
                         >{{$t('home.counter.sectionOneTitle')}}</h5>
                     </div>
                 </el-col>
@@ -77,12 +77,12 @@
                     class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
-                    <div class="grid-content">
+                    <div class="grid-content my-2">
                         <h1
                             class="text-white text-[35px] font-[600]"
                         >{{$t('home.counter.sectionTwoValue')}}</h1>
                         <h5
-                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700] tracking-wider"
                         >{{$t('home.counter.sectionTwoTitle')}}</h5>
                     </div>
                 </el-col>
@@ -90,12 +90,12 @@
                     class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
-                    <div class="grid-content">
+                    <div class="grid-content my-2">
                         <h1
                             class="text-white text-[35px] font-[600]"
                         >{{$t('home.counter.sectionThreeValue')}}</h1>
                         <h5
-                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700] tracking-wider"
                         >{{$t('home.counter.sectionThreeTitle')}}</h5>
                     </div>
                 </el-col>
@@ -103,12 +103,12 @@
                     class="border-b-2 md:border-b-0 el-col el-xs-22 md:border-l-2 border-[#34373C] md:border-white w-[100%] md:w-[2px] h-[2px] md:h-[25px] md:ml-2 md:mt-[25px] md:mr-[25px]"
                 />
                 <el-col :sm="22" :md="3" :lg="4" :xs="22">
-                    <div class="grid-content">
+                    <div class="grid-content my-2">
                         <h1
                             class="text-white text-[35px] font-[600]"
                         >{{$t('home.counter.sectionFourValue')}}</h1>
                         <h5
-                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700] tracking-wider"
                         >{{$t('home.counter.sectionFourTitle')}}</h5>
                     </div>
                 </el-col>
@@ -121,7 +121,7 @@
                             class="text-white text-[35px] font-[600]"
                         >{{$t('home.counter.sectionFiveValue')}}</h1>
                         <h5
-                            class="text-[#02EAD0] text-[12px] uppercase font-[700]"
+                            class="text-[#02EAD0] text-[12px] uppercase font-[700] tracking-wider"
                         >{{$t('home.counter.sectionFiveTitle')}}</h5>
                     </div>
                 </el-col>
@@ -1055,6 +1055,10 @@ const applyNowBtnClick = () => {
 
 .pricing-container {
     background: linear-gradient(180deg, rgba(166, 180, 181, 0.02) 0%, rgba(18, 23, 27, 0.02) 100%);
+
+    h5 {
+        word-spacing: 0.05rem;
+    }
 }
 </style>
 
