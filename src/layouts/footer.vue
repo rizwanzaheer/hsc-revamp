@@ -97,7 +97,7 @@
                 </p>
                 <p>
                     <a
-                        href="https://www.hoosmartchain.com/en/brand"
+                        href="/brand"
                         target="_blank"
                         class="hover:underline hover:underline-offset-4"
                     >{{ $t('common.brandresoures') }}</a>
@@ -313,7 +313,7 @@
                     </el-menu-item>
                     <el-menu-item index="4-4">
                         <a
-                            href="https://www.hoosmartchain.com/en/brand"
+                            href="brand"
                             target="_blank"
                             class="hover:underline hover:underline-offset-4"
                         >{{ $t('common.brandresoures') }}</a>

@@ -26,6 +26,11 @@ const routes = [
     //     component: LandingPage,
     // },
     {
+        path: '/brand',
+        name: 'Brand',
+        component: () => import('../pages/brand/index.vue'),
+    },
+    {
         path: '/about',
         name: 'About',
         component: About,
@@ -34,6 +39,12 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    // scrollBehavior(to, from, savedPosition) {
+    //     return {
+    //         x: 0,
+    //         y: 0,
+    //     };
+    // },
 });
 
 export default router;

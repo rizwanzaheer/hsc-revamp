@@ -1111,7 +1111,7 @@ const applyNowBtnClick = () => {
 
 .section-2 {
     margin-top: 70px;
-    background: url('~@/images/banner/use-bg.png') no-repeat center 108px;
+    background: url('../../images/banner/use-bg.png') no-repeat center 108px;
     background-size: 1920px 410px;
     .s-title {
         text-align: center;
