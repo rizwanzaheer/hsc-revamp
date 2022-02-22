@@ -1,6 +1,17 @@
 <template>
     <div class="brand-con">
-        <div class="banner-con" :class="{'banner-con-en': curLang === 'en'}"></div>
+        <div class="banner-con" :class="{'banner-con-en': curLang === 'en'}">
+            <el-row class="content-center h-full flex-wrap gap-9">
+                <el-col :md="16">
+                    <h1 class="text-[1.8rem] sm:text-[3rem] text-white">HSC Brand Elements</h1>
+                </el-col>
+                <el-col :md="16">
+                    <p
+                        class="text-white text-[1rem] sm:text-[1.2rem]"
+                    >Please show the hoo Smart Chain logos in official colors and usage patterns. Do not place logos on the top of any other objects, and leave reasonable space on logos' outside so that they are clearly seen.</p>
+                </el-col>
+            </el-row>
+        </div>
         <div class="section-1">
             <div class="container px-8 md:mx-auto">
                 <el-row justify="center">
@@ -8,7 +19,7 @@
                         <span>{{ $t('brand.logo') }}</span>
                     </el-col>
                 </el-row>
-                <el-row justify="center" class="gap-8">
+                <el-row justify="center" class="gap-10">
                     <div class="col-md-4 desc">
                         <div class="bd">
                             <div class="img-con">
@@ -172,13 +183,13 @@ export default {
         height: 300px;
         // max-height: 300px;
         // min-height: 160px;
-        background: #f7f7f7 url('../../images/brand/bg/pp.en.png') center top no-repeat;
-        background-size: 1920px 300px;
+        background: url('../../images/download/hoosmartchain-dark.png') right top no-repeat;
+        background-size: contain;
         // background-size: contain;
         &.banner-con-en {
-            background: #f7f7f7 url('../../images/brand/bg/pp.en.png') center top no-repeat;
+            background: url('../../images/download/hoosmartchain-dark.png') right top no-repeat;
             // background-size: contain;
-            background-size: 1920px 300px;
+            background-size: contain;
         }
     }
     .section-1 {
@@ -283,9 +294,9 @@ export default {
     .brand-con {
         .banner-con {
             height: 250px;
-            background: #f7f7f7 url('../../images/brand/bg/pp.m.en.png') 50% / cover no-repeat;
+            background: none;
             &.banner-con-en {
-                background: #f7f7f7 url('../../images/brand/bg/pp.m.en.png') 50% / cover no-repeat;
+                background: none;
             }
         }
         .section-1 {
