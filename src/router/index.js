@@ -8,23 +8,23 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: Home,
-    },
-    {
-        path: '/landing-page',
-        name: 'LandingPage',
-        component: LandingPage,
+        component: Home, // main home page
     },
     // {
-    //     path: '/hsc-revamp/', // this url only use for github pages
-    //     name: 'Home',
-    //     component: Home,
-    // },
-    // {
-    //     path: '/hsc-revamp/landing-page', // this url only use for github pages
+    //     path: '/landing-page',
     //     name: 'LandingPage',
     //     component: LandingPage,
     // },
+    {
+        path: '/hsc-revamp/', // this url only use for github pages
+        name: 'Home',
+        component: Home,
+    },
+    {
+        path: '/hsc-revamp/landing-page', // this url only use for github pages
+        name: 'LandingPage',
+        component: LandingPage,
+    },
     {
         path: '/brand',
         name: 'Brand',
