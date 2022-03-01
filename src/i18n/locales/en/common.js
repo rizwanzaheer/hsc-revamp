@@ -37,6 +37,7 @@ export default {
     'common.lang': 'Lang',
     'common.activity': 'Activity',
     'common.activity.unicorn': 'HSC Unicorn Program',
+    'common.activity.cosmic': 'Cosmic Origin Project',
     'common.community.qqgroup': 'QQ Group',
     'common.app.copyright': `© 2020 - 2022 Hoosmartchain.com. All rights reserved.`,
 

@@ -167,8 +167,8 @@
                         >
                             <a
                                 target="_blank"
-                                @click="jump('/activity/unicorn-program')"
-                            >{{ $t('common.activity.unicorn') }}</a>
+                                @click="jump('/landing-page')"
+                            >{{ $t('common.activity.cosmic') }}</a>
                         </el-menu-item>
                         <el-menu-item
                             v-if="curLang==='zh_cn'"
@@ -206,7 +206,7 @@
                         @mouseover="onMouseHoverOver"
                         @mouseleave="onMouseHoverOverLeave"
                     >
-                        <p class="lang-item" @click="setLang('zh_cn')">简体中文</p>
+                        <!-- <p class="lang-item" @click="setLang('zh_cn')">简体中文</p> -->
                         <!-- <p class="lang-item" @click="setLang('zh_tw')">繁體中文</p> -->
                         <p class="lang-item" @click="setLang('en')">English</p>
                         <!-- <p class="lang-item" @click="setLang('ko')">한국어</p> -->
@@ -350,8 +350,8 @@
                         <el-menu-item index="6-1">
                             <a
                                 target="_blank"
-                                @click="jump('/activity/unicorn-program')"
-                            >{{ $t('common.activity.unicorn') }}</a>
+                                @click="jump('/landing-page')"
+                            >{{ $t('common.activity.cosmic') }}</a>
                         </el-menu-item>
                         <el-menu-item v-if="curLang==='zh_cn'" index="6-2">
                             <a target="_blank" @click="jump('/activity/duanwu')">端午“粽”动员</a>
@@ -361,7 +361,7 @@
                     <!-- <el-menu-item index="/activity" @click="jump('/activity')">活动</el-menu-item> -->
                     <el-sub-menu index="8">
                         <template #title>{{ $t('common.lang') }}</template>
-                        <el-menu-item index="8-1" @click="setLang('zh_cn')">简体中文</el-menu-item>
+                        <!-- <el-menu-item index="8-1" @click="setLang('zh_cn')">简体中文</el-menu-item> -->
                         <!-- <el-menu-item index="8-2" @click="setLang('zh_tw')">繁體中文</el-menu-item> -->
                         <el-menu-item index="8-3" @click="setLang('en')">English</el-menu-item>
                         <!-- <el-menu-item index="8-4" @click="setLang('ko')">한국어</el-menu-item> -->
