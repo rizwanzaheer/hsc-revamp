@@ -27,13 +27,19 @@
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
                     >Project Vision</h2>
                     <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
-                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to an entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
+                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
                         <br />
-                        <br />HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
+                        <br />
+                        HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, Social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
                         <br />
                         <br />
                         <span class="text-[400]">Go fast alone, but we will go further together!</span>
+                        <br />
+                        <br />
+                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below, and we’ve attached a poster for the <span class="underline underline-offset-4 cursor-pointer" @click="openURL('/images/landing/cosmic-origin-project.png')"> rewards table for you here.</span>
                     </p>
+
+
                 </el-col>
             </el-row>
 
@@ -43,6 +49,64 @@
                     <CustomTabs :tabPosition="left" />
                 </el-col>
             </el-row>
+            <el-row :gutter="20" class="mt-20 mb-16">
+                <el-col :xs="20" :sm="20" lg="20" :offset="2">
+                    <h2
+                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
+                    >TVL Rewards</h2>
+
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
+                        The first is the TVL Scheme. This is calculated based on the Net TVL for the project calculated in USDT. This is aimed at all projects.
+                        <br />
+                        <br />
+                        <strong> Example 1:</strong> If your project reaches 1 Million in TVL based off a random monthly snapshot, then you will be eligible for <strong> Standard Basic Rewards A of 10K </strong>USDT. If you maintain your TVL for another month at 1 Million, then you will then be eligible for <strong>Monthly Continuous Reward B</strong>  of <strong>4K</strong> USDT thereafter.
+                        <br />
+                        <br />
+                        Once you reach the next tier to 5 Million TVL, then you will be eligible for Standard Basic Grants A (20K USDT) and Monthly Continuous rewards B for that tier (10K USDT).
+                        <span class="text-[400]">Go fast alone, but we will go further together!</span>
+                        <br />
+                        <br />
+                        <strong class="text-[#02EAD0]" >Game-fi and NFT Volume Rewards</strong>
+                        <br />
+                        The second scheme is the Volume Bonus for Game-fi and NFT projects. This can be combined with the TVL Bonus.
+                        <br />
+                        <br />
+                        <strong>Example 2:</strong> If your NFT project reaches real transactional volume of 1 Million USDT, then on top of Standard Basic Rewards A from TVL rewards, then you will get 10% extra from our bonus co-efficient. This also applies to Monthly Continuous Reward B.
+                        <br />
+                        <br />
+                        The bonus co-efficient increases in each tier, for 5 Million USDT real transaction volume, the bonus is 30%, and goes up to 200% for the highest tier.
+                        <br />
+                        <br />
+                        <strong class="text-[#02EAD0]">HOO Staking Bonus Rewards</strong>
+                        <br />
+                        This scheme is designed as an extra incentive to <strong>stake the HOO Token.</strong> It works in the same way as the Game-Fi / NFT bonus, as a bonus on top of the Standard Basic Rewards A and Monthly Continuous Rewards B. The staking bonus will be based off a coefficient depending on the number of staked HOO tokens.
+                        <br/>
+                        <br/>
+                        <strong>Example 3:</strong> If your Defi project reaches TVL of 1 Million USDT, and you’ve staked 100K HOO tokens. Then you will qualify for the first tier of rewards.
+                        <br />
+                        <br />
+                        On top of <strong>Standard Basic Rewards A from TVL rewards,</strong> you can get 10% extra from HOO staking bonus co-efficient which is 10%. So in total you will get extra 10K + 1K USDT bonus. This also applies to Monthly Continuous Reward B.
+                        <br />
+                        <br />
+                        The bonus co-efficient increases in each tier, for 1 Million Staked HOO the bonus is 30%, and goes up to 100% for the highest tier.
+                        <br />
+                        <br />
+                        <strong class="text-[#02EAD0]"> Cross Chain Portal Rewards</strong>
+                        <br />
+                        This scheme is designed for cross chain projects, such as bridges.
+                        <br />
+                        <br />
+                        There are two requires for this scheme, first is the Net Inflow of capital into HSC, and second is the Standard Monthly Volume, both are calculated in USDT. After the required will get monthly reward, and HSC Foundation will also allocate capital into the project.
+                        <br />
+                        <br />
+                        <strong>Example 4:</strong> the first tier requirement is 200K net capital inflow, and monthly trading volume of 1 Million UDST. Then the project will be eligible for 1960 USDT reward plus a 50K Capital USDT allocation.
+
+                    </p>
+
+                </el-col>
+            </el-row>
+
+
 
             <!-- terms and conditions section start -->
             <el-row class="mt-20 mb-16">
