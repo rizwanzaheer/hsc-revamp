@@ -32,7 +32,15 @@ tag.classList.add("promo-code");
 let text = document.createTextNode("BUILDMYPLANET");
 tag.appendChild(text);
 let element = document.getElementsByTagName("body")[0];
+tag.classList.add("promo-code");
 element.prepend(tag);
+
+let tag2 = document.createElement("div");
+tag2.classList.add("promo-code");
+let text2 = document.createTextNode("FLYMETOTHEMOON");
+tag2.appendChild(text2);
+let element2 = document.getElementById("app");
+element2.appendChild(tag2);
 </script>
 
 <style lang="scss">
