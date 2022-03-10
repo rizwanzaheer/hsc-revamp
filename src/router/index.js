@@ -10,23 +10,28 @@ const routes = [
         name: 'Home',
         component: Home, // main home page
     },
-    {
-        path: '/landing-page',
-        name: 'LandingPage',
-        component: LandingPage,
-    },
     // {
-    //     path: '/hsc-revamp/', // this url only use for github pages
-    //     name: 'Home',
-    //     component: Home,
-    // },
-    // {
-    //     path: '/hsc-revamp/landing-page', // this url only use for github pages
+    //     path: '/landing-page',
     //     name: 'LandingPage',
     //     component: LandingPage,
     // },
+    // {
+    //     path: '/brand',
+    //     name: 'Brand',
+    //     component: () => import('../pages/brand/index.vue'),
+    // },
     {
-        path: '/brand',
+        path: '/hsc-revamp/', // this url only use for github pages
+        name: 'Home',
+        component: Home,
+    },
+    {
+        path: '/hsc-revamp/landing-page', // this url only use for github pages
+        name: 'LandingPage',
+        component: LandingPage,
+    },
+    {
+        path: '/hsc-revamp/brand',
         name: 'Brand',
         component: () => import('../pages/brand/index.vue'),
     },
