@@ -27,16 +27,17 @@
                         class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
                     >Project Vision</h2>
                     <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
-                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
+                       Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
                         <br />
                         <br />
-                        HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards programme and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, Social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
+                        HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards program and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, Social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
                         <br />
                         <br />
                         <span class="text-[400]">Go fast alone, but we will go further together!</span>
                         <br />
                         <br />
-                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below, and we’ve attached a poster for the <span class="underline underline-offset-4 cursor-pointer" @click="openURL('/images/landing/cosmic-origin-project.png')"> rewards table for you here.</span>
+                        <!-- The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below, and we’ve attached a poster for the <span class="underline underline-offset-4 cursor-pointer" @click="openURL('/images/landing/cosmic-origin-project.png')"> rewards table for you here.</span> -->
+                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below. Once the number of registered projects reaches 60, the Cosmic Origin Project will officially be triggered, and will last 6 months from the start date.
                     </p>
 
 
