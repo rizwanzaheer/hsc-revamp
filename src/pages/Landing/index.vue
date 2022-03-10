@@ -97,10 +97,10 @@
                         This scheme is designed for cross chain projects, such as bridges.
                         <br />
                         <br />
-                        There are two requires for this scheme, first is the Net Inflow of capital into HSC, and second is the Standard Monthly Volume, both are calculated in USDT. After the required will get monthly reward, and HSC Foundation will also allocate capital into the project.
+                        There are two requires for this scheme, first is the Net Inflow of capital into HSC, and second is the Standard Monthly Volume, both are calculated in USDT. After the required will get monthly reward.
                         <br />
                         <br />
-                        <strong>Example 4:</strong> the first tier requirement is 200K net capital inflow, and monthly trading volume of 1 Million UDST. Then the project will be eligible for 1960 USDT reward plus a 50K Capital USDT allocation.
+                        <strong>Example 4:</strong> the first tier requirement is 200K net capital inflow, and monthly trading volume of 1 Million UDST. Then the project will be eligible for 1960 USDT reward.
 
                     </p>
 

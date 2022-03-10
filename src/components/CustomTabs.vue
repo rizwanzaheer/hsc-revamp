@@ -223,7 +223,7 @@
                         class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider"
                     >{{capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col>
-                <el-col :sm="24" :xs="24" :md="9">
+                <!-- <el-col :sm="24" :xs="24" :md="9">
                     <h6
                         class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
                         v-html="$t('home.priceCalculator.sectionThree.footerTitleThree')"
@@ -231,7 +231,7 @@
                     <h2
                         class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider"
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
-                </el-col>
+                </el-col> -->
                 <el-col :sm="24" :xs="24" :md="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right tracking-wider"
@@ -340,7 +340,7 @@ onMounted(() => {
 function resizeHandler() {
     curHeight.value = window.innerHeight;
     curWidth.value = window.innerWidth;
-    if (curHeight.value < 900 || curWidth.value < 900) {
+    if (curHeight.value < 950 || curWidth.value < 950) {
         currentTabPosition.value = 'top';
     } else currentTabPosition.value = 'left';
 }
@@ -481,9 +481,9 @@ const capitalHubRequireStandardMonthlyVolume = reactive<Marks>({
 });
 const capitalHubMonthlyRewards = reactive<Marks>({
     '0': '0',
-    '200k': '1960',
-    '400k': '4200',
-    '1M': '11200',
+    '200k': '2000',
+    '400k': '3000',
+    '1M': '4000',
 });
 const capitalHubCapitalAllocation = reactive<Marks>({
     '0': '0',
