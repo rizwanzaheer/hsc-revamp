@@ -340,7 +340,10 @@ onMounted(() => {
 function resizeHandler() {
     curHeight.value = window.innerHeight;
     curWidth.value = window.innerWidth;
-    if (curHeight.value < 950 || curWidth.value < 950) {
+    if (curWidth.value <= 950
+        // curHeight.value < 950 ||
+    ) {
+        console.log('in if')
         currentTabPosition.value = 'top';
     } else currentTabPosition.value = 'left';
 }
