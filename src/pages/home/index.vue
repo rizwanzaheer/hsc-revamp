@@ -157,7 +157,7 @@
                                 <el-link
                                     class="text-[15px] leading-[24px] font-[500] ml-8"
                                     :underline="false"
-                                    href="https://docs.hoosmartchain.com/#/en-us/Announcement"
+                                    href="https://medium.com/@HooSmartChain1/what-the-future-holds-for-hsc-8bfdc7e2e592"
                                     target="_blank"
                                 >
                                     {{$t('common.readDocumentation')}}

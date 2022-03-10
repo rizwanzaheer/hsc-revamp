@@ -35,7 +35,7 @@ export default {
     'home.banner.Title': 'Metaverse',
     'home.banner.slogan': 'Providing innovative solutions for growth in world of Blockchains',
 
-    'home.banner.supportTitle': 'Deploy here and apply for supports',
+    'home.banner.supportTitle': 'Apply for Cosmic Origin Project',
 
     'home.counter.sectionOneValue': '181M',
     'home.counter.sectionOneTitle': 'Total value locked (USDT)',
@@ -53,7 +53,7 @@ export default {
     'home.counter.sectionFiveTitle': 'Active Projects',
 
     'home.news.updateTitle': 'News & Update:',
-    'home.news.newsTitle': 'Hoo Smart Chain Heads Towards a New Journey.',
+    'home.news.newsTitle': 'Hoo Smart Chain Announces the Cosmic Origin Project',
 
     'home.infiniteSection.title': 'Infinite Innovation',
     'home.infiniteSection.para': 'Our vision for a vertically integrated blockchain ecosystem will take place in four stages',
