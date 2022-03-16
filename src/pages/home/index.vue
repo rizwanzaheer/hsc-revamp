@@ -460,7 +460,7 @@
             <!-- cosmic tab section start  -->
             <el-row :gutter="20" justify="center">
                 <el-col :span="20">
-                    <CustomTabs :tabPosition="left" />
+                    <CustomTabs :tabPosition="top" />
                 </el-col>
             </el-row>
 

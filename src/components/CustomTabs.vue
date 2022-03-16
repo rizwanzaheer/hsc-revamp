@@ -1,13 +1,10 @@
 <template>
-    <el-tabs class="custom-tabs" :tabPosition="currentTabPosition" :stretch="true">
+    <el-tabs class="custom-tabs" v-model="activeName" :tabPosition="currentTabPosition" :stretch="true">
         <!-- tab 1 start -->
-        <el-tab-pane>
+        <el-tab-pane name="first">
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1
-                        class="w-[100%] md:w-[70%] text-left"
-                        v-html="$t('home.priceCalculator.tabOne.Title')"
-                    ></h1>
+                    <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabOne.Title')"></h1>
                     <el-icon>
                         <arrow-right />
                     </el-icon>
@@ -16,30 +13,15 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
-                    <h1
-                        class="text-white text-[19px] font-[600] leading-[23px]"
-                        v-html="$t('home.priceCalculator.sectionOne.Title')"
-                    ></h1>
+                    <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionOne.Title')"></h1>
                 </el-col>
                 <el-col :span="24">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionOne.calcTitle')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider"
-                    >{{typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider" v-html="$t('home.priceCalculator.sectionOne.calcTitle')"></h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider">{{ typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label }}</h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
-                        <el-slider
-                            v-model="tvlValue"
-                            :marks="tvlMarks"
-                            :show-tooltip="false"
-                            height="24"
-                            size="large"
-                            step="20"
-                        ></el-slider>
+                        <el-slider v-model="tvlValue" :marks="tvlMarks" :show-tooltip="false" height="24" size="large" step="20"></el-slider>
                     </div>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="8">
@@ -47,34 +29,25 @@
                         class="text-white text-[12px] leading-[15px] md:text-[14px] md:leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider"
                         v-html="$t('home.priceCalculator.sectionOne.footerTitleOne')"
                     ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
                         <!-- 10K -->
-                        {{tvlMarksBasicGrants[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}
+                        {{ tvlMarksBasicGrants[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label] }}
                     </h2>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="16">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionOne.footerTitleTwo')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >{{tvlMarksMonthlyRewards[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionOne.footerTitleTwo')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        {{ tvlMarksMonthlyRewards[typeof marks[tvlValue] === 'string' ? marks[tvlValue] : marks[tvlValue].label] }}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
                     <h6
                         class="text-white text-[12px] leading-[20px] mt-[20px] underline text-left md:text-right underline-offset-2 cursor-pointer"
                         native-type="button"
-                        @click="$router.push({name: 'LandingPage'})"
+                        @click="$router.push({ name: 'LandingPage' })"
                     >
                         *In USDT — maintain at least 1 month
-                        <span
-                            style="transform: translateY(3px);
-                            display: inline-block;
-                            font-size: 12px;"
-                        >
+                        <span style="transform: translateY(3px); display: inline-block; font-size: 12px">
                             <el-icon>
                                 <arrow-right />
                             </el-icon>
@@ -86,13 +59,10 @@
         </el-tab-pane>
         <!-- tab 1 ends -->
         <!-- tab 2 start -->
-        <el-tab-pane>
+        <el-tab-pane name="second">
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1
-                        class="w-[100%] md:w-[70%] text-left"
-                        v-html="$t('home.priceCalculator.tabTwo.Title')"
-                    ></h1>
+                    <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabTwo.Title')"></h1>
                     <el-icon>
                         <arrow-right />
                     </el-icon>
@@ -101,76 +71,49 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
-                    <h1
-                        class="text-white text-[19px] font-[600] leading-[23px]"
-                        v-html="$t('home.priceCalculator.sectionTwo.Title')"
-                    ></h1>
+                    <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionTwo.Title')"></h1>
                 </el-col>
                 <el-col :span="24">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionTwo.calcTitle')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider"
-                    >{{typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.calcTitle')"></h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider">
+                        {{ typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label }}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
-                        <el-slider
-                            v-model="volumeBonusValue"
-                            :marks="volumeBonusMarks"
-                            :show-tooltip="false"
-                            height="24"
-                            size="large"
-                            :step="20"
-                        ></el-slider>
+                        <el-slider v-model="volumeBonusValue" :marks="volumeBonusMarks" :show-tooltip="false" height="24" size="large" :step="20"></el-slider>
                     </div>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="8">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionTwo.footerTitleOne')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >x {{volumeBonusRewardCoefficientX[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleOne')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        x {{ volumeBonusRewardCoefficientX[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label] }}
+                    </h2>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="7">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionTwo.footerTitleTwo')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >{{volumeBonusRewardsBonusA[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleTwo')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        {{ volumeBonusRewardsBonusA[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label] }}
+                    </h2>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="9">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionTwo.footerTitleThree')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >{{volumeBonusRewardsBonusB[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleThree')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        {{ volumeBonusRewardsBonusB[typeof volumeBonusMarks[volumeBonusValue] === 'string' ? volumeBonusMarks[volumeBonusValue] : volumeBonusMarks[volumeBonusValue].label] }}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
-                    <h6
-                        class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider"
-                    >*In USDT</h6>
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider">*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 2 ends -->
-        <!-- tab 3 start -->
-        <el-tab-pane>
+        <!-- tab 4 start -->
+        <el-tab-pane name="fourth">
             <template #label>
                 <div class="flex justify-center items-center custom-tab-container">
-                    <h1
-                        class="w-[100%] md:w-[70%] text-left"
-                        v-html="$t('home.priceCalculator.tabThree.Title')"
-                    ></h1>
+                    <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabFour.Title')"></h1>
                     <el-icon>
                         <arrow-right />
                     </el-icon>
@@ -179,49 +122,91 @@
             <!-- content section starts -->
             <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
                 <el-col :span="24">
-                    <h1
-                        class="text-white text-[19px] font-[600] leading-[23px]"
-                        v-html="$t('home.priceCalculator.sectionThree.Title')"
-                    ></h1>
+                    <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionFour.Title')"></h1>
                 </el-col>
                 <el-col :span="24">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionThree.calcTitle')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider"
-                    >{{typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider" v-html="$t('home.priceCalculator.sectionFour.calcTitle')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        {{ typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label }}
+                    </h2>
                 </el-col>
                 <el-col :span="24">
                     <div class="custom-slider-container pr-[12%]">
-                        <el-slider
-                            v-model="capitalHubValue"
-                            :marks="capitalHubMarks"
-                            :show-tooltip="false"
-                            height="24"
-                            size="large"
-                            :step="33"
-                        ></el-slider>
+                        <el-slider v-model="stakeHooBonusValue" :marks="stakeHooBonusMarks" :show-tooltip="false" height="24" size="large" step="20"></el-slider>
                     </div>
                 </el-col>
                 <el-col :sm="24" :xs="24" :md="8">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionThree.footerTitleOne')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider"
-                    >{{capitalHubRequireStandardMonthlyVolume[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleOne')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        x
+                        {{
+                            stakeHooBonusRewardCoefficientY[
+                                typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label
+                            ]
+                        }}
+                    </h2>
                 </el-col>
                 <el-col :sm="24" :xs="24" :md="7">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionThree.footerTitleTwo')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider"
-                    >{{capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleTwo')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
+                        {{ stakeHooBonusStandard[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label] }}
+                    </h2>
+                </el-col>
+                <el-col :sm="24" :xs="24" :md="9">
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleThree')"></h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider">
+                        {{
+                            stakeHooBonusMonthlyStakingBonus[
+                                typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label
+                            ]
+                        }}
+                    </h2>
+                </el-col>
+                <el-col :sm="24" :xs="24" :md="24">
+                    <h6 class="text-white text-[12px] leading-[20px] mt-1 md:mt-[20px] text-left md:text-right tracking-wider">*In USDT</h6>
+                </el-col>
+            </el-row>
+            <!-- content section ends -->
+        </el-tab-pane>
+        <!-- tab 4 ends -->
+
+        <!-- tab 3 start -->
+        <el-tab-pane name="third">
+            <template #label>
+                <div class="flex justify-center items-center custom-tab-container">
+                    <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabThree.Title')"></h1>
+                    <el-icon>
+                        <arrow-right />
+                    </el-icon>
+                </div>
+            </template>
+            <!-- content section starts -->
+            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
+                <el-col :span="24">
+                    <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionThree.Title')"></h1>
+                </el-col>
+                <el-col :span="24">
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider" v-html="$t('home.priceCalculator.sectionThree.calcTitle')"></h6>
+                    <h2 class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider">
+                        {{ typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label }}
+                    </h2>
+                </el-col>
+                <el-col :span="24">
+                    <div class="custom-slider-container pr-[12%]">
+                        <el-slider v-model="capitalHubValue" :marks="capitalHubMarks" :show-tooltip="false" height="24" size="large" :step="33"></el-slider>
+                    </div>
+                </el-col>
+                <el-col :sm="24" :xs="24" :md="8">
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleOne')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider">
+                        {{ capitalHubRequireStandardMonthlyVolume[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label] }}
+                    </h2>
+                </el-col>
+                <el-col :sm="24" :xs="24" :md="7">
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleTwo')"></h6>
+                    <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider">
+                        {{ capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label] }}
+                    </h2>
                 </el-col>
                 <!-- <el-col :sm="24" :xs="24" :md="9">
                     <h6
@@ -233,117 +218,51 @@
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col> -->
                 <el-col :sm="24" :xs="24" :md="24">
-                    <h6
-                        class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right tracking-wider"
-                    >*In USDT</h6>
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right tracking-wider">*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
         </el-tab-pane>
         <!-- tab 3 ends -->
-        <!-- tab 4 start -->
-        <el-tab-pane>
-            <template #label>
-                <div class="flex justify-center items-center custom-tab-container">
-                    <h1
-                        class="w-[100%] md:w-[70%] text-left"
-                        v-html="$t('home.priceCalculator.tabFour.Title')"
-                    ></h1>
-                    <el-icon>
-                        <arrow-right />
-                    </el-icon>
-                </div>
-            </template>
-            <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
-                <el-col :span="24">
-                    <h1
-                        class="text-white text-[19px] font-[600] leading-[23px]"
-                        v-html="$t('home.priceCalculator.sectionFour.Title')"
-                    ></h1>
-                </el-col>
-                <el-col :span="24">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[40px] tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionFour.calcTitle')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >{{typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label}}</h2>
-                </el-col>
-                <el-col :span="24">
-                    <div class="custom-slider-container pr-[12%]">
-                        <el-slider
-                            v-model="stakeHooBonusValue"
-                            :marks="stakeHooBonusMarks"
-                            :show-tooltip="false"
-                            height="24"
-                            size="large"
-                            step="20"
-                        ></el-slider>
-                    </div>
-                </el-col>
-                <el-col :sm="24" :xs="24" :md="8">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionFour.footerTitleOne')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >x {{stakeHooBonusRewardCoefficientY[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
-                </el-col>
-                <el-col :sm="24" :xs="24" :md="7">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionFour.footerTitleTwo')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider"
-                    >{{stakeHooBonusStandard[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
-                </el-col>
-                <el-col :sm="24" :xs="24" :md="9">
-                    <h6
-                        class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider"
-                        v-html="$t('home.priceCalculator.sectionFour.footerTitleThree')"
-                    ></h6>
-                    <h2
-                        class="text-[#02EAD0] text-[22px] leading-[26.82px] font-[600] tracking-wider"
-                    >{{stakeHooBonusMonthlyStakingBonus[typeof stakeHooBonusMarks[stakeHooBonusValue] === 'string' ? stakeHooBonusMarks[stakeHooBonusValue] : stakeHooBonusMarks[stakeHooBonusValue].label]}}</h2>
-                </el-col>
-                <el-col :sm="24" :xs="24" :md="24">
-                    <h6
-                        class="text-white text-[12px] leading-[20px] mt-1 md:mt-[20px] text-left md:text-right tracking-wider"
-                    >*In USDT</h6>
-                </el-col>
-            </el-row>
-            <!-- content section ends -->
-        </el-tab-pane>
-        <!-- tab 4 ends -->
     </el-tabs>
 </template>
 
-<script  lang="ts" setup>
-import { defineProps, toRefs, ref, reactive, onMounted, onBeforeUnmount } from 'vue';
+<script lang="ts" setup>
+import { defineProps, toRefs, ref, reactive, onMounted, onBeforeUnmount, watch } from 'vue';
 import type { CSSProperties } from 'vue';
 import { Calendar, ArrowRight } from '@element-plus/icons-vue';
 const props = defineProps({
     tabPosition: String,
+    onTabChange: {
+        type: Function,
+        default: (data: String): String => data
+    },
 });
-const { tabPosition } = toRefs(props);
+const { tabPosition, onTabChange } = toRefs(props);
+
+const activeName = ref('first');
+
 let currentTabPosition = ref('left');
 let curWidth = ref(0);
 let curHeight = ref(0);
 
 onMounted(() => {
+
     window.addEventListener('resize', resizeHandler);
 });
+
+watch(activeName, () => {
+    onTabChange.value(activeName.value);
+});
+
 function resizeHandler() {
     curHeight.value = window.innerHeight;
     curWidth.value = window.innerWidth;
-    if (curWidth.value <= 950
+    if (
+        curWidth.value <= 950
         // curHeight.value < 950 ||
     ) {
-        console.log('in if')
+        console.log('in if');
         currentTabPosition.value = 'top';
     } else currentTabPosition.value = 'left';
 }
@@ -542,7 +461,7 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
 });
 // stake Hoo Bonus section start here
 </script>
-<style  lang="scss">
+<style lang="scss">
 @import '../sass/common/_var.scss';
 :root {
     --el-color-primary: var($color-primary);
@@ -665,7 +584,6 @@ const stakeHooBonusMonthlyStakingBonus = reactive<Marks>({
     }
 }
 </style>
-
 
 <style lang="scss">
 @import '../sass/common/_var.scss';
