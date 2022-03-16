@@ -2,11 +2,9 @@
     <el-main>
         <div class="landing-con">
             <!-- visualization section starts -->
-            <el-row justify="center" class="first-main-banner">
+            <!-- <el-row justify="center" class="first-main-banner">
                 <el-col :span="24" class="mt-[20%] md:mt-[16%]">
-                    <h2
-                        class="text-white text-[30px] md:text-[40px] mt-5 text-center leading-[42px] md:leading-[48.76px] text-[600] not-italic"
-                    >Cosmic Origin Project</h2>
+                    <h2 class="text-white text-[30px] md:text-[40px] mt-5 text-center leading-[42px] md:leading-[48.76px] text-[600] not-italic">Cosmic Origin Project</h2>
                 </el-col>
                 <el-col :span="24" class="flex justify-center">
                     <CustomButton
@@ -16,161 +14,214 @@
                         @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
                     />
                 </el-col>
-            </el-row>
+            </el-row> -->
+            <div class="cosmic-origin-banner">
+                <div>
+                    <h1 class="text-white text-[30px] uppercase font-[800]">Cosmic Origin Project</h1>
+                    <pre><span class="pink">contract #cosmicoriginproject {</span>
+<span class="blue">string public greet</span>
+
+<span class="pink">=</span> <span class="blue">"Hello World!";</span>
+    <span class="pink">=</span> <span class="blue">"deploy'#DeLife'";</span>
+        <span class="pink">=</span> <span class="blue">"TVL";</span>
+            <span class="pink">=</span> <span class="blue">"Game-Fi + NFT";</span>
+        <span class="pink">=</span> <span class="blue">"Cross Chain Portal";</span>
+    <span class="pink">=</span> <span class="blue">"Staking Bonus "; }</span>
+<span class="pink">=</span> <CustomButton
+                        class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black h-[30px]"
+                        title="Apply Now"
+                        native-type="button"
+                        @click="openURL('http://hk.mikecrm.com/NtPoo5v')"
+                    />
+</pre>
+                </div>
+            </div>
             <!-- visualization section ends -->
 
             <!-- cosmic origin project section start -->
 
-            <el-row :gutter="20" class="mt-20 mb-16">
+            <el-row :gutter="20" class="mt-10 mb-16">
                 <el-col :xs="20" :sm="20" lg="20" :offset="2">
-                    <h2
-                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
-                    >Project Vision</h2>
-                    <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
-                       Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to entire planets, from insignificance to greatness and perhaps into decline. At HSC Foundation we strive to provide the sunlight and soil for pudding projects to realise their potential.
-                        <br />
-                        <br />
-                        HSC believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a grants and rewards program and welcome all developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with decentralised finance (De-fi), Game-fi, Social-fi and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
-                        <br />
-                        <br />
-                        <span class="text-[400]">Go fast alone, but we will go further together!</span>
-                        <br />
-                        <br />
-                        <!-- The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below, and we’ve attached a poster for the <span class="underline underline-offset-4 cursor-pointer" @click="openURL('/images/landing/cosmic-origin-project.png')"> rewards table for you here.</span> -->
-                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below. Once the number of registered projects reaches 60, the Cosmic Origin Project will officially be triggered, and will last 6 months from the start date.
+                    <h2 class="text-[#02EAD0] text-[18px] text-left leading-[30px] font-[600] not-italic">Project Vision</h2>
+
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-2">
+                        Every life in our universe has its own unique story to tell, from the smallest organism to the greatest civilizations to entire planets, from insignificance to greatness.
                     </p>
 
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                        Hoo Smart Chain believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a rewards program and welcome all
+                        developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with De-FI Game-Fi, Social-Fi
+                        and other merging blockchain technologies. We hope to do this together, realising our dream for a sprawling interconnected Metaverse.
+                    </p>
 
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below.
+                    </p>
+
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                        Once the number of registered projects reaches 60, the Cosmic Origin Project will officially be triggered, and will last for 6 months from the start date.
+                    </p>
+
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">Go fast alone, but we will go further together!</p>
                 </el-col>
             </el-row>
-
             <!-- cosmic tab section start  -->
             <el-row :gutter="20" justify="center">
                 <el-col :span="20">
-                    <CustomTabs :tabPosition="left" />
+                    <CustomTabs :tabPosition="left" :onTabChange="handleTabChange" />
                 </el-col>
             </el-row>
-            <el-row :gutter="20" class="mt-20 mb-16">
+
+            <el-row :gutter="20">
                 <el-col :xs="20" :sm="20" lg="20" :offset="2">
-                    <h2
-                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] font-[600] not-italic mb-2"
-                    >TVL Rewards</h2>
+                    <div v-if="activeTabName === 'first' || activeTabName == null">
+                        <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">TVL Rewards</h2>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
+                            The first is the TVL Scheme. This is calculated based on the Net TVL for the project calculated in USDT. <strong>This is aimed at all projects.</strong>
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            <strong>Example 1:</strong> If your project reaches 1 Million in TVL based off a random monthly snapshot, then you will be eligible for
+                            <strong>Standard Basic Rewards</strong> A of <strong>10K USDT</strong> as a one off reward.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            If you maintain your TVL for another month at 1 Million, then you will be eligible for <strong> Monthly Continuous Reward B </strong> of <strong>4K</strong> USDT
+                            thereafter.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            Once you reach the next tier to 5 Million TVL, then you will be eligible for the next tier for Standard Basic Rewards A of 20K USDT and Monthly Continuous rewards B for
+                            that tier <strong>10K USDT</strong>.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            The TVL Rewards will be the basis to calculate the Volume Bonus Rewards of Game-Fi and NFT, and HOO Staking Bonus Rewards.
+                        </p>
+                    </div>
 
-                    <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
-                        The first is the TVL Scheme. This is calculated based on the Net TVL for the project calculated in USDT. This is aimed at all projects.
-                        <br />
-                        <br />
-                        <strong> Example 1:</strong> If your project reaches 1 Million in TVL based off a random monthly snapshot, then you will be eligible for <strong> Standard Basic Rewards A of 10K </strong>USDT. If you maintain your TVL for another month at 1 Million, then you will then be eligible for <strong>Monthly Continuous Reward B</strong>  of <strong>4K</strong> USDT thereafter.
-                        <br />
-                        <br />
-                        Once you reach the next tier to 5 Million TVL, then you will be eligible for Standard Basic Grants A (20K USDT) and Monthly Continuous rewards B for that tier (10K USDT).
-                        <span class="text-[400]">Go fast alone, but we will go further together!</span>
-                        <br />
-                        <br />
-                        <strong class="text-[#02EAD0]" >Game-fi and NFT Volume Rewards</strong>
-                        <br />
-                        The second scheme is the Volume Bonus for Game-fi and NFT projects. This can be combined with the TVL Bonus.
-                        <br />
-                        <br />
-                        <strong>Example 2:</strong> If your NFT project reaches real transactional volume of 1 Million USDT, then on top of Standard Basic Rewards A from TVL rewards, then you will get 10% extra from our bonus co-efficient. This also applies to Monthly Continuous Reward B.
-                        <br />
-                        <br />
-                        The bonus co-efficient increases in each tier, for 5 Million USDT real transaction volume, the bonus is 30%, and goes up to 200% for the highest tier.
-                        <br />
-                        <br />
-                        <strong class="text-[#02EAD0]">HOO Staking Bonus Rewards</strong>
-                        <br />
-                        This scheme is designed as an extra incentive to <strong>stake the HOO Token.</strong> It works in the same way as the Game-Fi / NFT bonus, as a bonus on top of the Standard Basic Rewards A and Monthly Continuous Rewards B. The staking bonus will be based off a coefficient depending on the number of staked HOO tokens.
-                        <br/>
-                        <br/>
-                        <strong>Example 3:</strong> If your Defi project reaches TVL of 1 Million USDT, and you’ve staked 100K HOO tokens. Then you will qualify for the first tier of rewards.
-                        <br />
-                        <br />
-                        On top of <strong>Standard Basic Rewards A from TVL rewards,</strong> you can get 10% extra from HOO staking bonus co-efficient which is 10%. So in total you will get extra 10K + 1K USDT bonus. This also applies to Monthly Continuous Reward B.
-                        <br />
-                        <br />
-                        The bonus co-efficient increases in each tier, for 1 Million Staked HOO the bonus is 30%, and goes up to 100% for the highest tier.
-                        <br />
-                        <br />
-                        <strong class="text-[#02EAD0]"> Cross Chain Portal Rewards</strong>
-                        <br />
-                        This scheme is designed for cross chain projects, such as bridges.
-                        <br />
-                        <br />
-                        There are two requires for this scheme, first is the Net Inflow of capital into HSC, and second is the Standard Monthly Volume, both are calculated in USDT. After the required will get monthly reward.
-                        <br />
-                        <br />
-                        <strong>Example 4:</strong> the first tier requirement is 200K net capital inflow, and monthly trading volume of 1 Million UDST. Then the project will be eligible for 1960 USDT reward.
+                    <div v-if="activeTabName === 'second' || activeTabName == null">
+                        <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">Volume Bonus Reward for Game-Fi and NFT</h2>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
+                            The second scheme is the Volume Bonus for Game-fi and NFT projects. This reward is a bonus based off a percentage of the <strong>TVL Rewards</strong>. Projects will first
+                            need to fulfil the TVL Rewards criteria to be eligible for the Volume Bonus Reward.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6"><strong>Volume Bonus Reward</strong> can be calculated as:</p>
+                        <ul class="pl-8">
+                            <li class="list-disc text-[14px] mt-2 text-white"><strong>TVL Standard Basic Rewards A x Coefficient X = Volume Bonus Reward A</strong></li>
+                            <li class="list-disc text-[14px] mt-2 text-white"><strong>TVL Monthly Continuous Rewards B x Coefficient X = Volume Bonus Reward B</strong></li>
+                            <li class="text-[14px] mt-2 text-white">Coefficient X is dependent on the Real Transaction Volume</li>
+                        </ul>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            <strong>Example 2:</strong> If your NFT project reaches TVL 1 Million and Real Transactional volume of 1 Million USDT, then you will received Volume Bonus Reward A of 10000
+                            x 0.1 = 1000 USDT. (This is bonus on top of your TVL Standard Basic Reward of 10000)
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            If the TVL and Real Transactional Volume is maintained for a month, then the Volume Bonus Reward B will be 4000 x 0.1 = 400 USDT.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            If the TVL increases to 5M, and Real Transactional Volume increases to 5M, then the Volume Bonus Reward A will be 20000 x 0.3 = 6000 USDT, and Volume Bonus Reward B would
+                            be 10000 x 0.3 = 3000 USDT.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            *Note - Volume Bonus Rewards are based off the TVL Basic Rewards. Projects will need to fulfil the criteria for TVL Basic Rewards first in order to be eligible for Volume
+                            Bonus Rewards. Projects will then receive their TVL Rewards + Volume Bonus Rewards.
+                        </p>
+                    </div>
 
-                    </p>
+                    <div v-if="activeTabName === 'third' || activeTabName == null">
+                        <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">HOO Staking Bonus Rewards</h2>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
+                            This scheme is an extra incentive to stake the HOO Token, the native token for Hoo Smart Chain. Projects will first need to fulfil the TVL Rewards criteria to be eligible
+                            for the HOO Staking Bonus Reward.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6"><strong>Hoo Stalking Bonus Reward</strong> can be calculated as :</p>
+                        <ul class="pl-8">
+                            <li class="list-disc text-[14px] mt-2 text-white"><strong>TVL Standard Basic Rewards A x Coefficient Y = Staking Bonus Reward A</strong></li>
+                            <li class="list-disc text-[14px] mt-2 text-white"><strong>TVL Monthly Continuous Rewards B x Coefficient Y = Staking Bonus Reward B</strong></li>
+                            <li class="text-[14px] mt-2 text-white">Coefficient Y is dependent on the amount of staked HOO tokens.</li>
+                        </ul>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            <strong>Example 3: </strong>If your DeFi project reaches TVL of 1 Million USDT, and you’ve staked 500K HOO tokens. Then you will qualify for the second tier of Staking
+                            rewards, with a Coefficient Y of 0.2. So the Staking Bonus Reward A will be 10000 x 0.1 = 2000 USDT
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            If the TVL and Staked HOO is maintained for a month, then the Staked Bonus Reward B will 4000 x 0.2 = 800 USDT.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            If the TVL increases to 10M, and staked HOO remains at 500K, then the Staking Reward Bonus A would be 50000 x 0.2 = 10000 UDST.
+                        </p>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            *Note – HOO Staking Bonus Rewards are based off the TVL Basic Rewards. projects will need to fulfil the criteria for TVL Basic Rewards first in order to be eligible for
+                            bonus rewards Projects will then receive their TVL Rewards + Staking Bonus Rewards.
+                        </p>
+                    </div>
 
+                    <div v-if="activeTabName === 'fourth' || activeTabName == null">
+                        <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">Cross Chain Portal Rewards</h2>
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400]">This scheme is designed for cross chain projects, such as cross chain bridges.</p>
+
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            There are two requirements for this scheme, first is the Net Inflow of capital into Hoo Smart Chain, and second is the Standard Monthly Volume, both are calculated in USDT.
+                        </p>
+
+                        <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-6">
+                            <strong>Example 4:</strong> If you project reaches net capital inflow of 200K USDT, and monthly trading volume of 1 Million UDST. Then the project will be eligible for 2000
+                            USDT reward. These can be redeemed on a monthly basis.
+                        </p>
+                    </div>
                 </el-col>
             </el-row>
-
-
 
             <!-- terms and conditions section start -->
-            <el-row class="mt-20 mb-16">
+            <el-row>
                 <el-col :xs="20" :sm="20" lg="20" :offset="2">
-                    <h2
-                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
-                    >Terms and Conditions</h2>
-                    <h2
-                        class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
-                    >Rewards Date</h2>
-                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
-                        Phase 1 of Cosmic Origins Project Date: 0:00 January 14, 2022 to 24:00 July 30, 2022. With a plan for Phase 2 to be announced for second half of 2022.
-                        <br />
-                        <br />
-                    </p>
-                    <h2
-                        class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic mb-2 font-bold"
-                    >Details</h2>
-                    <ol
-                        class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] font-[400]"
-                    >
-                        <li>
-                            TVL rewards will be evaluated based on the value of mainstream tokens **, and other tokens will not be included in the standard of TVL. You may find a list of
-                            <span
-                                class="underline underline-offset-2 cursor-pointer"
-                                native-type="button"
-                                @click="openURL('https://docs.hoosmartchain.com/#/en-us/crosschain')"
-                            >mainstream tokens.</span>
-                        </li>
-                        <li>TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
-                        <li>Game-fi and NFT Volume Bonus can also be redeemed once, on top of TVL Rewards A and B.</li>
-                        <li>All projects metrics for rewards will be calculated by a random snapshot. If project does not reached the reward requirements at the time of which the snapshot was taken, the bonus will be cancelled.</li>
-                        <li>If malicious trading behaviour is found including bots, the reward will be cancelled with immediate effect. HSC Foundation Reserves the Right to interpret what is malicious trading behaviour.</li>
-                        <li>Transaction Volume Bonus Rewards are based on TVL Rewards A & B. They are awarded based on corresponding reward level x the coefficient which is a given percentage of the reward.</li>
-                        <li>All rewards will be paid out in USDT.</li>
-                    </ol>
-                    <br />
-                    <h2
-                        class="text-[#02EAD0] text-[18px] mt-5 text-left leading-[30px] text-[600] not-italic mb-2"
-                    >Reward payment</h2>
-                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
-                        All rewards are accumulated in the bonus pool, with the following two withdrawal methods:
-                        <br />
-                        <br />
-                    </p>
-                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px]">
-                        <li>One-time withdrawal: the reward is accumulated for one year, and you can apply for one-time withdrawal after one year.</li>
-                        <li>Withdrawal in batches: you can apply for withdrawal of 10% of the bonus pool every month. If the project develops to a high reward level, the monthly withdrawal volume can be increased by 10%. The remaining reward can be withdrawn directly after one year.</li>
-                    </ol>
-                    <br />
-                    <br />
+                    <h2 class="text-[#02EAD0] text-[18px] text-left leading-[30px] font-[600]">Terms and Conditions</h2>
 
-                    <p class="text-white text-[15px] leading-[23px] text-left text-[400] italic">
-                        The HSC Foundation reserves the right to interpret the terms of the grants and rewards programme in event of any dispute.
-                        <br />
-                        <br />
+                    <h2 class="text-white text-[15px] text-left leading-[23px] text-[700] font-bold mt-2">Rewards Date</h2>
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
+                        The First Phase of the Cosmic Origin Project will run from 9th of March 2022 until 9th of September 2022. This is the first phase of the Project, and the second phase will be
+                        announced later on the year.
+                    </p>
+
+                    <h2 class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic font-bold">Details</h2>
+                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] font-[400]">
+                        <li>
+                            TVL rewards will be evaluated based on the value of
+                            <span class="underline underline-offset-2 cursor-pointer" native-type="button" @click="openURL('https://docs.hoosmartchain.com/#/en-us/crosschain')">mainstream tokens</span
+                            >, and other tokens will not be included in the standard of TVL.
+                        </li>
+                        <li class="mt-2">TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
+                        <li class="mt-2">Volume Bonus Rewards for Game-fi and NFT also be redeemed once on top of TVL Rewards A and B.</li>
+                        <li class="mt-2">
+                            All projects metrics for rewards will be calculated by random snapshot. If project does not reached the reward requirements at the time of which the snapshot was taken, the
+                            bonus will be cancelled.
+                        </li>
+                        <li class="mt-2">
+                            Hoo Smart Chain Foundation will reserve final right to interpret the definition of malicious trading behaviour. If malicious trading behaviour is found including bots, the
+                            reward will be cancelled.
+                        </li>
+                        <li class="mt-2">
+                            Transaction Volume Bonus Rewards are based on TVL Rewards A & B. They are awarded based on corresponding reward level * the coefficient which is a given percentage of the
+                            reward
+                        </li>
+                        <li class="mt-2">All rewards will be paid out in USDT.</li>
+                    </ol>
+
+                    <h2 class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic font-bold">Reward Payment</h2>
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400]">All rewards are accumulated in the bonus pool, with the following two withdrawal methods:</p>
+                    <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] mt-2">
+                        <li>One-time withdrawal: the reward is accumulated for one year, and you can apply for one-time withdrawal after one year.</li>
+                        <li class="mt-2">
+                            Withdrawal in batches: you can apply for withdrawal of 10% of the bonus pool every month. If the project develops to a high reward level, the monthly withdrawal volume can
+                            be increased by 10%. The remaining reward can be withdrawn directly after one year.
+                        </li>
+                    </ol>
+
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400] italic mt-6">
+                        Hoo Smart Chain Foundation reserves the right to interpret the terms of the grants and rewards program in event of any dispute.
                     </p>
                 </el-col>
             </el-row>
             <!-- terms and conditions section ends -->
 
             <!-- cosmic tab section ends  -->
-
             <el-row justify="center" class="mt-10">
                 <el-col :xs="22" :sm="22" :md="12">
                     <img src="../../images/million/100-MILLION.png" style="width: 100%" />
@@ -178,14 +229,37 @@
             </el-row>
             <!-- cosmic origin project section start -->
 
+            <!-- Join cosmic section starts -->
+            <el-row class="mt-24 !mb-20" justify="center">
+                <el-col :span="21" style="background: linear-gradient(271.11deg, #719ee6 -9.09%, #02ead0 72.29%)">
+                    <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
+                        <el-col :span="16" class="h-[inherit]">
+                            <div class="grid-content pl-3 md:pl-0 flex justify-left items-center">
+                                <h1 class="text-[#12171B] leading-[28px] md:leading-[36.57px] font-[600] text-[16px] md:text-[30px] ml-2 md:ml-20">Be Part of Hoo Smart Chain Cosmic Origin Project</h1>
+                            </div>
+                        </el-col>
+                        <el-col :span="8" class="h-[inherit]">
+                            <div class="grid-content text-center flex justify-center md:justify-end items-center md:pr-[10%]">
+                                <a
+                                    class="text-[8px] md:text-[15px] bg-[#12171B] leading-[16px] md:leading-[18px] no-underline font-[600] text-white"
+                                    style="box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.37); border-radius: 6px; text-decoration: none !important; padding: 12px 25px !important"
+                                    href="http://hk.mikecrm.com/NtPoo5v"
+                                    target="_blank"
+                                    >Apply Now</a
+                                >
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row>
+            <!-- Join cosmic section ends -->
+
             <!-- hsc community section start -->
             <el-row class="hsc-community-con mt-20">
                 <el-col :span="24" class="mt-[6rem]">
                     <el-row :gutter="20" justify="center ">
                         <el-col :span="24" :xs="20" :sm="20">
-                            <h1
-                                class="text-white text-[30px] md:text-[40px] leading-[42px] md:leading-[49px] font-[600] text-center mt-10"
-                            >
+                            <h1 class="text-white text-[30px] md:text-[40px] leading-[42px] md:leading-[49px] font-[600] text-center mt-10">
                                 Join our community below
                                 <br />& we’ll help you out!
                             </h1>
@@ -195,22 +269,13 @@
                     <el-row :gutter="20" justify="center " class="mt-14">
                         <el-col :xs="20" :sm="20" md="6">
                             <div class="hsc-community-icon-con flex justify-evenly">
-                                <p
-                                    class="hsc-community-icon-5"
-                                    @click="openURL('https://discord.com/invite/n6ahyKV24d')"
-                                >
+                                <p class="hsc-community-icon-5" @click="openURL('https://discord.com/invite/n6ahyKV24d')">
                                     <a href>Discord</a>
                                 </p>
-                                <p
-                                    class="hsc-community-icon-3"
-                                    @click="openURL('https://t.me/HooSmartChain')"
-                                >
+                                <p class="hsc-community-icon-3" @click="openURL('https://t.me/HooSmartChain')">
                                     <a href>Telegram</a>
                                 </p>
-                                <p
-                                    class="hsc-community-icon-4"
-                                    @click="openURL('https://twitter.com/HooSmartChain')"
-                                >
+                                <p class="hsc-community-icon-4" @click="openURL('https://twitter.com/HooSmartChain')">
                                     <a href>Twitter</a>
                                 </p>
                             </div>
@@ -219,44 +284,21 @@
                 </el-col>
             </el-row>
             <!-- hsc community section ends -->
-
-            <!-- Join cosmic section starts -->
-            <el-row class="mt-24 !mb-20" justify="center">
-                <el-col
-                    :span="21"
-                    style="background: linear-gradient(271.11deg, #719EE6 -9.09%, #02EAD0 72.29%);"
-                >
-                    <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
-                        <el-col :span="16" class="h-[inherit]">
-                            <div class="grid-content pl-3 md:pl-0 flex justify-left items-center">
-                                <h1
-                                    class="text-[#12171B] leading-[28px] md:leading-[36.57px] font-[600] text-[16px] md:text-[30px] ml-2 md:ml-20"
-                                >Be part of HMC Project Rewards Programme</h1>
-                            </div>
-                        </el-col>
-                        <el-col :span="8" class="h-[inherit]">
-                            <div
-                                class="grid-content text-center flex justify-center md:justify-end items-center md:pr-[10%]"
-                            >
-                                <a
-                                    class="text-[8px] md:text-[15px] bg-[#12171B] leading-[16px] md:leading-[18px] no-underline font-[600] text-white"
-                                    style="box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.37); border-radius: 6px; text-decoration: none !important; padding:12px 25px !important; "
-                                    href="http://hk.mikecrm.com/NtPoo5v"
-                                    target="_blank"
-                                >Join now</a>
-                            </div>
-                        </el-col>
-                    </el-row>
-                </el-col>
-            </el-row>
-            <!-- Join cosmic section ends -->
         </div>
     </el-main>
 </template>
 <script setup>
 import { ArrowRight } from '@element-plus/icons-vue';
+import { ref, watch } from 'vue';
 import CustomButton from '../../components/CustomButton.vue';
 import CustomTabs from '../../components/CustomTabs.vue';
+
+const activeTabName = ref(null);
+
+const handleTabChange = (data) => {
+    activeTabName.value = data;
+};
+
 const openURL = (uri) => {
     // alert('forDeveloperRegisterNow calling!!');
     // window.open(document.URL, '_blank', '');
@@ -264,9 +306,9 @@ const openURL = (uri) => {
 };
 </script>
 
-
 <style lang="scss">
 @import '../../sass/common/_var.scss';
+
 .new-journey {
     &:hover {
         span {
@@ -288,14 +330,44 @@ const openURL = (uri) => {
         text-decoration: none !important;
     }
 }
-.first-main-banner {
-    background: url('../../images/landing-page-header/confetti-main.png') no-repeat;
+
+// .first-main-banner {
+//     background: url('../../images/landing-page-header/confetti-main.png') no-repeat;
+//     background-size: cover;
+//     min-height: 390px;
+//     // padding: 60px;
+//     margin-left: 100px;
+//     margin-right: 100px;
+//     background-position: center;
+// }
+
+.cosmic-origin-banner {
+    background: url('../../images/landing-page-header/cosmic-origin-project.png') no-repeat;
     background-size: cover;
-    min-height: 390px;
-    // padding: 60px;
+    min-height: 440px;
     margin-left: 100px;
     margin-right: 100px;
-    background-position: center;
+    background-position: 70%;
+
+    display: flex;
+    align-items: center;
+
+    div {
+        margin-left: 10%;
+        h1 {
+            text-shadow: 0px 0px 20px rgba(17, 64, 104, 1);
+        }
+        span {
+            font-size: 16px;
+            &.blue {
+                color: $color-primary;
+            }
+
+            &.pink {
+                color: $color-pink;
+            }
+        }
+    }
 }
 .el-row {
     margin-bottom: 20px;
@@ -557,6 +629,44 @@ const openURL = (uri) => {
         margin-left: 10px;
         margin-right: 10px;
         background-position: top;
+    }
+
+    .cosmic-origin-banner {
+        min-height: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cosmic-origin-banner {
+        div {
+            margin-left: 0;
+
+            h1 {
+                font-size: 24px;
+            }
+            span {
+                font-size: 13px !important;
+            }
+
+            button {
+                width: 100px;
+                height: 30px;
+                span {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .cosmic-origin-banner {
+        background-position: initial;
+        justify-content: center;
     }
 }
 </style>
