@@ -125,7 +125,7 @@
                         </p>
                     </div>
 
-                    <div v-if="activeTabName === 'fourth' || activeTabName == null">
+                    <div v-if="activeTabName === 'third' || activeTabName == null">
                         <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">HOO Staking Bonus Rewards</h2>
                         <p class="text-white text-[15px] leading-[21px] text-left text-[400]">
                             This scheme is an extra incentive to stake the HOO Token, the native token for Hoo Smart Chain. Projects will first need to fulfil the TVL Rewards criteria to be eligible
@@ -153,7 +153,7 @@
                         </p>
                     </div>
 
-                    <div v-if="activeTabName === 'third' || activeTabName == null">
+                    <div v-if="activeTabName === 'fourth' || activeTabName == null">
                         <h2 class="text-[#02EAD0] text-[18px] mt-6 text-left leading-[30px] font-[600]">Cross Chain Portal Rewards</h2>
                         <p class="text-white text-[15px] leading-[21px] text-left text-[400]">This scheme is designed for cross chain projects, such as cross chain bridges.</p>
 
@@ -182,10 +182,11 @@
 
                     <h2 class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic font-bold">Details</h2>
                     <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] font-[400]">
-                        <li>TVL rewards will be evaluated based on the value of mainstream tokens, and other tokens will not be included in the standard of TVL.</li>
-                        <ul class="pl-10">
-                            <li class="list-disc"><strong>ETH, BTC, USDT, USDC, DAI, UST, Stable coin</strong></li>
-                        </ul>
+                        <li>
+                            TVL rewards will be evaluated based on the value of
+                            <span class="underline underline-offset-2 cursor-pointer" native-type="button" @click="openURL('https://docs.hoosmartchain.com/#/en-us/crosschain')">mainstream tokens</span
+                            >, and other tokens will not be included in the standard of TVL.
+                        </li>
                         <li class="mt-2">TVL Rewards A can only be rewarded once. TVL Rewards B can be redeemed on a monthly basis thereafter.</li>
                         <li class="mt-2">Volume Bonus Rewards for Game-fi and NFT also be redeemed once on top of TVL Rewards A and B.</li>
                         <li class="mt-2">
