@@ -109,13 +109,13 @@
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">x {{ volumeBonusRewardCoefficientX[volumeBonusValue] }}</h2>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="7">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleTwo')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleTwo')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
                         {{ volumeBonusRewards.a }}
                     </h2>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="9">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleThree')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionTwo.footerTitleThree')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
                         {{ volumeBonusRewards.b }}
                     </h2>
@@ -175,14 +175,14 @@
                 </el-col>
 
                 <el-col :xs="24" :sm="24" :md="7">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleTwo')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleTwo')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
                         {{ stakeHooBonusRewards.a }}
                     </h2>
                 </el-col>
 
                 <el-col :xs="24" :sm="24" :md="9">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleThree')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionThree.footerTitleThree')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] tracking-wider">
                         {{ stakeHooBonusRewards.b }}
                     </h2>
@@ -225,7 +225,7 @@
                     </h2>
                 </el-col>
                 <el-col :sm="24" :xs="24" :md="7">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-2 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleTwo')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-5 md:mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleTwo')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider">
                         {{ capitalHubMonthlyRewards[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label] }}
                     </h2>
@@ -240,7 +240,7 @@
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col> -->
                 <el-col :sm="24" :xs="24" :md="24">
-                    <h6 class="text-white text-[12px] leading-[20px] mt-[0px] text-left md:text-right tracking-wider">*In USDT</h6>
+                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider">*In USDT</h6>
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -269,6 +269,10 @@ let curWidth = ref(0);
 let curHeight = ref(0);
 
 onMounted(() => {
+    if (window.innerWidth <= 1000) {
+        currentTabPosition.value = 'top';
+    }
+
     window.addEventListener('resize', resizeHandler);
 });
 
@@ -661,13 +665,13 @@ function resetTabValues() {
         }
     }
     .custom-tabs > .el-tabs__content {
-        padding: 32px;
+        padding: 0 32px 32px;
         /* background-color: #f4f5f7; */
         color: #6b778c;
         font-size: 32px;
         font-weight: 600;
-        height: 480px;
-        min-height: 480px;
+        // height: 480px;
+        // min-height: 480px;
     }
     .custom-tab-container {
         padding: 20px 10px;
@@ -683,6 +687,14 @@ function resetTabValues() {
         }
         .el-icon {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .custom-tab-container {
+        h1 {
+            font-size: 14px;
         }
     }
 }
