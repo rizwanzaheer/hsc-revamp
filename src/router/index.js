@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../pages/home/index.vue';
-import LandingPage from '../pages/landing/index.vue';
+import Home from '/src/pages/home/index.vue';
+import LandingPage from '/src/pages/landing/index.vue';
 
 import About from '../components/About.vue';
 

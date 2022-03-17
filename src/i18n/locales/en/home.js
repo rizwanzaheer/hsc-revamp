@@ -91,8 +91,8 @@ export default {
     'home.priceCalculator.sectionTwo.calcTitle': `Real Transactional Volume`,
     'home.priceCalculator.sectionTwo.calcTitleTwo': `TVL`,
     'home.priceCalculator.sectionTwo.footerTitleOne': `Reward</br>Coefficient: x`,
-    'home.priceCalculator.sectionTwo.footerTitleTwo': `Volume</br>Reward Bonus A`,
-    'home.priceCalculator.sectionTwo.footerTitleThree': `Volume</br>Rewards Bonus B`,
+    'home.priceCalculator.sectionTwo.footerTitleTwo': `Volume</br>Bonus Reward A`,
+    'home.priceCalculator.sectionTwo.footerTitleThree': `Volume</br>Bonus Reward B`,
 
     'home.priceCalculator.tabThree.Title': `HOO Staking </br> Bonus Rewards`,
     'home.priceCalculator.sectionThree.Title': `Estimate your rewards`,
