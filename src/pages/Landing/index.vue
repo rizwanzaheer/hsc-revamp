@@ -157,9 +157,10 @@
 
                     <h2 class="text-white text-[15px] text-left leading-[23px] text-[700] font-bold mt-2">Rewards Date</h2>
                     <p class="text-white text-[15px] leading-[23px] text-left text-[400]">
-                        The First Phase of the Cosmic Origin Project will run from 9th of March 2022 until 9th of September 2022. This is the first phase of the Project, and the second phase will be
-                        announced later on the year.
+                        The First Phase of the Cosmic Origin Project was officially announced on 9th of March 2022. Once the number of registered projects reaches 60, the Cosmic Origin Project will
+                        officially be triggered, and will last for 6 months from the start date.
                     </p>
+                    <p class="text-white text-[15px] leading-[23px] text-left text-[400] mt-6">This is the first phase of the Project, and the second phase will be announced later on the year.</p>
 
                     <h2 class="text-white text-[15px] mt-5 text-left leading-[23px] text-[700] not-italic font-bold">Details</h2>
                     <ol class="list-decimal text-white text-[15px] leading-[23px] ml-[20px] font-[400]">
