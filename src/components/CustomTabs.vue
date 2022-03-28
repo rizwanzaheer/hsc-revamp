@@ -3,7 +3,7 @@
         <!-- tab 1 start -->
         <el-tab-pane name="first">
             <template #label>
-                <div class="flex justify-center items-center custom-tab-container">
+                <div class="flex items-center custom-tab-container">
                     <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabOne.Title')"></h1>
                     <el-icon>
                         <arrow-right />
@@ -11,7 +11,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[5%]">
                 <el-col :span="24">
                     <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionOne.Title')"></h1>
                 </el-col>
@@ -41,19 +41,15 @@
                         {{ tvlMarksMonthlyRewards[tvlValue] }}
                     </h2>
                 </el-col>
-                <el-col :span="24">
-                    <h6
-                        class="text-white text-[12px] leading-[20px] mt-[20px] underline text-left md:text-right underline-offset-2 cursor-pointer"
-                        native-type="button"
-                        @click="$router.push({ name: 'LandingPage' })"
-                    >
-                        *In USDT — maintain at least 1 month
-                        <span style="transform: translateY(3px); display: inline-block; font-size: 12px">
+                <el-col class="text-left md:text-right" :span="24">
+                    <a :href="`${isExternal ? 'landing-page/#tvl' : '#tvl'}`" class="text-white text-[12px] leading-[20px] mt-[20px] underline text-left md:text-right underline-offset-2 cursor-pointer" native-type="button">
+                        *Maintain at least 1 month
+                        <!-- <span style="transform: translateY(3px); display: inline-block; font-size: 12px">
                             <el-icon>
                                 <arrow-right />
                             </el-icon>
-                        </span>
-                    </h6>
+                        </span> -->
+                    </a>
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -63,7 +59,7 @@
         <!-- tab 2 start -->
         <el-tab-pane name="second">
             <template #label>
-                <div class="flex justify-center items-center custom-tab-container">
+                <div class="flex items-center custom-tab-container">
                     <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabTwo.Title')"></h1>
                     <el-icon>
                         <arrow-right />
@@ -71,7 +67,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[5%]">
                 <el-col :span="24">
                     <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionTwo.Title')"></h1>
                 </el-col>
@@ -128,7 +124,7 @@
         <!-- tab 3 start -->
         <el-tab-pane name="third">
             <template #label>
-                <div class="flex justify-center items-center custom-tab-container">
+                <div class="flex items-center custom-tab-container">
                     <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabThree.Title')"></h1>
                     <el-icon>
                         <arrow-right />
@@ -136,7 +132,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[5%]">
                 <el-col :span="24">
                     <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionThree.Title')"></h1>
                 </el-col>
@@ -195,7 +191,7 @@
         <!-- tab 4 start -->
         <el-tab-pane name="fourth">
             <template #label>
-                <div class="flex justify-center items-center custom-tab-container">
+                <div class="flex items-center custom-tab-container">
                     <h1 class="w-[100%] md:w-[70%] text-left" v-html="$t('home.priceCalculator.tabFour.Title')"></h1>
                     <el-icon>
                         <arrow-right />
@@ -203,7 +199,7 @@
                 </div>
             </template>
             <!-- content section starts -->
-            <el-row :gutter="60" class="pl-[0%] md:pl-[12%]">
+            <el-row :gutter="60" class="pl-[0%] md:pl-[5%]">
                 <el-col :span="24">
                     <h1 class="text-white text-[19px] font-[600] leading-[23px]" v-html="$t('home.priceCalculator.sectionFour.Title')"></h1>
                 </el-col>
@@ -239,8 +235,19 @@
                         class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider"
                     >{{capitalHubCapitalAllocation[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label]}}</h2>
                 </el-col> -->
-                <el-col :sm="24" :xs="24" :md="24">
-                    <h6 class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider">*In USDT</h6>
+                <!-- <el-col class="text-left md:text-right" :sm="24" :xs="24" :md="24">
+                    <a class="text-white text-[12px] leading-[20px] mt-[20px] text-left md:text-right tracking-wider">*Maintain at least 1 month</a>
+                </el-col> -->
+
+                <el-col class="text-left md:text-right" :span="24">
+                    <a :href="`${isExternal ? 'landing-page/#cross-chain' : '#cross-chain'}`" class="text-white text-[12px] leading-[20px] mt-[20px] underline text-left md:text-right underline-offset-2 cursor-pointer" native-type="button">
+                        *Maintain at least 1 month
+                        <!-- <span style="transform: translateY(3px); display: inline-block; font-size: 12px">
+                            <el-icon>
+                                <arrow-right />
+                            </el-icon>
+                        </span> -->
+                    </a>
                 </el-col>
             </el-row>
             <!-- content section ends -->
@@ -255,6 +262,7 @@ import type { CSSProperties } from 'vue';
 import { Calendar, ArrowRight } from '@element-plus/icons-vue';
 const props = defineProps({
     tabPosition: String,
+    isExternal: Boolean,
     onTabChange: {
         type: Function,
         default: (data: String): String => data,
@@ -558,7 +566,10 @@ function resetTabValues() {
     /* height: 387px;
     min-height: 387px; */
 
-    background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.3) 0.71%, rgba(110, 105, 119, 0.012) 99.98%);
+    // background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.3) 0.71%, rgba(110, 105, 119, 0.012) 99.98%);
+
+    background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.5) 100%, rgba(110, 105, 119, 0.012) 99.98%);
+
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     /* border-color: transparent; */
