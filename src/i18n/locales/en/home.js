@@ -80,10 +80,10 @@ export default {
     'home.stages.lower.blockTwoTitle': `Social-Fi`,
     'home.stages.lower.blockTwoPara': `Aligning the interests for the community with Defi, Game-fi, Social-fi together will be a positive sum game for the entire community.`,
 
-    'home.priceCalculator.tabOne.Title': `TVL </br> Basic rewards </br> <span>All projects</span>`,
+    'home.priceCalculator.tabOne.Title': `TVL Rewards </br> <span>All projects</span>`,
     'home.priceCalculator.sectionOne.Title': `Estimate your rewards`,
-    'home.priceCalculator.sectionOne.calcTitle': `Net TVL (USDT)`,
-    'home.priceCalculator.sectionOne.footerTitleOne': `Standard</br>Basic Rewards A`,
+    'home.priceCalculator.sectionOne.calcTitle': `TVL in USDT`,
+    'home.priceCalculator.sectionOne.footerTitleOne': `First Month</br>Reward`,
     'home.priceCalculator.sectionOne.footerTitleTwo': `Monthly</br>continuous Rewards B`,
 
     'home.priceCalculator.tabTwo.Title': `Volume </br> Bonus Rewards </br><span>GameFi and NFT</span>`,
