@@ -241,12 +241,12 @@
                 class="el-primary-button bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 float-right mr-[30px]"
                 type="primary"
             >Register</el-button>-->
-            <CustomButton
+            <!-- <CustomButton
                 class="bg-[#02ead0] hover:bg-[#8FFDFF] hover:text-black mt-3 mr-[30px] float-right"
                 title="Register"
                 native-type="button"
                 @click="register"
-            />
+            /> -->
         </div>
 
         <!-- pc header section ends  -->
