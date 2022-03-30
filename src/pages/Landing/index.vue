@@ -162,7 +162,7 @@
             </el-row>
 
             <!-- Join cosmic section starts -->
-            <el-row class="mt-14 !mb-12" justify="center">
+            <el-row class="mt-14 " justify="center">
                 <el-col :lg="21" :xs="24" :sm="24" style="background: linear-gradient(271.11deg, #719ee6 -9.09%, #02ead0 72.29%)">
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
                         <el-col :lg="14" :xs="24" :md="12" :sm="24" class="h-32">
