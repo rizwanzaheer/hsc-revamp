@@ -568,7 +568,7 @@ function resetTabValues() {
 
     // background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.3) 0.71%, rgba(110, 105, 119, 0.012) 99.98%);
 
-    background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.5) 100%, rgba(110, 105, 119, 0.012) 99.98%);
+    background: linear-gradient(269.98deg, rgba(50, 70, 86, 0.4) 100%, rgba(110, 105, 119, 0.012) 99.98%);
 
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
