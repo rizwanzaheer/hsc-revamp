@@ -215,7 +215,7 @@
                     </div>
                 </el-col>
                 <el-col :sm="24" :xs="24" :md="8">
-                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] uppercase tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleOne')"></h6>
+                    <h6 class="text-white text-[14px] leading-[17.07px] font-[600] mt-[70px] tracking-wider" v-html="$t('home.priceCalculator.sectionFour.footerTitleOne')"></h6>
                     <h2 class="text-[#02EAD0] text-[20px] leading-[24px] md:text-[22px] md:leading-[26.82px] font-[600] uppercase tracking-wider">
                         {{ capitalHubRequireStandardMonthlyVolume[typeof capitalHubMarks[capitalHubValue] === 'string' ? capitalHubMarks[capitalHubValue] : capitalHubMarks[capitalHubValue].label] }}
                     </h2>

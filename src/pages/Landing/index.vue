@@ -31,14 +31,12 @@
                     <h2 class="text-[#02EAD0] text-[20px] text-left leading-[30px] font-[600] not-italic">Project Vision</h2>
 
                     <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-4">
-                        Hoo Smart Chain believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. We have created a rewards program and welcome all
-                        developers and community members to grow together with us. We aim to visualise blockchain data and create an entirely new paradigm of interacting with DeFi, GameFi, SocialFi
-                        and other merging blockchain technologies.
+                        Hoo Smart Chain believes that nurturing the growth of an ecosystem for innovation is vital to the blockchain industry. A sustained and continous support for projects will be
+                        crucial to their growth. The Cosmic Origin Project is a grants and rewards program that welcome all developers and community members to grow together. Hoo Smart Chain aims to
+                        visualise blockchain data and create an entirely new paradigm of interacting with DeFi, GameFi, SocialFi and other merging blockchain technologies.
                     </p>
 
-                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-4">
-                        The Cosmic Origin Project will operate in 4 schemes. We’ve made a handy calculator for you to estimate your rewards below.
-                    </p>
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-4">The Cosmic Origin Project will operate in 4 schemes:</p>
 
                     <ol class="pl-8">
                         <li class="list-decimal text-[14px] mt-2 text-white">TVL Rewards</li>
@@ -47,7 +45,7 @@
                         <li class="list-decimal text-[14px] mt-2 text-white">Cross Chain Portal Rewards</li>
                     </ol>
 
-                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-4">We’ve made a handy calculator for you to estimate your rewards below.  </p>
+                    <p class="text-white text-[15px] leading-[21px] text-left text-[400] mt-4">Here is a handy calculator for you to estimate your rewards below.</p>
                 </el-col>
             </el-row>
             <!-- cosmic tab section start  -->
@@ -162,7 +160,7 @@
             </el-row>
 
             <!-- Join cosmic section starts -->
-            <el-row class="mt-14 " justify="center">
+            <el-row class="mt-14" justify="center">
                 <el-col :lg="21" :xs="24" :sm="24" style="background: linear-gradient(271.11deg, #719ee6 -9.09%, #02ead0 72.29%)">
                     <el-row justify="center" :gutter="10" class="!items-center min-h-[130px]">
                         <el-col :lg="14" :xs="24" :md="12" :sm="24" class="h-32">
